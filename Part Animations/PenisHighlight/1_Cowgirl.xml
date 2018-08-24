@@ -1,0 +1,732 @@
+<Motion duration="120" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="236.35" y="498.05" scaleX="0.327" scaleY="0.172" rotation="90" visible="true" elementType="graphic" symbolName="PenisHighlight" class="PenisHighlight" baseClass="flash.display.Sprite">
+			<dimensions>
+				<geom:Rectangle left="-6.15" top="-13.45" width="12.3" height="26.9"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.5" y="0.5"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<Keyframe index="0">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="1" x="0.75" y="-30.44999999999999" scaleX="0.948012232415902" scaleY="0.9418604651162792">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="2" x="1.4000000000000057" y="-57.30000000000001" scaleX="0.9021406727828746" scaleY="0.9011627906976745">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="3" x="1.950000000000017" y="-80.15000000000003" scaleX="0.8654434250764524" scaleY="0.8604651162790697">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="4" x="2.25" y="-99.15000000000003" scaleX="0.8379204892966361" scaleY="0.8372093023255814">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="5" x="2.5999999999999943" y="-107.60000000000002" scaleX="0.8165137614678899" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="6" x="2.8499999999999943" y="-112.44999999999999" scaleX="0.8042813455657493" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="7" x="2.9000000000000057" y="-113.55000000000001" scaleX="0.8012232415902141" scaleY="0.7965116279069768">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="8" y="-111.90000000000003">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="9" x="2.8499999999999943" y="-106.94999999999999" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="10" y="-96.90000000000003" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="11" x="2.9000000000000057" y="-82" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="12" x="2.8000000000000114" y="-62" scaleX="0.8134556574923547">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="13" x="2.6500000000000057" y="-59.05000000000001" scaleX="0.8195718654434251" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="14" x="2.5500000000000114" y="-49.30000000000001" scaleX="0.8256880733944955" scaleY="0.8255813953488372">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="15" x="2.450000000000017" y="-32.650000000000034" scaleX="0.8348623853211009" scaleY="0.8313953488372093">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="16" x="2.5" y="-43.80000000000001" scaleX="0.8256880733944955" scaleY="0.8197674418604651">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="17" x="2.5999999999999943" y="-54.150000000000034" scaleX="0.8165137614678899" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="18" x="2.6500000000000057" y="-63.650000000000034" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="19" x="2.75" y="-72.25" scaleX="0.8073394495412844" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="20" x="2.8499999999999943" y="-73.44999999999999" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="21" x="2.9000000000000057" y="-73.94999999999999" scaleX="0.8012232415902141" scaleY="0.7965116279069768">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="22" y="-73.55000000000001">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="23" y="-72.5">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="24" x="2.8499999999999943" y="-69.40000000000003" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="25" y="-62.5" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="26" x="2.9000000000000057" y="-52" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="27" x="2.8000000000000114" y="-37.55000000000001" scaleX="0.8134556574923547">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="28" x="2.6500000000000057" y="-41.5" scaleX="0.8195718654434251" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="29" x="2.5500000000000114" y="-39.900000000000034" scaleX="0.8256880733944955" scaleY="0.8255813953488372">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="30" x="2.450000000000017" y="-32.650000000000034" scaleX="0.8348623853211009" scaleY="0.8313953488372093">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="31" x="2.5" y="-43.80000000000001" scaleX="0.8256880733944955" scaleY="0.8197674418604651">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="32" x="2.5999999999999943" y="-54.150000000000034" scaleX="0.8165137614678899" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="33" x="2.6500000000000057" y="-63.650000000000034" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="34" x="2.75" y="-72.25" scaleX="0.8073394495412844" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="35" x="2.8499999999999943" y="-73.44999999999999" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="36" x="2.9000000000000057" y="-73.94999999999999" scaleX="0.8012232415902141" scaleY="0.7965116279069768">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="37" y="-73.55000000000001">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="38" y="-72.5">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="39" x="2.8499999999999943" y="-69.40000000000003" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="40" y="-62.5" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="41" x="2.9000000000000057" y="-52" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="42" x="2.8000000000000114" y="-37.55000000000001" scaleX="0.8134556574923547">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="43" x="2.6500000000000057" y="-41.5" scaleX="0.8195718654434251" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="44" x="2.5500000000000114" y="-39.900000000000034" scaleX="0.8256880733944955" scaleY="0.8255813953488372">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="45" x="2.450000000000017" y="-32.650000000000034" scaleX="0.8348623853211009" scaleY="0.8313953488372093">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="46" x="2.5" y="-43.80000000000001" scaleX="0.8256880733944955" scaleY="0.8197674418604651">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="47" x="2.5999999999999943" y="-54.150000000000034" scaleX="0.8165137614678899" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="48" x="2.6500000000000057" y="-63.650000000000034" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="49" x="2.75" y="-72.25" scaleX="0.8073394495412844" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="50" x="2.8499999999999943" y="-73.44999999999999" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="51" x="2.9000000000000057" y="-73.94999999999999" scaleX="0.8012232415902141" scaleY="0.7965116279069768">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="52" y="-73.55000000000001">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="53" y="-72.5">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="54" x="2.8499999999999943" y="-69.40000000000003" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="55" y="-62.5" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="56" x="2.9000000000000057" y="-52" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="57" x="2.8000000000000114" y="-37.55000000000001" scaleX="0.8134556574923547">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="58" x="2.6500000000000057" y="-41.5" scaleX="0.8195718654434251" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="59" x="2.5500000000000114" y="-39.900000000000034" scaleX="0.8256880733944955" scaleY="0.8255813953488372">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="60" x="2.450000000000017" y="-32.650000000000034" scaleX="0.8348623853211009" scaleY="0.8313953488372093">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="61" x="2.5" y="-43.80000000000001" scaleX="0.8256880733944955" scaleY="0.8197674418604651">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="62" x="2.5999999999999943" y="-54.150000000000034" scaleX="0.8165137614678899" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="63" x="2.6500000000000057" y="-63.650000000000034" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="64" x="2.75" y="-72.25" scaleX="0.8073394495412844" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="65" x="2.8499999999999943" y="-73.44999999999999" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="66" x="2.9000000000000057" y="-73.94999999999999" scaleX="0.8012232415902141" scaleY="0.7965116279069768">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="67" y="-73.55000000000001">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="68" y="-72.5">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="69" x="2.8499999999999943" y="-69.40000000000003" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="70" y="-62.5" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="71" x="2.9000000000000057" y="-52" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="72" x="2.8000000000000114" y="-37.55000000000001" scaleX="0.8134556574923547">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="73" x="2.6500000000000057" y="-41.5" scaleX="0.8195718654434251" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="74" x="2.5500000000000114" y="-39.900000000000034" scaleX="0.8256880733944955" scaleY="0.8255813953488372">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="75" x="2.450000000000017" y="-32.650000000000034" scaleX="0.8348623853211009" scaleY="0.8313953488372093">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="76" x="2.5" y="-43.80000000000001" scaleX="0.8256880733944955" scaleY="0.8197674418604651">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="77" x="2.5999999999999943" y="-54.150000000000034" scaleX="0.8165137614678899" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="78" x="2.6500000000000057" y="-63.650000000000034" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="79" x="2.75" y="-72.25" scaleX="0.8073394495412844" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="80" x="2.8499999999999943" y="-73.44999999999999" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="81" x="2.9000000000000057" y="-73.94999999999999" scaleX="0.8012232415902141" scaleY="0.7965116279069768">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="82" y="-73.55000000000001">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="83" y="-72.35000000000002">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="84" x="2.8499999999999943" y="-68.75" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="85" y="-61.10000000000002" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="86" x="2.9000000000000057" y="-49.5" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="87" x="2.8000000000000114" y="-33.650000000000034" scaleX="0.8134556574923547">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="88" x="2.6500000000000057" y="-35.85000000000002" scaleX="0.8195718654434251" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="89" x="2.5500000000000114" y="-32.25" scaleX="0.8256880733944955" scaleY="0.8255813953488372">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="90" x="2.450000000000017" y="-22.650000000000034" scaleX="0.8348623853211009" scaleY="0.8313953488372093">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="91" x="2.5" y="-33.80000000000001" scaleX="0.8256880733944955" scaleY="0.8197674418604651">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="92" x="2.5999999999999943" y="-44.150000000000034" scaleX="0.8165137614678899" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="93" x="2.6500000000000057" y="-53.650000000000034" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="94" x="2.75" y="-62.25" scaleX="0.8073394495412844" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="95" x="2.8499999999999943" y="-63.5" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="96" x="2.9000000000000057" y="-63.94999999999999" scaleX="0.8012232415902141" scaleY="0.7965116279069768">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="97" y="-63.55000000000001">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="98" y="-62.35000000000002">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="99" x="2.8499999999999943" y="-58.75" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="100" y="-51.10000000000002" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="101" x="2.9000000000000057" y="-39.5" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="102" x="2.8000000000000114" y="-23.650000000000034" scaleX="0.8134556574923547">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="103" x="2.6500000000000057" y="-25.850000000000023" scaleX="0.8195718654434251" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="104" x="2.5500000000000114" y="-22.19999999999999" scaleX="0.8256880733944955" scaleY="0.8255813953488372">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="105" x="2.450000000000017" y="-12.650000000000034" scaleX="0.8348623853211009" scaleY="0.8313953488372093">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="106" x="2.5" y="-34.400000000000034" scaleX="0.8256880733944955" scaleY="0.8197674418604651">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="107" x="2.5999999999999943" y="-53.75" scaleX="0.8165137614678899" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="108" x="2.6500000000000057" y="-70.60000000000002" scaleX="0.8103975535168196" scaleY="0.808139534883721">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="109" x="2.75" y="-84.90000000000003" scaleX="0.8073394495412844" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="110" x="2.8499999999999943" y="-90.19999999999999" scaleX="0.8042813455657493">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="111" x="2.9000000000000057" y="-93.10000000000002" scaleX="0.8012232415902141" scaleY="0.7965116279069768">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="112" y="-93.55000000000001">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="113" x="2.8499999999999943" y="-91.25" scaleX="0.8042813455657493" scaleY="0.8023255813953489">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="114" x="2.700000000000017" y="-84.40000000000003" scaleX="0.8165137614678899" scaleY="0.8139534883720931">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="115" x="2.4000000000000057" y="-71" scaleX="0.8379204892966361" scaleY="0.8372093023255814">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="116" x="2.0999999999999943" y="-50.94999999999999" scaleX="0.8654434250764524" scaleY="0.8604651162790697">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="117" x="1.5" y="-23.900000000000034" scaleX="0.9021406727828746" scaleY="0.9011627906976745">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="118" x="0.8499999999999943" y="-14.699999999999989" scaleX="0.948012232415902" scaleY="0.9418604651162792">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+
+	<Keyframe index="119" x="-0.04999999999998295" y="2.349999999999966" scaleX="1" scaleY="1">
+		<color>
+			<Color redMultiplier="0" greenMultiplier="0" blueMultiplier="0" alphaMultiplier="1" redOffset="255" greenOffset="255" blueOffset="255" alphaOffset="0"/>
+		</color>
+	</Keyframe>
+</Motion>

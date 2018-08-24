@@ -1,0 +1,252 @@
+<Motion duration="120" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="203.85" y="706.35" scaleX="1.667" scaleY="1.667" skewX="162.8558" skewY="-17.1442" visible="true" elementType="movie clip" instanceName="NippleL" symbolName="Nipple" class="Nipple" baseClass="flash.display.Sprite">
+			<dimensions>
+				<geom:Rectangle left="-1" top="0.25" width="9.7" height="10.5"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.10309278350515465" y="-0.023809523809523808"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<Keyframe index="0"/>
+
+	<Keyframe index="1" x="3.5500000000000114" y="-48.80000000000007" scaleX="0.9292141571685663" scaleY="0.9292141571685663" rotation="0.8317000000000014"/>
+
+	<Keyframe index="2" x="6.700000000000017" y="-90.45000000000005" scaleX="0.8704259148170366" scaleY="0.8704259148170366" rotation="1.5711000000000013"/>
+
+	<Keyframe index="3" x="9.700000000000017" y="-125.5" scaleX="0.8224355128974205" scaleY="0.8224355128974205" rotation="2.108200000000002"/>
+
+	<Keyframe index="4" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="23.75" y="-202.10000000000002" scaleX="0.785242951409718" scaleY="0.785242951409718" rotation="-64.294"/>
+
+	<Keyframe index="5" x="26.650000000000006" y="-258.75" scaleX="0.758248350329934" scaleY="0.758248350329934" rotation="-111.448"/>
+
+	<Keyframe index="6" x="24.900000000000006" y="-290.75" scaleX="0.7426514697060588" scaleY="0.7426514697060588" rotation="-139.81699999999998"/>
+
+	<Keyframe index="7" x="23.849999999999994" y="-300.75" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="-149.2737"/>
+
+	<Keyframe index="8" x="22.55000000000001" y="-297.55" scaleX="0.7378524295140971" scaleY="0.7378524295140971" rotation="-152.5862"/>
+
+	<Keyframe index="9" x="18.150000000000006" y="-288.55" rotation="-162.546"/>
+
+	<Keyframe index="10" x="10.75" y="-273.3" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="181.3494"/>
+
+	<Keyframe index="11" x="0.30000000000001137" y="-251.45000000000005" rotation="158.36380000000003"/>
+
+	<Keyframe index="12" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="-3.0999999999999943" y="-218.55" rotation="118.6855"/>
+
+	<Keyframe index="13" x="-2.4000000000000057" y="-183" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="79.30030000000001"/>
+
+	<Keyframe index="14" x="3.25" y="-148.45000000000005" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="39.4714"/>
+
+	<Keyframe index="15" x="12.300000000000011" y="-118.60000000000002" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="0.0007000000000019213"/>
+
+	<Keyframe index="16" x="12.550000000000011" y="-126.89999999999998" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="0.8315000000000019"/>
+
+	<Keyframe index="17" x="12.800000000000011" y="-135.95000000000005" rotation="1.5709000000000017"/>
+
+	<Keyframe index="18" x="13.550000000000011" y="-145.64999999999998" rotation="2.1079000000000008"/>
+
+	<Keyframe index="19" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="25.150000000000006" y="-200" rotation="-64.2947"/>
+
+	<Keyframe index="20" x="27.200000000000017" y="-244.45000000000005" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="-111.44770000000001"/>
+
+	<Keyframe index="21" x="25.05000000000001" y="-270.95000000000005" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="-139.81709999999998"/>
+
+	<Keyframe index="22" x="23.849999999999994" y="-279.75" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="-149.2737"/>
+
+	<Keyframe index="23" x="22.5" y="-277.40000000000003" scaleX="0.7378524295140971" scaleY="0.7378524295140971" rotation="-152.5862"/>
+
+	<Keyframe index="24" x="18.099999999999994" y="-270.40000000000003" rotation="-162.546"/>
+
+	<Keyframe index="25" x="10.800000000000011" y="-258.45000000000005" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="181.3494"/>
+
+	<Keyframe index="26" x="0.30000000000001137" y="-240.70000000000005" rotation="158.36380000000003"/>
+
+	<Keyframe index="27" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="-3.0999999999999943" y="-210.90000000000003" rotation="118.6855"/>
+
+	<Keyframe index="28" x="-2.4499999999999886" y="-178.5" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="79.30030000000001"/>
+
+	<Keyframe index="29" x="3.200000000000017" y="-146.55000000000007" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="39.4714"/>
+
+	<Keyframe index="30" x="12.300000000000011" y="-118.60000000000002" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="0.0007000000000019213"/>
+
+	<Keyframe index="31" x="12.550000000000011" y="-128.75" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="0.8315000000000019"/>
+
+	<Keyframe index="32" x="12.800000000000011" y="-139.60000000000002" rotation="1.5709000000000017"/>
+
+	<Keyframe index="33" x="13.550000000000011" y="-151.14999999999998" rotation="2.1079000000000008"/>
+
+	<Keyframe index="34" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="25.150000000000006" y="-207.95000000000005" rotation="-64.2947"/>
+
+	<Keyframe index="35" x="27.25" y="-254.10000000000002" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="-111.44770000000001"/>
+
+	<Keyframe index="36" x="25.05000000000001" y="-281.8" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="-139.81709999999998"/>
+
+	<Keyframe index="37" x="23.849999999999994" y="-290.75" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="-149.2737"/>
+
+	<Keyframe index="38" x="22.55000000000001" y="-288" scaleX="0.7378524295140971" scaleY="0.7378524295140971" rotation="-152.5862"/>
+
+	<Keyframe index="39" x="18.150000000000006" y="-280.05" rotation="-162.546"/>
+
+	<Keyframe index="40" x="10.75" y="-266.3" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="181.3494"/>
+
+	<Keyframe index="41" x="0.30000000000001137" y="-246.25" rotation="158.36380000000003"/>
+
+	<Keyframe index="42" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="-3.0999999999999943" y="-215.15000000000003" rotation="118.6855"/>
+
+	<Keyframe index="43" x="-2.4000000000000057" y="-181.25" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="79.30030000000001"/>
+
+	<Keyframe index="44" x="3.25" y="-147.95000000000005" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="39.4714"/>
+
+	<Keyframe index="45" x="12.300000000000011" y="-118.60000000000002" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="0.0007000000000019213"/>
+
+	<Keyframe index="46" x="12.550000000000011" y="-126.89999999999998" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="0.8315000000000019"/>
+
+	<Keyframe index="47" x="12.800000000000011" y="-135.95000000000005" rotation="1.5709000000000017"/>
+
+	<Keyframe index="48" x="13.550000000000011" y="-145.64999999999998" rotation="2.1079000000000008"/>
+
+	<Keyframe index="49" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="25.150000000000006" y="-200" rotation="-64.2947"/>
+
+	<Keyframe index="50" x="27.200000000000017" y="-244.45000000000005" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="-111.44770000000001"/>
+
+	<Keyframe index="51" x="25.05000000000001" y="-270.95000000000005" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="-139.81709999999998"/>
+
+	<Keyframe index="52" x="23.849999999999994" y="-279.75" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="-149.2737"/>
+
+	<Keyframe index="53" x="22.5" y="-277.40000000000003" scaleX="0.7378524295140971" scaleY="0.7378524295140971" rotation="-152.5862"/>
+
+	<Keyframe index="54" x="18.099999999999994" y="-270.40000000000003" rotation="-162.546"/>
+
+	<Keyframe index="55" x="10.800000000000011" y="-258.45000000000005" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="181.3494"/>
+
+	<Keyframe index="56" x="0.30000000000001137" y="-240.70000000000005" rotation="158.36380000000003"/>
+
+	<Keyframe index="57" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="-3.0999999999999943" y="-210.90000000000003" rotation="118.6855"/>
+
+	<Keyframe index="58" x="-2.4499999999999886" y="-178.5" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="79.30030000000001"/>
+
+	<Keyframe index="59" x="3.200000000000017" y="-146.55000000000007" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="39.4714"/>
+
+	<Keyframe index="60" x="12.300000000000011" y="-118.60000000000002" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="0.0007000000000019213"/>
+
+	<Keyframe index="61" x="12.550000000000011" y="-128.75" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="0.8315000000000019"/>
+
+	<Keyframe index="62" x="12.800000000000011" y="-139.60000000000002" rotation="1.5709000000000017"/>
+
+	<Keyframe index="63" x="13.550000000000011" y="-151.14999999999998" rotation="2.1079000000000008"/>
+
+	<Keyframe index="64" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="25.150000000000006" y="-207.95000000000005" rotation="-64.2947"/>
+
+	<Keyframe index="65" x="27.25" y="-254.10000000000002" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="-111.44770000000001"/>
+
+	<Keyframe index="66" x="25.05000000000001" y="-281.8" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="-139.81709999999998"/>
+
+	<Keyframe index="67" x="23.849999999999994" y="-290.75" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="-149.2737"/>
+
+	<Keyframe index="68" x="22.55000000000001" y="-288" scaleX="0.7378524295140971" scaleY="0.7378524295140971" rotation="-152.5862"/>
+
+	<Keyframe index="69" x="18.150000000000006" y="-280.05" rotation="-162.546"/>
+
+	<Keyframe index="70" x="10.75" y="-266.3" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="181.3494"/>
+
+	<Keyframe index="71" x="0.30000000000001137" y="-246.25" rotation="158.36380000000003"/>
+
+	<Keyframe index="72" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="-3.0999999999999943" y="-215.15000000000003" rotation="118.6855"/>
+
+	<Keyframe index="73" x="-2.4000000000000057" y="-181.25" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="79.30030000000001"/>
+
+	<Keyframe index="74" x="3.25" y="-147.95000000000005" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="39.4714"/>
+
+	<Keyframe index="75" x="12.300000000000011" y="-118.60000000000002" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="0.0007000000000019213"/>
+
+	<Keyframe index="76" x="12.550000000000011" y="-126.89999999999998" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="0.8315000000000019"/>
+
+	<Keyframe index="77" x="12.800000000000011" y="-135.95000000000005" rotation="1.5709000000000017"/>
+
+	<Keyframe index="78" x="13.550000000000011" y="-145.64999999999998" rotation="2.1079000000000008"/>
+
+	<Keyframe index="79" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="25.150000000000006" y="-200" rotation="-64.2947"/>
+
+	<Keyframe index="80" x="27.200000000000017" y="-244.45000000000005" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="-111.44770000000001"/>
+
+	<Keyframe index="81" x="25.05000000000001" y="-270.95000000000005" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="-139.81709999999998"/>
+
+	<Keyframe index="82" x="23.849999999999994" y="-279.75" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="-149.2737"/>
+
+	<Keyframe index="83" x="22.5" y="-277.40000000000003" scaleX="0.7378524295140971" scaleY="0.7378524295140971" rotation="-152.5862"/>
+
+	<Keyframe index="84" x="18.099999999999994" y="-270.40000000000003" rotation="-162.546"/>
+
+	<Keyframe index="85" x="10.800000000000011" y="-258.45000000000005" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="181.3494"/>
+
+	<Keyframe index="86" x="0.30000000000001137" y="-240.70000000000005" rotation="158.36380000000003"/>
+
+	<Keyframe index="87" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="-3.0999999999999943" y="-210.90000000000003" rotation="118.6855"/>
+
+	<Keyframe index="88" x="-2.4499999999999886" y="-178.5" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="79.30030000000001"/>
+
+	<Keyframe index="89" x="3.200000000000017" y="-146.55000000000007" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="39.4714"/>
+
+	<Keyframe index="90" x="12.300000000000011" y="-118.60000000000002" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="0.0007000000000019213"/>
+
+	<Keyframe index="91" x="12.550000000000011" y="-128.75" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="0.8315000000000019"/>
+
+	<Keyframe index="92" x="12.800000000000011" y="-139.60000000000002" rotation="1.5709000000000017"/>
+
+	<Keyframe index="93" x="13.550000000000011" y="-151.14999999999998" rotation="2.1079000000000008"/>
+
+	<Keyframe index="94" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="25.150000000000006" y="-207.95000000000005" rotation="-64.2947"/>
+
+	<Keyframe index="95" x="27.25" y="-254.10000000000002" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="-111.44770000000001"/>
+
+	<Keyframe index="96" x="25.05000000000001" y="-281.8" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="-139.81709999999998"/>
+
+	<Keyframe index="97" x="23.849999999999994" y="-290.75" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="-149.2737"/>
+
+	<Keyframe index="98" x="22.55000000000001" y="-288" scaleX="0.7378524295140971" scaleY="0.7378524295140971" rotation="-152.5862"/>
+
+	<Keyframe index="99" x="18.150000000000006" y="-280.05" rotation="-162.546"/>
+
+	<Keyframe index="100" x="10.75" y="-266.3" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="181.3494"/>
+
+	<Keyframe index="101" x="0.30000000000001137" y="-246.25" rotation="158.36380000000003"/>
+
+	<Keyframe index="102" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="-3.0999999999999943" y="-215.15000000000003" rotation="118.6855"/>
+
+	<Keyframe index="103" x="-2.4000000000000057" y="-181.25" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="79.30030000000001"/>
+
+	<Keyframe index="104" x="3.25" y="-147.95000000000005" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="39.4714"/>
+
+	<Keyframe index="105" x="12.300000000000011" y="-118.60000000000002" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="0.0007000000000019213"/>
+
+	<Keyframe index="106" x="12.550000000000011" y="-127.95000000000005" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="0.8315000000000019"/>
+
+	<Keyframe index="107" x="12.800000000000011" y="-139.75" rotation="1.5709000000000017"/>
+
+	<Keyframe index="108" x="13.550000000000011" y="-153.20000000000005" rotation="2.1079000000000008"/>
+
+	<Keyframe index="109" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="25.150000000000006" y="-211.65000000000003" rotation="-64.2947"/>
+
+	<Keyframe index="110" x="27.200000000000017" y="-260.05" scaleX="0.7366526694661067" scaleY="0.7366526694661067" rotation="-111.44770000000001"/>
+
+	<Keyframe index="111" x="25.05000000000001" y="-289.65000000000003" scaleX="0.737252549490102" scaleY="0.737252549490102" rotation="-139.81709999999998"/>
+
+	<Keyframe index="112" x="23.849999999999994" y="-299.75" scaleX="0.7384523095380924" scaleY="0.7384523095380924" rotation="-149.2737"/>
+
+	<Keyframe index="113" x="22.349999999999994" y="-295.8" scaleX="0.743251349730054" scaleY="0.743251349730054" rotation="-152.5862"/>
+
+	<Keyframe index="114" x="17.25" y="-284" scaleX="0.7594481103779244" scaleY="0.7594481103779244" rotation="-162.54569999999998"/>
+
+	<Keyframe index="115" x="8.5" y="-262.8" scaleX="0.785242951409718" scaleY="0.785242951409718" rotation="181.34920000000002"/>
+
+	<Keyframe index="116" x="-5.099999999999994" y="-230.60000000000002" scaleX="0.8224355128974205" scaleY="0.8224355128974205" rotation="158.3642"/>
+
+	<Keyframe index="117" label="easing:{type:&quot;Quad&quot;, subtype:&quot;easeOut&quot;}" x="-12.099999999999994" y="-178" scaleX="0.8704259148170366" scaleY="0.8704259148170366" rotation="118.6849"/>
+
+	<Keyframe index="118" x="-15.349999999999994" y="-112.89999999999998" scaleX="0.9286142771445711" scaleY="0.9286142771445711" rotation="79.3008"/>
+
+	<Keyframe index="119" x="-12.299999999999983" y="-37.450000000000045" scaleX="0.9982003599280144" scaleY="0.9982003599280144" skewX="-320.52959999999996" skewY="39.4704"/>
+</Motion>

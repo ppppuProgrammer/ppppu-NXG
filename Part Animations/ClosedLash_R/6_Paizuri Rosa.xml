@@ -1,0 +1,30 @@
+<Motion duration="9" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="313.55" y="397.7" scaleX="1.297" scaleY="1.297" rotation="177.7039" visible="false" elementType="movie clip" symbolName="ClosedLash" class="ClosedLash" baseClass="flash.display.Sprite">
+			<dimensions>
+				<geom:Rectangle left="0" top="0" width="39.1" height="10.85"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0" y="0"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<Keyframe index="59"/>
+
+	<Keyframe index="60" visible="true" x="-4.449999999999989" y="4.400000000000034" rotation="-0.9350000000000023"/>
+
+	<Keyframe index="61" visible="true" x="-2.8000000000000114" y="7.199999999999989" rotation="-0.26439999999999486"/>
+
+	<Keyframe index="62" visible="true" x="-1.1999999999999886" y="5.650000000000034" rotation="0.2348999999999819"/>
+
+	<Keyframe index="63" visible="true" x="0.19999999999998863" y="-0.39999999999997726" rotation="0.5426999999999964"/>
+
+	<Keyframe index="64" visible="true" x="-0.4000000000000341" y="-14.300000000000011" rotation="1.4857999999999834"/>
+
+	<Keyframe index="65" visible="true" x="-0.6500000000000341" y="-27.30000000000001" rotation="1.998199999999997"/>
+
+	<Keyframe index="66" visible="true" x="-0.8000000000000114" y="-35.5" rotation="2.2670999999999992"/>
+
+	<Keyframe index="67" x="-0.75" y="-38.599999999999966" rotation="2.2948000000000093"/>
+</Motion>

@@ -1,0 +1,124 @@
+<Motion duration="120" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="237.6" y="234" scaleX="1.597" scaleY="0.94" rotation="-0.0027" visible="false" elementType="movie clip" symbolName="OpenSmile" class="OpenSmile" baseClass="flash.display.Sprite">
+			<dimensions>
+				<geom:Rectangle left="-4.75" top="-3.5" width="9.45" height="15.4"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.5026455026455027" y="0.22727272727272727"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<Keyframe index="0"/>
+
+	<Keyframe index="1" blank="true"/>
+
+	<Keyframe index="66" x="2.75" y="-26" scaleX="0.6819035691922354" scaleY="0.5531914893617021" rotation="0.0027"/>
+
+	<Keyframe index="67" visible="true" y="-30.400000000000006" scaleX="0.7633061991233564" scaleY="0.8265957446808512" rotation="0.002"/>
+
+	<Keyframe index="68" visible="true" y="-35.80000000000001" scaleX="0.8541014402003758" scaleY="1.0797872340425532" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="69" visible="true" x="2.5999999999999943" y="-37.75" scaleX="0.9198497182216657" scaleY="1.2627659574468086" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="70" visible="true" x="2.6500000000000057" y="-36.349999999999994" scaleX="0.9618033813400125" scaleY="1.375531914893617"/>
+
+	<Keyframe index="71" visible="true" x="2.5999999999999943" y="-31.44999999999999" scaleX="0.9793362554790233" scaleY="1.419148936170213"/>
+
+	<Keyframe index="72" visible="true" y="-23.19999999999999" scaleX="0.9849718221665623" scaleY="1.426595744680851"/>
+
+	<Keyframe index="73" visible="true" x="2.5" y="-12.349999999999994" scaleX="0.991859737006888" scaleY="1.4372340425531915" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="74" visible="true" x="2.4000000000000057" y="-1.3000000000000114" scaleX="1" scaleY="1.448936170212766" rotation="0.0022"/>
+
+	<Keyframe index="75" visible="true" x="2.3000000000000114" y="9.849999999999994" scaleX="1.0093926111458986" scaleY="1.4627659574468086"/>
+
+	<Keyframe index="76" visible="true" y="4.699999999999989" scaleX="0.9987476518472135" scaleY="1.446808510638298"/>
+
+	<Keyframe index="77" visible="true" x="2.4000000000000057" y="-2" scaleX="0.9893550407013151" scaleY="1.4340425531914895" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="78" visible="true" x="2.5" y="-10.099999999999994" scaleX="0.9824671258609894" scaleY="1.423404255319149" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="79" visible="true" x="2.6500000000000057" y="-18.94999999999999" scaleX="0.976205385097057" scaleY="1.4148936170212767"/>
+
+	<Keyframe index="80" visible="true" x="2.75" y="-24.900000000000006" scaleX="0.9724483406386976" scaleY="1.4085106382978725"/>
+
+	<Keyframe index="81" visible="true" y="-29.150000000000006" scaleX="0.9699436443331246" scaleY="1.4053191489361703"/>
+
+	<Keyframe index="82" visible="true" y="-31.75" scaleX="0.9686912961803381" scaleY="1.4042553191489364"/>
+
+	<Keyframe index="83" visible="true" y="-36.349999999999994" scaleX="0.9693174702567314" scaleY="1.4053191489361703"/>
+
+	<Keyframe index="84" visible="true" x="2.6500000000000057" y="-37.44999999999999" scaleX="0.971195992485911" scaleY="1.4074468085106384"/>
+
+	<Keyframe index="85" visible="true" y="-35" scaleX="0.9749530369442705" scaleY="1.4127659574468088"/>
+
+	<Keyframe index="86" visible="true" x="2.5999999999999943" y="-28.94999999999999" scaleX="0.9793362554790233" scaleY="1.419148936170213"/>
+
+	<Keyframe index="87" visible="true" y="-19.30000000000001" scaleX="0.9849718221665623" scaleY="1.426595744680851"/>
+
+	<Keyframe index="88" visible="true" x="2.5" y="-6.699999999999989" scaleX="0.991859737006888" scaleY="1.4372340425531915" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="89" visible="true" x="2.4000000000000057" y="6.349999999999994" scaleX="1" scaleY="1.448936170212766" rotation="0.0022"/>
+
+	<Keyframe index="90" visible="true" x="2.3000000000000114" y="19.849999999999994" scaleX="1.0093926111458986" scaleY="1.4627659574468086"/>
+
+	<Keyframe index="91" visible="true" y="14.699999999999989" scaleX="0.9987476518472135" scaleY="1.446808510638298"/>
+
+	<Keyframe index="92" visible="true" x="2.4000000000000057" y="8" scaleX="0.9893550407013151" scaleY="1.4340425531914895" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="93" visible="true" x="2.5" y="-0.09999999999999432" scaleX="0.9824671258609894" scaleY="1.423404255319149" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="94" visible="true" x="2.6500000000000057" y="-8.949999999999989" scaleX="0.976205385097057" scaleY="1.4148936170212767"/>
+
+	<Keyframe index="95" visible="true" x="2.75" y="-14.949999999999989" scaleX="0.9724483406386976" scaleY="1.4085106382978725"/>
+
+	<Keyframe index="96" visible="true" y="-19.150000000000006" scaleX="0.9699436443331246" scaleY="1.4053191489361703"/>
+
+	<Keyframe index="97" visible="true" y="-21.75" scaleX="0.9686912961803381" scaleY="1.4042553191489364"/>
+
+	<Keyframe index="98" visible="true" y="-26.349999999999994" scaleX="0.9693174702567314" scaleY="1.4053191489361703"/>
+
+	<Keyframe index="99" visible="true" x="2.6500000000000057" y="-27.44999999999999" scaleX="0.971195992485911" scaleY="1.4074468085106384"/>
+
+	<Keyframe index="100" visible="true" y="-25" scaleX="0.9749530369442705" scaleY="1.4127659574468088"/>
+
+	<Keyframe index="101" visible="true" x="2.5999999999999943" y="-18.94999999999999" scaleX="0.9793362554790233" scaleY="1.419148936170213"/>
+
+	<Keyframe index="102" visible="true" y="-9.300000000000011" scaleX="0.9849718221665623" scaleY="1.426595744680851"/>
+
+	<Keyframe index="103" visible="true" x="2.5" y="3.3000000000000114" scaleX="0.991859737006888" scaleY="1.4372340425531915" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="104" visible="true" x="2.4000000000000057" y="16.400000000000006" scaleX="1" scaleY="1.448936170212766" rotation="0.0022"/>
+
+	<Keyframe index="105" visible="true" x="2.3000000000000114" y="29.850000000000023" scaleX="1.0093926111458986" scaleY="1.4627659574468086"/>
+
+	<Keyframe index="106" visible="true" y="14.099999999999994" scaleX="0.9987476518472135" scaleY="1.446808510638298"/>
+
+	<Keyframe index="107" visible="true" x="2.4000000000000057" y="-1.5999999999999943" scaleX="0.9893550407013151" scaleY="1.4340425531914895" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="108" visible="true" x="2.5" y="-17.05000000000001" scaleX="0.9824671258609894" scaleY="1.423404255319149" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="109" visible="true" x="2.6500000000000057" y="-31.599999999999994" scaleX="0.976205385097057" scaleY="1.4148936170212767"/>
+
+	<Keyframe index="110" visible="true" x="2.75" y="-41.650000000000006" scaleX="0.9724483406386976" scaleY="1.4085106382978725"/>
+
+	<Keyframe index="111" visible="true" y="-48.30000000000001" scaleX="0.9699436443331246" scaleY="1.4053191489361703"/>
+
+	<Keyframe index="112" visible="true" y="-51.75" scaleX="0.9686912961803381" scaleY="1.4042553191489364"/>
+
+	<Keyframe index="113" visible="true" x="2.700000000000017" y="-56.25" scaleX="0.973700688791484" scaleY="1.4117021276595745"/>
+
+	<Keyframe index="114" visible="true" x="2.5" y="-57.19999999999999" scaleX="0.9887288666249218" scaleY="1.4329787234042555" rotation="0.0021000000000000003"/>
+
+	<Keyframe index="115" visible="true" x="2.25" y="-54.349999999999994" scaleX="1.0137758296806512" scaleY="1.4680851063829787" rotation="0.0022"/>
+
+	<Keyframe index="116" visible="true" x="1.8499999999999943" y="-47.599999999999994" scaleX="1.0482154038822793" scaleY="1.5191489361702128"/>
+
+	<Keyframe index="117" visible="true" x="1.4000000000000057" y="-36.94999999999999" scaleX="1.0926737633061991" scaleY="1.5829787234042554"/>
+
+	<Keyframe index="118" visible="true" x="0.9000000000000057" y="-22.30000000000001" scaleX="1.147150907952411" scaleY="1.6617021276595747"/>
+
+	<Keyframe index="119" visible="true" x="0.15000000000000568" y="-6.75" scaleX="1.2110206637445209" scaleY="1.7553191489361701" rotation="0.0022"/>
+</Motion>
