@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Textures/CharPartSprite.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/FaceAngled-2/FaceAngled2_HairAngledColor.png" type="Texture" id=2]
+[ext_resource path="res://Textures/FaceAngled-2/FaceAngled2_SkinColor.png" type="Texture" id=3]
+[ext_resource path="res://Textures/FaceAngled-2/FaceAngled2_Outline.png" type="Texture" id=4]
+
+[node name="FaceAngled-2" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+[node name="FaceAngled2_HairAngledColor" type="Sprite" parent="." index="0"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 2 )
+offset = Vector2( 350.825000, 375.775000 )
+[node name="FaceAngled2_SkinColor" type="Sprite" parent="." index="1"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+offset = Vector2( 350.825000, 375.775000 )
+[node name="FaceAngled2_Outline" type="Sprite" parent="." index="2"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+offset = Vector2( 350.825000, 375.775000 )
+

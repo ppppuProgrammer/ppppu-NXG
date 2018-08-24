@@ -1,0 +1,4 @@
+Inner_Diamonds_Wall_color_4
+Inner_Diamonds_Wall_color_3
+Inner_Diamonds_Wall_color_2
+Inner_Diamonds_Wall_color_1

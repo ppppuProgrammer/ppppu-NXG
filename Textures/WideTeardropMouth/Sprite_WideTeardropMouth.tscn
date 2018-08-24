@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Textures/CharPartSprite.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/WideTeardropMouth/WideTeardropMouth_LipColor.png" type="Texture" id=2]
+[ext_resource path="res://Textures/WideTeardropMouth/WideTeardropMth_Highlight.png" type="Texture" id=3]
+[ext_resource path="res://Textures/WideTeardropMouth/WideTeardropMth_Inside.png" type="Texture" id=4]
+[ext_resource path="res://Textures/WideTeardropMouth/WideTeardropMth_Teeth.png" type="Texture" id=5]
+[ext_resource path="res://Textures/WideTeardropMouth/WideTeardropMth_Outline.png" type="Texture" id=6]
+
+[node name="WideTeardropMouth" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+[node name="WideTeardropMouth_LipColor" type="Sprite" parent="." index="0"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 2 )
+offset = Vector2( -0.225000, 23.400000 )
+[node name="WideTeardropMth_Highlight" type="Sprite" parent="." index="1"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+offset = Vector2( -0.225000, 23.400000 )
+[node name="WideTeardropMth_Inside" type="Sprite" parent="." index="2"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+offset = Vector2( -0.225000, 23.400000 )
+[node name="WideTeardropMth_Teeth" type="Sprite" parent="." index="3"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 5 )
+offset = Vector2( -0.225000, 23.400000 )
+[node name="WideTeardropMth_Outline" type="Sprite" parent="." index="4"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 6 )
+offset = Vector2( -0.225000, 23.400000 )
+

@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Textures/CharPartSprite.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/TransitionDiamondBG/Diamond_Transition_-_Color_9.png" type="Texture" id=2]
+[ext_resource path="res://Textures/TransitionDiamondBG/Diamond_Transition_-_Color_8.png" type="Texture" id=3]
+[ext_resource path="res://Textures/TransitionDiamondBG/Diamond_Transition_-_Color_7.png" type="Texture" id=4]
+[ext_resource path="res://Textures/TransitionDiamondBG/Diamond_Transition_-_Color_6.png" type="Texture" id=5]
+[ext_resource path="res://Textures/TransitionDiamondBG/Diamond_Transition_-_Color_5.png" type="Texture" id=6]
+
+[node name="TransitionDiamondBG" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+[node name="Diamond_Transition_-_Color_9" type="Sprite" parent="." index="0"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 2 )
+offset = Vector2( 949.375000, 757.950000 )
+[node name="Diamond_Transition_-_Color_8" type="Sprite" parent="." index="1"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+offset = Vector2( 949.375000, 757.950000 )
+[node name="Diamond_Transition_-_Color_7" type="Sprite" parent="." index="2"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+offset = Vector2( 949.375000, 757.950000 )
+[node name="Diamond_Transition_-_Color_6" type="Sprite" parent="." index="3"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 5 )
+offset = Vector2( 949.375000, 757.950000 )
+[node name="Diamond_Transition_-_Color_5" type="Sprite" parent="." index="4"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 6 )
+offset = Vector2( 949.375000, 757.950000 )
+

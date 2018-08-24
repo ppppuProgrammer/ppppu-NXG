@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Textures/CharPartSprite.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/ShaftMask-2/ShaftMaskShape-2_0.0.png" type="Texture" id=2]
+
+[node name="ShaftMask-2" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+[node name="ShaftMaskShape-2_0.0" type="Sprite" parent="." index="0"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 2 )
+offset = Vector2( 60.350000, 257.850000 )
+

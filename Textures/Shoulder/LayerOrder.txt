@@ -1,0 +1,3 @@
+Shoulder_SkinColor
+Shoulder_SkinHighlightColor
+Shoulder_Outline

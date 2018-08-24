@@ -1,0 +1,862 @@
+[gd_scene load_steps=50 format=2]
+
+[ext_resource path="res://Animation.gd" type="Script" id=1]
+[ext_resource path="res://Char Parts/Nipple.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Char Parts/Areola.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Char Parts/BoobHighlight.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Char Parts/Boob.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Char Parts/Forearm.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Char Parts/Hand.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Char Parts/Eyebrow.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Char Parts/HairFront.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Char Parts/Hair2.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Char Parts/Hair1.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Char Parts/Eyelash.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Char Parts/EyeMask.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Char Parts/Eyelid.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Char Parts/Eyeball.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Char Parts/Sclera.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Char Parts/ClosedLash.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Char Parts/ClosedSmile.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Char Parts/OpenSmile.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Char Parts/Nose.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Char Parts/Face.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Char Parts/Ear.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Char Parts/Earring.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Char Parts/Symbol 47.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Char Parts/Hair3.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Char Parts/Headwear.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Char Parts/Clavicle.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Char Parts/MaleBody.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Char Parts/Vulva.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Char Parts/Groin.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Char Parts/ShaftMask.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Char Parts/PenisHighlight.tscn" type="PackedScene" id=32]
+[ext_resource path="res://Char Parts/MalePenisHead.tscn" type="PackedScene" id=33]
+[ext_resource path="res://Char Parts/MaleShaft.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Char Parts/MaleGroin.tscn" type="PackedScene" id=35]
+[ext_resource path="res://Char Parts/UpperLeg.tscn" type="PackedScene" id=36]
+[ext_resource path="res://Char Parts/LowerLeg.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Char Parts/MaleLeg.tscn" type="PackedScene" id=38]
+[ext_resource path="res://Char Parts/Navel.tscn" type="PackedScene" id=39]
+[ext_resource path="res://Char Parts/Hips.tscn" type="PackedScene" id=40]
+[ext_resource path="res://Char Parts/Neck.tscn" type="PackedScene" id=41]
+[ext_resource path="res://Char Parts/FrontButt.tscn" type="PackedScene" id=42]
+[ext_resource path="res://Char Parts/Chest.tscn" type="PackedScene" id=43]
+[ext_resource path="res://Char Parts/Shoulder.tscn" type="PackedScene" id=44]
+[ext_resource path="res://Char Parts/Arm.tscn" type="PackedScene" id=45]
+[ext_resource path="res://Char Parts/HairBack.tscn" type="PackedScene" id=46]
+[ext_resource path="res://Base Character Animations/1_Cowgirl-animation.tres" type="Animation" id=47]
+[ext_resource path="res://Textures/ShaftMask/ShaftMaskShape_0.0.png" type="Texture" id=48]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+
+render_priority = 0
+blend_mode = 0
+light_mode = 2
+
+[node name="1_Cowgirl Pch" type="Node2D"]
+light_mask = 9
+script = ExtResource( 1 )
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="Nipple (R)" parent="." instance=ExtResource( 2 )]
+position = Vector2( 300.16, 263.497 )
+rotation = 0.816043
+scale = Vector2( 1.11294, 1.11294 )
+z_index = 1750
+mainTexId = 0
+exnSkew = Vector2( 46.7558, 46.7558 )
+exnScale = Vector2( 1.11294, 1.11294 )
+exnPos = Vector2( 300.16, 263.497 )
+_tr = Transform2D( 0.744521, 0.827244, -0.827244, 0.744521, 300.16, 263.497 )
+
+[node name="Areola (R)" parent="." instance=ExtResource( 3 )]
+position = Vector2( 296.294, 272.745 )
+rotation = -1.56874
+scale = Vector2( 0.563316, 0.608316 )
+z_index = 1700
+mainTexId = 0
+exnSkew = Vector2( -89.8822, -89.8822 )
+exnScale = Vector2( 0.563316, 0.608316 )
+exnPos = Vector2( 296.294, 272.745 )
+_tr = Transform2D( 0.0125194, -0.563177, 0.608166, 0.0135195, 296.294, 272.745 )
+
+[node name="BoobHighlight (R)" parent="." instance=ExtResource( 4 )]
+position = Vector2( 272.121, 276.403 )
+rotation = 0.309498
+scale = Vector2( 1.92683, -1.11017 )
+z_index = 1650
+mainTexId = 0
+exnSkew = Vector2( 171.495, -17.7329 )
+exnScale = Vector2( 1.92683, 1.11017 )
+exnPos = Vector2( 272.121, 276.403 )
+_tr = Transform2D( 1.84689, 0.549248, -0.316455, 1.06411, 272.121, 276.403 )
+
+[node name="Boob (R)" parent="." instance=ExtResource( 5 )]
+position = Vector2( 271.86, 301.199 )
+rotation = -2.83206
+scale = Vector2( 1.12992, -0.980126 )
+z_index = 1600
+mainTexId = 0
+exnSkew = Vector2( -8.50705, 162.265 )
+exnScale = Vector2( 1.12992, 0.980126 )
+exnPos = Vector2( 271.86, 301.199 )
+_tr = Transform2D( -1.08303, -0.322121, 0.279418, -0.939453, 271.86, 301.199 )
+
+[node name="Forearm (L)" parent="." instance=ExtResource( 6 )]
+position = Vector2( 118.112, 421.938 )
+rotation = 2.53817
+scale = Vector2( 1.19204, -0.993377 )
+z_index = 1550
+mainTexId = 0
+exnSkew = Vector2( 34.7348, -145.427 )
+exnScale = Vector2( 1.19204, 0.993377 )
+exnPos = Vector2( 118.112, 421.938 )
+_tr = Transform2D( -0.9816, 0.676333, -0.563615, -0.818007, 118.112, 421.938 )
+
+[node name="Hand (L)" parent="." instance=ExtResource( 7 )]
+position = Vector2( 102.406, 491.044 )
+rotation = 0.476704
+scale = Vector2( 1.17704, 1.17704 )
+z_index = 1500
+mainTexId = 0
+exnSkew = Vector2( 27.3131, 27.3131 )
+exnScale = Vector2( 1.17704, 1.17704 )
+exnPos = Vector2( 102.406, 491.044 )
+_tr = Transform2D( 1.04582, 0.540091, -0.540091, 1.04582, 102.406, 491.044 )
+
+[node name="Eyebrow (L)" parent="." instance=ExtResource( 8 )]
+position = Vector2( 202.648, 127.975 )
+rotation = 3.03153
+scale = Vector2( 1.55904, -1.55904 )
+z_index = 1450
+mainTexId = 0
+exnSkew = Vector2( 6.30627, -173.694 )
+exnScale = Vector2( 1.55904, 1.55904 )
+exnPos = Vector2( 202.648, 127.975 )
+_tr = Transform2D( -1.54964, 0.170951, -0.170951, -1.54964, 202.648, 127.975 )
+
+[node name="Eyebrow (R)" parent="." instance=ExtResource( 8 )]
+position = Vector2( 276.752, 128.08 )
+rotation = -0.171115
+scale = Vector2( 1.55804, 1.55804 )
+z_index = 1400
+mainTexId = 0
+exnSkew = Vector2( -9.80418, -9.80418 )
+exnScale = Vector2( 1.55804, 1.55804 )
+exnPos = Vector2( 276.752, 128.08 )
+_tr = Transform2D( 1.53533, -0.265037, 0.265037, 1.53533, 276.752, 128.08 )
+
+[node name="HairFront" parent="." instance=ExtResource( 9 )]
+position = Vector2( 241.952, 96.6337 )
+rotation = 0.0095959
+scale = Vector2( 1.29104, 1.04283 )
+z_index = 1350
+mainTexId = 0
+exnSkew = Vector2( 0.549804, 0.549804 )
+exnScale = Vector2( 1.29104, 1.04283 )
+exnPos = Vector2( 241.952, 96.6337 )
+_tr = Transform2D( 1.29098, 0.0121418, -0.00980752, 1.04279, 241.952, 96.6337 )
+
+[node name="Hair2 (L)" parent="." instance=ExtResource( 10 )]
+position = Vector2( 173.002, 113.648 )
+rotation = -0.0806937
+scale = Vector2( 1.12104, 1.12104 )
+z_index = 1300
+mainTexId = 0
+exnSkew = Vector2( -4.62341, -4.62341 )
+exnScale = Vector2( 1.12104, 1.12104 )
+exnPos = Vector2( 173.002, 113.648 )
+_tr = Transform2D( 1.11894, -0.068652, 0.068652, 1.11894, 173.002, 113.648 )
+
+[node name="Hair2 (R)" parent="." instance=ExtResource( 10 )]
+position = Vector2( 303.042, 110.879 )
+rotation = 3.06475
+scale = Vector2( 1.12104, -1.12104 )
+z_index = 1250
+mainTexId = 0
+exnSkew = Vector2( 4.40297, -175.597 )
+exnScale = Vector2( 1.12104, 1.12104 )
+exnPos = Vector2( 303.042, 110.879 )
+_tr = Transform2D( -1.11908, 0.066285, -0.066285, -1.11908, 303.042, 110.879 )
+
+[node name="Hair1 (L)" parent="." instance=ExtResource( 11 )]
+position = Vector2( 184.286, 177.53 )
+rotation = 2.90484
+scale = Vector2( 1.11804, -1.195 )
+z_index = 1200
+mainTexId = 0
+exnSkew = Vector2( 13.9637, -166.435 )
+exnScale = Vector2( 1.11804, 1.195 )
+exnPos = Vector2( 184.286, 177.53 )
+_tr = Transform2D( -1.0869, 0.262026, -0.280063, -1.16172, 184.286, 177.53 )
+
+[node name="Hair1 (R)" parent="." instance=ExtResource( 11 )]
+position = Vector2( 295.117, 177.015 )
+rotation = -0.171087
+scale = Vector2( 1.11963, 1.19595 )
+z_index = 1150
+mainTexId = 0
+exnSkew = Vector2( -9.74067, -9.80254 )
+exnScale = Vector2( 1.11963, 1.19595 )
+exnPos = Vector2( 295.117, 177.015 )
+_tr = Transform2D( 1.10332, -0.190442, 0.203423, 1.17852, 295.117, 177.015 )
+
+[node name="Eyelash (L)" parent="." instance=ExtResource( 12 )]
+position = Vector2( 222.6, 137.742 )
+rotation = -3.13314
+scale = Vector2( 1.14704, -1.17671 )
+z_index = 1100
+mainTexId = 0
+exnSkew = Vector2( 6.11713, 179.516 )
+exnScale = Vector2( 1.14704, 1.17671 )
+exnPos = Vector2( 222.6, 137.742 )
+_tr = Transform2D( -1.14703, -0.00510732, 0.00523943, -1.1767, 222.6, 137.742 )
+
+[node name="EyeMask (L)" parent="." instance=ExtResource( 13 )]
+position = Vector2( 224.848, 142.544 )
+rotation = -3.13314
+scale = Vector2( 1.14704, -1.17671 )
+z_index = 1050
+mainTexId = 0
+exnSkew = Vector2( 6.11713, 179.516 )
+exnScale = Vector2( 1.14704, 1.17671 )
+exnPos = Vector2( 224.848, 142.544 )
+_tr = Transform2D( -1.14703, -0.00510732, 0.00523943, -1.1767, 224.848, 142.544 )
+
+[node name="Eyelid (L)" parent="." instance=ExtResource( 14 )]
+position = Vector2( 235.248, 118.282 )
+rotation = -3.06226
+scale = Vector2( 1.179, -0.606377 )
+z_index = 1000
+mainTexId = 0
+exnSkew = Vector2( -0.0071, 175.454 )
+exnScale = Vector2( 1.179, 0.606377 )
+exnPos = Vector2( 235.248, 118.282 )
+_tr = Transform2D( -1.17561, -0.0893795, 0.0459691, -0.604632, 235.248, 118.282 )
+
+[node name="Eyeball (L)" parent="." instance=ExtResource( 15 )]
+position = Vector2( 209.898, 164.853 )
+rotation = -0.00845004
+scale = Vector2( 1.28804, 1.16175 )
+z_index = 950
+mainTexId = 0
+exnSkew = Vector2( -0.000854405, -0.484151 )
+exnScale = Vector2( 1.28804, 1.16175 )
+exnPos = Vector2( 209.898, 164.853 )
+_tr = Transform2D( 1.28803, -0.00573106, 0.00516914, 1.16174, 209.898, 164.853 )
+
+[node name="Sclera (L)" parent="." instance=ExtResource( 16 )]
+position = Vector2( 207.098, 162.65 )
+rotation = -3.13314
+scale = Vector2( 1.17504, -1.00863 )
+z_index = 900
+mainTexId = 0
+exnSkew = Vector2( -0.0009, 179.516 )
+exnScale = Vector2( 1.17504, 1.00863 )
+exnPos = Vector2( 207.098, 162.65 )
+_tr = Transform2D( -1.17503, -0.005232, 0.00449102, -1.00862, 207.098, 162.65 )
+
+[node name="ClosedLash (L)" parent="." instance=ExtResource( 17 )]
+visible = false
+position = Vector2( 176.456, 204.865 )
+rotation = -0.000180563
+scale = Vector2( 1.21435, -1.1254 )
+z_index = 850
+mainTexId = 0
+exnSkew = Vector2( 179.996, 0.0103455 )
+exnScale = Vector2( 1.21435, 1.1254 )
+exnPos = Vector2( 176.456, 204.865 )
+_tr = Transform2D( 1.21435, -0.000192907, 0.000178777, 1.1254, 176.456, 204.865 )
+
+[node name="Eyelash (R)" parent="." instance=ExtResource( 12 )]
+position = Vector2( 257.6, 137.692 )
+rotation = -0.0097893
+scale = Vector2( 1.13604, 1.17475 )
+z_index = 800
+mainTexId = 0
+exnSkew = Vector2( -6.07754, -0.560885 )
+exnScale = Vector2( 1.13604, 1.17475 )
+exnPos = Vector2( 257.6, 137.692 )
+_tr = Transform2D( 1.13596, -0.0135413, 0.0140028, 1.17467, 257.6, 137.692 )
+
+[node name="EyeMask (R)" parent="." instance=ExtResource( 13 )]
+position = Vector2( 255.352, 142.496 )
+rotation = -0.0097893
+scale = Vector2( 1.13604, 1.17475 )
+z_index = 750
+mainTexId = 0
+exnSkew = Vector2( -6.07754, -0.560885 )
+exnScale = Vector2( 1.13604, 1.17475 )
+exnPos = Vector2( 255.352, 142.496 )
+_tr = Transform2D( 1.13596, -0.0135413, 0.0140028, 1.17467, 255.352, 142.496 )
+
+[node name="Eyelid (R)" parent="." instance=ExtResource( 14 )]
+position = Vector2( 245.052, 118.434 )
+rotation = 0.061849
+scale = Vector2( 1.16604, 0.606377 )
+z_index = 700
+mainTexId = 0
+exnSkew = Vector2( 0.0024, 3.54369 )
+exnScale = Vector2( 1.16604, 0.606377 )
+exnPos = Vector2( 245.052, 118.434 )
+_tr = Transform2D( 1.16392, 0.0702321, -0.0365228, 0.605276, 245.052, 118.434 )
+
+[node name="Eyeball (R)" parent="." instance=ExtResource( 15 )]
+position = Vector2( 270.152, 164.557 )
+rotation = -3.13181
+scale = Vector2( 1.27604, -1.16175 )
+z_index = 650
+mainTexId = 0
+exnSkew = Vector2( -0.0023568, 179.439 )
+exnScale = Vector2( 1.27604, 1.16175 )
+exnPos = Vector2( 270.152, 164.557 )
+_tr = Transform2D( -1.27595, -0.0152136, 0.013851, -1.16167, 270.152, 164.557 )
+
+[node name="Sclera (R)" parent="." instance=ExtResource( 16 )]
+position = Vector2( 272.952, 162.305 )
+rotation = -0.00979417
+scale = Vector2( 1.16404, 1.00863 )
+z_index = 600
+mainTexId = 0
+exnSkew = Vector2( -0.0382, -0.561164 )
+exnScale = Vector2( 1.16404, 1.00863 )
+exnPos = Vector2( 272.952, 162.305 )
+_tr = Transform2D( 1.16396, -0.0138755, 0.012023, 1.00856, 272.952, 162.305 )
+
+[node name="ClosedLash (R)" parent="." instance=ExtResource( 17 )]
+visible = false
+position = Vector2( 303.483, 203.585 )
+rotation = 3.13668
+scale = Vector2( 1.20335, 1.1254 )
+z_index = 550
+mainTexId = 0
+exnSkew = Vector2( 180.004, 179.719 )
+exnScale = Vector2( 1.20335, 1.1254 )
+exnPos = Vector2( 303.483, 203.585 )
+_tr = Transform2D( -1.20334, 0.00533394, -0.00498842, -1.12539, 303.483, 203.585 )
+
+[node name="ClosedSmile" parent="." instance=ExtResource( 18 )]
+position = Vector2( 240.35, 202.359 )
+rotation = -9.75369e-06
+scale = Vector2( 1.54708, 1.32004 )
+z_index = 500
+mainTexId = 0
+exnSkew = Vector2( -0.000558845, -0.000558845 )
+exnScale = Vector2( 1.54708, 1.32004 )
+exnPos = Vector2( 240.35, 202.359 )
+_tr = Transform2D( 1.54708, -1.62011e-05, 1.38235e-05, 1.32004, 240.35, 202.359 )
+
+[node name="OpenSmile" parent="." instance=ExtResource( 19 )]
+visible = false
+position = Vector2( 239.14, 219.445 )
+rotation = -2.07427e-05
+scale = Vector2( 1.31261, 0.704873 )
+z_index = 450
+mainTexId = 0
+exnSkew = Vector2( -0.00118847, -0.00118847 )
+exnScale = Vector2( 1.31261, 0.704873 )
+exnPos = Vector2( 239.14, 219.445 )
+_tr = Transform2D( 1.31261, -4.23955e-05, 2.27664e-05, 0.704873, 239.14, 219.445 )
+
+[node name="Nose" parent="." instance=ExtResource( 20 )]
+position = Vector2( 241.15, 175.515 )
+rotation = 0.0829951
+scale = Vector2( 0.973632, 0.782632 )
+z_index = 400
+mainTexId = 0
+exnSkew = Vector2( 4.53437, 4.75527 )
+exnScale = Vector2( 0.973632, 0.782632 )
+exnPos = Vector2( 241.15, 175.515 )
+_tr = Transform2D( 0.970282, 0.0807072, -0.0648746, 0.779939, 241.15, 175.515 )
+
+[node name="Face" parent="." instance=ExtResource( 21 )]
+position = Vector2( 239.1, 156.882 )
+rotation = -1.32203e-05
+scale = Vector2( 1.12104, 1.07721 )
+z_index = 350
+mainTexId = 0
+exnSkew = Vector2( -0.000757469, -0.000757469 )
+exnScale = Vector2( 1.12104, 1.07721 )
+exnPos = Vector2( 239.1, 156.882 )
+_tr = Transform2D( 1.12104, -1.56527e-05, 1.50407e-05, 1.07721, 239.1, 156.882 )
+
+[node name="Ear (R)" parent="." instance=ExtResource( 22 )]
+position = Vector2( 303.402, 172.765 )
+rotation = -1.32203e-05
+scale = Vector2( 1.12104, 1.04404 )
+z_index = 300
+mainTexId = 0
+exnSkew = Vector2( -0.000757469, -0.000757469 )
+exnScale = Vector2( 1.12104, 1.04404 )
+exnPos = Vector2( 303.402, 172.765 )
+_tr = Transform2D( 1.12104, -1.56527e-05, 1.45776e-05, 1.04404, 303.402, 172.765 )
+
+[node name="Ear (L)" parent="." instance=ExtResource( 22 )]
+position = Vector2( 174.098, 172.765 )
+rotation = -3.14158
+scale = Vector2( 1.12104, -1.04404 )
+z_index = 250
+mainTexId = 0
+exnSkew = Vector2( -0.00225747, 179.999 )
+exnScale = Vector2( 1.12104, 1.04404 )
+exnPos = Vector2( 174.098, 172.765 )
+_tr = Transform2D( -1.12104, -1.40677e-05, 1.31014e-05, -1.04404, 174.098, 172.765 )
+
+[node name="Earring (R)" parent="." instance=ExtResource( 23 )]
+position = Vector2( 310.352, 210.319 )
+rotation = -1.32203e-05
+scale = Vector2( 1.12104, 1.12104 )
+z_index = 200
+mainTexId = 0
+exnSkew = Vector2( -0.000757469, -0.000757469 )
+exnScale = Vector2( 1.12104, 1.12104 )
+exnPos = Vector2( 310.352, 210.319 )
+_tr = Transform2D( 1.12104, -1.56527e-05, 1.56527e-05, 1.12104, 310.352, 210.319 )
+
+[node name="Earring (L)" parent="." instance=ExtResource( 23 )]
+position = Vector2( 167.346, 210.319 )
+rotation = -1.32203e-05
+scale = Vector2( 1.12104, 1.12104 )
+z_index = 150
+mainTexId = 0
+exnSkew = Vector2( -0.000757469, -0.000757469 )
+exnScale = Vector2( 1.12104, 1.12104 )
+exnPos = Vector2( 167.346, 210.319 )
+_tr = Transform2D( 1.12104, -1.56527e-05, 1.56527e-05, 1.12104, 167.346, 210.319 )
+
+[node name="Symbol 47" parent="." instance=ExtResource( 24 )]
+position = Vector2( 236.4, 196.421 )
+rotation = -1.32203e-05
+scale = Vector2( 1.12104, 1.12104 )
+z_index = 100
+exnSkew = Vector2( -0.000757469, -0.000757469 )
+exnScale = Vector2( 1.12104, 1.12104 )
+exnPos = Vector2( 236.4, 196.421 )
+_tr = Transform2D( 1.12104, -1.56527e-05, 1.56527e-05, 1.12104, 236.4, 196.421 )
+
+[node name="Hair3 (L)" parent="." instance=ExtResource( 25 )]
+position = Vector2( 197.623, 84.1753 )
+rotation = -0.0498238
+scale = Vector2( 1.12104, 1.12104 )
+z_index = 50
+mainTexId = 0
+exnSkew = Vector2( -2.85469, -2.85469 )
+exnScale = Vector2( 1.12104, 1.12104 )
+exnPos = Vector2( 197.623, 84.1753 )
+_tr = Transform2D( 1.12025, -0.0420649, 0.0420649, 1.12025, 197.623, 84.1753 )
+
+[node name="Hair3 (R)" parent="." instance=ExtResource( 25 )]
+position = Vector2( 280.033, 82.9191 )
+rotation = 3.0829
+scale = Vector2( 1.12104, -1.12104 )
+mainTexId = 0
+exnSkew = Vector2( -356.637, -176.637 )
+exnScale = Vector2( 1.12104, 1.12104 )
+exnPos = Vector2( 280.033, 82.9191 )
+_tr = Transform2D( -1.11995, 0.0494024, -0.0494024, -1.11995, 280.033, 82.9191 )
+
+[node name="Headwear" parent="." instance=ExtResource( 26 )]
+position = Vector2( 239.15, 36.9572 )
+rotation = -1.32203e-05
+scale = Vector2( 1.12104, 1.12104 )
+z_index = -50
+mainTexId = 0
+exnSkew = Vector2( -0.000757469, -0.000757469 )
+exnScale = Vector2( 1.12104, 1.12104 )
+exnPos = Vector2( 239.15, 36.9572 )
+_tr = Transform2D( 1.12104, -1.56527e-05, 1.56527e-05, 1.12104, 239.15, 36.9572 )
+
+[node name="Clavicle (L)" parent="." instance=ExtResource( 27 )]
+position = Vector2( 224.444, 263.561 )
+rotation = -2.73166
+scale = Vector2( 1.00004, -0.96 )
+z_index = -100
+mainTexId = 0
+exnSkew = Vector2( -6.94814, 156.513 )
+exnScale = Vector2( 1.00004, 0.96 )
+exnPos = Vector2( 224.444, 263.561 )
+_tr = Transform2D( -0.922375, -0.386405, 0.370933, -0.885443, 224.444, 263.561 )
+
+[node name="Clavicle (R)" parent="." instance=ExtResource( 27 )]
+position = Vector2( 257.91, 262.813 )
+rotation = 0.432552
+scale = Vector2( 1.01504, 0.960042 )
+z_index = -150
+mainTexId = 0
+exnSkew = Vector2( 5.41385, 24.7834 )
+exnScale = Vector2( 1.01504, 0.960042 )
+exnPos = Vector2( 257.91, 262.813 )
+_tr = Transform2D( 0.925444, 0.416968, -0.394375, 0.875299, 257.91, 262.813 )
+
+[node name="MaleBody" parent="." instance=ExtResource( 28 )]
+position = Vector2( 46.8937, 572.733 )
+scale = Vector2( 0.960042, 0.962293 )
+z_index = -200
+mainTexId = 0
+exnScale = Vector2( 0.960042, 0.962293 )
+exnPos = Vector2( 46.8937, 572.733 )
+_tr = Transform2D( 0.960042, 0, 0, 0.962293, 46.8937, 572.733 )
+
+[node name="Vulva" parent="." instance=ExtResource( 29 )]
+position = Vector2( 224.277, 467.816 )
+rotation = -0.0657185
+scale = Vector2( 1.30958, 1.86788 )
+z_index = -250
+mainTexId = 0
+exnSkew = Vector2( -3.76539, -3.76539 )
+exnScale = Vector2( 1.30958, 1.86788 )
+exnPos = Vector2( 224.277, 467.816 )
+_tr = Transform2D( 1.30675, -0.0859713, 0.122623, 1.86385, 224.277, 467.816 )
+
+[node name="Groin" parent="." instance=ExtResource( 30 )]
+position = Vector2( 244.2, 463.055 )
+rotation = -0.0349538
+scale = Vector2( 0.960042, 0.960042 )
+z_index = -300
+mainTexId = 0
+exnSkew = Vector2( -2.0027, -2.0027 )
+exnScale = Vector2( 0.960042, 0.960042 )
+exnPos = Vector2( 244.2, 463.055 )
+_tr = Transform2D( 0.959455, -0.0335512, 0.0335512, 0.959455, 244.2, 463.055 )
+
+[node name="Nipple (L)" parent="." instance=ExtResource( 2 )]
+position = Vector2( 185.037, 263.787 )
+rotation = -2.53916
+scale = Vector2( 1.11294, -1.11294 )
+z_index = -350
+mainTexId = 0
+exnSkew = Vector2( -34.5171, 145.483 )
+exnScale = Vector2( 1.11294, 1.11294 )
+exnPos = Vector2( 185.037, 263.787 )
+_tr = Transform2D( -0.889318, -0.669146, 0.669146, -0.889318, 185.037, 263.787 )
+
+[node name="Areola (L)" parent="." instance=ExtResource( 3 )]
+position = Vector2( 187.669, 273.972 )
+rotation = 1.35994
+scale = Vector2( 0.563, -0.607042 )
+z_index = -400
+mainTexId = 0
+exnSkew = Vector2( 102.081, -77.9188 )
+exnScale = Vector2( 0.563, 0.607042 )
+exnPos = Vector2( 187.669, 273.972 )
+_tr = Transform2D( 0.0943264, 0.555042, -0.598461, 0.101705, 187.669, 273.972 )
+
+[node name="BoobHighlight (L)" parent="." instance=ExtResource( 4 )]
+position = Vector2( 213.421, 278.13 )
+rotation = -2.69711
+scale = Vector2( 1.91592, 1.11013 )
+z_index = -450
+mainTexId = 0
+exnSkew = Vector2( -162.207, -154.533 )
+exnScale = Vector2( 1.91592, 1.11013 )
+exnPos = Vector2( 213.421, 278.13 )
+_tr = Transform2D( -1.7462, -0.788371, 0.4568, -1.01179, 213.421, 278.13 )
+
+[node name="Boob (L)" parent="." instance=ExtResource( 5 )]
+position = Vector2( 209.735, 302.484 )
+rotation = 0.44451
+scale = Vector2( 1.12396, 0.979167 )
+z_index = -500
+mainTexId = 0
+exnSkew = Vector2( 17.7951, 25.4686 )
+exnScale = Vector2( 1.12396, 0.979167 )
+exnPos = Vector2( 209.735, 302.484 )
+_tr = Transform2D( 1.02438, 0.462533, -0.402949, 0.892413, 209.735, 302.484 )
+
+[node name="ShaftMask" parent="." instance=ExtResource( 31 )]
+position = Vector2( 212.45, 478.75 )
+scale = Vector2( 0.960042, 1.35425 )
+z_index = -550
+mainTexId = 0
+exnScale = Vector2( 0.960042, 1.35425 )
+exnPos = Vector2( 212.45, 478.75 )
+_tr = Transform2D( 0.960042, 0, 0, 1.35425, 212.45, 478.75 )
+
+[node name="Main" parent="ShaftMask" index="1"]
+visible = false
+
+[node name="PenisHighlight" parent="." instance=ExtResource( 32 )]
+position = Vector2( 239.25, 424.483 )
+rotation = 1.5708
+scale = Vector2( 0.262, 0.137316 )
+z_index = -600
+mainTexId = 0
+exnSkew = Vector2( 90, 90 )
+exnScale = Vector2( 0.262, 0.137316 )
+exnPos = Vector2( 239.25, 424.483 )
+_tr = Transform2D( -9.48437e-07, 0.262, -0.137316, -4.97083e-07, 239.25, 424.483 )
+
+[node name="MalePenisHead" parent="." instance=ExtResource( 33 )]
+position = Vector2( 246.45, 443.283 )
+scale = Vector2( 1.08104, 1.08104 )
+z_index = -650
+mainTexId = 0
+exnScale = Vector2( 1.08104, 1.08104 )
+exnPos = Vector2( 246.45, 443.283 )
+_tr = Transform2D( 1.08104, 0, 0, 1.08104, 246.45, 443.283 )
+
+[node name="MaleShaft" parent="." instance=ExtResource( 34 )]
+material = SubResource( 1 )
+position = Vector2( 246.2, 466.483 )
+scale = Vector2( 1.07546, 1.08104 )
+z_index = -700
+_sections_unfolded = [ "Material", "Visibility", "Z Index", "material" ]
+mainTexId = 0
+exnScale = Vector2( 1.07546, 1.08104 )
+exnPos = Vector2( 246.2, 466.483 )
+_tr = Transform2D( 1.07546, 0, 0, 1.08104, 246.2, 466.483 )
+
+[node name="MaleGroin" parent="." instance=ExtResource( 35 )]
+position = Vector2( 113.196, 574.083 )
+scale = Vector2( 0.960042, 0.790335 )
+z_index = -750
+mainTexId = 0
+exnScale = Vector2( 0.960042, 0.790335 )
+exnPos = Vector2( 113.196, 574.083 )
+_tr = Transform2D( 0.960042, 0, 0, 0.790335, 113.196, 574.083 )
+
+[node name="UpperLeg (L)" parent="." instance=ExtResource( 36 )]
+position = Vector2( 121.306, 419.95 )
+rotation = -0.905614
+scale = Vector2( 1.07704, 1.07704 )
+z_index = -800
+mainTexId = 0
+exnSkew = Vector2( -51.8879, -51.8879 )
+exnScale = Vector2( 1.07704, 1.07704 )
+exnPos = Vector2( 121.306, 419.95 )
+_tr = Transform2D( 0.668567, -0.844416, 0.844416, 0.668567, 121.306, 419.95 )
+
+[node name="LowerLeg (L)" parent="." instance=ExtResource( 37 )]
+position = Vector2( 72.8205, 639.08 )
+rotation = -3.07704
+scale = Vector2( 1.08004, 1.08004 )
+z_index = -850
+exnSkew = Vector2( -176.301, -176.301 )
+exnScale = Vector2( 1.08004, 1.08004 )
+exnPos = Vector2( 72.8205, 639.08 )
+_tr = Transform2D( -1.0785, -0.0577471, 0.0577471, -1.0785, 72.8205, 639.08 )
+
+[node name="UpperLeg (R)" parent="." instance=ExtResource( 36 )]
+position = Vector2( 357.192, 425.519 )
+rotation = 2.34105
+scale = Vector2( 1.07704, -1.07704 )
+z_index = -900
+mainTexId = 0
+exnSkew = Vector2( 45.8707, -134.132 )
+exnScale = Vector2( 1.07704, 1.07704 )
+exnPos = Vector2( 357.192, 425.519 )
+_tr = Transform2D( -0.753434, 0.769647, -0.769647, -0.753434, 357.192, 425.519 )
+
+[node name="LowerLeg (R)" parent="." instance=ExtResource( 37 )]
+position = Vector2( 414.698, 639.986 )
+rotation = 0.152945
+scale = Vector2( 1.08047, -1.08047 )
+z_index = -950
+exnSkew = Vector2( 171.237, -8.76308 )
+exnScale = Vector2( 1.08047, 1.08047 )
+exnPos = Vector2( 414.698, 639.986 )
+_tr = Transform2D( 1.06786, 0.164604, -0.164604, 1.06786, 414.698, 639.986 )
+
+[node name="MaleLeg (R)" parent="." instance=ExtResource( 38 )]
+position = Vector2( 336.459, 523.144 )
+rotation = 0.228353
+scale = Vector2( 0.958042, 0.958042 )
+z_index = -1000
+mainTexId = 0
+exnSkew = Vector2( 13.0837, 13.0837 )
+exnScale = Vector2( 0.958042, 0.958042 )
+exnPos = Vector2( 336.459, 523.144 )
+_tr = Transform2D( 0.930183, 0.229357, -0.229357, 0.930183, 336.459, 523.144 )
+
+[node name="MaleLeg (L)" parent="." instance=ExtResource( 38 )]
+position = Vector2( 169.049, 527.306 )
+rotation = -2.90771
+scale = Vector2( 0.958042, -0.958042 )
+z_index = -1050
+mainTexId = 0
+exnSkew = Vector2( -13.4008, 166.599 )
+exnScale = Vector2( 0.958042, 0.958042 )
+exnPos = Vector2( 169.049, 527.306 )
+_tr = Transform2D( -0.927861, -0.238576, 0.238576, -0.927861, 169.049, 527.306 )
+
+[node name="Navel" parent="." instance=ExtResource( 39 )]
+position = Vector2( 238.65, 373.994 )
+scale = Vector2( 0.960042, 0.679385 )
+z_index = -1100
+mainTexId = 0
+exnScale = Vector2( 0.960042, 0.679385 )
+exnPos = Vector2( 238.65, 373.994 )
+_tr = Transform2D( 0.960042, 0, 0, 0.679385, 238.65, 373.994 )
+
+[node name="Hips" parent="." instance=ExtResource( 40 )]
+position = Vector2( 238.9, 420.613 )
+scale = Vector2( 1.08204, 0.903042 )
+z_index = -1150
+mainTexId = 0
+exnSkew = Vector2( -2.25696, 0 )
+exnScale = Vector2( 1.08204, 0.903042 )
+exnPos = Vector2( 238.9, 420.613 )
+_tr = Transform2D( 1.08204, 0, 0, 0.903042, 238.9, 420.613 )
+
+[node name="Neck" parent="." instance=ExtResource( 41 )]
+position = Vector2( 240.35, 241.248 )
+rotation = -0.0264286
+scale = Vector2( 1.23504, 0.581 )
+z_index = -1200
+mainTexId = 0
+exnSkew = Vector2( -1.51425, -1.51425 )
+exnScale = Vector2( 1.23504, 0.581 )
+exnPos = Vector2( 240.35, 241.248 )
+_tr = Transform2D( 1.23461, -0.0326222, 0.0153465, 0.580797, 240.35, 241.248 )
+
+[node name="FrontButt (L)" parent="." instance=ExtResource( 42 )]
+position = Vector2( 202.85, 411.534 )
+rotation = -7.42303e-06
+scale = Vector2( 0.880042, 0.960042 )
+z_index = -1250
+mainTexId = 0
+exnSkew = Vector2( -0.000425308, -0.000425308 )
+exnScale = Vector2( 0.880042, 0.960042 )
+exnPos = Vector2( 202.85, 411.534 )
+_tr = Transform2D( 0.880042, 0, 0, 0.960042, 202.85, 411.534 )
+
+[node name="FrontButt (R)" parent="." instance=ExtResource( 42 )]
+position = Vector2( 282.752, 406.734 )
+rotation = 3.14159
+scale = Vector2( 0.880042, -0.960042 )
+z_index = -1300
+mainTexId = 0
+exnSkew = Vector2( -0.0022, -180 )
+exnScale = Vector2( 0.880042, 0.960042 )
+exnPos = Vector2( 282.752, 406.734 )
+_tr = Transform2D( -0.880042, -2.23107e-06, 2.43388e-06, -0.960042, 282.752, 406.734 )
+
+[node name="Chest" parent="." instance=ExtResource( 43 )]
+position = Vector2( 240.396, 324.64 )
+rotation = 0.0482753
+scale = Vector2( 1.12904, 0.934502 )
+z_index = -1350
+mainTexId = 0
+exnSkew = Vector2( 2.76597, 2.76597 )
+exnScale = Vector2( 1.12904, 0.934502 )
+exnPos = Vector2( 240.396, 324.64 )
+_tr = Transform2D( 1.12773, 0.0544768, -0.0450902, 0.933414, 240.396, 324.64 )
+
+[node name="Shoulder (R)" parent="." instance=ExtResource( 44 )]
+position = Vector2( 267.402, 267.698 )
+rotation = 2.93031
+scale = Vector2( 1.17904, -1.18104 )
+z_index = -1400
+mainTexId = 0
+exnSkew = Vector2( 8.83665, -167.894 )
+exnScale = Vector2( 1.17904, 1.18104 )
+exnPos = Vector2( 267.402, 267.698 )
+_tr = Transform2D( -1.14935, 0.262916, -0.263362, -1.1513, 267.402, 267.698 )
+
+[node name="Shoulder (L)" parent="." instance=ExtResource( 44 )]
+position = Vector2( 211.398, 267.2 )
+rotation = -0.376025
+scale = Vector2( 1.17804, 1.19304 )
+z_index = -1450
+mainTexId = 0
+exnSkew = Vector2( -12.922, -21.5447 )
+exnScale = Vector2( 1.17804, 1.19304 )
+exnPos = Vector2( 211.398, 267.2 )
+_tr = Transform2D( 1.09574, -0.432599, 0.438108, 1.10969, 211.398, 267.2 )
+
+[node name="Forearm (R)" parent="." instance=ExtResource( 6 )]
+position = Vector2( 339.621, 490.098 )
+rotation = -2.75173
+scale = Vector2( 1.194, -1.11604 )
+z_index = -1500
+mainTexId = 0
+exnSkew = Vector2( -22.1702, 157.663 )
+exnScale = Vector2( 1.194, 1.11604 )
+exnPos = Vector2( 339.621, 490.098 )
+_tr = Transform2D( -1.10145, -0.460909, 0.430815, -1.02954, 339.621, 490.098 )
+
+[node name="Arm (R)" parent="." instance=ExtResource( 45 )]
+position = Vector2( 295.5, 345.136 )
+rotation = -3.03168
+scale = Vector2( 1.17204, -1.18404 )
+z_index = -1550
+mainTexId = 0
+exnSkew = Vector2( -8.00219, 173.703 )
+exnScale = Vector2( 1.17204, 1.18404 )
+exnPos = Vector2( 295.5, 345.136 )
+_tr = Transform2D( -1.16498, -0.128493, 0.129809, -1.1769, 295.5, 345.136 )
+
+[node name="Hand (R)" parent="." instance=ExtResource( 7 )]
+position = Vector2( 393.791, 528.815 )
+rotation = -1.7793
+scale = Vector2( 1.17947, -1.17947 )
+z_index = -1600
+mainTexId = 0
+exnSkew = Vector2( -78.0537, 101.946 )
+exnScale = Vector2( 1.17947, 1.17947 )
+exnPos = Vector2( 393.791, 528.815 )
+_tr = Transform2D( -0.277284, -1.14642, 1.14642, -0.277284, 393.791, 528.815 )
+
+[node name="Arm (L)" parent="." instance=ExtResource( 45 )]
+position = Vector2( 182.535, 332.307 )
+rotation = 0.18801
+scale = Vector2( 1.17304, 1.00359 )
+z_index = -1650
+mainTexId = 0
+exnSkew = Vector2( 12.2852, 10.7722 )
+exnScale = Vector2( 1.17304, 1.00359 )
+exnPos = Vector2( 182.535, 332.307 )
+_tr = Transform2D( 1.1523, 0.21961, -0.187885, 0.985842, 182.535, 332.307 )
+
+[node name="HairBack" parent="." instance=ExtResource( 46 )]
+position = Vector2( 274, 243.577 )
+rotation = -2.73614e-05
+scale = Vector2( 1.12104, 1.11646 )
+z_index = -1700
+mainTexId = 0
+exnSkew = Vector2( -0.00156769, -0.00156769 )
+exnScale = Vector2( 1.12104, 1.11646 )
+exnPos = Vector2( 274, 243.577 )
+_tr = Transform2D( 1.12104, -3.13054e-05, 3.11773e-05, 1.11646, 274, 243.577 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/1_Cowgirl-animation = ExtResource( 47 )
+blend_times = [  ]
+
+[node name="Light2D" type="Light2D" parent="."]
+light_mask = 0
+position = Vector2( 240.881, 613.071 )
+enabled = true
+editor_only = false
+texture = ExtResource( 48 )
+offset = Vector2( 0, 0 )
+texture_scale = 0.2
+color = Color( 1, 1, 1, 1 )
+energy = 1.0
+mode = 2
+range_height = 0.0
+range_z_min = -4096
+range_z_max = 4096
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 8
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+_sections_unfolded = [ "Range", "Visibility" ]
+
+
+[editable path="ShaftMask"]
+
+[editable path="MaleShaft"]

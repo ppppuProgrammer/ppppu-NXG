@@ -1,0 +1,2 @@
+MaleGroin_MaleSkinColor
+MaleGroin_Outline

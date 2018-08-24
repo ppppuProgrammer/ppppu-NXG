@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://BaseCharPart.tscn" type="PackedScene" id=1]
+
+[node name="MaleShaft" index="0" instance=ExtResource( 1 )]
+initLoadTextures = PoolStringArray( "Textures/MaleShaft/Sprite_MaleShaft.tscn", "Textures/MaleShaft-2/Sprite_MaleShaft-2.tscn" )
+

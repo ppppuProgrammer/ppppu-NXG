@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Textures/CharPartSprite.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/OhMouth/OhMouth_LipColor.png" type="Texture" id=2]
+[ext_resource path="res://Textures/OhMouth/Oh_Highlight.png" type="Texture" id=3]
+[ext_resource path="res://Textures/OhMouth/Oh_Inside.png" type="Texture" id=4]
+[ext_resource path="res://Textures/OhMouth/Oh_Outline.png" type="Texture" id=5]
+
+[node name="OhMouth" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+[node name="OhMouth_LipColor" type="Sprite" parent="." index="0"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 2 )
+offset = Vector2( 0.000000, 24.800000 )
+[node name="Oh_Highlight" type="Sprite" parent="." index="1"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+offset = Vector2( 0.000000, 24.800000 )
+[node name="Oh_Inside" type="Sprite" parent="." index="2"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+offset = Vector2( 0.000000, 24.800000 )
+[node name="Oh_Outline" type="Sprite" parent="." index="3"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 5 )
+offset = Vector2( 0.000000, 24.800000 )
+

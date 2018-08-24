@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Textures/CharPartSprite.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/Sclera-2/Sclera2_EyelidColor.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Sclera-2/Sclera2_ScleraColor.png" type="Texture" id=3]
+
+[node name="Sclera-2" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+[node name="Sclera2_EyelidColor" type="Sprite" parent="." index="0"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 2 )
+offset = Vector2( 16.925000, -21.975000 )
+[node name="Sclera2_ScleraColor" type="Sprite" parent="." index="1"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+offset = Vector2( 16.925000, -21.975000 )
+
