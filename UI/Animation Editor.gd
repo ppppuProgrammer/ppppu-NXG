@@ -1,9 +1,5 @@
 extends GraphEdit
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 const AnimationGraphNode = preload("res://UI/Nodes/AnimationGraphNode.gd")
 var _addNodeData = {"Animation": preload("res://UI/Nodes/AGN_Select.tscn"), 
 		"Blend2": preload("res://UI/Nodes/Blend2/AGN_Blend2.tscn")}
@@ -11,8 +7,6 @@ var _animations = []
 var _animPlayer:AnimationPlayer
 var _animTree:AnimationTree = null
 
-
-#var _node_classes:Dictionary = preload("res://GraphNodeInfo.gd").new().node_class_translations
 signal new_animation_added
 signal blend_tree_connection_changed
 signal connected_nodes(to, to_slot, from)
@@ -22,10 +16,6 @@ signal output_graph_node_added(output_graph_node)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-
-	#Need to do this so the output node is added to the blend tree
-	#$output.setOutputNode(
-	#add_child($AGN_Output)
 	emit_signal("output_graph_node_added", $output)
 	connect('connection_request', self, '_connect_graph_node')
 	connect('disconnection_request', self, '_disconnect_graph_node')
@@ -61,10 +51,10 @@ func _on_Add_Node_Index_Pressed(index:int):
 
 #Returns the names of all the nodes that have one or more of their properties being animated.
 func get_names_of_animated_nodes():
-	#Currently Animation Tree doesn't provide a way to know what
+	#Currently Animation Blend Trees do not provide a way to know what
 	#animation nodes are connected to another. So instead rely
 	#on the graph to traverse through the connections.
-	#First construct a more indepth  dictionary for the 
+	#First construct a more detailed dictionary for the 
 	#relationship between the graph nodes.
 	var connection_map:Dictionary = {}
 	for cdata in get_connection_list():
@@ -76,6 +66,8 @@ func get_names_of_animated_nodes():
 			connection_map[to][from] = [cdata['to_port'], cdata['from_port']]
 	
 	var active_names:Array = []
+	#Recursively navigate the blend tree to get the names of all
+	#the nodes involved with the current animation blend tree.
 	active_names = process_animated_node($output, connection_map)
 	return active_names
 	
@@ -83,8 +75,6 @@ func process_animated_node(node, map):
 	var processed_data = {}
 	#print("Current Node: %s" % node.name)
 	var next = null if not node.name in map else map[node.name]
-	#var retList:Array = []
-	#retList.resize(next.size())
 	if next:
 		#print("Raw next: %s" % next)
 		#print("Next: %s" % str(next.keys()))
@@ -101,4 +91,3 @@ func process_animated_node(node, map):
 		#print("No next")
 		return node.process_node_names(_animPlayer, processed_data)
 	#print("%s : %s" % [node.name, node.process_node_names(_animPlayer, {})])
-	#node.process_node_names(_animPlayer, processed_data)

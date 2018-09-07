@@ -1,16 +1,10 @@
 extends "res://UI/Nodes/AnimationGraphNode.gd"
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 onready var animSelect:MenuButton = $SelectList
-#var node:AnimationNodeAnimation = AnimationNodeAnimation.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	animation_node = AnimationNodeAnimation.new()
-	#print(animation_node)
-	#agnType = _gnTypes.ANIMATION
 	var animEditor = get_parent()
 	var selectPopup = animSelect.get_popup()
 	selectPopup.connect("index_pressed", self, "on_anim_select_index_pressed")
@@ -21,9 +15,6 @@ func _ready():
 func on_anim_select_index_pressed(index):
 	animSelect.text = animSelect.get_popup().get_item_text(index)
 	(animation_node as AnimationNodeAnimation).set_animation(animSelect.text)
-	#animation_node.set_parameter("animation", animSelect.text)
-	#print(animation_node)
-	#print(animation_node.get_parameter("animation"))
 	
 func add_animation_names_from_list(list):
 	pass
@@ -43,8 +34,3 @@ func process_node_names(animPlayer:AnimationPlayer, data):
 				if not nodeName in nodesUsed:
 					nodesUsed.append(nodeName)
 	return nodesUsed
-	#print(nodesUsed)
-	#
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

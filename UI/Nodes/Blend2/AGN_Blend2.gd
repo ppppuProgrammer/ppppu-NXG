@@ -31,4 +31,3 @@ func process_node_names(animPlayer, data:Dictionary):
 
 func _on_HSlider_value_changed(value):
 	emit_signal("parameter_changed", self.name, "blend_amount", value)
-	#animation_node.set_parameter("blend_amount", value)  
