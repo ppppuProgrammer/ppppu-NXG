@@ -1,0 +1,9 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+
+resource_name = "1_Cowgirl Ros"
+length = 4.0
+loop = true
+step = 0.033333
+

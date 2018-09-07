@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Textures/CharPartSprite.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/Boob-Large Side Back/BoobLargeSideBack-Outline_0.0.png" type="Texture" id=2]
+[ext_resource path="res://Textures/Boob-Large Side Back/BoobLargeSideBack-Outline.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Boob-Large Side Back/BoobLargeSideBack-SkinHighlightColor.png" type="Texture" id=4]
+[ext_resource path="res://Textures/Boob-Large Side Back/BoobLargeSideBack-SkinColor.png" type="Texture" id=5]
+
+[node name="Boob-Large Side Back" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+variantName = "Large Side Back"
+[node name="BoobLargeSideBack-Outline_0.0" type="Sprite" parent="." index="0"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 2 )
+offset = Vector2( -46.400000, 58.425000 )
+[node name="BoobLargeSideBack-Outline" type="Sprite" parent="." index="1"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+offset = Vector2( -46.400000, 58.425000 )
+[node name="BoobLargeSideBack-SkinHighlightColor" type="Sprite" parent="." index="2"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+offset = Vector2( -46.400000, 58.425000 )
+[node name="BoobLargeSideBack-SkinColor" type="Sprite" parent="." index="3"]
+use_parent_material = true
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 5 )
+offset = Vector2( -46.400000, 58.425000 )
+

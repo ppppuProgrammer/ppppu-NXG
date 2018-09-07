@@ -6,6 +6,7 @@
 
 [node name="MidTorsoAngled" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
+variantName = "Default"
 [node name="MidTorsoAngled_SkinColor" type="Sprite" parent="." index="0"]
 use_parent_material = true
 scale = Vector2( 0.200000, 0.200000 )

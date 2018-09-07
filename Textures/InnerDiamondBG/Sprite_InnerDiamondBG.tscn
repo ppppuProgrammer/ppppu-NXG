@@ -8,6 +8,7 @@
 
 [node name="InnerDiamondBG" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
+variantName = "Default"
 [node name="Inner_Diamonds_Wall_color_4" type="Sprite" parent="." index="0"]
 use_parent_material = true
 scale = Vector2( 0.200000, 0.200000 )

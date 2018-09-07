@@ -7,6 +7,7 @@
 
 [node name="Hips-Ver2" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
+variantName = "Ver2"
 [node name="Hips2_SkinColor" type="Sprite" parent="." index="0"]
 use_parent_material = true
 scale = Vector2( 0.200000, 0.200000 )

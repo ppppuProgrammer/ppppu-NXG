@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://BaseCharPart.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Char Parts/BaseCharPart.tscn" type="PackedScene" id=1]
+
 
 [node name="Hair3" index="0" instance=ExtResource( 1 )]
 initLoadTextures = PoolStringArray( "Textures/Hair3-Pch/Sprite_Hair3-Pch.tscn", "Textures/Hair3-Rosa/Sprite_Hair3-Rosa.tscn" )

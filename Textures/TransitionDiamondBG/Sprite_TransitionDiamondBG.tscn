@@ -9,6 +9,7 @@
 
 [node name="TransitionDiamondBG" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
+variantName = "Default"
 [node name="Diamond_Transition_-_Color_9" type="Sprite" parent="." index="0"]
 use_parent_material = true
 scale = Vector2( 0.200000, 0.200000 )

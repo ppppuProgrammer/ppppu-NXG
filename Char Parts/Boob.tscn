@@ -1,7 +1,13 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://BaseCharPart.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Char Parts/BaseCharPart.tscn" type="PackedScene" id=1]
 
-[node name="Boob" instance=ExtResource( 1 )]
-initLoadTextures = PoolStringArray( "Textures/Boob/Sprite_Boob.tscn", "Textures/Boob-2/Sprite_Boob-2.tscn", "Textures/Boob-3/Sprite_Boob-3.tscn" )
+
+[node name="Boob" index="0" instance=ExtResource( 1 )]
+initLoadTextures = PoolStringArray( "Textures/Boob/Sprite_Boob.tscn", "Textures/Boob-Large/Sprite_Boob-Large.tscn", "Textures/Boob-Large Lean Forward/Sprite_Boob-Large Lean Forward.tscn", "Textures/Boob-Large Side/Sprite_Boob-Large Side.tscn", "Textures/Boob-Large Side Back/Sprite_Boob-Large Side Back.tscn", "Textures/Boob-Small/Sprite_Boob-Small.tscn", "Textures/Boob-Small Lean Forward/Sprite_Boob-Small Lean Forward.tscn", "Textures/Boob-Small Side/Sprite_Boob-Small Side.tscn", "Textures/Boob-Small Side Front/Sprite_Boob-Small Side Front.tscn", "Textures/Boob-Ver2/Sprite_Boob-Ver2.tscn", "Textures/Boob-Ver3/Sprite_Boob-Ver3.tscn" )
+initLoadOverTextures = PoolStringArray(  )
+initLoadUnderTextures = PoolStringArray(  )
+mainTexId = -1
+overTexId = -1
+underTexId = -1
 
