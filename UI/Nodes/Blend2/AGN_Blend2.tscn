@@ -161,7 +161,7 @@ text = "Sync"
 flat = false
 align = 0
 
-[node name="MenuButton" type="MenuButton" parent="."]
+[node name="MenuButton" type="Button" parent="."]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -172,20 +172,20 @@ margin_right = 96.0
 margin_bottom = 144.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
+focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 toggle_mode = false
-action_mode = 0
-enabled_focus_mode = 0
+enabled_focus_mode = 2
 shortcut = null
 group = null
 text = "Edit Filters"
 flat = false
 align = 1
-items = [  ]
 
 [connection signal="value_changed" from="blend_amount/VBoxContainer/HSlider" to="." method="_on_HSlider_value_changed"]
+[connection signal="pressed" from="MenuButton" to="." method="_on_MenuButton_pressed"]
 
 [editable path="blend_amount"]

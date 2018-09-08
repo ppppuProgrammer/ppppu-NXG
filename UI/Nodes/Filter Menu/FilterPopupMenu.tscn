@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/Nodes/Filter Menu/FilterPopupMenu.gd" type="Script" id=1]
 
 [sub_resource type="StyleBoxFlat" id=1]
 
@@ -6,7 +8,7 @@ content_margin_left = -1.0
 content_margin_right = -1.0
 content_margin_top = -1.0
 content_margin_bottom = -1.0
-bg_color = Color( 0.341176, 0.419608, 0.596078, 1 )
+bg_color = Color( 0.611765, 0.658824, 0.764706, 0.501961 )
 draw_center = true
 border_width_left = 0
 border_width_top = 0
@@ -27,6 +29,7 @@ shadow_color = Color( 0, 0, 0, 0.6 )
 shadow_size = 0
 anti_aliasing = true
 anti_aliasing_size = 1
+_sections_unfolded = [ "Content Margin" ]
 
 [node name="FilterPopupMenu" type="PopupPanel"]
 anchor_left = 0.0
@@ -40,61 +43,19 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-popup_exclusive = false
-_sections_unfolded = [ "Popup" ]
+popup_exclusive = true
+script = ExtResource( 1 )
+_sections_unfolded = [ "Focus", "Grow Direction", "Hint", "Popup", "Rect", "Theme" ]
 
-[node name="FilterCheckBox" type="CheckBox" parent="."]
+[node name="VBox" type="VBoxContainer" parent="."]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 24.0
-margin_bottom = 24.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = true
-enabled_focus_mode = 2
-shortcut = null
-group = null
-text = "Enable Filtering"
-flat = false
-align = 0
-
-[node name="ScrollContainer" type="ScrollContainer" parent="."]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 20.0
-margin_top = 25.0
-margin_right = 460.0
-margin_bottom = 280.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = true
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_styles/bg = SubResource( 1 )
-scroll_horizontal_enabled = true
-scroll_horizontal = 0
-scroll_vertical_enabled = true
-scroll_vertical = 0
-scroll_deadzone = 0
-_sections_unfolded = [ "Anchor", "Rect", "Size Flags", "custom_styles", "custom_styles/bg" ]
-
-[node name="NodePathList" type="VBoxContainer" parent="ScrollContainer"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 24.0
-margin_bottom = 24.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 476.0
+margin_bottom = 298.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -103,13 +64,166 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 alignment = 0
 
-[node name="CheckBox" type="CheckBox" parent="ScrollContainer/NodePathList"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBox"]
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 24.0
+margin_right = 472.0
 margin_bottom = 24.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="FilterCheckBox" type="CheckBox" parent="VBox/HBoxContainer"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 421.0
+margin_bottom = 24.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 0
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Enable Filtering"
+flat = false
+align = 0
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="CloseButton" type="Button" parent="VBox/HBoxContainer"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 425.0
+margin_right = 472.0
+margin_bottom = 24.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 8
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Close"
+flat = false
+align = 2
+_sections_unfolded = [ "Grow Direction", "Rect", "Size Flags" ]
+
+[node name="SearchBar" type="LineEdit" parent="VBox"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 28.0
+margin_right = 472.0
+margin_bottom = 52.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+secret_character = "*"
+focus_mode = 2
+context_menu_enabled = true
+clear_button_enabled = false
+placeholder_text = "Search"
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "Caret", "Placeholder" ]
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBox"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 56.0
+margin_right = 472.0
+margin_bottom = 294.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 3
+custom_styles/bg = SubResource( 1 )
+scroll_horizontal_enabled = true
+scroll_horizontal = 0
+scroll_vertical_enabled = true
+scroll_vertical = 0
+scroll_deadzone = 0
+_sections_unfolded = [ "Anchor", "Rect", "Scroll", "Size Flags", "custom_styles", "custom_styles/bg" ]
+
+[node name="NodePathList" type="VBoxContainer" parent="VBox/ScrollContainer"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 43.0
+margin_bottom = 80.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 0
+size_flags_vertical = 1
+alignment = 0
+_sections_unfolded = [ "Rect", "Size Flags", "custom_constants" ]
+
+[node name="CheckBox" type="CheckBox" parent="VBox/ScrollContainer/NodePathList"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 43.0
+margin_bottom = 24.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+pressed = true
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "T"
+flat = false
+align = 0
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="CheckBox2" type="CheckBox" parent="VBox/ScrollContainer/NodePathList"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 28.0
+margin_right = 43.0
+margin_bottom = 52.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -121,6 +235,34 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
+text = "T2"
+flat = false
+align = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="CheckBox3" type="CheckBox" parent="VBox/ScrollContainer/NodePathList"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 56.0
+margin_right = 43.0
+margin_bottom = 80.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "T3"
 flat = false
 align = 0
 
+[connection signal="toggled" from="VBox/HBoxContainer/FilterCheckBox" to="." method="_on_FilterCheckBox_toggled"]
+[connection signal="pressed" from="VBox/HBoxContainer/CloseButton" to="." method="_on_CloseButton_pressed"]
+[connection signal="text_changed" from="VBox/SearchBar" to="." method="_on_SearchBar_text_changed"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://UI/Animation Editor.gd" type="Script" id=1]
 [ext_resource path="res://UI/Nodes/AGN_Output.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/Nodes/Filter Menu/FilterPopupMenu.tscn" type="PackedScene" id=3]
 
 [node name="Graph" type="GraphEdit"]
 anchor_left = 0.0
@@ -57,4 +58,7 @@ text = "Add Node"
 flat = true
 align = 1
 items = [  ]
+
+[node name="FilterPopupMenu" parent="." instance=ExtResource( 3 )]
+visible = false
 

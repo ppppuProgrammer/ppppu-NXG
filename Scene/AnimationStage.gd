@@ -108,3 +108,11 @@ func setDefaultTextures():
 	for child in self.get_children():
 		if child is CHARPART_CLASS:
 			child.mainTexId = 0
+
+func _on_Show_Graph_toggled(button_pressed):
+	$GraphLayer/Graph.visible = button_pressed
+
+
+func _on_Reset_pressed():
+	_animTree.active = !true
+	_animTree.active = true

@@ -21,9 +21,9 @@ func add_animation_names_from_list(list):
 	
 func add_animation_name(name):
 	animSelect.add_item(name)
-	
+
 func process_node_names(animPlayer:AnimationPlayer, data):
-	.process_node_names(animPlayer, data)
+	#.process_node_names(animPlayer, data)
 	var nodesUsed:Array = []
 	var animName:String = animation_node.animation
 	if animPlayer.has_animation(animName):
@@ -33,4 +33,16 @@ func process_node_names(animPlayer:AnimationPlayer, data):
 				var nodeName:String = anim.track_get_path(trackIdx).get_name(0)
 				if not nodeName in nodesUsed:
 					nodesUsed.append(nodeName)
+	return nodesUsed
+
+func process_node_paths(animPlayer:AnimationPlayer, data, baseNameOnly:bool):
+	var nodesUsed:Array = []
+	var animName:String = animation_node.animation
+	if animPlayer.has_animation(animName):
+		var anim:Animation = animPlayer.get_animation(animName)
+		if anim:
+			for trackIdx in anim.get_track_count():
+				var nodePath:String = anim.track_get_path(trackIdx).get_name(0) if baseNameOnly else anim.track_get_path(trackIdx)
+				if not nodePath in nodesUsed:
+					nodesUsed.append(nodePath)
 	return nodesUsed

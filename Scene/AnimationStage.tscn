@@ -1,12 +1,13 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scene/AnimationStage.gd" type="Script" id=1]
 [ext_resource path="res://UI/Animation Editor.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Base Character Animations/1_Cowgirl Large-animation.tres" type="Animation" id=3]
 [ext_resource path="res://Base Character Animations/1_Cowgirl Ros-animation.tres" type="Animation" id=4]
-[ext_resource path="res://Base Character Animations/1_Cowgirl-animation.tres" type="Animation" id=5]
-[ext_resource path="res://Scene/StageAnimationTree.gd" type="Script" id=6]
-[ext_resource path="res://Scene/AnimSceneDebugger.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Base Character Animations/1_Cowgirl Small-animation.tres" type="Animation" id=5]
+[ext_resource path="res://Base Character Animations/1_Cowgirl-animation.tres" type="Animation" id=6]
+[ext_resource path="res://Scene/StageAnimationTree.gd" type="Script" id=7]
+[ext_resource path="res://Scene/AnimSceneDebugger.tscn" type="PackedScene" id=8]
 
 [sub_resource type="Animation" id=1]
 
@@ -26,10 +27,10 @@ _sections_unfolded = [ "Material", "Script", "Transform", "Visibility" ]
 
 [node name="GraphLayer" type="CanvasLayer" parent="."]
 layer = 127
-offset = Vector2( 0, 0 )
+offset = Vector2( 0, 40 )
 rotation = 0.0
 scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+transform = Transform2D( 1, 0, 0, 1, 0, 40 )
 
 [node name="Graph" parent="GraphLayer" instance=ExtResource( 2 )]
 _sections_unfolded = [ "Focus", "Material", "Mouse", "Rect", "Size Flags", "Theme", "Visibility", "custom_colors", "custom_constants", "custom_icons", "custom_styles" ]
@@ -42,7 +43,8 @@ playback_default_blend_time = 0.0
 playback_speed = 1.0
 "anims/1_Cowgirl Large-animation" = ExtResource( 3 )
 "anims/1_Cowgirl Ros-animation" = ExtResource( 4 )
-anims/1_Cowgirl-animation = ExtResource( 5 )
+"anims/1_Cowgirl Small-animation" = ExtResource( 5 )
+anims/1_Cowgirl-animation = ExtResource( 6 )
 anims/None = SubResource( 1 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
@@ -53,8 +55,12 @@ anim_player = NodePath("../AnimationPlayer")
 active = false
 process_mode = 1
 root_motion_track = NodePath("")
-script = ExtResource( 6 )
+script = ExtResource( 7 )
 _sections_unfolded = [ "Root Motion", "parameters", "parameters/Add2", "parameters/Blend2", "parameters/Blender", "parameters/Seek", "parameters/TimeScale", "tree_root" ]
 
-[node name="AnimSceneDebugger" parent="." instance=ExtResource( 7 )]
+[node name="AnimSceneDebugger" parent="." instance=ExtResource( 8 )]
 
+[connection signal="toggled" from="AnimSceneDebugger/Show Graph" to="." method="_on_Show_Graph_toggled"]
+[connection signal="pressed" from="AnimSceneDebugger/Reset" to="." method="_on_Reset_pressed"]
+
+[editable path="AnimSceneDebugger"]
