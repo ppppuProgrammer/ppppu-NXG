@@ -15,6 +15,7 @@ func _ready():
 func on_anim_select_index_pressed(index):
 	animSelect.text = animSelect.get_popup().get_item_text(index)
 	(animation_node as AnimationNodeAnimation).set_animation(animSelect.text)
+	emit_signal("activate_char_parts_request")
 	
 func add_animation_names_from_list(list):
 	pass

@@ -14,6 +14,7 @@ signal disconnected_nodes(to, to_slot)
 signal added_node(node_name, node, offset)
 signal output_graph_node_added(output_graph_node)
 signal filter_list_sent(filter_list)
+signal update_character_parts
 
 onready var _filter_menu:PopupPanel = $FilterPopupMenu
 # Called when the node enters the scene tree for the first time.
@@ -52,7 +53,7 @@ func _on_Add_Node_Index_Pressed(index:int):
 	var newGraphNode:AnimationGraphNode = _addNodeData[$AddNodeButton.get_popup().get_item_text(index)].instance()
 	newGraphNode.offset = Vector2(50, 50)
 	add_child(newGraphNode)
-	
+	newGraphNode.connect("activate_char_parts_request", self, "_on_activate_char_parts_request")
 	if newGraphNode.has_filter:
 		newGraphNode.connect("show_filter_menu", self, "_show_filter_popup_menu")
 		#newGraphNode.connect("filter_list_request", self, "_get_filterable_nodes_list")
@@ -80,6 +81,9 @@ func _get_filterable_nodes_list(animation_node:AnimationNode):
 	#var list = []
 	var connection_map:Dictionary = create_node_connection_map()
 	emit_signal("filter_list_sent", process_animated_node(animation_node, connection_map, false))
+
+func _on_activate_char_parts_request():
+	emit_signal("update_character_parts")
 
 func create_node_connection_map():
 	var connection_map:Dictionary = {}

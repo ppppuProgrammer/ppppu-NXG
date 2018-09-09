@@ -17,7 +17,8 @@ onready var _graph:AnimationEditor = $GraphLayer/Graph
 func _ready():
 	#Set up the Animation Editor Graph
 	_graph.setup(_masterPlayer)
-	_graph.connect("blend_tree_connection_changed", self, "_blend_tree_changed")
+	_graph.connect("blend_tree_connection_changed", self, "_update_activated_character_parts")
+	_graph.connect("update_character_parts", self, "_update_activated_character_parts")
 	_graph.connect("connected_nodes", _animTree, "connect_animation_nodes")
 	_graph.connect("disconnected_nodes", _animTree, "disconnect_animation_nodes")
 	_graph.connect("added_node", _animTree, "add_animation_node")
@@ -66,7 +67,7 @@ func _process(delta):
 	elif Input.is_action_just_pressed("debug_print_graph"):
 		_graph.get_names_of_animated_nodes()
 	
-func _blend_tree_changed():
+func _update_activated_character_parts():
 	_animTree.active = false
 	deactivate_all_parts()
 	for node in _graph.get_names_of_animated_nodes():
@@ -74,7 +75,7 @@ func _blend_tree_changed():
 	_animTree.active = true
 
 func deactivate_all_parts():
-	for partName in _activeCharParts:
+	for partName in _activeCharParts.keys():
 		deactivate_character_part(partName)
 
 func deactivate_character_part(partName:String):
@@ -86,11 +87,12 @@ func deactivate_character_part(partName:String):
 		charPart = get_node(partName)
 	if charPart:
 		_standbyCharParts[partName] = charPart
+		print("%s on standby" % charPart.name)
 		charPart.visible = false
 		charPart.set_process(false)
 
 func debug_activate_all():
-	for partName in _standbyCharParts:
+	for partName in _standbyCharParts.keys():
 		activate_character_part(partName)
 
 func activate_character_part(partName:String):
@@ -110,7 +112,7 @@ func setDefaultTextures():
 			child.mainTexId = 0
 
 func _on_Show_Graph_toggled(button_pressed):
-	$GraphLayer/Graph.visible = button_pressed
+	_graph.visible = button_pressed
 
 
 func _on_Reset_pressed():

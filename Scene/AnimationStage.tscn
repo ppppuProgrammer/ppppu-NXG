@@ -33,6 +33,7 @@ scale = Vector2( 1, 1 )
 transform = Transform2D( 1, 0, 0, 1, 0, 40 )
 
 [node name="Graph" parent="GraphLayer" instance=ExtResource( 2 )]
+snap_distance = 5
 _sections_unfolded = [ "Focus", "Material", "Mouse", "Rect", "Size Flags", "Theme", "Visibility", "custom_colors", "custom_constants", "custom_icons", "custom_styles" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -60,7 +61,3 @@ _sections_unfolded = [ "Root Motion", "parameters", "parameters/Add2", "paramete
 
 [node name="AnimSceneDebugger" parent="." instance=ExtResource( 8 )]
 
-[connection signal="toggled" from="AnimSceneDebugger/Show Graph" to="." method="_on_Show_Graph_toggled"]
-[connection signal="pressed" from="AnimSceneDebugger/Reset" to="." method="_on_Reset_pressed"]
-
-[editable path="AnimSceneDebugger"]

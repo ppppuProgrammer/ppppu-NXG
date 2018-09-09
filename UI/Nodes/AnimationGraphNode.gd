@@ -11,7 +11,7 @@ var has_filter:bool = false
 
 signal parameter_changed(node_name, parameter_name, value)
 signal show_filter_menu(animNode)
-signal filter_list_request(node)
+signal activate_char_parts_request
 #Returns an array of nodes that are being used by the animation node
 #that this graph node represents. Subclasses that do some sort of
 #modifications to the nodes that are to be animated should override
