@@ -1,0 +1,7 @@
+[gd_resource type="Gradient" format=2]
+
+[resource]
+
+resource_name = "Lips Default 1"
+offsets = PoolRealArray( 0.0 )
+colors = PoolColorArray( 0.000000, 0.058824, 0.611765, 1.0 )

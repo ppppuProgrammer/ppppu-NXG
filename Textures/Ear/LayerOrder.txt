@@ -1,2 +1,2 @@
-Ear_Gradient
+Ear_SkinColor
 Ear_Outline

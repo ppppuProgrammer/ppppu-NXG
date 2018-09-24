@@ -1,0 +1,7 @@
+[gd_resource type="Gradient" format=2]
+
+[resource]
+
+resource_name = "Head Default 2"
+offsets = PoolRealArray( 0.0 )
+colors = PoolColorArray( 0.941176, 0.647059, 0.525490, 1.0 )

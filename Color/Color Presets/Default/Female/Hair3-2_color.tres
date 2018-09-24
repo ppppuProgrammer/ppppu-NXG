@@ -1,0 +1,7 @@
+[gd_resource type="Gradient" format=2]
+
+[resource]
+
+resource_name = "Hair Default 5"
+offsets = PoolRealArray( 0.0 )
+colors = PoolColorArray( 1.000000, 0.701961, 0.000000, 1.0 )

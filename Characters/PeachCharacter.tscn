@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Characters/Character.tscn" type="PackedScene" id=1]
+
+[node name="PeachCharacter" instance=ExtResource( 1 )]
+_sections_unfolded = [ "Script" ]
+character_name = "Peach"
+character_music_name = "Beep Block Skyway"
+talkative_frequency = null
+

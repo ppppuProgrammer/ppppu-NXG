@@ -1,0 +1,7 @@
+[gd_resource type="Gradient" format=2]
+
+[resource]
+
+resource_name = "Lower Body Default 3"
+offsets = PoolRealArray( 0.0 )
+colors = PoolColorArray( 0.909804, 0.596078, 0.631373, 1.0 )

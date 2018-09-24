@@ -19,7 +19,7 @@ signal update_character_parts
 onready var _filter_menu:PopupPanel = $FilterPopupMenu
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
+	Log.append("Initializing Animation Editor")
 	emit_signal("output_graph_node_added", $output)
 	connect('connection_request', self, '_connect_graph_node')
 	connect('disconnection_request', self, '_disconnect_graph_node')

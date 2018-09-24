@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Color/CharacterColorizer.gd" type="Script" id=1]
+
+[node name="CharacterColorizer" type="Node"]
+script = ExtResource( 1 )
+_sections_unfolded = [ "Pause" ]
+initialColorGroups = PoolStringArray( "Accessory", "Body", "Eye", "Hair", "Head", "Headwear", "Highlight", "Leggings", "Lips", "Lower Body", "Male", "Outline" )
+

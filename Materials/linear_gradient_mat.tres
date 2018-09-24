@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://Shaders/Linear Gradient.shader" type="Shader" id=1]
+[ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=2]
+
+[resource]
+
+resource_name = "Linear Gradient Material"
+render_priority = 0
+shader = ExtResource( 1 )
+shader_param/s1_start_UV = null
+shader_param/s1_end_UV = null
+shader_param/s2_start_UV = null
+shader_param/s2_end_UV = null
+shader_param/s3_start_UV = null
+shader_param/s3_end_UV = null
+shader_param/s4_start_UV = null
+shader_param/s4_end_UV = null
+shader_param/s5_start_UV = null
+shader_param/s5_end_UV = null
+shader_param/s6_start_UV = null
+shader_param/s6_end_UV = null
+shader_param/s7_start_UV = null
+shader_param/s7_end_UV = null
+shader_param/s8_start_UV = null
+shader_param/s8_end_UV = null
+shader_param/sectionReferenceTex = ExtResource( 2 )
+_sections_unfolded = [ "Resource", "shader_param" ]
+

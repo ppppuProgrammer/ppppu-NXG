@@ -1,0 +1,7 @@
+[gd_resource type="Gradient" format=2]
+
+[resource]
+
+resource_name = "Leggings Default 1"
+offsets = PoolRealArray( 0.5490196, 1 )
+colors = PoolColorArray( 0.925490, 0.776471, 1.000000, 1, 0.878431, 0.650980, 0.988235, 1 )

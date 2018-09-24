@@ -1,14 +1,16 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Textures/CharPartSprite.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Textures/Grin/Grin.png" type="Texture" id=2]
+[ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Textures/Grin/Grin.png" type="Texture" id=3]
 
 [node name="Grin" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Default"
-[node name="Grin" type="Sprite" parent="." index="0"]
-use_parent_material = true
+[node name="Grin" type="Sprite" parent="." index="0" groups=["ColorGrp_UNUSED",]]
+script = ExtResource( 2 )
+use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 offset = Vector2( -0.325000, 15.500000 )
 

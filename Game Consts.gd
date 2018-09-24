@@ -1,0 +1,3 @@
+extends Node
+
+enum COLOR_METHOD_TYPE {SOLID, LINEAR, RADIAL}

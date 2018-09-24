@@ -1,0 +1,45 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://Shaders/Radial Gradient.shader" type="Shader" id=1]
+[ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=2]
+
+[resource]
+
+resource_name = "Radial Gradient Material"
+render_priority = 0
+shader = ExtResource( 1 )
+shader_param/s1_centerUV = null
+shader_param/s1_radius = null
+shader_param/s1_use_focal_point = null
+shader_param/s1_focal_pointUV = null
+shader_param/s2_centerUV = null
+shader_param/s2_radius = null
+shader_param/s2_use_focal_point = null
+shader_param/s2_focal_pointUV = null
+shader_param/s3_centerUV = null
+shader_param/s3_radius = null
+shader_param/s3_use_focal_point = null
+shader_param/s3_focal_pointUV = null
+shader_param/s4_centerUV = null
+shader_param/s4_radius = null
+shader_param/s4_use_focal_point = null
+shader_param/s4_focal_pointUV = null
+shader_param/s5_centerUV = null
+shader_param/s5_radius = null
+shader_param/s5_use_focal_point = null
+shader_param/s5_focal_pointUV = null
+shader_param/s6_centerUV = null
+shader_param/s6_radius = null
+shader_param/s6_use_focal_point = null
+shader_param/s6_focal_pointUV = null
+shader_param/s7_centerUV = null
+shader_param/s7_radius = null
+shader_param/s7_use_focal_point = null
+shader_param/s7_focal_pointUV = null
+shader_param/s8_centerUV = null
+shader_param/s8_radius = null
+shader_param/s8_use_focal_point = null
+shader_param/s8_focal_pointUV = null
+shader_param/sectionReferenceTex = ExtResource( 2 )
+_sections_unfolded = [ "Resource", "shader", "shader_param" ]
+

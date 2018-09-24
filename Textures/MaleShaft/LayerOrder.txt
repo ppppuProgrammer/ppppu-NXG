@@ -1,5 +1,3 @@
-MaleShaft_Gradient
-MaleShaft_MaleSkinColor_1
-MaleShaft_Gradient
+MaleShaft_ShaftSkin
 MaleShaft_Outline
 MaleShaft_Squiggly

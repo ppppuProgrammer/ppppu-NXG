@@ -1,0 +1,9 @@
+[gd_resource type="Gradient" format=2]
+
+[resource]
+
+resource_name = "Body Default 4"
+offsets = PoolRealArray( 0 )
+colors = PoolColorArray( 1, 0.686275, 1, 1 )
+_sections_unfolded = [ "colors", "offsets" ]
+

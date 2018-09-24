@@ -1,26 +1,30 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Textures/CharPartSprite.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Textures/Hair2-Pch/Hair2_PchSeg3.png" type="Texture" id=2]
-[ext_resource path="res://Textures/Hair2-Pch/Hair2_PchSeg2.png" type="Texture" id=3]
-[ext_resource path="res://Textures/Hair2-Pch/Hair2_Pch_Outline.png" type="Texture" id=4]
+[ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Textures/Hair2-Pch/Hair2_PchSeg3.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Hair2-Pch/Hair2_PchSeg2.png" type="Texture" id=4]
+[ext_resource path="res://Textures/Hair2-Pch/Hair2_Pch_Outline.png" type="Texture" id=5]
 
 [node name="Hair2-Pch" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Pch"
-[node name="Hair2_PchSeg3" type="Sprite" parent="." index="0"]
-use_parent_material = true
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 2 )
-offset = Vector2( -11.300000, 7.525000 )
-[node name="Hair2_PchSeg2" type="Sprite" parent="." index="1"]
-use_parent_material = true
+[node name="Hair2_PchSeg3" type="Sprite" parent="." index="0" groups=["ColorGrp_Hair",]]
+script = ExtResource( 2 )
+use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
 offset = Vector2( -11.300000, 7.525000 )
-[node name="Hair2_Pch_Outline" type="Sprite" parent="." index="2"]
-use_parent_material = true
+[node name="Hair2_PchSeg2" type="Sprite" parent="." index="1" groups=["ColorGrp_Hair",]]
+script = ExtResource( 2 )
+use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( -11.300000, 7.525000 )
+[node name="Hair2_Pch_Outline" type="Sprite" parent="." index="2" groups=["ColorGrp_Outline",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 5 )
 offset = Vector2( -11.300000, 7.525000 )
 

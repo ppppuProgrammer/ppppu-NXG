@@ -1,0 +1,45 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Characters/Character.gd" type="Script" id=1]
+[ext_resource path="res://Color/Color Presets/Default/Female/Accessory-1_color.tres" type="Gradient" id=2]
+[ext_resource path="res://Color/Color Presets/Default/Female/Accessory-2_color.tres" type="Gradient" id=3]
+[ext_resource path="res://Color/Color Presets/Unset_color.tres" type="Gradient" id=4]
+[ext_resource path="res://Color/Color Presets/Default/Female/Skin_color.tres" type="Gradient" id=5]
+[ext_resource path="res://Color/Color Presets/Default/Female/Breast_color.tres" type="Gradient" id=6]
+[ext_resource path="res://Color/Color Presets/Default/Female/Nipple_color.tres" type="Gradient" id=7]
+[ext_resource path="res://Color/Color Presets/Default/Female/Areola_color.tres" type="Gradient" id=8]
+[ext_resource path="res://Color/Color Presets/Default/Female/Iris_color.tres" type="Gradient" id=9]
+[ext_resource path="res://Color/Color Presets/Default/Female/Hair1_color.tres" type="Gradient" id=10]
+[ext_resource path="res://Color/Color Presets/Default/Female/HairFrontAngled-2_color.tres" type="Gradient" id=11]
+[ext_resource path="res://Color/Color Presets/Default/Female/Hair2-2_color.tres" type="Gradient" id=12]
+[ext_resource path="res://Color/Color Presets/Default/Female/Hair3-2_color.tres" type="Gradient" id=13]
+[ext_resource path="res://Color/Color Presets/Default/Female/HairBack-2_color.tres" type="Gradient" id=14]
+[ext_resource path="res://Color/Color Presets/Default/Female/Eyelid_color.tres" type="Gradient" id=15]
+[ext_resource path="res://Color/Color Presets/Default/Female/Legging_color.tres" type="Gradient" id=16]
+[ext_resource path="res://Color/Color Presets/Default/Female/Lips_color.tres" type="Gradient" id=17]
+[ext_resource path="res://Color/Color Presets/Default/Female/Vulva_color.tres" type="Gradient" id=18]
+[ext_resource path="res://Color/Color Presets/Default/Female/Clit_color.tres" type="Gradient" id=19]
+[ext_resource path="res://Color/Color Presets/Default/Outline_color.tres" type="Gradient" id=20]
+[ext_resource path="res://Color/Color Presets/Default/Female/FleshLine_color.tres" type="Gradient" id=21]
+
+[node name="Character" type="Node"]
+script = ExtResource( 1 )
+_sections_unfolded = [ "Script", "default_color_settings" ]
+character_name = null
+character_music_name = null
+default_color_settings = {
+"Accessory": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Body": [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Eye": [ ExtResource( 9 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Hair": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 4 ) ],
+"Head": [ ExtResource( 4 ), ExtResource( 4 ), ExtResource( 15 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Headwear": [ ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Highlight": [ ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Leggings": [ ExtResource( 16 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Lips": [ ExtResource( 17 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Lower Body": [ ExtResource( 18 ), ExtResource( 4 ), ExtResource( 19 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Male": [ ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Outline": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ]
+}
+talkative_frequency = null
+

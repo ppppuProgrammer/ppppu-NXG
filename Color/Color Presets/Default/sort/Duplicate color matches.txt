@@ -1,0 +1,57 @@
+
+AreolaLarge-SkinHighlightColor_0.0_color.tres : 
+	Areola_Highlight_0.0_color.tres, BackHipsAngled_SkinHighlightColor_color.tres, ForearmLargeGrasp-SkinHighlightColor_color.tres, ForearmSmallGrasp-SkinHighlightColor_color.tres, Forearm_SkinHighlightColor_color.tres, Hair3_Pch_Highlight_color.tres, Hair3_Rosa_Highlight_color.tres, Oh_Highlight_color.tres, OpenSml_Highlight_color.tres, OpenSml_Teeth_color.tres, Hips2_Highlight_color.tres, HipsAngled_SkinHighlightColor_color.tres, Hips_Highlight_color.tres, Boob2_SkinHighlightColor_color.tres, Boob3_SkinHighlightColor_color.tres, BoobHighlightLargeSprite_0.0_color.tres, BoobHighlightLargeSprite_color.tres, BoobHighlight_SkinHighlightColor_color.tres, BoobLarge-SkinHighlight_color.tres, Eyeball_Highlight_color.tres, Sclera2_ScleraColor_color.tres, Sclera_ScleraColor_color.tres, Shoulder_SkinHighlightColor_color.tres, SideBoobLarge-SkinHighlight_color.tres, SideBoobSmall-SkinHighlightColor_color.tres, Sideboob_SkinHighlightColor_color.tres, TeardropMth_Highlight_color.tres, TeardropMth_Teeth_color.tres, Tongue_Highlight_color.tres, UpperLeg_SkinHighlightColor_color.tres, VulvaAngled_SkinHighlightColor_color.tres, Earring-Pch_Highlight_0.0_color.tres, Boob_SkinHighlightColor_color.tres, Buttcheek_Highlight_color.tres, ClosedSmile_Highlight_color.tres, Vulva_SkinHighlightColor_color.tres, WideMth_Highlight_color.tres, WideTeardropMth_Highlight_color.tres, WideTeardropMth_Teeth_color.tres, BoobLargeLeanForward-SkinHighlightColor_color.tres, BoobLargeSide-SkinHighlightColor_color.tres, BoobLargeSideBack-SkinHighlightColor_color.tres, BoobMask-Large_color.tres, BoobMask-Large_Side_Back_color.tres, BoobMask-Large_Side_color.tres, BoobSmall-SkinHighlightColor_color.tres, BoobSmallLeanForward-SkinHighlightColor_color.tres, BoobSmallSide-SkinHighlightColor_color.tres, BoobSmallSideFront-SkinHighlightColor_color.tres
+
+Arm2_Outline_color.tres : 
+	Arm3_Outline_color.tres, Arm_Outline_color.tres, BackHipsAngled_Outline_color.tres, FaceAngled_Outline_color.tres, Face_Outline_color.tres, Forearm_Outline_color.tres, Hair1_Pch_Outline_color.tres, Hair1_Rosa_Outline_color.tres, Hair2_Pch_Outline_color.tres, Hair2_Rosa_Outline_color.tres, Hair3_Pch_Outline_color.tres, Hair3_Rosa_Outline_color.tres, HairBack_Pch_Outline_color.tres, HairBack_Rosa_Outline_color.tres, HairFrontAngled2_Pch_Outline_color.tres, HairFrontAngled_Pch_Outline_color.tres, HairFrontAngled_Rosa_Outline_color.tres, Boob_Outline_color.tres, HairFront_Pch_Outline_color.tres, LowerBackAngled_Outline_color.tres, LowerLeg_Outline_0.0_color.tres, LowerLeg_Outline_color.tres, MaleBody_Outline_color.tres, MaleGroin_Outline_color.tres, MaleLeg_Outline_color.tres, MalePenisHead_Outline_color.tres, MidTorsoAngled_Outline_color.tres, Navel_Outline_color.tres, NoseShape-Angled_0.0_color.tres, NoseShape_0.0_color.tres, Oh_Outline_color.tres, OpenSml_Outline_color.tres, HairFront_Rosa_Outline_color.tres, Hand2_Outline_color.tres, Hand_Outline_color.tres, Hips2_Outline_color.tres, HipsAngled_Outline_color.tres, Hips_Outline_color.tres, Boob2_Outline_color.tres, Boob3_Outline_color.tres, Earring-Rosa_Outline_0.0_color.tres, Ear_Outline_color.tres, Eyeball_Outline_color.tres, EyebrowShape_0.0_color.tres, FaceAngled2_Outline_color.tres, FaceAngled3_Outline_color.tres, PenisHighlight_color.tres, Pupil_PupilColor_color.tres, Shoulder_Outline_color.tres, SideBoob_Outline_color.tres, Symbol 58_0.0_color.tres, Symbol 58_1.0_color.tres, TeardropMth_Outline_color.tres, Tongue_Outline_color.tres, UpperBackAngled_Outline_color.tres, UpperLeg_Outline_color.tres, Earring-Pch_Outline_0.0_color.tres, ButtcheekShadow_color.tres, Buttcheek_Outline_color.tres, ChestAngled_Outline_color.tres, Chest_Outline_color.tres, Clavicle_Outline_color.tres, ClosedLashShape_0.0_color.tres, ClosedSmile_Outline_color.tres, WideMth_Outline_color.tres, WideTeardropMth_Outline_color.tres
+
+Arm2_SkinColor_color.tres : 
+	Arm3_SkinColor_color.tres, Arm_SkinColor_color.tres, BackHipsAngled_SkinColor_color.tres, FaceAngled_SkinColor_color.tres, Forearm_SkinColor_color.tres, FrontButt_SkinColor_color.tres, Groin2_SkinColor_color.tres, Groin_SkinColor_color.tres, LowerBackAngled_SkinColor_color.tres, MidTorsoAngled_SkinColor_color.tres, Hand2_SkinColor_color.tres, Hand_SkinColor_color.tres, Hips2_SkinColor_color.tres, HipsAngled_SkinColor_color.tres, Hips_SkinColor_color.tres, FaceAngled2_SkinColor_color.tres, FaceAngled3_SkinColor_color.tres, Shoulder_SkinColor_color.tres, Sideboob_SkinColor_color.tres, UpperBackAngled_SkinColor_color.tres, UpperLeg_SkinColor_color.tres, Boob_SkinColor_color.tres, Buttcheek_SkinColor_color.tres, ChestAngled_SkinColor_color.tres, Chest_SkinColor_color.tres, Clavicle_SkinColor_color.tres
+
+ForearmLargeGrasp-Outline_color.tres : 
+	ForearmSmallGrasp-Outline_color.tres, NippleSmall-Outline_color.tres, NippleSmallAnim6-Outline_color.tres, HandLargeGrasp-Outline_color.tres, BoobLarge-Outline_color.tres, BoobLargeLeanForward-Outline_color.tres, SideBoobLarge-Outline_color.tres, SideBoobSmall-Outline_color.tres, BoobLargeSide-Outline_color.tres, BoobLargeSideBack-Outline_color.tres, BoobSmall-Outline_color.tres, BoobSmallLeanForward-Outline_color.tres, BoobSmallSide-Outline_color.tres, BoobSmallSideFront-Outline_color.tres
+
+ForearmLargeGrasp-SkinColor_color.tres : 
+	ForearmSmallGrasp-SkinColor_color.tres, BoobLargeLeanForward-SkinColor_color.tres, HandLargeGrasp-SkinColor_color.tres, HandSmallGrasp-Outline_color.tres, HandSmallGrasp-SkinColor_color.tres, BoobLarge-SkinColor_color.tres, SideBoobLarge-SkinColor_color.tres, SideBoobSmall-SkinColor_color.tres, BoobLargeSide-SkinColor_color.tres, BoobLargeSideBack-SkinColor_color.tres, BoobSmall-SkinColor_color.tres, BoobSmallLeanForward-SkinColor_color.tres, BoobSmallSide-SkinColor_color.tres, BoobSmallSideFront-SkinColor_color.tres
+
+Groin2_SkinLineColor_color.tres : 
+	Groin_SkinLineColor_color.tres, BackVulva_SkinLineColor_color.tres, Eyelid_SkinLineColor_color.tres, VulvaAngled_SkinLineColor_2_color.tres, VulvaAngled_SkinLineColor_3_color.tres, VulvaAngled_SkinLineColor_4_color.tres, Vulva_SkinLineColor_1_color.tres, Vulva_SkinLineColor_2_color.tres
+
+Hair1_PchSeg1_color.tres : 
+	Hair2_PchSeg3_color.tres, Hair3_PchSeg3_color.tres, HairBack_PchSeg3_color.tres, HairFrontAngled2_PchSeg3_color.tres, HairFrontAngled_PchSeg3_color.tres, HairFront_PchSeg3_color.tres
+
+Hair2_RosaSeg3_color.tres : 
+	Hair3_RosaSeg3_color.tres, HairFrontAngled_RosaSeg3_color.tres, HairFront_RosaSeg3_color.tres
+
+HairBack_PchSeg2_color.tres : 
+	FaceAngled_HairAngledColor_color.tres, FaceAngled2_HairAngledColor_color.tres, FaceAngled3_HairAngledColor_color.tres
+
+HairFrontAngled2_PchSeg2_color.tres : 
+	HairFrontAngled_PchSeg2_color.tres, HairFront_PchSeg2_color.tres
+
+HairFrontAngled_RosaSeg2_color.tres : 
+	HairFront_RosaSeg2_color.tres
+
+VulvaAngled_VulvaColor_3_color.tres : 
+	BackVulva_VulvaColor_color.tres, VulvaAngled_VulvaColor_2_color.tres, Vulva_VulvaColor_color.tres
+
+MaleBody_MaleSkinColor_color.tres : 
+	MaleGroin_MaleSkinColor_color.tres, MaleLeg_MaleSkinColor_color.tres, MalePenisHead_MaleSkinColor_color.tres
+
+NippleSmall-NippleColor_color.tres : 
+	NippleSmallAnim6-NippleCOlor_color.tres
+
+OhMouth_LipColor_color.tres : 
+	OpenSmile_LipColor_color.tres, TeardropMouth_LipColor_color.tres, ClosedSmile_LipColor_color.tres, WideMouth_LipColor_color.tres, WideTeardropMouth_LipColor_color.tres
+
+Oh_Inside_color.tres : 
+	OpenSml_Inside_color.tres, TeardropMth_Inside_color.tres, WideMth_Inside_color.tres, WideTeardropMth_Inside_color.tres
+
+Boob2_BreastColor_color.tres : 
+	Boob3_BreastColor_color.tres
+
+Eyelid_EyelidColor_color.tres : 
+	Sclera2_EyelidColor_color.tres, Sclera_EyelidColor_color.tres
+
+VulvaAngled_Clit_color.tres : 
+	Vulva_Clit_color.tres

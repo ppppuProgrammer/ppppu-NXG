@@ -1,26 +1,30 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Textures/CharPartSprite.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Textures/FaceAngled-Ver3/FaceAngled3_HairAngledColor.png" type="Texture" id=2]
-[ext_resource path="res://Textures/FaceAngled-Ver3/FaceAngled3_SkinColor.png" type="Texture" id=3]
-[ext_resource path="res://Textures/FaceAngled-Ver3/FaceAngled3_Outline.png" type="Texture" id=4]
+[ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Textures/FaceAngled-Ver3/FaceAngled3_HairAngledColor.png" type="Texture" id=3]
+[ext_resource path="res://Textures/FaceAngled-Ver3/FaceAngled3_SkinColor.png" type="Texture" id=4]
+[ext_resource path="res://Textures/FaceAngled-Ver3/FaceAngled3_Outline.png" type="Texture" id=5]
 
 [node name="FaceAngled-Ver3" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Ver3"
-[node name="FaceAngled3_HairAngledColor" type="Sprite" parent="." index="0"]
-use_parent_material = true
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 2 )
-offset = Vector2( 368.925000, 375.750000 )
-[node name="FaceAngled3_SkinColor" type="Sprite" parent="." index="1"]
-use_parent_material = true
+[node name="FaceAngled3_HairAngledColor" type="Sprite" parent="." index="0" groups=["ColorGrp_Hair",]]
+script = ExtResource( 2 )
+use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
 offset = Vector2( 368.925000, 375.750000 )
-[node name="FaceAngled3_Outline" type="Sprite" parent="." index="2"]
-use_parent_material = true
+[node name="FaceAngled3_SkinColor" type="Sprite" parent="." index="1" groups=["ColorGrp_Body",]]
+script = ExtResource( 2 )
+use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( 368.925000, 375.750000 )
+[node name="FaceAngled3_Outline" type="Sprite" parent="." index="2" groups=["ColorGrp_Outline",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 5 )
 offset = Vector2( 368.925000, 375.750000 )
 

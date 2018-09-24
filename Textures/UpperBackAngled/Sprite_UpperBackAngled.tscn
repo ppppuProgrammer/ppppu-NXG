@@ -1,20 +1,23 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Textures/CharPartSprite.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Textures/UpperBackAngled/UpperBackAngled_SkinColor.png" type="Texture" id=2]
-[ext_resource path="res://Textures/UpperBackAngled/UpperBackAngled_Outline.png" type="Texture" id=3]
+[ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Textures/UpperBackAngled/UpperBackAngled_SkinColor.png" type="Texture" id=3]
+[ext_resource path="res://Textures/UpperBackAngled/UpperBackAngled_Outline.png" type="Texture" id=4]
 
 [node name="UpperBackAngled" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Default"
-[node name="UpperBackAngled_SkinColor" type="Sprite" parent="." index="0"]
-use_parent_material = true
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 2 )
-offset = Vector2( 33.875000, -79.100000 )
-[node name="UpperBackAngled_Outline" type="Sprite" parent="." index="1"]
-use_parent_material = true
+[node name="UpperBackAngled_SkinColor" type="Sprite" parent="." index="0" groups=["ColorGrp_Body",]]
+script = ExtResource( 2 )
+use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( 33.875000, -79.100000 )
+[node name="UpperBackAngled_Outline" type="Sprite" parent="." index="1" groups=["ColorGrp_Outline",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
 offset = Vector2( 33.875000, -79.100000 )
 
