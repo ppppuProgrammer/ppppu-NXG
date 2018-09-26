@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scene/AnimationStage.gd" type="Script" id=1]
 [ext_resource path="res://UI/Animation Editor.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Base Character Animations/1_Cowgirl-animation.tres" type="Animation" id=6]
 [ext_resource path="res://Scene/StageAnimationTree.gd" type="Script" id=7]
 [ext_resource path="res://Scene/AnimSceneDebugger.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Color/CharacterColorizer.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Animation" id=1]
 
@@ -60,4 +61,13 @@ script = ExtResource( 7 )
 _sections_unfolded = [ "Root Motion", "parameters", "parameters/Add2", "parameters/Blend2", "parameters/Blender", "parameters/Seek", "parameters/TimeScale", "tree_root" ]
 
 [node name="AnimSceneDebugger" parent="." instance=ExtResource( 8 )]
+editor/display_folded = true
 
+[node name="CharacterColorizer" parent="." instance=ExtResource( 9 )]
+_sections_unfolded = [ "Pause", "initialColorGroups" ]
+initialColorGroups = PoolStringArray( "", "", "", "" )
+
+[connection signal="toggled" from="AnimSceneDebugger/Show Graph" to="." method="_on_Show_Graph_toggled"]
+[connection signal="pressed" from="AnimSceneDebugger/Reset" to="." method="_on_Reset_pressed"]
+
+[editable path="AnimSceneDebugger"]

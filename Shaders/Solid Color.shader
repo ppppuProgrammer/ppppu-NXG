@@ -7,6 +7,9 @@ shader_type canvas_item;
 //in the texture belongs to.
 uniform sampler2D sectionReferenceTex;
 
+//Can't use until Godot's issues with large textures are fixed. Key one being
+//that they can't be read 
+//uniform sampler2D color_group_texture;
 //Below are (gradient) textures that determine how a particular color section
 //should look. Expects a gradient texture and always uses UV(0,0.5) for reading the color.
 uniform sampler2D section1;
@@ -19,6 +22,8 @@ uniform sampler2D section7;
 uniform sampler2D section8;
 
 vec4 get_color_from_section(in int sectionNum){
+	//float sectionPercentage = 1.0 / 8.0;
+	//return texture(color_group_texture, vec2(float(sectionNum-1) * sectionPercentage,0.5));
 	if(sectionNum == 1){
 		return texture(section1, vec2(0.0,0.5));
 	} else if(sectionNum == 2){
@@ -36,6 +41,7 @@ vec4 get_color_from_section(in int sectionNum){
 	} else if(sectionNum == 8){
 		return texture(section8, vec2(0.0,0.5));
 	} else {
+		return vec4(0.0);
 		return vec4(-1.0,-1.0,-1.0,-1.0);
 	}
 }
@@ -44,6 +50,7 @@ void fragment(){
 	vec4 texColor = texture(TEXTURE, UV);
 	COLOR = texColor;
 	for(int i = 1; i <= 8; i++){
+		//vec4 refColor = texture(sectionReferenceTex, vec2((float(i)-0.5) / 8.0, 0.5));
 		vec4 refColor = texture(sectionReferenceTex, vec2((float(i)-0.5) / 8.0, 0.5));
 		vec4 sectColor = get_color_from_section(i);
 		if(refColor.rgb == texColor.rgb){

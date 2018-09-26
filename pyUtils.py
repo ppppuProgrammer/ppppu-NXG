@@ -10,6 +10,7 @@ BASE_CHAR_ANIMS_PATH = Path("./Base Character Animations")
 TEST_ANIM_PATH = Path(BASE_CHAR_ANIMS_PATH / "Testing")
 CHAR_PARTS_PATH = Path("./Char Parts")
 TEXTURES_PATH = Path("./Textures")
+TEXTURE_CGROUP_PATH = TEXTURES_PATH / "Color Groups.txt"
 CREATION_INFO_STR = "Creation Info"
 CREATION_INFO_PATH = BASE_CHAR_ANIMS_PATH / CREATION_INFO_STR
 
@@ -45,6 +46,17 @@ def GetCharPartSections(partName):
 Z_INDEX_PADDING = int(50)
 
 
+def loadColorGroups():
+    colorDict = {}
+    if TEXTURE_CGROUP_PATH.exists():
+        oldCGroupContents = TEXTURE_CGROUP_PATH.read_text()
+        for line in oldCGroupContents.split('\n'):
+            lineParts = line.split(',', 2)
+            if len(lineParts) > 1 and len(lineParts[1]) > 0:
+                colorDict[lineParts[0]] = lineParts[1]
+    return colorDict
+
+                
 def analyzeCreationInfo(animationName):
     # Returns a dictionary with a key of the node name (part name + side flag)
     # and a tuple for the value, with the tuple's contents being

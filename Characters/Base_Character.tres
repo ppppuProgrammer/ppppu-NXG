@@ -25,7 +25,7 @@
 [resource]
 
 script = ExtResource( 21 )
-_sections_unfolded = [ "Script" ]
+_sections_unfolded = [ "Script", "default_color_settings" ]
 character_name = null
 character_music_name = null
 default_color_settings = {

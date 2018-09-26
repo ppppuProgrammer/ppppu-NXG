@@ -16,8 +16,14 @@ _global_script_class_icons={
 [application]
 
 config/name="p4u proj"
-run/main_scene="res://Scene/AnimationStage.tscn"
+run/main_scene="res://Game.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Log="*res://Logging/Logger.gd"
+GameVersion="*res://Game Version.gd"
+GameConsts="*res://Game Consts.gd"
 
 [display]
 

@@ -1,6 +1,69 @@
-[gd_scene format=2]
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Game_Main.gd" type="Script" id=1]
+[ext_resource path="res://Characters/Roster.gd" type="Script" id=2]
+[ext_resource path="res://Animation/AnimationAssignments.gd" type="Script" id=3]
+[ext_resource path="res://Animation/AnimationLocks.gd" type="Script" id=4]
+[ext_resource path="res://Animation/AnimationCatalog.gd" type="Script" id=5]
+[ext_resource path="res://Color/Palettes.gd" type="Script" id=6]
+[ext_resource path="res://Characters/CharacterDefaults.gd" type="Script" id=7]
+[ext_resource path="res://Color/ColoringTechs.gd" type="Script" id=8]
+[ext_resource path="res://Audio/MusicCollection.gd" type="Script" id=9]
+[ext_resource path="res://Audio/MusicSelections.gd" type="Script" id=10]
+[ext_resource path="res://Color/ColorGroups.gd" type="Script" id=11]
+[ext_resource path="res://Color/PaletteDispatcher.gd" type="Script" id=12]
 
 [node name="Game" type="Node2D"]
+script = ExtResource( 1 )
 
 [node name="Scene" type="Node2D" parent="."]
 
+[node name="Roster" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="AnimationAssignments" type="Node" parent="."]
+script = ExtResource( 3 )
+_sections_unfolded = [ "Script" ]
+
+[node name="AnimationLocks" type="Node" parent="."]
+script = ExtResource( 4 )
+
+[node name="AnimationCatalog" type="Node" parent="."]
+script = ExtResource( 5 )
+
+[node name="Palettes" type="Node" parent="."]
+script = ExtResource( 6 )
+
+[node name="CharacterDefaults" type="Node" parent="."]
+script = ExtResource( 7 )
+
+[node name="ColoringTechs" type="Node" parent="."]
+script = ExtResource( 8 )
+
+[node name="MusicCollection" type="Node" parent="."]
+script = ExtResource( 9 )
+_sections_unfolded = [ "Script" ]
+
+[node name="MusicSelections" type="Node" parent="."]
+script = ExtResource( 10 )
+_sections_unfolded = [ "Script" ]
+
+[node name="ColorGroups" type="Node" parent="."]
+script = ExtResource( 11 )
+
+[node name="PaletteDispatcher" type="Node" parent="."]
+script = ExtResource( 12 )
+
+[connection signal="character_changed" from="." to="PaletteDispatcher" method="_on_Game_character_changed"]
+[connection signal="character_changed" from="." to="Palettes" method="_on_Game_character_changed"]
+[connection signal="character_added" from="Roster" to="CharacterDefaults" method="_on_Roster_character_added"]
+[connection signal="character_added" from="Roster" to="Palettes" method="_on_Roster_character_added"]
+[connection signal="character_removed" from="Roster" to="CharacterDefaults" method="_on_Roster_character_removed"]
+[connection signal="character_removed" from="Roster" to="Palettes" method="_on_Roster_character_removed"]
+[connection signal="character_swapped" from="Roster" to="CharacterDefaults" method="_on_Roster_character_swapped"]
+[connection signal="character_swapped" from="Roster" to="Palettes" method="_on_Roster_character_swapped"]
+[connection signal="full_group_name_request" from="Palettes" to="ColorGroups" method="_on_Palettes_full_group_name_request"]
+[connection signal="group_added" from="ColorGroups" to="PaletteDispatcher" method="_on_ColorGroups_group_added"]
+[connection signal="group_size_changed" from="ColorGroups" to="PaletteDispatcher" method="_on_ColorGroups_group_size_changed"]
+[connection signal="group_size_changed" from="ColorGroups" to="CharacterDefaults" method="_on_ColorGroups_group_size_changed"]
+[connection signal="group_size_changed" from="ColorGroups" to="Palettes" method="_on_ColorGroups_group_size_changed"]

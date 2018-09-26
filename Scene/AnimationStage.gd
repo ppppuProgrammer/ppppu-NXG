@@ -15,6 +15,7 @@ onready var _animTree = $AnimationTree
 const AnimationEditor = preload("res://UI/Animation Editor.gd")
 onready var _graph:AnimationEditor = $GraphLayer/Graph
 func _ready():
+	Log.append("Initializing Animation Stage")
 	#Set up the Animation Editor Graph
 	_graph.setup(_masterPlayer)
 	_graph.connect("blend_tree_connection_changed", self, "_update_activated_character_parts")
@@ -27,6 +28,7 @@ func _ready():
 	#Create character parts for animations currently in the master player
 	for animationName in _masterPlayer.get_animation_list():
 		var animation:Animation = _masterPlayer.get_animation(animationName)
+		Log.append("Adding animation (%s)" % animationName)
 		for i in range(0, animation.get_track_count()):
 			var partNames = deduceCharPartNames(animation.track_get_path(i))
 		
@@ -87,7 +89,6 @@ func deactivate_character_part(partName:String):
 		charPart = get_node(partName)
 	if charPart:
 		_standbyCharParts[partName] = charPart
-		print("%s on standby" % charPart.name)
 		charPart.visible = false
 		charPart.set_process(false)
 

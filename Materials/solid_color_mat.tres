@@ -1,13 +1,15 @@
-[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+[gd_resource type="ShaderMaterial" load_steps=4 format=2]
 
 [ext_resource path="res://Shaders/Solid Color.shader" type="Shader" id=1]
-[ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=2]
+[ext_resource path="res://Color/Color Presets/Default/Lrg_Texture2.tres" type="Texture" id=2]
+[ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=3]
 
 [resource]
 
 resource_name = "Solid Color Material"
 render_priority = 0
 shader = ExtResource( 1 )
-shader_param/sectionReferenceTex = ExtResource( 2 )
-_sections_unfolded = [ "Resource", "shader", "shader_param" ]
+shader_param/sectionReferenceTex = ExtResource( 3 )
+shader_param/color_group_texture = ExtResource( 2 )
+_sections_unfolded = [ "Resource", "shader", "shader_param", "shader_param/color_group_texture" ]
 
