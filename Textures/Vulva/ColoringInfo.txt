@@ -1,0 +1,5 @@
+Vulva_Clit:Solid;3,
+Vulva_SkinLineColor_2:Solid;
+Vulva_VulvaColor:Radial;1,;(0.23271049216971737, 0.3937749657710612);(0.23477034274988876, 0.3937749657710612);0.4814575383454425
+Vulva_SkinLineColor_1:Solid;
+Vulva_SkinHighlightColor:Solid;2,

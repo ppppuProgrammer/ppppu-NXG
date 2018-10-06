@@ -1,0 +1,2 @@
+HandLargeGrasp-SkinColor:Solid
+HandLargeGrasp-Outline:Solid

@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=2]
+[ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Textures/SideBoob-Large/SideBoobLarge-Outline.png" type="Texture" id=3]
+[ext_resource path="res://Textures/SideBoob-Large/SideBoobLarge-SkinHighlight.png" type="Texture" id=4]
+[ext_resource path="res://Textures/SideBoob-Large/SideBoobLarge-SkinColor.png" type="Texture" id=5]
+
+
+[node name="SideBoob-Large" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+variantName = "Large"
+[node name="SideBoobLarge-Outline" type="Sprite" parent="." index="0" ]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+
+[node name="SideBoobLarge-SkinHighlight" type="Sprite" parent="." index="1" ]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+
+[node name="SideBoobLarge-SkinColor" type="Sprite" parent="." index="2" ]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 5 )
+

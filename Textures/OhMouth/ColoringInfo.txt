@@ -1,0 +1,4 @@
+OhMouth_LipColor:Solid;1,
+Oh_Highlight:Solid;1,
+Oh_Inside:Solid;
+Oh_Outline:Solid;

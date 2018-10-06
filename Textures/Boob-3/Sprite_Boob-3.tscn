@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=2]
+[ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Textures/Boob-3/Boob3_Outline.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Boob-3/Boob3_SkinHighlightColor.png" type="Texture" id=4]
+[ext_resource path="res://Textures/Boob-3/Boob3_BreastColor.png" type="Texture" id=5]
+
+
+[node name="Boob-3" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+variantName = "3"
+[node name="Boob3_Outline" type="Sprite" parent="." index="0" ]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+
+[node name="Boob3_SkinHighlightColor" type="Sprite" parent="." index="1" ]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+
+[node name="Boob3_BreastColor" type="Sprite" parent="." index="2" ]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 5 )
+

@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+[ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Textures/Nipple-Small Anim6/NippleSmallAnim6-Outline.png" type="Texture" id=3]
+[ext_resource path="res://Textures/Nipple-Small Anim6/NippleSmallAnim6-NippleCOlor.png" type="Texture" id=4]
+
+
+[node name="Nipple-Small Anim6" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+variantName = "Small Anim6"
+[node name="NippleSmallAnim6-Outline" type="Sprite" parent="." index="0" ]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+
+[node name="NippleSmallAnim6-NippleCOlor" type="Sprite" parent="." index="1" ]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+

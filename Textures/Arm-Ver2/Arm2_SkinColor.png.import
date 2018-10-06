@@ -2,13 +2,11 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Arm2_SkinColor.png-cfd9aa1156a1e7194d91bc6d0432e908.stex"
+valid=false
 
 [deps]
 
 source_file="res://Textures/Arm-Ver2/Arm2_SkinColor.png"
-dest_files=[ "res://.import/Arm2_SkinColor.png-cfd9aa1156a1e7194d91bc6d0432e908.stex" ]
-
 [params]
 
 compress/mode=0

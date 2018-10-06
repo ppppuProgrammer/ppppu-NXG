@@ -1,0 +1,2 @@
+NippleSmallAnim6-Outline:Solid
+NippleSmallAnim6-NippleCOlor:Solid

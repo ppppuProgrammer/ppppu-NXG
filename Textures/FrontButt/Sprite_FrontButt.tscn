@@ -1,9 +1,21 @@
-[gd_scene load_steps=3 format=2]
-
+[gd_scene load_steps=7 format=2]
 [ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
 [ext_resource path="res://Textures/FrontButt/FrontButt_SkinColor.png" type="Texture" id=3]
 [ext_resource path="res://Textures/FrontButt/FrontButt_Outline.png" type="Texture" id=4]
+[ext_resource path="res://Shaders/Apply Color Group.shader" type="Shader" id=5]
+[ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=6]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+render_priority = 0
+shader = ExtResource( 5 )
+shader_param/color_method = 0
+shader_param/sectionReferenceTex = ExtResource( 6 )
+shader_param/s1_UV1 = null
+shader_param/s1_UV2 = null
+shader_param/s1_radius = null
+shader_param/s1_use_focal_point = null
 
 [node name="FrontButt" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
@@ -13,11 +25,11 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
-offset = Vector2( -10.775000, 276.825000 )
+material = SubResource( 1 )
+
 [node name="FrontButt_Outline" type="Sprite" parent="." index="1" groups=["ColorGrp_Outline",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
-offset = Vector2( -10.775000, 276.825000 )
 

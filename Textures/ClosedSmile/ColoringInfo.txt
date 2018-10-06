@@ -1,0 +1,3 @@
+ClosedSmile_LipColor:Solid;1,
+ClosedSmile_Outline:Solid;
+ClosedSmile_Highlight:Solid;1,

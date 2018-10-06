@@ -1,0 +1,3 @@
+UpperLeg_SkinColor:Solid;1,
+UpperLeg_Outline:Solid;
+UpperLeg_SkinHighlightColor:Solid;2,

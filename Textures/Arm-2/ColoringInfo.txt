@@ -1,0 +1,2 @@
+Arm2_SkinColor:Solid
+Arm2_Outline:Solid

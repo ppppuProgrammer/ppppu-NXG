@@ -1,0 +1,2 @@
+Hand_SkinColor:Solid;1,
+Hand_Outline:Solid;

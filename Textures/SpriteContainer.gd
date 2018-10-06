@@ -3,7 +3,7 @@ extends Node2D
 # A node that will hold various sprite nodes to complete a variant
 # of a character part.
 export var variantName:String = "Default" setget , _getVariantName
-export var gradientData:Dictionary
+#export var gradientData:Dictionary
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.

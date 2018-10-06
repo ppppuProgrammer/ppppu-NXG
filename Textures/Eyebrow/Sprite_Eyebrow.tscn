@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=2]
-
+[gd_scene load_steps=4 format=2]
 [ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
 [ext_resource path="res://Textures/Eyebrow/EyebrowShape_0.0.png" type="Texture" id=3]
+
 
 [node name="Eyebrow" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
@@ -12,5 +12,4 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
-offset = Vector2( 2.275000, -0.225000 )
 

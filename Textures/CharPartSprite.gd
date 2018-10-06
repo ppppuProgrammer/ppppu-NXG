@@ -1,6 +1,13 @@
 extends Sprite
 
 var color_group_texture:LargeTexture
+export (String) var material_group = null
+#export (Array) var _defaultMaterialList 
+func _ready():
+	var groups:Array = get_groups()
+	if groups.size() > 0:
+		pass
+	#print("%s: %s" % [self.name, self.get_groups()])
 
 func change_color_mat_type(matType:int):
 	pass

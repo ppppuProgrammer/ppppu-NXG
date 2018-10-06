@@ -1,0 +1,4 @@
+MaleShaft2_MaleSkinColor_1:Solid
+MaleShaft2_Gradient:Radial,(0.5414012768412712, -0.2466076987724098),(0.5414012768412712, -0.2466076987724098),0.9739271722290116
+MaleShaft2_Outline:Solid
+MaleShaft_Squiggly:Solid

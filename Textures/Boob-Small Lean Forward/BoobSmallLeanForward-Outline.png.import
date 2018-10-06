@@ -1,0 +1,31 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/BoobSmallLeanForward-Outline.png-1a1514248397262155814518b1d4be89.stex"
+
+[deps]
+
+source_file="res://Textures/Boob-Small Lean Forward/BoobSmallLeanForward-Outline.png"
+dest_files=[ "res://.import/BoobSmallLeanForward-Outline.png-1a1514248397262155814518b1d4be89.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=2
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=true
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

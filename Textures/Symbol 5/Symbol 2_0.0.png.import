@@ -1,0 +1,31 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Symbol 2_0.0.png-fcf0e499c7787b931094f6cad11fb01e.stex"
+
+[deps]
+
+source_file="res://Textures/Symbol 5/Symbol 2_0.0.png"
+dest_files=[ "res://.import/Symbol 2_0.0.png-fcf0e499c7787b931094f6cad11fb01e.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=2
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=true
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0
