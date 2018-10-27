@@ -1,3 +1,0 @@
-ForearmLargeGrasp-SkinColor:Solid
-ForearmLargeGrasp-Outline:Solid
-ForearmLargeGrasp-SkinHighlightColor:Solid

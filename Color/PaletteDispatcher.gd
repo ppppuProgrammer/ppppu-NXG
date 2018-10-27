@@ -32,10 +32,13 @@ func _on_ColorGroups_group_added(group_name):
 func dispatch_character_palette(character_palette:Dictionary):
 	var tex_piece:GradientTexture
 	for group in character_palette.keys():
+		print(group)
 		var largeTex:LargeTexture = _groupTextures[group]
 		for gradient_idx in range(0, character_palette[group].size()):
 			var gradient:Gradient = character_palette[group][gradient_idx]
 			tex_piece = (largeTex.get_piece_texture(gradient_idx) as GradientTexture)
 			tex_piece.gradient = gradient
 		#Now emit the changed large texture
-		get_tree().call_group(CGROUP_PREFIX % group, "set_color_texture", -1, largeTex)
+		#print(get_tree().has_group(CGROUP_PREFIX % group))
+		#print(get_tree().get_nodes_in_group(CGROUP_PREFIX % group))
+		get_tree().call_group(CGROUP_PREFIX % group, "set_color_group_texture", -1, largeTex)

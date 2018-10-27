@@ -1,2 +1,0 @@
-Arm3_SkinColor:Solid
-Arm3_Outline:Solid

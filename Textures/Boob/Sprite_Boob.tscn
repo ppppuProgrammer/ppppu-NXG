@@ -16,7 +16,8 @@ shader_param/sectionReferenceTex = ExtResource( 7 )
 shader_param/s2_UV1 = null
 shader_param/s2_UV2 = null
 shader_param/s2_radius = null
-shader_param/s2_use_focal_point = null
+shader_param/s2_use_focus_point = null
+shader_param/s2_gradient_transform = null
 
 [sub_resource type="ShaderMaterial" id=2]
 
@@ -27,22 +28,26 @@ shader_param/sectionReferenceTex = ExtResource( 7 )
 shader_param/s1_UV1 = null
 shader_param/s1_UV2 = null
 shader_param/s1_radius = null
-shader_param/s1_use_focal_point = null
+shader_param/s1_use_focus_point = null
+shader_param/s1_gradient_transform = null
 
 [node name="Boob" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Default"
+
 [node name="Boob_Outline" type="Sprite" parent="." index="0" groups=["ColorGrp_Outline",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( -13.950000, -7.375000 )
 
 [node name="Boob_SkinHighlightColor" type="Sprite" parent="." index="1" groups=["ColorGrp_Highlight",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( -13.950000, -7.375000 )
 material = SubResource( 1 )
 
 [node name="Boob_SkinColor" type="Sprite" parent="." index="2" groups=["ColorGrp_Body",]]
@@ -50,5 +55,6 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 5 )
+offset = Vector2( -13.950000, -7.375000 )
 material = SubResource( 2 )
 

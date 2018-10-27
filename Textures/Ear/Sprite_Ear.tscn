@@ -12,19 +12,22 @@ render_priority = 0
 shader = ExtResource( 5 )
 shader_param/color_method = 2
 shader_param/sectionReferenceTex = ExtResource( 6 )
-shader_param/s3_UV1 = Vector2(0.3218848029208847, 0.547026208570224)
-shader_param/s3_UV2 = Vector2(0.3218848029208847, 0.547026208570224)
-shader_param/s3_radius = 0.8743601887808228
-shader_param/s3_use_focal_point = False
+shader_param/s3_UV1 = Vector2(65.58115687, 92.94836485)
+shader_param/s3_UV2 = Vector2(65.58115687, 92.94836485)
+shader_param/s3_radius = 141.0544611963
+shader_param/s3_use_focus_point = false
+shader_param/s3_gradient_transform = Basis(0.97237, -0.23465, 0, -0.15526, 1.25307, 0, 0.1, -1.749, 1)
 
 [node name="Ear" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Default"
+
 [node name="Ear_SkinColor" type="Sprite" parent="." index="0" groups=["ColorGrp_Body",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( 6.950000, -1.700000 )
 material = SubResource( 1 )
 
 [node name="Ear_Outline" type="Sprite" parent="." index="1" groups=["ColorGrp_Outline",]]
@@ -32,4 +35,5 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( 6.950000, -1.700000 )
 

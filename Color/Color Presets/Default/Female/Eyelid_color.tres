@@ -2,6 +2,6 @@
 
 [resource]
 
-resource_name = "Head Default 2"
-offsets = PoolRealArray( 0.0 )
-colors = PoolColorArray( 0.941176, 0.647059, 0.525490, 1.0 )
+offsets = PoolRealArray( 0 )
+colors = PoolColorArray( 0.941176, 0.647059, 0.52549, 1 )
+

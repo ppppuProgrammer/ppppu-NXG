@@ -1,2 +1,0 @@
-HandLargeGrasp-SkinColor
-HandLargeGrasp-Outline

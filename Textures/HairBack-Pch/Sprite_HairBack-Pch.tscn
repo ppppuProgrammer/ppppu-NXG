@@ -16,7 +16,8 @@ shader_param/sectionReferenceTex = ExtResource( 7 )
 shader_param/s6_UV1 = null
 shader_param/s6_UV2 = null
 shader_param/s6_radius = null
-shader_param/s6_use_focal_point = null
+shader_param/s6_use_focus_point = null
+shader_param/s6_gradient_transform = null
 
 [sub_resource type="ShaderMaterial" id=2]
 
@@ -27,16 +28,19 @@ shader_param/sectionReferenceTex = ExtResource( 7 )
 shader_param/s7_UV1 = null
 shader_param/s7_UV2 = null
 shader_param/s7_radius = null
-shader_param/s7_use_focal_point = null
+shader_param/s7_use_focus_point = null
+shader_param/s7_gradient_transform = null
 
 [node name="HairBack-Pch" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Pch"
+
 [node name="HairBack_PchSeg3" type="Sprite" parent="." index="0" groups=["ColorGrp_Hair",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( -161.800000, 156.025000 )
 material = SubResource( 1 )
 
 [node name="HairBack_Pch_Outline" type="Sprite" parent="." index="1" groups=["ColorGrp_Outline",]]
@@ -44,11 +48,13 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( -161.800000, 156.025000 )
 
 [node name="HairBack_PchSeg2" type="Sprite" parent="." index="2" groups=["ColorGrp_Hair",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 5 )
+offset = Vector2( -161.800000, 156.025000 )
 material = SubResource( 2 )
 

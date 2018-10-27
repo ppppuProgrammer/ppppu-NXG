@@ -6,8 +6,8 @@ Hips/Hips_Highlight,Highlight
 Hips/Hips_SkinColor,Body
 ShaftMask/ShaftMaskShape_0.0,UNUSED
 Nipple/Nipple_Outline,Outline
-Nipple/Nipple_NippleColor,NippleColor
-Eyelid/Eyelid_EyelidColor,EyelidColor
+Nipple/Nipple_NippleColor,Body
+Eyelid/Eyelid_EyelidColor,Head
 Eyelid/Eyelid_SkinLineColor,Outline
 Navel/Navel_Outline,Outline
 Navel/Navel_SkinColor,Body
@@ -104,8 +104,8 @@ Boob-Ver2/Boob2_BreastColor,Body
 Boob-Ver2/Boob2_SkinHighlightColor,Highlight
 Boob-Ver2/Boob2_Outline,Outline
 BoobHighlight/BoobHighlight_SkinHighlightColor,Highlight
-Sclera-Ver2/Sclera2_ScleraColor,ScleraColor
-Sclera-Ver2/Sclera2_EyelidColor,EyelidColor
+Sclera-Ver2/Sclera2_ScleraColor,Eye
+Sclera-Ver2/Sclera2_EyelidColor,Head
 LowerBackAngled/LowerBackAngled_SkinColor,Body
 LowerBackAngled/LowerBackAngled_Outline,Outline
 VulvaAngled/VulvaAngled_VulvaColor_3,UNUSED
@@ -191,8 +191,8 @@ Hair2-Pch/Hair2_PchSeg2,Hair
 Chest/Chest_Outline,Outline
 Chest/Chest_SkinColor,Body
 Areola/Areola_Highlight,Highlight
-Areola/Areola_AreolaColor,AreolaColor
-Sclera/Sclera_EyelidColor,Eye
+Areola/Areola_AreolaColor,Body
+Sclera/Sclera_EyelidColor,Head
 Sclera/Sclera_ScleraColor,Eye
 HairFront-Angled Pch/HairFrontAngled_Pch_Outline,Outline
 HairFront-Angled Pch/HairFrontAngled_PchSeg2,Hair

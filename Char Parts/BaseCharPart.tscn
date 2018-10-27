@@ -3,8 +3,6 @@
 [ext_resource path="res://Char Parts/CharacterPart.gd" type="Script" id=1]
 [ext_resource path="res://Char Parts/CharPartLayer.gd" type="Script" id=2]
 
-
-
 [node name="BaseCharPart" type="Node2D"]
 light_mask = 0
 script = ExtResource( 1 )

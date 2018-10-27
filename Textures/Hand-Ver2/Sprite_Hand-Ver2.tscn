@@ -15,11 +15,13 @@ shader_param/sectionReferenceTex = ExtResource( 6 )
 shader_param/s1_UV1 = null
 shader_param/s1_UV2 = null
 shader_param/s1_radius = null
-shader_param/s1_use_focal_point = null
+shader_param/s1_use_focus_point = null
+shader_param/s1_gradient_transform = null
 
 [node name="Hand-Ver2" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Ver2"
+
 [node name="Hand2_SkinColor" type="Sprite" parent="." index="0" groups=["ColorGrp_Body",]]
 script = ExtResource( 2 )
 use_parent_material = false

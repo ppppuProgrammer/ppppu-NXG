@@ -1,2 +1,0 @@
-Hand2_SkinColor
-Hand2_Outline

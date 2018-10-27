@@ -16,7 +16,8 @@ shader_param/sectionReferenceTex = ExtResource( 7 )
 shader_param/s2_UV1 = null
 shader_param/s2_UV2 = null
 shader_param/s2_radius = null
-shader_param/s2_use_focal_point = null
+shader_param/s2_use_focus_point = null
+shader_param/s2_gradient_transform = null
 
 [sub_resource type="ShaderMaterial" id=2]
 
@@ -24,14 +25,16 @@ render_priority = 0
 shader = ExtResource( 6 )
 shader_param/color_method = 2
 shader_param/sectionReferenceTex = ExtResource( 7 )
-shader_param/s3_UV1 = Vector2(0.5391708390553859, 0.4908072332011654)
-shader_param/s3_UV2 = Vector2(1.0139419264656861, 0.4908072332011654)
-shader_param/s3_radius = 0.6138233556731456
-shader_param/s3_use_focal_point = True
+shader_param/s3_UV1 = Vector2(173.27975231000002, 169.56908139)
+shader_param/s3_UV2 = Vector2(186.36279525080002, 142.8762972148)
+shader_param/s3_radius = 195.3379640403
+shader_param/s3_use_focus_point = true
+shader_param/s3_gradient_transform = Basis(0.44016, -0.89804, 0, 1.39581, 0.74889, 0, 2.05, 2.1, 1)
 
 [node name="Boob-Ver2" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Ver2"
+
 [node name="Boob2_Outline" type="Sprite" parent="." index="0" groups=["ColorGrp_Outline",]]
 script = ExtResource( 2 )
 use_parent_material = false

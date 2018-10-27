@@ -1,3 +1,0 @@
-BoobSmallLeanForward-Outline:Solid
-BoobSmallLeanForward-SkinHighlightColor:Solid
-BoobSmallLeanForward-SkinColor:Solid

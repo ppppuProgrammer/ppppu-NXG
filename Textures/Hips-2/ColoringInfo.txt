@@ -1,3 +1,0 @@
-Hips2_SkinColor:Solid
-Hips2_Outline:Solid
-Hips2_Highlight:Solid

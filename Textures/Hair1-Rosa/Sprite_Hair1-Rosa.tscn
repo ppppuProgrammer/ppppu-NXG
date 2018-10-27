@@ -12,19 +12,22 @@ render_priority = 0
 shader = ExtResource( 5 )
 shader_param/color_method = 1
 shader_param/sectionReferenceTex = ExtResource( 6 )
-shader_param/s3_UV1 = Vector2(0.5211267565596616, -0.0388849429608708)
-shader_param/s3_UV2 = Vector2(0.4775928260362499, 1.0388849372787914)
+shader_param/s3_UV1 = Vector2(120.299, 179.8115)
+shader_param/s3_UV2 = Vector2(118.59899999999999, 255.68650000000002)
 shader_param/s3_radius = null
-shader_param/s3_use_focal_point = null
+shader_param/s3_use_focus_point = null
+shader_param/s3_gradient_transform = null
 
 [node name="Hair1-Rosa" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Rosa"
+
 [node name="Hair1_RosaSeg1" type="Sprite" parent="." index="0" groups=["ColorGrp_Hair",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( -2.375000, -6.600000 )
 material = SubResource( 1 )
 
 [node name="Hair1_Rosa_Outline" type="Sprite" parent="." index="1" groups=["ColorGrp_Outline",]]
@@ -32,4 +35,5 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( -2.375000, -6.600000 )
 

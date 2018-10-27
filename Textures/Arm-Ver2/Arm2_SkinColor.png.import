@@ -2,11 +2,13 @@
 
 importer="texture"
 type="StreamTexture"
-valid=false
+path="res://.import/Arm2_SkinColor.png-cfd9aa1156a1e7194d91bc6d0432e908.stex"
 
 [deps]
 
 source_file="res://Textures/Arm-Ver2/Arm2_SkinColor.png"
+dest_files=[ "res://.import/Arm2_SkinColor.png-cfd9aa1156a1e7194d91bc6d0432e908.stex" ]
+
 [params]
 
 compress/mode=0
@@ -16,7 +18,7 @@ compress/bptc_ldr=0
 compress/normal_map=2
 flags/repeat=0
 flags/filter=true
-flags/mipmaps=true
+flags/mipmaps=false
 flags/anisotropic=true
 flags/srgb=2
 process/fix_alpha_border=true

@@ -2,11 +2,13 @@
 
 importer="texture"
 type="StreamTexture"
-valid=false
+path="res://.import/MaleBody_MaleSkinColor.png-8fa7e96b7df315c4ac5c3fbdffbaeda6.stex"
 
 [deps]
 
 source_file="res://Textures/MaleBody/MaleBody_MaleSkinColor.png"
+dest_files=[ "res://.import/MaleBody_MaleSkinColor.png-8fa7e96b7df315c4ac5c3fbdffbaeda6.stex" ]
+
 [params]
 
 compress/mode=0
@@ -16,7 +18,7 @@ compress/bptc_ldr=0
 compress/normal_map=2
 flags/repeat=0
 flags/filter=true
-flags/mipmaps=true
+flags/mipmaps=false
 flags/anisotropic=true
 flags/srgb=2
 process/fix_alpha_border=true

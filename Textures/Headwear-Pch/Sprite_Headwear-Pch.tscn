@@ -7,9 +7,11 @@
 [node name="Headwear-Pch" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Pch"
+
 [node name="Peach Crown_0.0" type="Sprite" parent="." index="0" groups=["ColorGrp_UNUSED",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( 0.000000, -0.175000 )
 

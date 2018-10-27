@@ -16,7 +16,8 @@ shader_param/sectionReferenceTex = ExtResource( 7 )
 shader_param/s7_UV1 = null
 shader_param/s7_UV2 = null
 shader_param/s7_radius = null
-shader_param/s7_use_focal_point = null
+shader_param/s7_use_focus_point = null
+shader_param/s7_gradient_transform = null
 
 [sub_resource type="ShaderMaterial" id=2]
 
@@ -27,11 +28,13 @@ shader_param/sectionReferenceTex = ExtResource( 7 )
 shader_param/s1_UV1 = null
 shader_param/s1_UV2 = null
 shader_param/s1_radius = null
-shader_param/s1_use_focal_point = null
+shader_param/s1_use_focus_point = null
+shader_param/s1_gradient_transform = null
 
 [node name="FaceAngled-Ver3" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Ver3"
+
 [node name="FaceAngled3_HairAngledColor" type="Sprite" parent="." index="0" groups=["ColorGrp_Hair",]]
 script = ExtResource( 2 )
 use_parent_material = false

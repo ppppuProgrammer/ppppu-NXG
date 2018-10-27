@@ -15,21 +15,25 @@ shader_param/sectionReferenceTex = ExtResource( 6 )
 shader_param/s4_UV1 = null
 shader_param/s4_UV2 = null
 shader_param/s4_radius = null
-shader_param/s4_use_focal_point = null
+shader_param/s4_use_focus_point = null
+shader_param/s4_gradient_transform = null
 
 [node name="Nipple" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Default"
+
 [node name="Nipple_Outline" type="Sprite" parent="." index="0" groups=["ColorGrp_Outline",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( 19.250000, 27.500000 )
 
-[node name="Nipple_NippleColor" type="Sprite" parent="." index="1" groups=["ColorGrp_NippleColor",]]
+[node name="Nipple_NippleColor" type="Sprite" parent="." index="1" groups=["ColorGrp_Body",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( 19.250000, 27.500000 )
 material = SubResource( 1 )
 

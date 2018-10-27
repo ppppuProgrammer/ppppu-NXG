@@ -1,43 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=3 format=2]
 [ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
-[ext_resource path="res://Textures/Symbol 5/Symbol 2_4.0.png" type="Texture" id=3]
-[ext_resource path="res://Textures/Symbol 5/Symbol 2_3.0.png" type="Texture" id=4]
-[ext_resource path="res://Textures/Symbol 5/Symbol 2_2.0.png" type="Texture" id=5]
-[ext_resource path="res://Textures/Symbol 5/Symbol 2_1.0.png" type="Texture" id=6]
-[ext_resource path="res://Textures/Symbol 5/Symbol 2_0.0.png" type="Texture" id=7]
 
 
 [node name="Symbol 5" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Default"
-[node name="Symbol 2_4.0" type="Sprite" parent="." index="0" ]
-script = ExtResource( 2 )
-use_parent_material = false
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 3 )
-
-[node name="Symbol 2_3.0" type="Sprite" parent="." index="1" ]
-script = ExtResource( 2 )
-use_parent_material = false
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 4 )
-
-[node name="Symbol 2_2.0" type="Sprite" parent="." index="2" ]
-script = ExtResource( 2 )
-use_parent_material = false
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 5 )
-
-[node name="Symbol 2_1.0" type="Sprite" parent="." index="3" ]
-script = ExtResource( 2 )
-use_parent_material = false
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 6 )
-
-[node name="Symbol 2_0.0" type="Sprite" parent="." index="4" ]
-script = ExtResource( 2 )
-use_parent_material = false
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 7 )
 

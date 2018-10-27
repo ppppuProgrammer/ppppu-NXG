@@ -60,7 +60,7 @@ slot/5/right_enabled = false
 slot/5/right_type = 0
 slot/5/right_color = Color( 1, 1, 1, 1 )
 script = ExtResource( 1 )
-_sections_unfolded = [ "Rect", "slot" ]
+_sections_unfolded = [ "Mouse", "Rect", "slot", "slot/0" ]
 
 [node name="in" type="Label" parent="."]
 anchor_left = 0.0

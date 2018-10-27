@@ -16,7 +16,8 @@ shader_param/sectionReferenceTex = ExtResource( 7 )
 shader_param/s1_UV1 = null
 shader_param/s1_UV2 = null
 shader_param/s1_radius = null
-shader_param/s1_use_focal_point = null
+shader_param/s1_use_focus_point = null
+shader_param/s1_gradient_transform = null
 
 [sub_resource type="ShaderMaterial" id=2]
 
@@ -24,19 +25,22 @@ render_priority = 0
 shader = ExtResource( 6 )
 shader_param/color_method = 2
 shader_param/sectionReferenceTex = ExtResource( 7 )
-shader_param/s2_UV1 = Vector2(0.4500330346842706, -1.1744444490233859)
-shader_param/s2_UV2 = Vector2(0.4500330346842706, -1.1744444490233859)
-shader_param/s2_radius = 1.6478393701854823
-shader_param/s2_use_focal_point = False
+shader_param/s2_UV1 = Vector2(226.26297, 0.8999999999999986)
+shader_param/s2_UV2 = Vector2(226.26297, 0.8999999999999986)
+shader_param/s2_radius = 649.4108757255
+shader_param/s2_use_focus_point = false
+shader_param/s2_gradient_transform = Basis(1, 0, 0, 0, 1, 0, 0, 0, 1)
 
 [node name="HairFront-Angled Pch" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Angled Pch"
+
 [node name="HairFrontAngled_PchSeg3" type="Sprite" parent="." index="0" groups=["ColorGrp_Hair",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( 0.350000, -0.150000 )
 material = SubResource( 1 )
 
 [node name="HairFrontAngled_PchSeg2" type="Sprite" parent="." index="1" groups=["ColorGrp_Hair",]]
@@ -44,6 +48,7 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( 0.350000, -0.150000 )
 material = SubResource( 2 )
 
 [node name="HairFrontAngled_Pch_Outline" type="Sprite" parent="." index="2" groups=["ColorGrp_Outline",]]
@@ -51,4 +56,5 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 5 )
+offset = Vector2( 0.350000, -0.150000 )
 

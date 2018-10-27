@@ -21,12 +21,12 @@ func remove(id:int):
 		_characters.remove(id)
 		emit_signal("character_removed", id)
 	
-func swap(id:int, new_id:int):
-	if min(id, new_id) >= 0 and max(id, new_id) < _characters.size():
+func swap(old_id:int, new_id:int):
+	if min(old_id, new_id) >= 0 and max(old_id, new_id) < _characters.size():
 		var name2:String = _characters[new_id]
-		_characters[new_id] = _characters[id]
-		_characters[id] = name2
-		emit_signal("characters_swapped", id, new_id)
+		_characters[new_id] = _characters[old_id]
+		_characters[old_id] = name2
+		emit_signal("characters_swapped", old_id, new_id)
 	
 func get_id(character_name:String):
 	if character_name in _characters:

@@ -1,0 +1,88 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Color/Color Presets/Default/Female/Accessory-1_color.tres" type="Gradient" id=1]
+[ext_resource path="res://Color/Color Presets/Default/Female/Accessory-2_color.tres" type="Gradient" id=2]
+[ext_resource path="res://Color/Color Presets/Default/Female/Breast_color.tres" type="Gradient" id=3]
+[ext_resource path="res://Color/Color Presets/Default/Female/Clit_color.tres" type="Gradient" id=4]
+[ext_resource path="res://Color/Color Presets/Default/Female/Ear_color.tres" type="Gradient" id=5]
+[ext_resource path="res://Color/Color Presets/Default/Female/Iris_color.tres" type="Gradient" id=6]
+[ext_resource path="res://Color/Color Presets/Default/Female/Rosa/Hair/HairFrontAngled_RosaSeg2_color.tres" type="Gradient" id=7]
+[ext_resource path="res://Color/Color Presets/Unset_color.tres" type="Gradient" id=8]
+[ext_resource path="res://Color/Color Presets/Default/LargeTexExperiment.gd" type="Script" id=9]
+
+[sub_resource type="GradientTexture" id=1]
+
+flags = 4
+gradient = ExtResource( 1 )
+width = 128
+
+[sub_resource type="GradientTexture" id=2]
+
+flags = 4
+gradient = ExtResource( 2 )
+width = 128
+
+[sub_resource type="GradientTexture" id=3]
+
+flags = 4
+gradient = ExtResource( 3 )
+width = 128
+
+[sub_resource type="GradientTexture" id=4]
+
+flags = 4
+gradient = ExtResource( 4 )
+width = 128
+
+[sub_resource type="GradientTexture" id=5]
+
+flags = 4
+gradient = ExtResource( 5 )
+width = 128
+
+[sub_resource type="GradientTexture" id=6]
+
+flags = 4
+gradient = ExtResource( 6 )
+width = 128
+
+[sub_resource type="GradientTexture" id=7]
+
+flags = 4
+gradient = ExtResource( 7 )
+width = 128
+
+[sub_resource type="GradientTexture" id=8]
+
+flags = 4
+gradient = ExtResource( 8 )
+width = 128
+
+[sub_resource type="LargeTexture" id=9]
+
+flags = 4
+_data = [ Vector2( 0, 0 ), SubResource( 1 ), Vector2( 32, 0 ), SubResource( 2 ), Vector2( 64, 0 ), SubResource( 3 ), Vector2( 96, 0 ), SubResource( 4 ), Vector2( 128, 0 ), SubResource( 5 ), Vector2( 160, 0 ), SubResource( 6 ), Vector2( 192, 0 ), SubResource( 7 ), Vector2( 224, 0 ), SubResource( 8 ), Vector2( 256, 1 ) ]
+
+[sub_resource type="Gradient" id=10]
+
+offsets = PoolRealArray( 0, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture" id=11]
+
+flags = 4
+gradient = SubResource( 10 )
+width = 128
+
+[node name="Node2D" type="Sprite"]
+position = Vector2( 252.477, 65 )
+texture = SubResource( 9 )
+region_rect = Rect2( 342.021, -27, 24, 1 )
+script = ExtResource( 9 )
+_sections_unfolded = [ "Offset", "Region", "Transform", "largeTex", "texture" ]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 10 )
+texture = SubResource( 11 )
+_sections_unfolded = [ "Transform", "texture" ]
+

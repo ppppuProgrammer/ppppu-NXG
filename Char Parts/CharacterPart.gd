@@ -1,3 +1,4 @@
+tool
 extends Node2D
 
 export var initLoadTextures = PoolStringArray()
@@ -9,9 +10,6 @@ var _underTextures = []
 export var mainTexId:int = -1 setget _setMainTex
 export var overTexId:int = -1 setget _setOverTex
 export var underTexId:int = -1 setget _setUnderTex
-#export var mainTexName:String = "" setget , _getMainTexName
-#export var overTexName:String = "" setget , _getOverTexName
-#export var underTexName:String = "" setget , _getUnderTexName
 #Dictionaries to find the id of a variant's name
 var _variantLookup_main:Dictionary = {}
 var _variantLookup_over:Dictionary = {}
@@ -36,25 +34,14 @@ onready var _underSprite = $Underlay
 enum layers {UNDER = -1, MAIN, OVER }
 
 ### Masking properties START ###
-#For quick setup. Later remove this from this file
-var _maskFactory = null
-var maskTypes
 
-#The Mask type node that is being used to mask another Char Part
-var _mask:Light2D = null
-#The Masked type node that indicates that this Char Part is to be masked
-var _masked:Node = null
 ### Masking properties END ###
 #onready var AnimPlayer = $AnimationPlayer
 #Flag to indicate if the transform needs to be recalculated
 var recalcTransform = false
 var _validateOK = false
 signal sig_spriteSceneChanged(emitter, layer, spriteNode)
-signal sig_removeMasking
 
-func registerMaskingFactory(maskingFactory):
-	_maskFactory = maskingFactory
-	maskTypes = _maskFactory.maskTypes
 
 func _ready():
 	_variantLookup_main["None"] = -1
@@ -70,23 +57,7 @@ func _ready():
 	_setUnderTex(underTexId)
 
 ### Animation related START ###
-#Used to make the character part a mask, have it be masked, 
-#or disable anything to do with masking.
-func setupMasking(type:int, layer:int):
-	if type == maskTypes.MASKED:
-		if not _masked:
-			_masked = _maskFactory.createMasking(type, layer)
-			add_child(_masked)
-		else:
-			_masked.changeMaskingLayer(layer)
-	elif type == maskTypes.MASK:
-		if not _mask:
-			_mask = _maskFactory.createMasking(type, layer)
-			add_child(_mask)
-		else:
-			_mask.changeMaskingLayer(layer)
-	elif type == maskTypes.NONE:
-		emit_signal("sig_removeMasking")
+
 ### Animation related END ###
 
 ### Texture related START ###
@@ -186,11 +157,6 @@ func get_textures_in_use(layer):
 	
 ### Texture related END ###
 
-func changeLightMaskLayerForSprites(layer:int):
-	_mainSprite.changeChildLightMask(layer)
-	_overSprite.changeChildLightMask(layer)
-	_underSprite.changeChildLightMask(layer)
-	
 func setAnimPlayPosition(time):
 	$AnimationPlayer.seek(time, true)
 

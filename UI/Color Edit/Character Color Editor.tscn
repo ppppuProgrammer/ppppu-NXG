@@ -1,23 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Fonts/SM256-menu.tres" type="DynamicFontData" id=1]
-
-[sub_resource type="DynamicFont" id=1]
-
-size = 16
-outline_size = 0
-outline_color = Color( 1, 1, 1, 1 )
-use_mipmaps = false
-use_filter = false
-font_data = ExtResource( 1 )
-_sections_unfolded = [ "Resource", "font_data" ]
+[ext_resource path="res://UI/Color Edit/Character Color Editor.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/SM256 menu font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://UI/Gradient Editor/Gradient Editor.tscn" type="PackedScene" id=3]
 
 [sub_resource type="ButtonGroup" id=2]
 
 resource_local_to_scene = true
 resource_name = "Color Section"
 
-[node name="Control" type="Control"]
+[node name="Char Color Editor" type="Control"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -28,27 +20,26 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Anchor", "Focus", "Hint", "Mouse", "Rect", "Size Flags", "Theme", "custom_constants" ]
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchor_left = 0.0
 anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 20.0
-margin_top = 20.0
-margin_right = -20.0
-margin_bottom = -20.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 415.0
+margin_bottom = 272.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
+size_flags_horizontal = 0
 size_flags_vertical = 1
-custom_constants/margin_right = 20
-custom_constants/margin_top = 20
+custom_constants/margin_top = 10
 custom_constants/margin_left = 20
 custom_constants/margin_bottom = 20
-_sections_unfolded = [ "Margin", "Visibility", "custom_constants" ]
+_sections_unfolded = [ "Grow Direction", "Margin", "Rect", "Size Flags", "Visibility", "custom_constants" ]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 anchor_left = 0.0
@@ -56,82 +47,74 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 20.0
-margin_top = 20.0
-margin_right = 420.0
-margin_bottom = 660.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_constants/separation = 5
-alignment = 0
-_sections_unfolded = [ "custom_constants" ]
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 400.0
-margin_bottom = 100.0
+margin_top = 10.0
+margin_right = 415.0
+margin_bottom = 252.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
+custom_constants/separation = 8
 alignment = 0
-_sections_unfolded = [ "Size Flags" ]
+_sections_unfolded = [ "Grow Direction", "Size Flags", "custom_constants" ]
 
-[node name="CGroupSelect" type="ItemList" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 300.0
-margin_bottom = 100.0
+margin_right = 395.0
+margin_bottom = 16.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 2 )
+text = "Select a Color Group"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="CGroupSelect" type="ItemList" parent="MarginContainer/VBoxContainer"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 24.0
+margin_right = 395.0
+margin_bottom = 124.0
 rect_min_size = Vector2( 300, 100 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = true
 focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
-size_flags_horizontal = 0
+size_flags_horizontal = 3
 size_flags_vertical = 0
+custom_fonts/font = ExtResource( 2 )
 items = [  ]
 select_mode = 0
 allow_reselect = false
+max_columns = 2
+same_column_width = true
 icon_mode = 1
 fixed_icon_size = Vector2( 0, 0 )
-_sections_unfolded = [ "Columns", "Rect", "Size Flags" ]
+_sections_unfolded = [ "Columns", "Grow Direction", "Icon", "Rect", "Size Flags", "custom_constants", "custom_fonts", "custom_styles" ]
 
-[node name="Preview" type="Panel" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="SectionHBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 304.0
-margin_right = 400.0
-margin_bottom = 100.0
-rect_min_size = Vector2( 0, 100 )
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 3
-size_flags_vertical = 0
-_sections_unfolded = [ "Rect", "Size Flags" ]
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 105.0
-margin_right = 400.0
-margin_bottom = 127.0
+margin_top = 132.0
+margin_right = 395.0
+margin_bottom = 154.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -140,9 +123,9 @@ size_flags_horizontal = 3
 size_flags_vertical = 1
 custom_constants/separation = 15
 alignment = 0
-_sections_unfolded = [ "Size Flags", "custom_constants" ]
+_sections_unfolded = [ "Anchor", "Focus", "Grow Direction", "Hint", "Margin", "Mouse", "Rect", "Size Flags", "custom_constants" ]
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SectionHBox"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -156,14 +139,14 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 text = "Section"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts", "custom_fonts/font" ]
 
-[node name="CSectionBtn1" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="CSectionBtn1" type="Button" parent="MarginContainer/VBoxContainer/SectionHBox"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -178,7 +161,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
@@ -186,9 +169,9 @@ group = SubResource( 2 )
 text = "1"
 flat = false
 align = 1
-_sections_unfolded = [ "custom_fonts" ]
+_sections_unfolded = [ "Rect", "Size Flags", "custom_fonts" ]
 
-[node name="CSectionBtn2" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="CSectionBtn2" type="Button" parent="MarginContainer/VBoxContainer/SectionHBox"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -203,7 +186,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
@@ -212,7 +195,7 @@ text = "2"
 flat = false
 align = 1
 
-[node name="CSectionBtn3" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="CSectionBtn3" type="Button" parent="MarginContainer/VBoxContainer/SectionHBox"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -227,7 +210,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
@@ -236,7 +219,7 @@ text = "3"
 flat = false
 align = 1
 
-[node name="CSectionBtn4" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="CSectionBtn4" type="Button" parent="MarginContainer/VBoxContainer/SectionHBox"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -251,7 +234,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
@@ -260,7 +243,7 @@ text = "4"
 flat = false
 align = 1
 
-[node name="CSectionBtn5" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="CSectionBtn5" type="Button" parent="MarginContainer/VBoxContainer/SectionHBox"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -275,7 +258,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
@@ -284,7 +267,7 @@ text = "5"
 flat = false
 align = 1
 
-[node name="CSectionBtn6" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="CSectionBtn6" type="Button" parent="MarginContainer/VBoxContainer/SectionHBox"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -299,7 +282,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
@@ -308,7 +291,7 @@ text = "6"
 flat = false
 align = 1
 
-[node name="CSectionBtn7" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="CSectionBtn7" type="Button" parent="MarginContainer/VBoxContainer/SectionHBox"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -323,7 +306,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
@@ -332,13 +315,13 @@ text = "7"
 flat = false
 align = 1
 
-[node name="CSectionBtn8" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="CSectionBtn8" type="Button" parent="MarginContainer/VBoxContainer/SectionHBox"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 368.0
-margin_right = 400.0
+margin_right = 395.0
 margin_bottom = 22.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -347,7 +330,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = ExtResource( 2 )
 toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
@@ -357,20 +340,70 @@ flat = false
 align = 1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="GradientEdit" type="GradientEdit" parent="MarginContainer/VBoxContainer"]
+[node name="ColorMargin" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 132.0
-margin_right = 400.0
-margin_bottom = 164.0
+margin_top = 162.0
+margin_right = 395.0
+margin_bottom = 242.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
-focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
+size_flags_horizontal = 0
 size_flags_vertical = 1
-_sections_unfolded = [ "Rect" ]
+custom_constants/margin_left = 20
+_sections_unfolded = [ "Rect", "Size Flags", "custom_constants" ]
 
+[node name="ColorHBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ColorMargin"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 20.0
+margin_right = 395.0
+margin_bottom = 80.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 0
+size_flags_vertical = 1
+custom_constants/separation = 12
+alignment = 0
+_sections_unfolded = [ "Margin", "Size Flags", "custom_constants" ]
+
+[node name="ColorLabel" type="Label" parent="MarginContainer/VBoxContainer/ColorMargin/ColorHBox"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 32.0
+margin_right = 55.0
+margin_bottom = 48.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 2 )
+text = "Color"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Gradient Editor" parent="MarginContainer/VBoxContainer/ColorMargin/ColorHBox" instance=ExtResource( 3 )]
+anchor_right = 0.0
+margin_left = 67.0
+margin_right = 375.0
+
+[node name="PopupPanel" parent="MarginContainer/VBoxContainer/ColorMargin/ColorHBox/Gradient Editor" index="1"]
+visible = false
+
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/CGroupSelect" to="." method="_on_CGroupSelect_item_selected"]
+
+[editable path="MarginContainer/VBoxContainer/ColorMargin/ColorHBox/Gradient Editor"]

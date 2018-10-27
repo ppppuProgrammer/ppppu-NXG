@@ -17,6 +17,7 @@ func add(group_name:String):
 		emit_signal("group_added", group_name)
 		emit_signal("group_size_changed", _groups.size())
 	return id
+	
 func get_group_names() -> Array:
 	return _groups
 	

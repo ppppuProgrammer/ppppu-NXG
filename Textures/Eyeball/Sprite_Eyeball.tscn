@@ -17,7 +17,8 @@ shader_param/sectionReferenceTex = ExtResource( 8 )
 shader_param/s1_UV1 = null
 shader_param/s1_UV2 = null
 shader_param/s1_radius = null
-shader_param/s1_use_focal_point = null
+shader_param/s1_use_focus_point = null
+shader_param/s1_gradient_transform = null
 
 [sub_resource type="ShaderMaterial" id=2]
 
@@ -28,7 +29,8 @@ shader_param/sectionReferenceTex = ExtResource( 8 )
 shader_param/s5_UV1 = null
 shader_param/s5_UV2 = null
 shader_param/s5_radius = null
-shader_param/s5_use_focal_point = null
+shader_param/s5_use_focus_point = null
+shader_param/s5_gradient_transform = null
 
 [sub_resource type="ShaderMaterial" id=3]
 
@@ -39,16 +41,19 @@ shader_param/sectionReferenceTex = ExtResource( 8 )
 shader_param/s4_UV1 = null
 shader_param/s4_UV2 = null
 shader_param/s4_radius = null
-shader_param/s4_use_focal_point = null
+shader_param/s4_use_focus_point = null
+shader_param/s4_gradient_transform = null
 
 [node name="Eyeball" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Default"
+
 [node name="Iris_IrisColor" type="Sprite" parent="." index="0" groups=["ColorGrp_IrisColor",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( -0.125000, -0.125000 )
 material = SubResource( 1 )
 
 [node name="Eyeball_Outline" type="Sprite" parent="." index="1" groups=["ColorGrp_Outline",]]
@@ -56,12 +61,14 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( -0.125000, -0.125000 )
 
 [node name="Pupil_PupilColor" type="Sprite" parent="." index="2" groups=["ColorGrp_Eye",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 5 )
+offset = Vector2( -0.125000, -0.125000 )
 material = SubResource( 2 )
 
 [node name="Eyeball_Highlight" type="Sprite" parent="." index="3" groups=["ColorGrp_Highlight",]]
@@ -69,5 +76,6 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 6 )
+offset = Vector2( -0.125000, -0.125000 )
 material = SubResource( 3 )
 

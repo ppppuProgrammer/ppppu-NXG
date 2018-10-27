@@ -18,7 +18,8 @@ shader_param/sectionReferenceTex = ExtResource( 9 )
 shader_param/s3_UV1 = null
 shader_param/s3_UV2 = null
 shader_param/s3_radius = null
-shader_param/s3_use_focal_point = null
+shader_param/s3_use_focus_point = null
+shader_param/s3_gradient_transform = null
 
 [sub_resource type="ShaderMaterial" id=2]
 
@@ -26,10 +27,11 @@ render_priority = 0
 shader = ExtResource( 8 )
 shader_param/color_method = 2
 shader_param/sectionReferenceTex = ExtResource( 9 )
-shader_param/s1_UV1 = Vector2(0.23271049216971737, 0.3937749657710612)
-shader_param/s1_UV2 = Vector2(0.23477034274988876, 0.3937749657710612)
-shader_param/s1_radius = 0.4814575383454425
-shader_param/s1_use_focal_point = True
+shader_param/s1_UV1 = Vector2(38.750786, 26.4522945)
+shader_param/s1_UV2 = Vector2(39.232796, 26.4525885261)
+shader_param/s1_radius = 204.8427767988
+shader_param/s1_use_focus_point = true
+shader_param/s1_gradient_transform = Basis(1, 0.00061, 0, -0.00031, 0.70502, 0, 0, 3.85, 1)
 
 [sub_resource type="ShaderMaterial" id=3]
 
@@ -40,16 +42,19 @@ shader_param/sectionReferenceTex = ExtResource( 9 )
 shader_param/s2_UV1 = null
 shader_param/s2_UV2 = null
 shader_param/s2_radius = null
-shader_param/s2_use_focal_point = null
+shader_param/s2_use_focus_point = null
+shader_param/s2_gradient_transform = null
 
 [node name="Vulva" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Default"
+
 [node name="Vulva_Clit" type="Sprite" parent="." index="0" groups=["ColorGrp_Lower Body",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( 78.500000, 27.000000 )
 material = SubResource( 1 )
 
 [node name="Vulva_SkinLineColor_2" type="Sprite" parent="." index="1" groups=["ColorGrp_UNUSED",]]
@@ -57,12 +62,14 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( 78.500000, 27.000000 )
 
 [node name="Vulva_VulvaColor" type="Sprite" parent="." index="2" groups=["ColorGrp_Lower Body",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 5 )
+offset = Vector2( 78.500000, 27.000000 )
 material = SubResource( 2 )
 
 [node name="Vulva_SkinLineColor_1" type="Sprite" parent="." index="3" groups=["ColorGrp_UNUSED",]]
@@ -70,11 +77,13 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 6 )
+offset = Vector2( 78.500000, 27.000000 )
 
 [node name="Vulva_SkinHighlightColor" type="Sprite" parent="." index="4" groups=["ColorGrp_Highlight",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 7 )
+offset = Vector2( 78.500000, 27.000000 )
 material = SubResource( 3 )
 

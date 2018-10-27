@@ -1,43 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=3 format=2]
 [ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
-[ext_resource path="res://Textures/TransitionDiamondBG/Diamond_Transition_-_Color_9.png" type="Texture" id=3]
-[ext_resource path="res://Textures/TransitionDiamondBG/Diamond_Transition_-_Color_8.png" type="Texture" id=4]
-[ext_resource path="res://Textures/TransitionDiamondBG/Diamond_Transition_-_Color_7.png" type="Texture" id=5]
-[ext_resource path="res://Textures/TransitionDiamondBG/Diamond_Transition_-_Color_6.png" type="Texture" id=6]
-[ext_resource path="res://Textures/TransitionDiamondBG/Diamond_Transition_-_Color_5.png" type="Texture" id=7]
 
 
 [node name="TransitionDiamondBG" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Default"
-[node name="Diamond_Transition_-_Color_9" type="Sprite" parent="." index="0" ]
-script = ExtResource( 2 )
-use_parent_material = false
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 3 )
-
-[node name="Diamond_Transition_-_Color_8" type="Sprite" parent="." index="1" ]
-script = ExtResource( 2 )
-use_parent_material = false
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 4 )
-
-[node name="Diamond_Transition_-_Color_7" type="Sprite" parent="." index="2" ]
-script = ExtResource( 2 )
-use_parent_material = false
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 5 )
-
-[node name="Diamond_Transition_-_Color_6" type="Sprite" parent="." index="3" ]
-script = ExtResource( 2 )
-use_parent_material = false
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 6 )
-
-[node name="Diamond_Transition_-_Color_5" type="Sprite" parent="." index="4" ]
-script = ExtResource( 2 )
-use_parent_material = false
-scale = Vector2( 0.200000, 0.200000 )
-texture = ExtResource( 7 )
 

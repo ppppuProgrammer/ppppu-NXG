@@ -1,2 +1,0 @@
-Sclera2_EyelidColor:Solid
-Sclera2_ScleraColor:Solid

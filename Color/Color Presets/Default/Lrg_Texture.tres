@@ -1,0 +1,64 @@
+[gd_resource type="LargeTexture" load_steps=17 format=2]
+
+[ext_resource path="res://Color/Color Presets/Default/Female/Rosa/Hair/Hair1_RosaSeg1_color.tres" type="Gradient" id=1]
+[ext_resource path="res://Color/Color Presets/Default/Female/Rosa/Hair/Hair2_RosaSeg2_color.tres" type="Gradient" id=2]
+[ext_resource path="res://Color/Color Presets/Default/Female/Rosa/Hair/Hair2_RosaSeg3_color.tres" type="Gradient" id=3]
+[ext_resource path="res://Color/Color Presets/Default/Female/Rosa/Hair/Hair3_RosaSeg2_color.tres" type="Gradient" id=4]
+[ext_resource path="res://Color/Color Presets/Default/Female/Rosa/Hair/HairBack_RosaSeg2_color.tres" type="Gradient" id=5]
+[ext_resource path="res://Color/Color Presets/Default/Female/Rosa/Hair/HairBack_RosaSeg3_color.tres" type="Gradient" id=6]
+[ext_resource path="res://Color/Color Presets/Default/Female/Rosa/Hair/HairFrontAngled_RosaSeg2_color.tres" type="Gradient" id=7]
+[ext_resource path="res://Color/Color Presets/Unset_color.tres" type="Gradient" id=8]
+
+[sub_resource type="GradientTexture" id=1]
+
+flags = 4
+gradient = ExtResource( 1 )
+width = 128
+
+[sub_resource type="GradientTexture" id=2]
+
+flags = 4
+gradient = ExtResource( 2 )
+width = 128
+
+[sub_resource type="GradientTexture" id=3]
+
+flags = 4
+gradient = ExtResource( 3 )
+width = 128
+
+[sub_resource type="GradientTexture" id=4]
+
+flags = 4
+gradient = ExtResource( 4 )
+width = 128
+
+[sub_resource type="GradientTexture" id=5]
+
+flags = 4
+gradient = ExtResource( 5 )
+width = 128
+
+[sub_resource type="GradientTexture" id=6]
+
+flags = 4
+gradient = ExtResource( 6 )
+width = 128
+
+[sub_resource type="GradientTexture" id=7]
+
+flags = 4
+gradient = ExtResource( 7 )
+width = 128
+
+[sub_resource type="GradientTexture" id=8]
+
+flags = 4
+gradient = ExtResource( 8 )
+width = 128
+
+[resource]
+
+flags = 4
+_data = [ Vector2( 0, 0 ), SubResource( 1 ), Vector2( 32, 0 ), SubResource( 2 ), Vector2( 64, 0 ), SubResource( 3 ), Vector2( 96, 0 ), SubResource( 4 ), Vector2( 128, 0 ), SubResource( 5 ), Vector2( 160, 0 ), SubResource( 6 ), Vector2( 192, 0 ), SubResource( 7 ), Vector2( 224, 0 ), SubResource( 8 ), Vector2( 256, 1 ) ]
+

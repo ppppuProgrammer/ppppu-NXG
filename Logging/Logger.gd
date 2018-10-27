@@ -32,6 +32,7 @@ func _get_system_info():
 	for videoDriverNum in OS.get_video_driver_count():
 		videoStr += "\n\t%s" % OS.get_video_driver_name(videoDriverNum)
 	return "%s\n%s" % [systemStr, videoStr]
+	
 func append(text:String, log_level:int = ALL):
 	if log_level == DEBUG and !OS.is_debug_build():
 		return

@@ -5,6 +5,7 @@ extends Node
 # of 8 gradients
 var _palettes:Array = []
 var _color_groups_size:int = 0
+const _unset_color:Gradient = preload("res://Color/Color Presets/Unset_color.tres")
 signal full_group_name_request(color_group_id)
 #Adds
 
@@ -17,11 +18,19 @@ func get_character_palette(char_id:int, group_names:Array) -> Dictionary:
 	return character_palette
 
 func set_character_colors_for_group(character_id:int, group_id:int, gradients:Array):
-	_palettes[character_id][group_id] = gradients
-	#print(gradients[0].colors[0])
-	if _palettes[character_id][group_id].size() != GameConsts.SECTIONS_IN_COLOR_GROUP:
-		 _palettes[character_id][group_id].resize(GameConsts.SECTIONS_IN_COLOR_GROUP)
-		
+	if _palettes[character_id][group_id] == null:
+		_palettes[character_id][group_id] = _create_group_array()
+	
+	for x in range(gradients.size()):
+		if gradients[x] != null:
+			_palettes[character_id][group_id][x] = gradients[x].duplicate()
+
+func _create_group_array():
+	var array:Array = []
+	for x in range(GameConsts.SECTIONS_IN_COLOR_GROUP):
+		array.append(_unset_color.duplicate())
+	return array
+
 func get_character_colors_for_group(char_id:int, group_id:int):
 	return _palettes[char_id][group_id]
 	
@@ -41,8 +50,7 @@ func _on_Roster_character_added(char_id:int, char_name:String):
 	_palettes[char_id].resize(_color_groups_size)
 	#initialize the group arrays
 	for group_array in _palettes[char_id]:
-		group_array = []
-		group_array.resize(GameConsts.SECTIONS_IN_COLOR_GROUP)
+		group_array = _create_group_array()
 
 func _on_Roster_character_removed(char_id:int):
 	_palettes.remove(char_id)

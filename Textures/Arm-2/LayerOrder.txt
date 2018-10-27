@@ -1,2 +1,0 @@
-Arm2_SkinColor
-Arm2_Outline

@@ -12,10 +12,11 @@ render_priority = 0
 shader = ExtResource( 5 )
 shader_param/color_method = 2
 shader_param/sectionReferenceTex = ExtResource( 6 )
-shader_param/s5_UV1 = Vector2(0.5007633511330323, 0.5003344702418412)
-shader_param/s5_UV2 = Vector2(0.5007633511330323, 0.5003344702418412)
-shader_param/s5_radius = 0.1213917403021624
-shader_param/s5_use_focal_point = False
+shader_param/s5_UV1 = Vector2(81.996228, 74.7930845)
+shader_param/s5_UV2 = Vector2(81.996228, 74.7930845)
+shader_param/s5_radius = 90.7319761371
+shader_param/s5_use_focus_point = false
+shader_param/s5_gradient_transform = Basis(1, 0, 0, 0, 0.93047, 0, 0, 0, 1)
 
 [sub_resource type="ShaderMaterial" id=2]
 
@@ -26,16 +27,19 @@ shader_param/sectionReferenceTex = ExtResource( 6 )
 shader_param/s1_UV1 = null
 shader_param/s1_UV2 = null
 shader_param/s1_radius = null
-shader_param/s1_use_focal_point = null
+shader_param/s1_use_focus_point = null
+shader_param/s1_gradient_transform = null
 
 [node name="Areola" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Default"
-[node name="Areola_AreolaColor" type="Sprite" parent="." index="0" groups=["ColorGrp_AreolaColor",]]
+
+[node name="Areola_AreolaColor" type="Sprite" parent="." index="0" groups=["ColorGrp_Body",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( -0.125000, 0.000000 )
 material = SubResource( 1 )
 
 [node name="Areola_Highlight" type="Sprite" parent="." index="1" groups=["ColorGrp_Highlight",]]
@@ -43,5 +47,6 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( -0.125000, 0.000000 )
 material = SubResource( 2 )
 

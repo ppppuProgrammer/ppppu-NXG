@@ -32,8 +32,3 @@ func get_used_textures_list():
 				#and not the node itself.
 				texList.append(spriteNode)
 	return texList
-	
-func changeChildLightMask(layer:int):
-	for child in get_children():
-		child.changeLightMask(layer)
-		

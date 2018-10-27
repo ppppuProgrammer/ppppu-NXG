@@ -93,7 +93,7 @@ group = null
 flat = false
 align = 1
 items = [  ]
-_sections_unfolded = [ "Columns", "Grow Direction", "Icon", "Rect", "Size Flags", "Visibility", "custom_constants" ]
+_sections_unfolded = [ "Columns", "Grow Direction", "Icon", "Mouse", "Rect", "Size Flags", "Visibility", "custom_constants" ]
 
 [node name="Control2" type="Control" parent="."]
 anchor_left = 0.0

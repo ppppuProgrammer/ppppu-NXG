@@ -1,0 +1,45 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://Shaders/Apply Color Group.shader" type="Shader" id=1]
+[ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=2]
+
+[resource]
+
+render_priority = 0
+shader = ExtResource( 1 )
+shader_param/color_method = 1
+shader_param/s1_UV1 = Vector2( 0.5, 0.2 )
+shader_param/s1_UV2 = null
+shader_param/s1_radius = null
+shader_param/s1_use_focal_point = null
+shader_param/s2_UV1 = null
+shader_param/s2_UV2 = null
+shader_param/s2_radius = null
+shader_param/s2_use_focal_point = null
+shader_param/s3_UV1 = null
+shader_param/s3_UV2 = null
+shader_param/s3_radius = null
+shader_param/s3_use_focal_point = null
+shader_param/s4_UV1 = null
+shader_param/s4_UV2 = null
+shader_param/s4_radius = null
+shader_param/s4_use_focal_point = null
+shader_param/s5_UV1 = null
+shader_param/s5_UV2 = null
+shader_param/s5_radius = null
+shader_param/s5_use_focal_point = null
+shader_param/s6_UV1 = null
+shader_param/s6_UV2 = null
+shader_param/s6_radius = null
+shader_param/s6_use_focal_point = null
+shader_param/s7_UV1 = null
+shader_param/s7_UV2 = null
+shader_param/s7_radius = null
+shader_param/s7_use_focal_point = null
+shader_param/s8_UV1 = null
+shader_param/s8_UV2 = null
+shader_param/s8_radius = null
+shader_param/s8_use_focal_point = null
+shader_param/sectionReferenceTex = ExtResource( 2 )
+_sections_unfolded = [ "Resource", "Script", "shader", "shader_param", "shader_param/section1" ]
+

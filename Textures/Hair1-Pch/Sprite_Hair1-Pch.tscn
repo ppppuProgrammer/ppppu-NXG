@@ -15,16 +15,19 @@ shader_param/sectionReferenceTex = ExtResource( 6 )
 shader_param/s3_UV1 = null
 shader_param/s3_UV2 = null
 shader_param/s3_radius = null
-shader_param/s3_use_focal_point = null
+shader_param/s3_use_focus_point = null
+shader_param/s3_gradient_transform = null
 
 [node name="Hair1-Pch" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Pch"
+
 [node name="Hair1_PchSeg1" type="Sprite" parent="." index="0" groups=["ColorGrp_Hair",]]
 script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 3 )
+offset = Vector2( -2.375000, 14.325000 )
 material = SubResource( 1 )
 
 [node name="Hair1_Pch_Outline" type="Sprite" parent="." index="1" groups=["ColorGrp_Outline",]]
@@ -32,4 +35,5 @@ script = ExtResource( 2 )
 use_parent_material = false
 scale = Vector2( 0.200000, 0.200000 )
 texture = ExtResource( 4 )
+offset = Vector2( -2.375000, 14.325000 )
 

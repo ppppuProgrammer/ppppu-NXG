@@ -1,3 +1,0 @@
-BoobLargeSide-Outline:Solid
-BoobLargeSide-SkinHighlightColor:Solid
-BoobLargeSide-SkinColor:Solid

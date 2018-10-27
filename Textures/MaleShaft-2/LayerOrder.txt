@@ -1,4 +1,0 @@
-MaleShaft2_MaleSkinColor_1
-MaleShaft2_Gradient
-MaleShaft2_Outline
-MaleShaft_Squiggly
