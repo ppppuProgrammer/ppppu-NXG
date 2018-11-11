@@ -41,7 +41,6 @@ vec4 get_color_from_section(in int sectionNum){
 	} else if(sectionNum == 8){
 		return texture(section8, vec2(0.0,0.5));
 	} else {
-		return vec4(0.0);
 		return vec4(-1.0,-1.0,-1.0,-1.0);
 	}
 }

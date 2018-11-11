@@ -54,16 +54,19 @@ def createColorShaderParamBlock(sectionNum, paramsList):
     return '''shader_param/s{0:s}_UV1 = {1:s}
 shader_param/s{0:s}_UV2 = {2:s}
 shader_param/s{0:s}_radius = {3:s}
-shader_param/s{0:s}_use_focal_point = {4:s}'''.format(
+shader_param/s{0:s}_use_focus_point = {4:s}
+shader_param/s{0:s}_gradient_transform = {5:s}'''.format(
         sectionNum,
         "Vector2{}".format(paramsList[0]) if paramsList[0] != "null" else paramsList[0],
         "Vector2{}".format(paramsList[1]) if paramsList[1] != "null" else paramsList[1],
-        paramsList[2], paramsList[3])
+        paramsList[2], paramsList[3],
+        "Basis{}".format(paramsList[4]) if paramsList[4] != "null" else paramsList[4])
 
 
 NODE_STR = '''[node name="{:s}" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "{:s}"
+
 '''
 NODE_CHILD_STR = '''[node name=\"{0:s}\" type=\"Sprite\" parent=\".\" index=\"{1:d}\" {4:s}]
 script = ExtResource( 2 )
@@ -83,7 +86,7 @@ def createNodeText(objectName, imgList, offsets=None):
     for x in range(0, len(imgList)):
         clrGroup = ""
         imgRelPath = str(imgList[x].relative_to(
-            pyUtils.TEXTURES_PATH).with_suffix(""))
+            pyUtils.CHARACTER_PARTS_TEXTURE_PATH).with_suffix(""))
         if imgRelPath in colorGroupDict:
             group = colorGroupDict[imgRelPath]
             if group is not "UNUSED":
@@ -126,7 +129,7 @@ def main():
     pyUtils.VerifyProjectFolderStructure()
     #print(colorGroupDict)
     #Grab all the folders in the cwd and put them in a list
-    folders = [folder for folder in pyUtils.TEXTURES_PATH.iterdir() if folder.is_dir()]
+    folders = [folder for folder in pyUtils.CHARACTER_PARTS_TEXTURE_PATH.iterdir() if folder.is_dir()]
     
     for folder in folders:
         res_dict.clear()
@@ -182,7 +185,7 @@ def main():
                         colorLayerName, 0)
                     for colorSect in colorLayerSections:
                         subresources_text += createColorShaderParamBlock(
-                            colorSect, ["null", "null", "null", "null"]) + "\n"
+                            colorSect, ["null", "null", "null", "null", "null"]) + "\n"
                 elif colorLayerMethod == "Linear" or colorLayerMethod == "Radial":
                     subresources_text += createColorShaderBaseBlock(
                         colorLayerName,
@@ -190,11 +193,15 @@ def main():
                     colorLayerUV1 = colorLayerParts[3]
                     colorLayerUV2 = colorLayerParts[4]
                     colorLayerRadius = colorLayerParts[5] if colorLayerMethod == "Radial" else "null"
+                    colorTransform = colorLayerParts[6] if colorLayerMethod == "Radial" else colorLayerParts[5]
+                    if colorTransform != "null":
+                        colorTransformParts = re.split(", ", colorTransform[1:-1])
                     for colorSect in colorLayerSections:
                         subresources_text += createColorShaderParamBlock(
                             colorSect,
                             [colorLayerUV1, colorLayerUV2, colorLayerRadius,
-                             str(colorLayerUV1 != colorLayerUV2) if colorLayerMethod == "Radial" else "null"]) + "\n"
+                             str(colorLayerUV1 != colorLayerUV2).lower() if colorLayerMethod == "Radial" else "null",
+                             colorTransform])  + "\n"
                 #print("sections: {}".format(colorLayerSections))
         nodeText = createNodeText(folder.name, pngList, offsets)
         fileHeader = createSceneHeader(len(res_dict) + 1)

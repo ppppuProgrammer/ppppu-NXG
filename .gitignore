@@ -13,5 +13,6 @@ export_presets.cfg
 
 # p4u specific ignores
 __pycache__/
-
+*~
+*.pyc
 # End of https://www.gitignore.io/api/godot

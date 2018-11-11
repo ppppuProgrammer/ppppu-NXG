@@ -1,0 +1,31 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/MaleShaft_Squiggly.png-1f949c85d329e2aee5336bdc5833d2d3.stex"
+
+[deps]
+
+source_file="res://Textures/Character Parts/MaleShaft/MaleShaft_Squiggly.png"
+dest_files=[ "res://.import/MaleShaft_Squiggly.png-1f949c85d329e2aee5336bdc5833d2d3.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=2
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=true
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

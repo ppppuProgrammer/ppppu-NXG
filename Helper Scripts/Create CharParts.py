@@ -21,7 +21,7 @@ for partName in partNameList:
         cleanPartsList.append(strippedName)
 #print(cleanPartsList)
 #Texture folder contains the image textures for a char part. While it may be a bit redundant to have the textures in their own tscn to be placed into another tscn this will be done to ease future going plans (such as consolidating multiple unique versions for a char part into 1, an example of which is the Arm char part, which has 3 versions. Instead of having Arm1, Arm2, and Arm3, just have Arm which can switch the texture used between any of the 3.)
-texFolder = pyUtils.TEXTURES_PATH
+texFolder = pyUtils.CHARACTER_PARTS_TEXTURE_PATH
 partTextureDirList = [texDir.stem for texDir in texFolder.iterdir() if texDir.is_dir()]
 #print(partTextureDirList)
 #Go into the char parts folder and create the tscn for the char part.

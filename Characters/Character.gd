@@ -3,6 +3,8 @@ extends Resource
 #const ERROR_GRADIENT:Resource = preload("res://Characters/Color Presets/unset_gradient.tres")
 
 export var character_name:String = ""
+
+export var character_icon:Texture = null
 #A list of animation node blend trees that the character uses.
 #var animation_trees:Array = []
 #Array of strings containing the names of the animation trees the character has

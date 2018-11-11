@@ -1,16 +1,179 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Scene/AnimationStage.gd" type="Script" id=1]
 [ext_resource path="res://Scene/AnimSceneDebugger.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/Main Menu/Character Quick Select Menu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/Main Menu/Main Menu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Textures/Backgrounds/Planet Background.png" type="Texture" id=5]
+[ext_resource path="res://Characters/Roster.gd" type="Script" id=6]
+[ext_resource path="res://Animation/AnimationAssignments.gd" type="Script" id=7]
+[ext_resource path="res://Animation/AnimationLocks.gd" type="Script" id=8]
+[ext_resource path="res://Animation/AnimationCatalog.gd" type="Script" id=9]
+[ext_resource path="res://Color/Palettes.gd" type="Script" id=10]
+[ext_resource path="res://Characters/CharacterDefaults.gd" type="Script" id=11]
+[ext_resource path="res://Color/ColoringTechs.gd" type="Script" id=12]
+[ext_resource path="res://Audio/MusicCollection.gd" type="Script" id=13]
+[ext_resource path="res://Audio/MusicSelections.gd" type="Script" id=14]
+[ext_resource path="res://Color/ColorGroups.gd" type="Script" id=15]
+[ext_resource path="res://Color/PaletteDispatcher.gd" type="Script" id=16]
+[ext_resource path="res://Materials/MaterialStash.gd" type="Script" id=17]
+[ext_resource path="res://Materials/MaterialGroupParameters.gd" type="Script" id=18]
+[ext_resource path="res://Materials/MaterialDispatcher.gd" type="Script" id=19]
+[ext_resource path="res://CharacterMaterials.gd" type="Script" id=20]
 
 [node name="AnimationStage" type="Node2D"]
 script = ExtResource( 1 )
-_sections_unfolded = [ "Material", "Script", "Transform", "Visibility" ]
 
 [node name="AnimSceneDebugger" parent="." instance=ExtResource( 2 )]
-editor/display_folded = true
 
-[connection signal="toggled" from="AnimSceneDebugger/Margin/TopHBox/Show Graph" to="." method="_on_Show_Graph_toggled"]
-[connection signal="pressed" from="AnimSceneDebugger/Margin/TopHBox/Reset" to="." method="_on_Reset_pressed"]
+[node name="UI" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 960.0
+margin_bottom = 720.0
+
+[node name="Character Q Select" parent="UI" instance=ExtResource( 3 )]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -30.0
+margin_right = -20.0
+margin_bottom = 0.0
+size_flags_horizontal = 3
+size_flags_vertical = 0
+
+[node name="Name Limiter" parent="UI/Character Q Select/HBox" index="0"]
+margin_right = 360.0
+rect_min_size = Vector2( 360, 0 )
+rect_clip_content = false
+
+[node name="Current Char Label" parent="UI/Character Q Select/HBox/Name Limiter" index="0"]
+text = "Character name at maximum size"
+
+[node name="VSeparator" parent="UI/Character Q Select/HBox" index="1"]
+margin_left = 364.0
+margin_right = 368.0
+
+[node name="Character Select Bar" parent="UI/Character Q Select/HBox" index="2"]
+margin_left = 372.0
+button_size = Vector2( 24, 24 )
+
+[node name="ScrollContainer" parent="UI/Character Q Select/HBox/Character Select Bar" index="0"]
+margin_right = 534.0
+
+[node name="IconsHBox" parent="UI/Character Q Select/HBox/Character Select Bar/ScrollContainer" index="0"]
+margin_right = 534.0
+custom_constants/separation = 10
+
+[node name="Main Menu" parent="." instance=ExtResource( 4 )]
+editor/display_folded = true
+margin_left = 12.0
+margin_top = 42.0
+margin_right = 12.0
+margin_bottom = 42.0
+mouse_filter = 1
+
+[node name="ItemList" parent="Main Menu/VBoxContainer" index="0"]
+margin_right = 27.0
+margin_bottom = 0.0
+items = [ "Item 0", null, false, "Item 1", null, false, "Item 2", null, false ]
+
+[node name="Label" parent="Main Menu/VBoxContainer" index="1"]
+margin_top = 4.0
+margin_right = 27.0
+margin_bottom = 35.0
+
+[node name="TabContainer" parent="Main Menu/VBoxContainer" index="2"]
+visible = true
+margin_top = 39.0
+margin_right = 27.0
+margin_bottom = 75.0
+
+[node name="BG" type="Sprite" parent="."]
+z_index = -4096
+texture = ExtResource( 5 )
+offset = Vector2( 480, 360 )
+
+[node name="Roster" type="Node" parent="."]
+script = ExtResource( 6 )
+character_name_max_length = 30
+
+[node name="AnimationAssignments" type="Node" parent="."]
+script = ExtResource( 7 )
+
+[node name="AnimationLocks" type="Node" parent="."]
+script = ExtResource( 8 )
+
+[node name="AnimationCatalog" type="Node" parent="."]
+script = ExtResource( 9 )
+
+[node name="Palettes" type="Node" parent="."]
+script = ExtResource( 10 )
+
+[node name="CharacterDefaults" type="Node" parent="."]
+script = ExtResource( 11 )
+
+[node name="ColoringTechs" type="Node" parent="."]
+script = ExtResource( 12 )
+
+[node name="MusicCollection" type="Node" parent="."]
+script = ExtResource( 13 )
+
+[node name="MusicSelections" type="Node" parent="."]
+script = ExtResource( 14 )
+
+[node name="ColorGroups" type="Node" parent="."]
+script = ExtResource( 15 )
+
+[node name="PaletteDispatcher" type="Node" parent="."]
+script = ExtResource( 16 )
+
+[node name="MaterialStash" type="Node" parent="."]
+script = ExtResource( 17 )
+_materials = {
+
+}
+
+[node name="MaterialGroupParameters" type="Node" parent="."]
+script = ExtResource( 18 )
+
+[node name="MaterialDispatcher" type="Node" parent="."]
+script = ExtResource( 19 )
+
+[node name="CharacterMaterials" type="Node" parent="."]
+script = ExtResource( 20 )
+
+[connection signal="change_character_button" from="." to="UI/Character Q Select" method="_on_change_character_button"]
+[connection signal="character_changed" from="." to="AnimSceneDebugger" method="_on_character_changed"]
+[connection signal="character_changed" from="." to="UI/Character Q Select" method="_on_character_changed"]
+[connection signal="created_character_screen" from="." to="AnimSceneDebugger" method="_on_AnimationStage_created_character_screen"]
+[connection signal="pressed" from="AnimSceneDebugger/Char Screens Panel/VBox0/Add Screen Button" to="." method="_on_Add_Character_Screen_request"]
+[connection signal="character_button_pressed" from="UI/Character Q Select/HBox/Character Select Bar" to="." method="_on_Character_Select_Bar_character_button_pressed"]
+[connection signal="character_added" from="Roster" to="Palettes" method="_on_Roster_character_added"]
+[connection signal="character_added" from="Roster" to="CharacterDefaults" method="_on_Roster_character_added"]
+[connection signal="character_added" from="Roster" to="AnimSceneDebugger" method="_on_Roster_character_added"]
+[connection signal="character_added" from="Roster" to="UI/Character Q Select" method="_on_Roster_character_added"]
+[connection signal="character_added" from="Roster" to="CharacterMaterials" method="_on_Roster_character_added"]
+[connection signal="character_removed" from="Roster" to="Palettes" method="_on_Roster_character_removed"]
+[connection signal="character_removed" from="Roster" to="CharacterDefaults" method="_on_Roster_character_removed"]
+[connection signal="character_removed" from="Roster" to="Main Menu" method="_on_Roster_character_removed"]
+[connection signal="character_removed" from="Roster" to="CharacterMaterials" method="_on_Roster_character_removed"]
+[connection signal="character_swapped" from="Roster" to="Palettes" method="_on_Roster_character_swapped"]
+[connection signal="character_swapped" from="Roster" to="CharacterDefaults" method="_on_Roster_character_swapped"]
+[connection signal="character_swapped" from="Roster" to="Main Menu" method="_on_Roster_character_swapped"]
+[connection signal="character_swapped" from="Roster" to="CharacterMaterials" method="_on_Roster_character_swapped"]
+[connection signal="full_group_name_request" from="Palettes" to="ColorGroups" method="_on_Palettes_full_group_name_request"]
+[connection signal="group_added" from="ColorGroups" to="AnimSceneDebugger" method="_on_ColorGroups_group_added"]
+[connection signal="group_added" from="ColorGroups" to="PaletteDispatcher" method="_on_ColorGroups_group_added"]
+[connection signal="group_size_changed" from="ColorGroups" to="Palettes" method="_on_ColorGroups_group_size_changed"]
+[connection signal="group_size_changed" from="ColorGroups" to="CharacterDefaults" method="_on_ColorGroups_group_size_changed"]
+[connection signal="group_size_changed" from="ColorGroups" to="PaletteDispatcher" method="_on_ColorGroups_group_size_changed"]
+[connection signal="color_group_has_changed" from="PaletteDispatcher" to="AnimSceneDebugger" method="_on_PaletteDispatcher_color_group_has_changed"]
 
 [editable path="AnimSceneDebugger"]
+
+[editable path="UI/Character Q Select"]
+
+[editable path="UI/Character Q Select/HBox/Character Select Bar"]
+
+[editable path="Main Menu"]

@@ -3,7 +3,7 @@
 [ext_resource path="res://Char Parts/BaseCharPart.tscn" type="PackedScene" id=1]
 
 [node name="Clavicle" index="0" instance=ExtResource( 1 )]
-initLoadTextures = PoolStringArray( "Textures/Clavicle/Sprite_Clavicle.tscn" )
+initLoadTextures = PoolStringArray( "Textures/Character Parts/Clavicle/Sprite_Clavicle.tscn" )
 initLoadOverTextures = PoolStringArray(  )
 initLoadUnderTextures = PoolStringArray(  )
 mainTexId = -1

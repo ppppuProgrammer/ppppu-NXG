@@ -10,17 +10,17 @@ BASE_CHAR_ANIMS_PATH = Path("./Base Character Animations")
 TEST_ANIM_PATH = Path(BASE_CHAR_ANIMS_PATH / "Testing")
 CHAR_PARTS_PATH = Path("./Char Parts")
 TEXTURES_PATH = Path("./Textures")
+CHARACTER_PARTS_TEXTURE_PATH = TEXTURES_PATH / "Character Parts"
 TEXTURE_CGROUP_PATH = TEXTURES_PATH / "Color Groups.txt"
 CREATION_INFO_STR = "Creation Info"
 CREATION_INFO_PATH = BASE_CHAR_ANIMS_PATH / CREATION_INFO_STR
-
 
 
 class MASKING(Enum):
     normal = -1
     mask = 0
     masked = 1
-
+    
     
 def SplitAnimationName(origStr, maxSplits=1):
     variantSplitList = re.split("(-|_)", origStr, maxsplit=maxSplits)
@@ -117,3 +117,5 @@ def VerifyProjectFolderStructure():
         TEXTURES_PATH.mkdir()
     if not CREATION_INFO_PATH.exists():
         CREATION_INFO_PATH.mkdir()
+    if not CHARACTER_PARTS_TEXTURE_PATH.exists():
+        CHARACTER_PARTS_TEXTURE_PATH.mkdir()

@@ -1,0 +1,31 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Hand2_SkinColor.png-17d5f1d497d11c1d66a53414e5fe1f8f.stex"
+
+[deps]
+
+source_file="res://Textures/Character Parts/Hand-Ver2/Hand2_SkinColor.png"
+dest_files=[ "res://.import/Hand2_SkinColor.png-17d5f1d497d11c1d66a53414e5fe1f8f.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=2
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=true
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

@@ -1,12 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://Char Parts/BaseCharPart.tscn" type="PackedScene" id=1]
 
-[node name="Arm" index="0" instance=ExtResource( 1 )]
-initLoadTextures = PoolStringArray( "Textures/Arm/Sprite_Arm.tscn", "Textures/Arm-2/Sprite_Arm-2.tscn", "Textures/Arm-3/Sprite_Arm-3.tscn", "Textures/Arm-Ver2/Sprite_Arm-Ver2.tscn", "Textures/Arm-Ver3/Sprite_Arm-Ver3.tscn" )
-initLoadOverTextures = PoolStringArray(  )
-initLoadUnderTextures = PoolStringArray(  )
-mainTexId = -1
-overTexId = -1
-underTexId = -1
+[node name="Arm" instance=ExtResource( 1 )]
+initLoadTextures = PoolStringArray( "Textures/Character Parts/Arm/Sprite_Arm.tscn", "Textures/Character Parts/Arm-2/Sprite_Arm-2.tscn", "Textures/Character Parts/Arm-3/Sprite_Arm-3.tscn", "Textures/Character Parts/Arm-Ver2/Sprite_Arm-Ver2.tscn", "Textures/Character Parts/Arm-Ver3/Sprite_Arm-Ver3.tscn" )
 

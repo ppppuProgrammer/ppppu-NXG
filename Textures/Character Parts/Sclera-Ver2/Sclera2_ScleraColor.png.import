@@ -1,0 +1,31 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Sclera2_ScleraColor.png-3d457f93691b39d1e7ad5a6ab3fa2f08.stex"
+
+[deps]
+
+source_file="res://Textures/Character Parts/Sclera-Ver2/Sclera2_ScleraColor.png"
+dest_files=[ "res://.import/Sclera2_ScleraColor.png-3d457f93691b39d1e7ad5a6ab3fa2f08.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=2
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=true
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

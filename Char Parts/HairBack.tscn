@@ -3,7 +3,7 @@
 [ext_resource path="res://Char Parts/BaseCharPart.tscn" type="PackedScene" id=1]
 
 [node name="HairBack" index="0" instance=ExtResource( 1 )]
-initLoadTextures = PoolStringArray( "Textures/HairBack-Pch/Sprite_HairBack-Pch.tscn", "Textures/HairBack-Rosa/Sprite_HairBack-Rosa.tscn" )
+initLoadTextures = PoolStringArray( "Textures/Character Parts/HairBack-Pch/Sprite_HairBack-Pch.tscn", "Textures/Character Parts/HairBack-Rosa/Sprite_HairBack-Rosa.tscn" )
 initLoadOverTextures = PoolStringArray(  )
 initLoadUnderTextures = PoolStringArray(  )
 mainTexId = -1
