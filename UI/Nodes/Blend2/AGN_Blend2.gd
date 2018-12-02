@@ -3,7 +3,8 @@ extends "res://UI/Nodes/AnimationGraphNode.gd"
 onready var blendSlider:HSlider = $blend_amount/VBoxContainer/HSlider 
 
 func _ready():
-	animation_node = AnimationNodeBlend2.new()
+	if not animation_node:
+		animation_node = AnimationNodeBlend2.new()
 	has_filter = true
 	has_parameters = true
 	#$MenuButton.

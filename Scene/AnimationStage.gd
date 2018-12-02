@@ -2,16 +2,21 @@ extends Node2D
 
 #Animation Stage is where all the action happens.
 #Here is where the Characters Screens are placed.
-const _CHAR_SCREEN_CLASS = preload("res://Scene/Character Screen/Character Screen.gd")
+const CharacterScreenNode = preload("res://Scene/Character Screen/Character Screen.tscn")
+const CharacterScreen = preload("res://Scene/Character Screen/Character Screen.gd")
 const Character = preload("res://Characters/Character.gd")
 var _character_screens = []
 var _screen_names:Array = []
 var current_character:int = -1
+var _animations:Array = []
 
 signal character_changed(char_id, char_name)
 signal created_character_screen(screen_name)
 signal renamed_character_screen(idx, name)
 signal change_character_button(char_id, char_name, icon)
+signal animation_added(animation)
+signal character_screen_start_edit_reply(anim_tree)
+signal character_screen_placement_data_reply(screen_placement)
 
 func _ready():
 	#Screen.connect("apply_palette_request", self, "_change_character_palette")
@@ -51,22 +56,28 @@ func load_characters(character_resource_list:Array):
 	for char_res in character_resource_list:
 		var character:Character = load(char_res) as Character
 		_process_character(character)
-	#Hard coded for now but later this will look to load
-	#character data from a resource file or preferrably a pck
-	#var pchData:Character = load("res://Characters/Presets/Peach_Character.tres") as Character
-	#var pchData:Character = load("res://Characters/Presets/Peach_Character.tres")
-	#_process_character(pchData)
-	#var rosaData:Character = load("res://Characters/Presets/Rosalina_Character.tres")
+
+func load_animations(animation_resource_list:Array):
+	for anim_res in animation_resource_list:
+		var animation:Animation = load(anim_res) as Animation
+		if animation:
+			_animations.append(animation)
+			emit_signal("animation_added", animation)
 
 func create_new_screen(name:String = ""):
 	if name != "" and not name in _screen_names:
 		return
 	var _idx:int = _character_screens.size()
-	_character_screens.append(_CHAR_SCREEN_CLASS.new())
-	if name == "":
-		name = "Unnamed %d" % _idx
-	_screen_names.insert(_idx, name)
-	emit_signal("created_character_screen", name)
+	var screen:CharacterScreen = CharacterScreen.new(_animations.duplicate(false))
+	
+	_character_screens.append(screen)
+	var screen_name:String = "Ex %d" % (_idx)
+	if _idx == 0:
+		screen_name = "main"
+	_screen_names.append(screen_name)
+	connect("animation_added", screen, "add_animation_to_player")
+	$Screens.add_child(screen)
+	emit_signal("created_character_screen", screen_name)
 
 
 	
@@ -89,8 +100,45 @@ func _on_Character_Select_Bar_character_button_pressed(idx:int):
 
 
 func _on_Add_Character_Screen_request():
-	var free_idx:int = _character_screens.size()
-	_character_screens.append(_CHAR_SCREEN_CLASS.new())
-	var screen_name:String = "Screen %d" % (free_idx + 1)
-	_screen_names.append(screen_name)
-	emit_signal("created_character_screen", screen_name)
+	#var free_idx:int = _character_screens.size()
+	create_new_screen()
+#	yield(screen, "ready")
+	#_character_screens.append(screen)
+	#screen.add_animations_to_player(_animations.duplicate(false))
+#	screen.connect("animation_added", self, "add_animation_to_player")
+
+
+func _on_character_screen_anim_tree_request(screen_num:int):
+	var screen_tree = null
+	var screen_player = null
+	if screen_num < _character_screens.size():
+		var screen:CharacterScreen = _character_screens[screen_num]
+		screen_tree = screen.get_animation_tree()
+		screen_player = screen.get_animation_player()
+	emit_signal("character_screen_start_edit_reply", screen_tree, screen_player)
+
+func _on_start_screen_animation(screen_num:int):
+	var screen:CharacterScreen = $Screens.get_child(screen_num)
+	if screen:
+		screen.play_animation()
+
+
+func _on_update_parts_for_character_screen(screen_num:int, animated_parts_list:Array):
+	var screen:CharacterScreen = $Screens.get_child(screen_num)
+	if screen:
+		screen.update_parts(animated_parts_list)
+
+
+func _on_character_screen_placement_data_request(screen_num:int):
+	var screen:CharacterScreen = $Screens.get_child(screen_num)
+	if screen:
+		emit_signal("character_screen_placement_data_reply", Rect2(screen.position, screen.scale))
+	else:
+		emit_signal("character_screen_placement_data_reply", Rect2(Vector2(0, 0), Vector2(0, 0)))
+
+
+func _on_character_screen_placement_changed(screen_num:int, screen_placement:Rect2):
+	var screen:CharacterScreen = $Screens.get_child(screen_num)
+	if screen:
+		screen.position = screen_placement.position
+		screen.scale = screen_placement.size

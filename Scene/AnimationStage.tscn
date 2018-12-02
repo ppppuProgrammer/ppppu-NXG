@@ -27,6 +27,7 @@ script = ExtResource( 1 )
 [node name="AnimSceneDebugger" parent="." instance=ExtResource( 2 )]
 
 [node name="UI" type="Control" parent="."]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = 960.0
@@ -89,6 +90,8 @@ margin_top = 39.0
 margin_right = 27.0
 margin_bottom = 75.0
 
+[node name="Screens" type="Node2D" parent="."]
+
 [node name="BG" type="Sprite" parent="."]
 z_index = -4096
 texture = ExtResource( 5 )
@@ -143,15 +146,23 @@ script = ExtResource( 19 )
 [node name="CharacterMaterials" type="Node" parent="."]
 script = ExtResource( 20 )
 
+[connection signal="animation_added" from="." to="AnimSceneDebugger" method="_on_AnimationStage_animation_added"]
 [connection signal="change_character_button" from="." to="UI/Character Q Select" method="_on_change_character_button"]
 [connection signal="character_changed" from="." to="AnimSceneDebugger" method="_on_character_changed"]
 [connection signal="character_changed" from="." to="UI/Character Q Select" method="_on_character_changed"]
+[connection signal="character_screen_placement_data_reply" from="." to="AnimSceneDebugger" method="_on_character_screen_placement_data_reply"]
+[connection signal="character_screen_start_edit_reply" from="." to="AnimSceneDebugger" method="_on_AnimationStage_character_screen_start_edit_reply"]
 [connection signal="created_character_screen" from="." to="AnimSceneDebugger" method="_on_AnimationStage_created_character_screen"]
+[connection signal="character_screen_placement_changed" from="AnimSceneDebugger" to="." method="_on_character_screen_placement_changed"]
+[connection signal="character_screen_placement_data_request" from="AnimSceneDebugger" to="." method="_on_character_screen_placement_data_request"]
+[connection signal="character_screen_start_edit_request" from="AnimSceneDebugger" to="." method="_on_character_screen_anim_tree_request"]
+[connection signal="start_screen_animation" from="AnimSceneDebugger" to="." method="_on_start_screen_animation"]
+[connection signal="update_parts_for_character_screen" from="AnimSceneDebugger" to="." method="_on_update_parts_for_character_screen"]
 [connection signal="pressed" from="AnimSceneDebugger/Char Screens Panel/VBox0/Add Screen Button" to="." method="_on_Add_Character_Screen_request"]
 [connection signal="character_button_pressed" from="UI/Character Q Select/HBox/Character Select Bar" to="." method="_on_Character_Select_Bar_character_button_pressed"]
+[connection signal="character_added" from="Roster" to="AnimSceneDebugger" method="_on_Roster_character_added"]
 [connection signal="character_added" from="Roster" to="Palettes" method="_on_Roster_character_added"]
 [connection signal="character_added" from="Roster" to="CharacterDefaults" method="_on_Roster_character_added"]
-[connection signal="character_added" from="Roster" to="AnimSceneDebugger" method="_on_Roster_character_added"]
 [connection signal="character_added" from="Roster" to="UI/Character Q Select" method="_on_Roster_character_added"]
 [connection signal="character_added" from="Roster" to="CharacterMaterials" method="_on_Roster_character_added"]
 [connection signal="character_removed" from="Roster" to="Palettes" method="_on_Roster_character_removed"]

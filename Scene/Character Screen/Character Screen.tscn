@@ -1,44 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scene/Character Screen/Character Screen.gd" type="Script" id=1]
-[ext_resource path="res://UI/Animation Editor.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Base Character Animations/1_Cowgirl Large-animation.tres" type="Animation" id=3]
-[ext_resource path="res://Base Character Animations/1_Cowgirl Ros-animation.tres" type="Animation" id=4]
-[ext_resource path="res://Base Character Animations/1_Cowgirl Small-animation.tres" type="Animation" id=5]
-[ext_resource path="res://Base Character Animations/1_Cowgirl-animation.tres" type="Animation" id=6]
-[ext_resource path="res://Scene/StageAnimationTree.gd" type="Script" id=7]
-[ext_resource path="res://Color/CharacterColorizer.tscn" type="PackedScene" id=8]
-
-[sub_resource type="Animation" id=1]
-
-length = 0.001
-
-[sub_resource type="AnimationNodeBlendTree" id=2]
-
+[ext_resource path="res://Color/CharacterColorizer.tscn" type="PackedScene" id=2]
 
 [node name="Character Screen" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="GraphLayer" type="CanvasLayer" parent="."]
-layer = 127
-offset = Vector2( 0, 40 )
-transform = Transform2D( 1, 0, 0, 1, 0, 40 )
-
-[node name="Graph" parent="GraphLayer" instance=ExtResource( 2 )]
-snap_distance = 5
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-"anims/1_Cowgirl Large-animation" = ExtResource( 3 )
-"anims/1_Cowgirl Ros-animation" = ExtResource( 4 )
-"anims/1_Cowgirl Small-animation" = ExtResource( 5 )
-anims/1_Cowgirl-animation = ExtResource( 6 )
-anims/None = SubResource( 1 )
-
-[node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 2 )
-anim_player = NodePath("../AnimationPlayer")
-script = ExtResource( 7 )
-
-[node name="CharacterColorizer" parent="." instance=ExtResource( 8 )]
+[node name="CharacterColorizer" parent="." instance=ExtResource( 2 )]
 initialColorGroups = PoolStringArray( "", "", "", "" )
 

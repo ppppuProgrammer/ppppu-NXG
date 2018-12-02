@@ -9,10 +9,19 @@ const _COLOR_GROUP_PREFAB = preload("res://Scene/Debug Color Group Container.tsc
 onready var _color_grid:GridContainer = $"Margin/Color Panel/VBox/Scroll/Margin/Grid"
 var _color_group_containers:Dictionary = {}
 onready var _char_palette_label:Label = $"Margin/Color Panel/VBox/Char Palette Label" 
+onready var _anim_editor = $"Graph Edit Popup/VBoxContainer/Animation Editor"
 #onready var _char_palette_label:Label = $"Color Panel/VBox/Char Palette Label" 
 const _DEFAULT_CHAR_PALETTE_STR:String = "Main Character Palette"
 const _CHAR_PALETTE_STR:String = "%s's Palette"
 const ColorDisplayBar = preload("res://UI/Common/Color Display Bar.gd")
+
+#Signals
+signal character_screen_start_edit_request(screen_num)
+signal start_screen_animation(screen_num)
+signal update_parts_for_character_screen(screen_num, animated_parts_list)
+signal character_screen_placement_data_request(screen_num)
+signal character_screen_placement_changed(screen_num, screen_placement)
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	_animStage = get_parent()
@@ -69,5 +78,50 @@ func _on_HideShow_Debugger_toggled(button_pressed:bool):
 
 
 func _on_Roster_character_added(char_id:int, char_name:String):
-	$"Char Screens Panel/VBox0/VBox1/Panel/VBox2/Char List".get_popup().add_item(char_name)
-	
+	$"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/Char List".get_popup().add_item(char_name)
+
+
+func _on_Edit_Animation_Button_pressed():
+	#Get screen number.
+	var screen_number:int = $"Char Screens Panel/VBox0/VBox1/Tabs".current_tab
+	emit_signal("character_screen_start_edit_request", screen_number)
+
+
+func _on_Screen_tab_changed(tab:int):
+	var tab_title:String = $"Char Screens Panel/VBox0/VBox1/Tabs".get_tab_title(tab)
+	$"Graph Edit Popup/VBoxContainer/HBoxContainer/Graph Title".text = tab_title
+	emit_signal("character_screen_placement_data_request", tab)
+
+func _on_AnimationStage_animation_added(animation:Animation):
+	_anim_editor.add_animation(animation)
+
+
+func _on_AnimationStage_character_screen_start_edit_reply(anim_tree, anim_player):
+	_anim_editor.clear_editor()
+	if anim_tree != null:
+		_anim_editor.set_animation_tree(anim_tree, anim_player)
+		$"Graph Edit Popup".show_editor()
+
+
+func _on_Play_Screen_pressed():
+	var screen_num:int = $"Char Screens Panel/VBox0/VBox1/Tabs".current_tab
+	emit_signal("start_screen_animation", screen_num)
+
+
+func _on_Animation_Editor_blend_tree_has_changed(animated_parts_list:Array):
+	var screen_num:int = $"Char Screens Panel/VBox0/VBox1/Tabs".current_tab
+	emit_signal("update_parts_for_character_screen", screen_num, animated_parts_list)
+
+func _on_character_screen_placement_change(value:float) -> void:
+	var screen_num:int = $"Char Screens Panel/VBox0/VBox1/Tabs".current_tab
+	var screen_placement:Rect2 = Rect2($"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos/X SpinBox".value,
+			$"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos/Y SpinBox".value,
+			$"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale/X SpinBox".value,
+			$"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale/Y SpinBox".value)
+	emit_signal("character_screen_placement_changed", screen_num, screen_placement)
+
+func _on_character_screen_placement_data_reply(screen_placement:Rect2):
+	$"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos/X SpinBox".value = screen_placement.position.x
+	$"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos/Y SpinBox".value = screen_placement.position.y
+	$"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale/X SpinBox".value = screen_placement.size.x
+	$"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale/Y SpinBox".value = screen_placement.size.y

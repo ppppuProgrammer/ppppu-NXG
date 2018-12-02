@@ -13,27 +13,37 @@ const CHAR_PART_PATH = "res://Char Parts/"
 var _standbyCharParts = {}
 var _activeCharParts = {}
 
-onready var _masterPlayer:AnimationPlayer = $AnimationPlayer
-onready var _animTree = $AnimationTree
-const AnimationEditor = preload("res://UI/Animation Editor.gd")
-onready var _graph:AnimationEditor = $GraphLayer/Graph
+var _anim_player:AnimationPlayer = null# setget ,get_anim_player
+const StageAnimationTree = preload("res://Scene/StageAnimationTree.gd")
+var _animTree:StageAnimationTree = null setget ,get_animation_tree
+
+#const AnimationEditor = preload("res://UI/Animation Editor.gd")
+#onready var _graph:AnimationEditor = $GraphLayer/Graph
 
 signal apply_palette_request
 
+func _init(animation_list:Array) -> void:
+	_anim_player = AnimationPlayer.new()
+	_animTree = StageAnimationTree.new()
+	_animTree.tree_root = AnimationNodeBlendTree.new()
+	#_animTree.tree_root.connect("tree_changed", self, "_update_activated_character_parts")
+	if _anim_player.get_animation_list().size() == 0:
+		for anim in animation_list:
+			_anim_player.add_animation(anim.resource_name, anim)
+	_anim_player.name = "AnimationPlayer"
+	add_child(_anim_player)
+	add_child(_animTree)
+	_animTree.anim_player = _animTree.get_path_to(_anim_player)
+
 func _ready():
-	Log.append("Initializing Animation Stage")
-	#Set up the Animation Editor Graph
-	_graph.setup(_masterPlayer)
-	_graph.connect("blend_tree_connection_changed", self, "_update_activated_character_parts")
-	_graph.connect("update_character_parts", self, "_update_activated_character_parts")
-	_graph.connect("connected_nodes", _animTree, "connect_animation_nodes")
-	_graph.connect("disconnected_nodes", _animTree, "disconnect_animation_nodes")
-	_graph.connect("added_node", _animTree, "add_animation_node")
-	_graph.connect("output_graph_node_added", _animTree, "setup_output_graph_node")
+	#
+	#Log.append("Initializing Animation Stage")
+	#connect("blend_tree_connection_changed", self, "_update_activated_character_parts")
+	#connect("update_character_parts", self, "_update_activated_character_parts")
 	
 	#Create character parts for animations currently in the master player
-	for animationName in _masterPlayer.get_animation_list():
-		var animation:Animation = _masterPlayer.get_animation(animationName)
+	for animationName in _anim_player.get_animation_list():
+		var animation:Animation = _anim_player.get_animation(animationName)
 		Log.append("Adding animation (%s)" % animationName)
 		for i in range(0, animation.get_track_count()):
 			var partNames = deduceCharPartNames(animation.track_get_path(i))
@@ -66,20 +76,20 @@ func createCharacterPart(charPartNamePair:Array):
 		charPart.name = charPartNamePair[1]
 	return charPart
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if Input.is_key_pressed(KEY_A):
-		_animTree.active = true
-	elif Input.is_key_pressed(KEY_D):
-		_animTree.active = false
-	elif Input.is_action_just_pressed("debug_print_graph"):
-		_graph.get_names_of_animated_nodes()
-	
-func _update_activated_character_parts():
+func update_parts(animated_parts_list:Array):
 	_animTree.active = false
 	deactivate_all_parts()
-	for node in _graph.get_names_of_animated_nodes():
+	for node in animated_parts_list:
 		activate_character_part(node)
+	_animTree.active = true
+	emit_signal("apply_palette_request")
+	
+func _update_activated_character_parts(parts_list:Array):
+	_animTree.active = false
+	deactivate_all_parts()
+#	for node in _graph.get_names_of_animated_nodes():
+#	for node in parts_list:
+#		activate_character_part(node)
 	_animTree.active = true
 	emit_signal("apply_palette_request")
 
@@ -119,9 +129,24 @@ func setDefaultTextures():
 		if child is CHARPART_CLASS:
 			child.mainTexId = 0
 
-func _on_Show_Graph_toggled(button_pressed):
-	_graph.visible = button_pressed
+func add_animation_to_player(animation:Animation) -> void:
+	_anim_player.add_animation(animation.resource_name, animation)
 
+#func add_animations_to_player(anim_list:Array) -> void:
+	
+
+#func _on_Show_Graph_toggled(button_pressed):
+#	_graph.visible = button_pressed
+
+func get_animation_player() -> AnimationPlayer:
+	return _anim_player
+
+func play_animation(start_time:float = 0.0):
+	_animTree.active = true
+	emit_signal("apply_palette_request")
+
+func get_animation_tree() -> StageAnimationTree:
+	return _animTree
 
 func _on_Reset_pressed():
 	_animTree.active = !true

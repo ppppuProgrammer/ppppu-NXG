@@ -72,11 +72,11 @@ func _loadTextures(texPathList, textureList, lookupDict:Dictionary):
 
 # To be called by animations to control what variant to use.
 func setVariantByName(layer, variantName):
-	if layer == MAIN:
+	if layer == layers.MAIN:
 		_setMainTexByVariant(variantName)
-	elif layer == OVER:
+	elif layer == layers.OVER:
 		_setOverTexByVariant(variantName)
-	elif layer == UNDER:
+	elif layer == layers.UNDER:
 		_setUnderTexByVariant(variantName)
 
 func _setMainTexByVariant(variantName):
@@ -87,13 +87,13 @@ func _setMainTexByVariant(variantName):
 		# Instead of using -1 should have another value used to 
 		# indicate that the texture couldn't be loaded
 		mainTexId = -1
-	emit_signal("sig_spriteSceneChanged", self, MAIN, _mainSprite)
+	emit_signal("sig_spriteSceneChanged", self, layers.MAIN, _mainSprite)
 
 func _setMainTex(texId):
 	#if mainTexId != texId:
 	mainTexId = _validateTexId(texId, _mainTextures)
 	_setTexture(mainTexId, _mainTextures, _mainSprite)
-	emit_signal("sig_spriteSceneChanged", self, MAIN, _mainSprite)
+	emit_signal("sig_spriteSceneChanged", self, layers.MAIN, _mainSprite)
 
 func _setOverTexByVariant(variantName):
 	if _variantLookup_over.has(variantName):
@@ -101,13 +101,13 @@ func _setOverTexByVariant(variantName):
 		_setTexture(overTexId, _overTextures, _overSprite)
 	else:
 		overTexId = -1
-	emit_signal("sig_spriteSceneChanged", self, OVER, _overSprite)
+	emit_signal("sig_spriteSceneChanged", self, layers.OVER, _overSprite)
 
 func _setOverTex(texId):
 	#if overTexId != texId:
 	overTexId = _validateTexId(texId, _overTextures)
 	_setTexture(overTexId, _overTextures, _overSprite)
-	emit_signal("sig_spriteSceneChanged", self, OVER, _overSprite)
+	emit_signal("sig_spriteSceneChanged", self, layers.OVER, _overSprite)
 	
 func _setUnderTexByVariant(variantName):
 	if _variantLookup_under.has(variantName):
@@ -115,14 +115,14 @@ func _setUnderTexByVariant(variantName):
 		_setTexture(underTexId, _overTextures, _overSprite)
 	else:
 		underTexId = -1
-	emit_signal("sig_spriteSceneChanged", self, UNDER, _underSprite)	
+	emit_signal("sig_spriteSceneChanged", self, layers.UNDER, _underSprite)	
 
 func _setUnderTex(texId):
 	#vv is commented due to conflicts with node ready order
 	#if underTexId != texId:
 	underTexId = _validateTexId(texId, _underTextures)
 	_setTexture(underTexId, _underTextures, _underSprite)
-	emit_signal("sig_spriteSceneChanged", self, UNDER, _underSprite)
+	emit_signal("sig_spriteSceneChanged", self, layers.UNDER, _underSprite)
 	
 func _validateTexId(texId, textureList):
 	if !_validateOK:
@@ -147,11 +147,11 @@ func _setTexture(texId, textureList, sprite):
 
 func get_textures_in_use(layer):
 	var textures = null
-	if layer == MAIN and _mainSprite:
+	if layer == layers.MAIN and _mainSprite:
 		textures = _mainSprite.get_used_textures_list()
-	elif layer == OVER and _overSprite:
+	elif layer == layers.OVER and _overSprite:
 		textures = _overSprite.get_used_textures_list()
-	elif layer == UNDER and _underSprite:
+	elif layer == layers.UNDER and _underSprite:
 		textures = _underSprite.get_used_textures_list()
 	return textures
 	

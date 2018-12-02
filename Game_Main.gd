@@ -6,6 +6,7 @@ onready var _scene = $Scene
 #The list of materials that are built into the game
 export (Array) var default_materials
 export (Array) var start_characters_resources
+export (Array) var start_animations
 
 func _ready():
 	#Load materials
@@ -17,3 +18,4 @@ func _ready():
 	
 	add_child(stage)
 	stage.load_characters(start_characters_resources)
+	stage.load_animations(start_animations)

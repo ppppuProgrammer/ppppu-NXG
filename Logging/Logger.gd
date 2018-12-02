@@ -33,8 +33,8 @@ func _get_system_info():
 		videoStr += "\n\t%s" % OS.get_video_driver_name(videoDriverNum)
 	return "%s\n%s" % [systemStr, videoStr]
 	
-func append(text:String, log_level:int = ALL):
-	if log_level == DEBUG and !OS.is_debug_build():
+func append(text:String, log_level:int = level.ALL):
+	if log_level == level.DEBUG and !OS.is_debug_build():
 		return
 	var logFile:File = File.new()
 	logFile.open(log_name, File.READ_WRITE)

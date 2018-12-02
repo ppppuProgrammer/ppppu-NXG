@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scene/AnimSceneDebugger.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/DebugFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Fonts/SM256 menu font.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Scene/Char Screens Panel.gd" type="Script" id=4]
+[ext_resource path="res://Scene/Graph Edit Popup.gd" type="Script" id=5]
+[ext_resource path="res://UI/Animation Editor.tscn" type="PackedScene" id=6]
 
 [sub_resource type="StyleBoxFlat" id=1]
 
@@ -151,7 +153,6 @@ margin_right = 45.0
 margin_bottom = 75.0
 
 [node name="Debug Buttons" type="VBoxContainer" parent="."]
-editor/display_folded = true
 margin_left = 10.0
 margin_top = 10.0
 margin_right = 140.0
@@ -191,7 +192,7 @@ script = ExtResource( 4 )
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 343.0
-margin_bottom = 267.0
+margin_bottom = 293.0
 
 [node name="Label" type="Label" parent="Char Screens Panel/VBox0"]
 margin_right = 336.0
@@ -210,7 +211,7 @@ text = "Add new screen"
 [node name="VBox1" type="VBoxContainer" parent="Char Screens Panel/VBox0"]
 margin_top = 46.0
 margin_right = 336.0
-margin_bottom = 260.0
+margin_bottom = 286.0
 
 [node name="Tabs" type="Tabs" parent="Char Screens Panel/VBox0/VBox1"]
 margin_right = 336.0
@@ -218,26 +219,26 @@ margin_bottom = 23.0
 custom_fonts/font = ExtResource( 3 )
 tab_align = 0
 
-[node name="Panel" type="PanelContainer" parent="Char Screens Panel/VBox0/VBox1"]
+[node name="Screen Panel" type="PanelContainer" parent="Char Screens Panel/VBox0/VBox1"]
 margin_top = 27.0
 margin_right = 336.0
-margin_bottom = 214.0
+margin_bottom = 240.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="VBox2" type="VBoxContainer" parent="Char Screens Panel/VBox0/VBox1/Panel"]
+[node name="VBox2" type="VBoxContainer" parent="Char Screens Panel/VBox0/VBox1/Screen Panel"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 329.0
-margin_bottom = 180.0
+margin_bottom = 206.0
 
-[node name="Remove Screen Button" type="Button" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2"]
+[node name="Remove Screen Button" type="Button" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2"]
 margin_right = 322.0
 margin_bottom = 22.0
 custom_fonts/font = ExtResource( 3 )
 text = "Remove screen"
 
-[node name="Label" type="Label" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2"]
+[node name="Label" type="Label" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2"]
 margin_top = 26.0
 margin_right = 322.0
 margin_bottom = 42.0
@@ -245,7 +246,7 @@ custom_fonts/font = ExtResource( 3 )
 text = "Character:"
 valign = 1
 
-[node name="Char List" type="MenuButton" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2"]
+[node name="Char List" type="MenuButton" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2"]
 margin_top = 46.0
 margin_right = 322.0
 margin_bottom = 91.0
@@ -256,12 +257,12 @@ disabled = true
 flat = false
 clip_text = true
 
-[node name="HBox Pos" type="HBoxContainer" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2"]
+[node name="HBox Pos" type="HBoxContainer" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2"]
 margin_top = 95.0
 margin_right = 322.0
 margin_bottom = 119.0
 
-[node name="X Label" type="Label" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2/HBox Pos"]
+[node name="X Label" type="Label" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos"]
 margin_top = 4.0
 margin_right = 59.0
 margin_bottom = 20.0
@@ -270,7 +271,7 @@ custom_fonts/font = ExtResource( 3 )
 text = "pos X:"
 valign = 1
 
-[node name="X SpinBox" type="SpinBox" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2/HBox Pos"]
+[node name="X SpinBox" type="SpinBox" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos"]
 margin_left = 63.0
 margin_right = 137.0
 margin_bottom = 24.0
@@ -279,13 +280,13 @@ min_value = -960.0
 max_value = 960.0
 step = 0.1
 
-[node name="VSeparator" type="VSeparator" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2/HBox Pos"]
+[node name="VSeparator" type="VSeparator" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos"]
 margin_left = 141.0
 margin_right = 183.0
 margin_bottom = 24.0
 size_flags_horizontal = 3
 
-[node name="Y Label" type="Label" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2/HBox Pos"]
+[node name="Y Label" type="Label" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos"]
 margin_left = 187.0
 margin_top = 4.0
 margin_right = 244.0
@@ -295,7 +296,7 @@ custom_fonts/font = ExtResource( 3 )
 text = "pos Y:"
 valign = 1
 
-[node name="Y SpinBox2" type="SpinBox" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2/HBox Pos"]
+[node name="Y SpinBox" type="SpinBox" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos"]
 margin_left = 248.0
 margin_right = 322.0
 margin_bottom = 24.0
@@ -304,13 +305,12 @@ min_value = -720.0
 max_value = 720.0
 step = 0.1
 
-[node name="HBox Scale" type="HBoxContainer" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2"]
-editor/display_folded = true
+[node name="HBox Scale" type="HBoxContainer" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2"]
 margin_top = 123.0
 margin_right = 322.0
 margin_bottom = 147.0
 
-[node name="X Label" type="Label" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2/HBox Scale"]
+[node name="X Label" type="Label" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale"]
 margin_top = 4.0
 margin_right = 78.0
 margin_bottom = 20.0
@@ -319,7 +319,7 @@ custom_fonts/font = ExtResource( 3 )
 text = "Scale X:"
 valign = 1
 
-[node name="X SpinBox" type="SpinBox" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2/HBox Scale"]
+[node name="X SpinBox" type="SpinBox" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale"]
 margin_left = 82.0
 margin_right = 156.0
 margin_bottom = 24.0
@@ -330,13 +330,13 @@ step = 0.1
 value = 1.0
 prefix = "x"
 
-[node name="VSeparator" type="VSeparator" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2/HBox Scale"]
+[node name="VSeparator" type="VSeparator" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale"]
 margin_left = 160.0
 margin_right = 164.0
 margin_bottom = 24.0
 size_flags_horizontal = 3
 
-[node name="Y Label" type="Label" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2/HBox Scale"]
+[node name="Y Label" type="Label" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale"]
 margin_left = 168.0
 margin_top = 4.0
 margin_right = 244.0
@@ -346,7 +346,7 @@ custom_fonts/font = ExtResource( 3 )
 text = "Scale Y:"
 valign = 1
 
-[node name="Y SpinBox2" type="SpinBox" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2/HBox Scale"]
+[node name="Y SpinBox" type="SpinBox" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale"]
 margin_left = 248.0
 margin_right = 322.0
 margin_bottom = 24.0
@@ -357,12 +357,88 @@ step = 0.1
 value = 1.0
 prefix = "x"
 
-[node name="Edit Animation Button" type="Button" parent="Char Screens Panel/VBox0/VBox1/Panel/VBox2"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2"]
 margin_top = 151.0
 margin_right = 322.0
 margin_bottom = 173.0
+
+[node name="Play Screen" type="Button" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBoxContainer"]
+margin_right = 159.0
+margin_bottom = 22.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 3 )
+text = "Play"
+
+[node name="Pause Screen2" type="Button" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBoxContainer"]
+margin_left = 163.0
+margin_right = 322.0
+margin_bottom = 22.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 3 )
+text = "Pause"
+
+[node name="Edit Animation Button" type="Button" parent="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2"]
+margin_top = 177.0
+margin_right = 322.0
+margin_bottom = 199.0
 custom_fonts/font = ExtResource( 3 )
 text = "Edit Animation Tree"
 
+[node name="Graph Edit Popup" type="PopupPanel" parent="."]
+margin_left = 5.0
+margin_top = 133.0
+margin_right = 485.0
+margin_bottom = 613.0
+script = ExtResource( 5 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Graph Edit Popup"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 476.0
+margin_bottom = 476.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Graph Edit Popup/VBoxContainer"]
+margin_right = 472.0
+margin_bottom = 20.0
+
+[node name="Graph Title" type="Label" parent="Graph Edit Popup/VBoxContainer/HBoxContainer"]
+margin_top = 2.0
+margin_right = 448.0
+margin_bottom = 18.0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 3 )
+text = "%s Animation Tree"
+align = 1
+
+[node name="Close Button" type="Button" parent="Graph Edit Popup/VBoxContainer/HBoxContainer"]
+margin_left = 452.0
+margin_right = 472.0
+margin_bottom = 20.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "X"
+
+[node name="Animation Editor" parent="Graph Edit Popup/VBoxContainer" instance=ExtResource( 6 )]
+margin_top = 24.0
+margin_right = 472.0
+margin_bottom = 472.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="output" parent="Graph Edit Popup/VBoxContainer/Animation Editor" index="1"]
+margin_bottom = -264.0
+
 [connection signal="value_changed" from="Margin/TopHBox/HSlider" to="." method="_on_HSlider_value_changed"]
 [connection signal="toggled" from="Debug Buttons/Hide-Show Debugger" to="." method="_on_HideShow_Debugger_toggled"]
+[connection signal="tab_changed" from="Char Screens Panel/VBox0/VBox1/Tabs" to="." method="_on_Screen_tab_changed"]
+[connection signal="value_changed" from="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos/X SpinBox" to="." method="_on_character_screen_placement_change"]
+[connection signal="value_changed" from="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos/Y SpinBox" to="." method="_on_character_screen_placement_change"]
+[connection signal="value_changed" from="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale/X SpinBox" to="." method="_on_character_screen_placement_change"]
+[connection signal="value_changed" from="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale/Y SpinBox" to="." method="_on_character_screen_placement_change"]
+[connection signal="pressed" from="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBoxContainer/Play Screen" to="." method="_on_Play_Screen_pressed"]
+[connection signal="pressed" from="Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/Edit Animation Button" to="." method="_on_Edit_Animation_Button_pressed"]
+[connection signal="pressed" from="Graph Edit Popup/VBoxContainer/HBoxContainer/Close Button" to="Graph Edit Popup" method="_on_Close_Button_pressed"]
+[connection signal="blend_tree_has_changed" from="Graph Edit Popup/VBoxContainer/Animation Editor" to="." method="_on_Animation_Editor_blend_tree_has_changed"]
+
+[editable path="Graph Edit Popup/VBoxContainer/Animation Editor"]
