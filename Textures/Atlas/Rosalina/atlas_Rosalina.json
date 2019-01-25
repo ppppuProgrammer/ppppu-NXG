@@ -1,0 +1,135 @@
+{
+	"../character parts/rosa/earring-rosa/earring-rosa_accessory2.png": {
+		"src": "../character parts/rosa/earring-rosa/earring-rosa_accessory2.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1450, "y": 3831, "w": 160, "h": 260,
+		"u0": 0.708008, "v0": 0.467651, "u1": 0.834961, "v1": 0.487183,
+		"rotate": 90, "hash": 13211449672285574086
+	},
+	"../character parts/rosa/earring-rosa/earring-rosa_accessory3.png": {
+		"src": "../character parts/rosa/earring-rosa/earring-rosa_accessory3.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1712, "y": 3831, "w": 160, "h": 260,
+		"u0": 0.835938, "v0": 0.467651, "u1": 0.962891, "v1": 0.487183,
+		"rotate": 90, "hash": 17635630562909350539
+	},
+	"../character parts/rosa/earring-rosa/earring-rosa_outline.png": {
+		"src": "../character parts/rosa/earring-rosa/earring-rosa_outline.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1085, "y": 4040, "w": 160, "h": 260,
+		"u0": 0.529785, "v0": 0.493164, "u1": 0.656738, "v1": 0.512695,
+		"rotate": 90, "hash": 8759050486822270324
+	},
+	"../character parts/rosa/hair1-rosa/hair1_rosaseg1.png": {
+		"src": "../character parts/rosa/hair1-rosa/hair1_rosaseg1.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1727, "y": 2935, "w": 207, "h": 363,
+		"u0": 0.843262, "v0": 0.358276, "u1": 0.944336, "v1": 0.402588,
+		"rotate": 0, "hash": 4350222114139503424
+	},
+	"../character parts/rosa/hair1-rosa/hair1_rosa_outline.png": {
+		"src": "../character parts/rosa/hair1-rosa/hair1_rosa_outline.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1085, "y": 3831, "w": 207, "h": 363,
+		"u0": 0.529785, "v0": 0.467651, "u1": 0.707031, "v1": 0.49292,
+		"rotate": 90, "hash": 1750727833710212193
+	},
+	"../character parts/rosa/hair2-rosa/hair2_rosaseg2.png": {
+		"src": "../character parts/rosa/hair2-rosa/hair2_rosaseg2.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1, "y": 4212, "w": 389, "h": 382,
+		"u0": 0.000488281, "v0": 0.51416, "u1": 0.19043, "v1": 0.560791,
+		"rotate": 0, "hash": 6735006846961731399
+	},
+	"../character parts/rosa/hair2-rosa/hair2_rosaseg3.png": {
+		"src": "../character parts/rosa/hair2-rosa/hair2_rosaseg3.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 392, "y": 4212, "w": 389, "h": 382,
+		"u0": 0.191406, "v0": 0.51416, "u1": 0.381348, "v1": 0.560791,
+		"rotate": 0, "hash": 16304421381435108309
+	},
+	"../character parts/rosa/hair2-rosa/hair2_rosa_outline.png": {
+		"src": "../character parts/rosa/hair2-rosa/hair2_rosa_outline.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 783, "y": 4212, "w": 389, "h": 382,
+		"u0": 0.382324, "v0": 0.51416, "u1": 0.572266, "v1": 0.560791,
+		"rotate": 0, "hash": 110921057321933862
+	},
+	"../character parts/rosa/hair3-rosa/hair3_rosaseg2.png": {
+		"src": "../character parts/rosa/hair3-rosa/hair3_rosaseg2.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 864, "y": 3383, "w": 540, "h": 379,
+		"u0": 0.421875, "v0": 0.412964, "u1": 0.685547, "v1": 0.459229,
+		"rotate": 0, "hash": 13852848625841003626
+	},
+	"../character parts/rosa/hair3-rosa/hair3_rosaseg3.png": {
+		"src": "../character parts/rosa/hair3-rosa/hair3_rosaseg3.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1406, "y": 3383, "w": 540, "h": 379,
+		"u0": 0.686523, "v0": 0.412964, "u1": 0.950195, "v1": 0.459229,
+		"rotate": 0, "hash": 11646139647043892630
+	},
+	"../character parts/rosa/hair3-rosa/hair3_rosa_highlight.png": {
+		"src": "../character parts/rosa/hair3-rosa/hair3_rosa_highlight.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1, "y": 3831, "w": 540, "h": 379,
+		"u0": 0.000488281, "v0": 0.467651, "u1": 0.26416, "v1": 0.513916,
+		"rotate": 0, "hash": 3120870153503422926
+	},
+	"../character parts/rosa/hair3-rosa/hair3_rosa_outline.png": {
+		"src": "../character parts/rosa/hair3-rosa/hair3_rosa_outline.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 543, "y": 3831, "w": 540, "h": 379,
+		"u0": 0.265137, "v0": 0.467651, "u1": 0.528809, "v1": 0.513916,
+		"rotate": 0, "hash": 14629462095949249794
+	},
+	"../character parts/rosa/hairback-rosa/hairback_rosaseg2.png": {
+		"src": "../character parts/rosa/hairback-rosa/hairback_rosaseg2.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1, "y": 1, "w": 976, "h": 1527,
+		"u0": 0.000488281, "v0": 0.00012207, "u1": 0.746094, "v1": 0.119263,
+		"rotate": 90, "hash": 13798578116895544252
+	},
+	"../character parts/rosa/hairback-rosa/hairback_rosaseg3.png": {
+		"src": "../character parts/rosa/hairback-rosa/hairback_rosaseg3.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1, "y": 979, "w": 976, "h": 1527,
+		"u0": 0.000488281, "v0": 0.119507, "u1": 0.746094, "v1": 0.238647,
+		"rotate": 90, "hash": 6678537964056667882
+	},
+	"../character parts/rosa/hairback-rosa/hairback_rosa_outline.png": {
+		"src": "../character parts/rosa/hairback-rosa/hairback_rosa_outline.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1, "y": 1957, "w": 976, "h": 1527,
+		"u0": 0.000488281, "v0": 0.238892, "u1": 0.746094, "v1": 0.358032,
+		"rotate": 90, "hash": 11852378507483996582
+	},
+	"../character parts/rosa/hairfront-angled rosa/hairfrontangled_rosaseg2.png": {
+		"src": "../character parts/rosa/hairfront-angled rosa/hairfrontangled_rosaseg2.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1530, "y": 1, "w": 447, "h": 866,
+		"u0": 0.74707, "v0": 0.00012207, "u1": 0.965332, "v1": 0.105835,
+		"rotate": 0, "hash": 15952836626034112786
+	},
+	"../character parts/rosa/hairfront-angled rosa/hairfrontangled_rosaseg3.png": {
+		"src": "../character parts/rosa/hairfront-angled rosa/hairfrontangled_rosaseg3.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1530, "y": 869, "w": 447, "h": 866,
+		"u0": 0.74707, "v0": 0.106079, "u1": 0.965332, "v1": 0.211792,
+		"rotate": 0, "hash": 16355783677300457346
+	},
+	"../character parts/rosa/hairfront-angled rosa/hairfrontangled_rosa_outline.png": {
+		"src": "../character parts/rosa/hairfront-angled rosa/hairfrontangled_rosa_outline.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1530, "y": 1737, "w": 447, "h": 866,
+		"u0": 0.74707, "v0": 0.212036, "u1": 0.965332, "v1": 0.317749,
+		"rotate": 0, "hash": 11193497967319665255
+	},
+	"../character parts/rosa/hairfront-rosa/hairfront_rosaseg2.png": {
+		"src": "../character parts/rosa/hairfront-rosa/hairfront_rosaseg2.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1, "y": 2935, "w": 446, "h": 861,
+		"u0": 0.000488281, "v0": 0.358276, "u1": 0.420898, "v1": 0.41272,
+		"rotate": 90, "hash": 5033829984155961256
+	},
+	"../character parts/rosa/hairfront-rosa/hairfront_rosaseg3.png": {
+		"src": "../character parts/rosa/hairfront-rosa/hairfront_rosaseg3.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 864, "y": 2935, "w": 446, "h": 861,
+		"u0": 0.421875, "v0": 0.358276, "u1": 0.842285, "v1": 0.41272,
+		"rotate": 90, "hash": 8206964951445551765
+	},
+	"../character parts/rosa/hairfront-rosa/hairfront_rosa_outline.png": {
+		"src": "../character parts/rosa/hairfront-rosa/hairfront_rosa_outline.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1, "y": 3383, "w": 446, "h": 861,
+		"u0": 0.000488281, "v0": 0.412964, "u1": 0.420898, "v1": 0.467407,
+		"rotate": 90, "hash": 16243725908304003363
+	},
+	"../character parts/rosa/headwear-rosa/rosalina crown_0.0.png": {
+		"src": "../character parts/rosa/headwear-rosa/rosalina crown_0.0.png", "dst": "rosalina/atlas_rosalina.png",
+		"x": 1530, "y": 2605, "w": 418, "h": 293,
+		"u0": 0.74707, "v0": 0.317993, "u1": 0.951172, "v1": 0.35376,
+		"rotate": 0, "hash": 3168209580229239306
+	}
+}
+

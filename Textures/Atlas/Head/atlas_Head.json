@@ -1,0 +1,183 @@
+{
+	"../character parts/head/closedlash/closedlashshape_0.0.png": {
+		"src": "../character parts/head/closedlash/closedlashshape_0.0.png", "dst": "head/atlas_head.png",
+		"x": 779, "y": 887, "w": 197, "h": 56,
+		"u0": 0.760742, "v0": 0.108276, "u1": 0.953125, "v1": 0.115112,
+		"rotate": 0, "hash": 1162397563475070919
+	},
+	"../character parts/head/ear/ear_outline.png": {
+		"src": "../character parts/head/ear/ear_outline.png", "dst": "head/atlas_head.png",
+		"x": 779, "y": 945, "w": 163, "h": 191,
+		"u0": 0.760742, "v0": 0.115356, "u1": 0.947266, "v1": 0.135254,
+		"rotate": 90, "hash": 9696315663469485639
+	},
+	"../character parts/head/ear/ear_skincolor.png": {
+		"src": "../character parts/head/ear/ear_skincolor.png", "dst": "head/atlas_head.png",
+		"x": 779, "y": 1110, "w": 163, "h": 191,
+		"u0": 0.760742, "v0": 0.135498, "u1": 0.947266, "v1": 0.155396,
+		"rotate": 90, "hash": 211255560689775390
+	},
+	"../character parts/head/eyemask-ver2/eyemaskshape-2_0.0.png": {
+		"src": "../character parts/head/eyemask-ver2/eyemaskshape-2_0.0.png", "dst": "head/atlas_head.png",
+		"x": 769, "y": 1744, "w": 160, "h": 174,
+		"u0": 0.750977, "v0": 0.212891, "u1": 0.920898, "v1": 0.232422,
+		"rotate": 90, "hash": 6655913176125761647
+	},
+	"../character parts/head/eyemask/eyemaskshape_0.0.png": {
+		"src": "../character parts/head/eyemask/eyemaskshape_0.0.png", "dst": "head/atlas_head.png",
+		"x": 769, "y": 1906, "w": 166, "h": 159,
+		"u0": 0.750977, "v0": 0.232666, "u1": 0.913086, "v1": 0.252075,
+		"rotate": 0, "hash": 12546667321919038683
+	},
+	"../character parts/head/eyeball/eyeball_highlight.png": {
+		"src": "../character parts/head/eyeball/eyeball_highlight.png", "dst": "head/atlas_head.png",
+		"x": 779, "y": 1605, "w": 95, "h": 138,
+		"u0": 0.760742, "v0": 0.195923, "u1": 0.895508, "v1": 0.20752,
+		"rotate": 90, "hash": 8720951905760396692
+	},
+	"../character parts/head/eyeball/eyeball_outline.png": {
+		"src": "../character parts/head/eyeball/eyeball_outline.png", "dst": "head/atlas_head.png",
+		"x": 769, "y": 2067, "w": 95, "h": 138,
+		"u0": 0.750977, "v0": 0.252319, "u1": 0.885742, "v1": 0.263916,
+		"rotate": 90, "hash": 10104089053990962727
+	},
+	"../character parts/head/eyeball/iris_iriscolor.png": {
+		"src": "../character parts/head/eyeball/iris_iriscolor.png", "dst": "head/atlas_head.png",
+		"x": 769, "y": 2164, "w": 95, "h": 138,
+		"u0": 0.750977, "v0": 0.26416, "u1": 0.885742, "v1": 0.275757,
+		"rotate": 90, "hash": 9726673123889603109
+	},
+	"../character parts/head/eyeball/pupil_pupilcolor.png": {
+		"src": "../character parts/head/eyeball/pupil_pupilcolor.png", "dst": "head/atlas_head.png",
+		"x": 909, "y": 2067, "w": 95, "h": 138,
+		"u0": 0.887695, "v0": 0.252319, "u1": 0.980469, "v1": 0.269165,
+		"rotate": 0, "hash": 11965725886255367417
+	},
+	"../character parts/head/eyebrow/eyebrowshape_0.0.png": {
+		"src": "../character parts/head/eyebrow/eyebrowshape_0.0.png", "dst": "head/atlas_head.png",
+		"x": 981, "y": 90, "w": 87, "h": 24,
+		"u0": 0.958008, "v0": 0.0109863, "u1": 0.981445, "v1": 0.0216064,
+		"rotate": 90, "hash": 8518992566889050744
+	},
+	"../character parts/head/eyelash/symbol 58_0.0.png": {
+		"src": "../character parts/head/eyelash/symbol 58_0.0.png", "dst": "head/atlas_head.png",
+		"x": 779, "y": 1275, "w": 163, "h": 176,
+		"u0": 0.760742, "v0": 0.15564, "u1": 0.932617, "v1": 0.175537,
+		"rotate": 90, "hash": 3177015294575566662
+	},
+	"../character parts/head/eyelash/symbol 58_1.0.png": {
+		"src": "../character parts/head/eyelash/symbol 58_1.0.png", "dst": "head/atlas_head.png",
+		"x": 779, "y": 1440, "w": 163, "h": 176,
+		"u0": 0.760742, "v0": 0.175781, "u1": 0.932617, "v1": 0.195679,
+		"rotate": 90, "hash": 10904836847960080572
+	},
+	"../character parts/head/eyelid/eyelid_eyelidcolor.png": {
+		"src": "../character parts/head/eyelid/eyelid_eyelidcolor.png", "dst": "head/atlas_head.png",
+		"x": 779, "y": 1, "w": 272, "h": 200,
+		"u0": 0.760742, "v0": 0.00012207, "u1": 0.956055, "v1": 0.0333252,
+		"rotate": 90, "hash": 16449047310015592923
+	},
+	"../character parts/head/eyelid/eyelid_skinlinecolor.png": {
+		"src": "../character parts/head/eyelid/eyelid_skinlinecolor.png", "dst": "head/atlas_head.png",
+		"x": 779, "y": 275, "w": 272, "h": 200,
+		"u0": 0.760742, "v0": 0.0335693, "u1": 0.956055, "v1": 0.0667725,
+		"rotate": 90, "hash": 3176080613123965592
+	},
+	"../character parts/head/face/face_facecolor.png": {
+		"src": "../character parts/head/face/face_facecolor.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 1, "w": 579, "h": 776,
+		"u0": 0.000976562, "v0": 0.00012207, "u1": 0.758789, "v1": 0.0708008,
+		"rotate": 90, "hash": 15295842061946306852
+	},
+	"../character parts/head/face/face_haircolor.png": {
+		"src": "../character parts/head/face/face_haircolor.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 582, "w": 579, "h": 776,
+		"u0": 0.000976562, "v0": 0.0710449, "u1": 0.758789, "v1": 0.141724,
+		"rotate": 90, "hash": 2822436692024014944
+	},
+	"../character parts/head/face/face_outline.png": {
+		"src": "../character parts/head/face/face_outline.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 1163, "w": 579, "h": 776,
+		"u0": 0.000976562, "v0": 0.141968, "u1": 0.758789, "v1": 0.212646,
+		"rotate": 90, "hash": 10297111085650173545
+	},
+	"../character parts/head/faceangled-ver2/faceangled2_hairangledcolor.png": {
+		"src": "../character parts/head/faceangled-ver2/faceangled2_hairangledcolor.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 3844, "w": 696, "h": 766,
+		"u0": 0.000976562, "v0": 0.469238, "u1": 0.749023, "v1": 0.554199,
+		"rotate": 90, "hash": 3353926697916119872
+	},
+	"../character parts/head/faceangled-ver2/faceangled2_outline.png": {
+		"src": "../character parts/head/faceangled-ver2/faceangled2_outline.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 4542, "w": 696, "h": 766,
+		"u0": 0.000976562, "v0": 0.554443, "u1": 0.749023, "v1": 0.639404,
+		"rotate": 90, "hash": 9999854032766639990
+	},
+	"../character parts/head/faceangled-ver2/faceangled2_skincolor.png": {
+		"src": "../character parts/head/faceangled-ver2/faceangled2_skincolor.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 5240, "w": 696, "h": 766,
+		"u0": 0.000976562, "v0": 0.639648, "u1": 0.749023, "v1": 0.724609,
+		"rotate": 90, "hash": 9030685528419409852
+	},
+	"../character parts/head/faceangled-ver3/faceangled3_hairangledcolor.png": {
+		"src": "../character parts/head/faceangled-ver3/faceangled3_hairangledcolor.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 1744, "w": 698, "h": 766,
+		"u0": 0.000976562, "v0": 0.212891, "u1": 0.749023, "v1": 0.298096,
+		"rotate": 90, "hash": 10960952448196853664
+	},
+	"../character parts/head/faceangled-ver3/faceangled3_outline.png": {
+		"src": "../character parts/head/faceangled-ver3/faceangled3_outline.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 2444, "w": 698, "h": 766,
+		"u0": 0.000976562, "v0": 0.29834, "u1": 0.749023, "v1": 0.383545,
+		"rotate": 90, "hash": 2640802737110660770
+	},
+	"../character parts/head/faceangled-ver3/faceangled3_skincolor.png": {
+		"src": "../character parts/head/faceangled-ver3/faceangled3_skincolor.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 3144, "w": 698, "h": 766,
+		"u0": 0.000976562, "v0": 0.383789, "u1": 0.749023, "v1": 0.468994,
+		"rotate": 90, "hash": 13447190986480957750
+	},
+	"../character parts/head/faceangled/faceangled_hairangledcolor.png": {
+		"src": "../character parts/head/faceangled/faceangled_hairangledcolor.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 5938, "w": 696, "h": 766,
+		"u0": 0.000976562, "v0": 0.724854, "u1": 0.749023, "v1": 0.809814,
+		"rotate": 90, "hash": 1946468511219757606
+	},
+	"../character parts/head/faceangled/faceangled_outline.png": {
+		"src": "../character parts/head/faceangled/faceangled_outline.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 6636, "w": 696, "h": 766,
+		"u0": 0.000976562, "v0": 0.810059, "u1": 0.749023, "v1": 0.89502,
+		"rotate": 90, "hash": 2566719394503229242
+	},
+	"../character parts/head/faceangled/faceangled_skincolor.png": {
+		"src": "../character parts/head/faceangled/faceangled_skincolor.png", "dst": "head/atlas_head.png",
+		"x": 1, "y": 7334, "w": 696, "h": 766,
+		"u0": 0.000976562, "v0": 0.895264, "u1": 0.749023, "v1": 0.980225,
+		"rotate": 90, "hash": 8765970534376499313
+	},
+	"../character parts/head/nose-angled/noseshape-angled_0.0.png": {
+		"src": "../character parts/head/nose-angled/noseshape-angled_0.0.png", "dst": "head/atlas_head.png",
+		"x": 981, "y": 1, "w": 32, "h": 87,
+		"u0": 0.958008, "v0": 0.00012207, "u1": 0.989258, "v1": 0.0107422,
+		"rotate": 0, "hash": 17986460795228998928
+	},
+	"../character parts/head/nose/noseshape_0.0.png": {
+		"src": "../character parts/head/nose/noseshape_0.0.png", "dst": "head/atlas_head.png",
+		"x": 981, "y": 179, "w": 19, "h": 71,
+		"u0": 0.958008, "v0": 0.0218506, "u1": 0.976562, "v1": 0.0305176,
+		"rotate": 0, "hash": 2740321496270493
+	},
+	"../character parts/head/sclera/sclera_eyelidcolor.png": {
+		"src": "../character parts/head/sclera/sclera_eyelidcolor.png", "dst": "head/atlas_head.png",
+		"x": 779, "y": 549, "w": 167, "h": 203,
+		"u0": 0.760742, "v0": 0.0670166, "u1": 0.958984, "v1": 0.0874023,
+		"rotate": 90, "hash": 2798276251283603838
+	},
+	"../character parts/head/sclera/sclera_scleracolor.png": {
+		"src": "../character parts/head/sclera/sclera_scleracolor.png", "dst": "head/atlas_head.png",
+		"x": 779, "y": 718, "w": 167, "h": 203,
+		"u0": 0.760742, "v0": 0.0876465, "u1": 0.958984, "v1": 0.108032,
+		"rotate": 90, "hash": 684369171331805816
+	}
+}
+

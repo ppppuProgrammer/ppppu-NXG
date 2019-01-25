@@ -21,7 +21,7 @@ signal start_screen_animation(screen_num)
 signal update_parts_for_character_screen(screen_num, animated_parts_list)
 signal character_screen_placement_data_request(screen_num)
 signal character_screen_placement_changed(screen_num, screen_placement)
-
+signal start_playing_animation(start_time)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	_animStage = get_parent()
@@ -125,3 +125,24 @@ func _on_character_screen_placement_data_reply(screen_placement:Rect2):
 	$"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Pos/Y SpinBox".value = screen_placement.position.y
 	$"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale/X SpinBox".value = screen_placement.size.x
 	$"Char Screens Panel/VBox0/VBox1/Screen Panel/VBox2/HBox Scale/Y SpinBox".value = screen_placement.size.y
+
+
+func _on_Seek_Time_Input_text_entered(new_text:String):
+	if new_text.is_valid_float():
+		var start_time:float = float(new_text)
+		emit_signal("start_playing_animation", start_time)
+	$"Debug Buttons/Other D Buttons/Seek HBox/Seek Time Input".text = "-1"
+
+
+
+func _on_Seek_Time_Input_gui_input(event):
+	if event is InputEventMouse and event.is_pressed():
+		$"Debug Buttons/Other D Buttons/Seek HBox/Seek Time Input".clear()
+
+func _on_Seek_Time_Input_focus_entered():
+	pass # Replace with function body.
+
+
+func _on_Seek_Time_Input_focus_exited():
+	if $"Debug Buttons/Other D Buttons/Seek HBox/Seek Time Input".text.empty():
+		$"Debug Buttons/Other D Buttons/Seek HBox/Seek Time Input".text = "-1"

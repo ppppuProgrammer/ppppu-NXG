@@ -72,7 +72,8 @@ func set_animation_tree(anim_tree:StageAnimationTree, animation_player:Animation
 	connect("added_node", _animTree, "add_animation_node")
 	connect("output_graph_node_added", _animTree, "setup_output_graph_node")
 	#Reconstruct the node layout based on the animation tree
-	var tree_properties = _animTree.tree_root.get_property_list()
+	var _sub_tree:AnimationNodeBlendTree = _animTree.get_sub_tree()
+	var tree_properties = _sub_tree.get_property_list()
 	#var tree_properties = _animTree.tree_root.get
 	print("tree properties:")
 	for entry in tree_properties:
@@ -86,9 +87,9 @@ func set_animation_tree(anim_tree:StageAnimationTree, animation_player:Animation
 			var record_properties_as_relevant:bool = false
 			if tree_property_name.ends_with("/node"):
 				#print("Node properties:")
-				var relevant_properties:Dictionary = {"animation_node": _animTree.tree_root.get_node(node_name)}
+				var relevant_properties:Dictionary = {"animation_node": _sub_tree.get_node(node_name)}
 				#print(relevant_properties["animation_node"])
-				var current_animation_node:AnimationNode = _animTree.tree_root.get_node(node_name)
+				var current_animation_node:AnimationNode = _sub_tree.get_node(node_name)
 				for node_prop in current_animation_node.get_property_list():
 					var prop_name:String = node_prop["name"]
 					#print(node_prop)
@@ -110,18 +111,18 @@ func set_animation_tree(anim_tree:StageAnimationTree, animation_player:Animation
 					graph_node.set_initial_settings(relevant_properties)
 			elif tree_property_name.ends_with("/position"):
 				#Don't actually use this property's value
-				print("position: %s" % _animTree.tree_root.get(tree_property_name))
+				print("position: %s" % _sub_tree.get(tree_property_name))
 				var graph_node = get_node(node_name)
 				if graph_node:
 					if graph_node.animation_node and graph_node.animation_node.has_meta("offset"):
 						graph_node.offset = graph_node.animation_node.get_meta("offset")
-					#graph_node.offset = _animTree.tree_root.get(entry.name)
+					#graph_node.offset = _sub_tree.get(entry.name)
 					print("offset: %s" % graph_node.offset)
 				#print(entry)
 		elif tree_property_name == "graph_offset":
-			print(_animTree.tree_root.get(entry.name))
+			print(_sub_tree.get(entry.name))
 		elif tree_property_name == "node_connections":
-			var connections_map:Array = _animTree.tree_root.get(entry.name)
+			var connections_map:Array = _sub_tree.get(entry.name)
 			#Need to find the to port number for the graph node. Since AnimationNode can only have 1 from/output,
 			#it's just a matter of finding the index of the first right enabled slot.
 			if not connections_map.empty():

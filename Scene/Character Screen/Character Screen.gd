@@ -25,7 +25,7 @@ signal apply_palette_request
 func _init(animation_list:Array) -> void:
 	_anim_player = AnimationPlayer.new()
 	_animTree = StageAnimationTree.new()
-	_animTree.tree_root = AnimationNodeBlendTree.new()
+	#_animTree.tree_root = AnimationNodeBlendTree.new()
 	#_animTree.tree_root.connect("tree_changed", self, "_update_activated_character_parts")
 	if _anim_player.get_animation_list().size() == 0:
 		for anim in animation_list:
@@ -142,7 +142,7 @@ func get_animation_player() -> AnimationPlayer:
 	return _anim_player
 
 func play_animation(start_time:float = 0.0):
-	_animTree.active = true
+	_animTree.seek(start_time)
 	emit_signal("apply_palette_request")
 
 func get_animation_tree() -> StageAnimationTree:

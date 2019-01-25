@@ -17,6 +17,7 @@ signal change_character_button(char_id, char_name, icon)
 signal animation_added(animation)
 signal character_screen_start_edit_reply(anim_tree)
 signal character_screen_placement_data_reply(screen_placement)
+signal sync_screen_animations(time)
 
 func _ready():
 	#Screen.connect("apply_palette_request", self, "_change_character_palette")
@@ -76,6 +77,7 @@ func create_new_screen(name:String = ""):
 		screen_name = "main"
 	_screen_names.append(screen_name)
 	connect("animation_added", screen, "add_animation_to_player")
+	connect("sync_screen_animations", screen, "play_animation")
 	$Screens.add_child(screen)
 	emit_signal("created_character_screen", screen_name)
 
@@ -127,6 +129,7 @@ func _on_update_parts_for_character_screen(screen_num:int, animated_parts_list:A
 	var screen:CharacterScreen = $Screens.get_child(screen_num)
 	if screen:
 		screen.update_parts(animated_parts_list)
+		emit_signal("sync_screen_animations", 0.0)
 
 
 func _on_character_screen_placement_data_request(screen_num:int):
@@ -142,3 +145,8 @@ func _on_character_screen_placement_changed(screen_num:int, screen_placement:Rec
 	if screen:
 		screen.position = screen_placement.position
 		screen.scale = screen_placement.size
+
+
+func _on_Animation_Seek(time:float):
+	emit_signal("sync_screen_animations", time)
+	

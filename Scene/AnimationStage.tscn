@@ -25,23 +25,29 @@
 script = ExtResource( 1 )
 
 [node name="AnimSceneDebugger" parent="." instance=ExtResource( 2 )]
+editor/display_folded = true
 
 [node name="UI" type="Control" parent="."]
-editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = 960.0
 margin_bottom = 720.0
+mouse_filter = 1
 
 [node name="Character Q Select" parent="UI" instance=ExtResource( 3 )]
+editor/display_folded = true
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -30.0
 margin_right = -20.0
 margin_bottom = 0.0
+mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 0
+
+[node name="HBox" parent="UI/Character Q Select" index="0"]
+mouse_filter = 1
 
 [node name="Name Limiter" parent="UI/Character Q Select/HBox" index="0"]
 margin_right = 360.0
@@ -49,6 +55,8 @@ rect_min_size = Vector2( 360, 0 )
 rect_clip_content = false
 
 [node name="Current Char Label" parent="UI/Character Q Select/HBox/Name Limiter" index="0"]
+margin_left = -1.43198
+margin_right = -1.43198
 text = "Character name at maximum size"
 
 [node name="VSeparator" parent="UI/Character Q Select/HBox" index="1"]
@@ -57,22 +65,24 @@ margin_right = 368.0
 
 [node name="Character Select Bar" parent="UI/Character Q Select/HBox" index="2"]
 margin_left = 372.0
+mouse_filter = 1
 button_size = Vector2( 24, 24 )
 
 [node name="ScrollContainer" parent="UI/Character Q Select/HBox/Character Select Bar" index="0"]
 margin_right = 534.0
+mouse_filter = 1
 
 [node name="IconsHBox" parent="UI/Character Q Select/HBox/Character Select Bar/ScrollContainer" index="0"]
 margin_right = 534.0
+mouse_filter = 1
 custom_constants/separation = 10
 
 [node name="Main Menu" parent="." instance=ExtResource( 4 )]
-editor/display_folded = true
 margin_left = 12.0
 margin_top = 42.0
 margin_right = 12.0
 margin_bottom = 42.0
-mouse_filter = 1
+mouse_filter = 2
 
 [node name="ItemList" parent="Main Menu/VBoxContainer" index="0"]
 margin_right = 27.0
@@ -93,6 +103,7 @@ margin_bottom = 75.0
 [node name="Screens" type="Node2D" parent="."]
 
 [node name="BG" type="Sprite" parent="."]
+position = Vector2( 0, -1.43195 )
 z_index = -4096
 texture = ExtResource( 5 )
 offset = Vector2( 480, 360 )
@@ -156,12 +167,13 @@ script = ExtResource( 20 )
 [connection signal="character_screen_placement_changed" from="AnimSceneDebugger" to="." method="_on_character_screen_placement_changed"]
 [connection signal="character_screen_placement_data_request" from="AnimSceneDebugger" to="." method="_on_character_screen_placement_data_request"]
 [connection signal="character_screen_start_edit_request" from="AnimSceneDebugger" to="." method="_on_character_screen_anim_tree_request"]
+[connection signal="start_playing_animation" from="AnimSceneDebugger" to="." method="_on_Animation_Seek"]
 [connection signal="start_screen_animation" from="AnimSceneDebugger" to="." method="_on_start_screen_animation"]
 [connection signal="update_parts_for_character_screen" from="AnimSceneDebugger" to="." method="_on_update_parts_for_character_screen"]
 [connection signal="pressed" from="AnimSceneDebugger/Char Screens Panel/VBox0/Add Screen Button" to="." method="_on_Add_Character_Screen_request"]
 [connection signal="character_button_pressed" from="UI/Character Q Select/HBox/Character Select Bar" to="." method="_on_Character_Select_Bar_character_button_pressed"]
-[connection signal="character_added" from="Roster" to="AnimSceneDebugger" method="_on_Roster_character_added"]
 [connection signal="character_added" from="Roster" to="Palettes" method="_on_Roster_character_added"]
+[connection signal="character_added" from="Roster" to="AnimSceneDebugger" method="_on_Roster_character_added"]
 [connection signal="character_added" from="Roster" to="CharacterDefaults" method="_on_Roster_character_added"]
 [connection signal="character_added" from="Roster" to="UI/Character Q Select" method="_on_Roster_character_added"]
 [connection signal="character_added" from="Roster" to="CharacterMaterials" method="_on_Roster_character_added"]

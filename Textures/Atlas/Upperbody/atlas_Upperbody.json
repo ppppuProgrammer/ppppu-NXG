@@ -1,0 +1,297 @@
+{
+	"../character parts/upperbody/areola/areola_areolacolor.png": {
+		"src": "../character parts/upperbody/areola/areola_areolacolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 713, "y": 6271, "w": 165, "h": 151,
+		"u0": 0.696289, "v0": 0.765503, "u1": 0.857422, "v1": 0.783936,
+		"rotate": 0, "hash": 6822796427628016408
+	},
+	"../character parts/upperbody/areola/areola_highlight.png": {
+		"src": "../character parts/upperbody/areola/areola_highlight.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 713, "y": 6424, "w": 165, "h": 151,
+		"u0": 0.696289, "v0": 0.78418, "u1": 0.857422, "v1": 0.802612,
+		"rotate": 0, "hash": 6385709911872014980
+	},
+	"../character parts/upperbody/arm-ver2/arm2_outline.png": {
+		"src": "../character parts/upperbody/arm-ver2/arm2_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 778, "y": 1145, "w": 242, "h": 743,
+		"u0": 0.759766, "v0": 0.139771, "u1": 0.996094, "v1": 0.230469,
+		"rotate": 0, "hash": 1622591998877434929
+	},
+	"../character parts/upperbody/arm-ver2/arm2_skincolor.png": {
+		"src": "../character parts/upperbody/arm-ver2/arm2_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 778, "y": 1890, "w": 242, "h": 743,
+		"u0": 0.759766, "v0": 0.230713, "u1": 0.996094, "v1": 0.321411,
+		"rotate": 0, "hash": 6375879627628062650
+	},
+	"../character parts/upperbody/arm-ver3/arm3_outline.png": {
+		"src": "../character parts/upperbody/arm-ver3/arm3_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 4189, "w": 237, "h": 743,
+		"u0": 0.000976562, "v0": 0.511353, "u1": 0.726562, "v1": 0.540283,
+		"rotate": 90, "hash": 2700338789747504482
+	},
+	"../character parts/upperbody/arm-ver3/arm3_skincolor.png": {
+		"src": "../character parts/upperbody/arm-ver3/arm3_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 4428, "w": 237, "h": 743,
+		"u0": 0.000976562, "v0": 0.540527, "u1": 0.726562, "v1": 0.569458,
+		"rotate": 90, "hash": 4345222155827623905
+	},
+	"../character parts/upperbody/arm/arm_outline.png": {
+		"src": "../character parts/upperbody/arm/arm_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 778, "y": 2635, "w": 242, "h": 743,
+		"u0": 0.759766, "v0": 0.321655, "u1": 0.996094, "v1": 0.412354,
+		"rotate": 0, "hash": 10759350654372218904
+	},
+	"../character parts/upperbody/arm/arm_skincolor.png": {
+		"src": "../character parts/upperbody/arm/arm_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 3945, "w": 242, "h": 743,
+		"u0": 0.000976562, "v0": 0.481567, "u1": 0.726562, "v1": 0.511108,
+		"rotate": 90, "hash": 5202740665277390293
+	},
+	"../character parts/upperbody/boob-ver2/boob2_breastcolor.png": {
+		"src": "../character parts/upperbody/boob-ver2/boob2_breastcolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 6790, "w": 330, "h": 320,
+		"u0": 0.000976562, "v0": 0.828857, "u1": 0.323242, "v1": 0.86792,
+		"rotate": 0, "hash": 11689544849850858225
+	},
+	"../character parts/upperbody/boob-ver2/boob2_outline.png": {
+		"src": "../character parts/upperbody/boob-ver2/boob2_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 333, "y": 6790, "w": 330, "h": 320,
+		"u0": 0.325195, "v0": 0.828857, "u1": 0.647461, "v1": 0.86792,
+		"rotate": 0, "hash": 5630556470336434777
+	},
+	"../character parts/upperbody/boob-ver2/boob2_skinhighlightcolor.png": {
+		"src": "../character parts/upperbody/boob-ver2/boob2_skinhighlightcolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 665, "y": 6790, "w": 330, "h": 320,
+		"u0": 0.649414, "v0": 0.828857, "u1": 0.97168, "v1": 0.86792,
+		"rotate": 0, "hash": 10619048632910889709
+	},
+	"../character parts/upperbody/boob-ver3/boob3_breastcolor.png": {
+		"src": "../character parts/upperbody/boob-ver3/boob3_breastcolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 7112, "w": 322, "h": 320,
+		"u0": 0.000976562, "v0": 0.868164, "u1": 0.31543, "v1": 0.907227,
+		"rotate": 0, "hash": 481367701242323607
+	},
+	"../character parts/upperbody/boob-ver3/boob3_outline.png": {
+		"src": "../character parts/upperbody/boob-ver3/boob3_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 325, "y": 7112, "w": 322, "h": 320,
+		"u0": 0.317383, "v0": 0.868164, "u1": 0.631836, "v1": 0.907227,
+		"rotate": 0, "hash": 12743183630983788611
+	},
+	"../character parts/upperbody/boob-ver3/boob3_skinhighlightcolor.png": {
+		"src": "../character parts/upperbody/boob-ver3/boob3_skinhighlightcolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 649, "y": 7112, "w": 322, "h": 320,
+		"u0": 0.633789, "v0": 0.868164, "u1": 0.948242, "v1": 0.907227,
+		"rotate": 0, "hash": 3747946868134257160
+	},
+	"../character parts/upperbody/boob/boob_outline.png": {
+		"src": "../character parts/upperbody/boob/boob_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 367, "y": 5931, "w": 354, "h": 333,
+		"u0": 0.358398, "v0": 0.723999, "u1": 0.704102, "v1": 0.764648,
+		"rotate": 0, "hash": 7745103850142357718
+	},
+	"../character parts/upperbody/boob/boob_skincolor.png": {
+		"src": "../character parts/upperbody/boob/boob_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 6271, "w": 354, "h": 333,
+		"u0": 0.000976562, "v0": 0.765503, "u1": 0.34668, "v1": 0.806152,
+		"rotate": 0, "hash": 2209151645238201759
+	},
+	"../character parts/upperbody/boob/boob_skinhighlightcolor.png": {
+		"src": "../character parts/upperbody/boob/boob_skinhighlightcolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 357, "y": 6271, "w": 354, "h": 333,
+		"u0": 0.348633, "v0": 0.765503, "u1": 0.694336, "v1": 0.806152,
+		"rotate": 0, "hash": 3511776948058855360
+	},
+	"../character parts/upperbody/boobhighlight/boobhighlight_skinhighlightcolor.png": {
+		"src": "../character parts/upperbody/boobhighlight/boobhighlight_skinhighlightcolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 976, "y": 289, "w": 44, "h": 39,
+		"u0": 0.953125, "v0": 0.0352783, "u1": 0.996094, "v1": 0.0400391,
+		"rotate": 0, "hash": 968685884186908687
+	},
+	"../character parts/upperbody/chest/chest_outline.png": {
+		"src": "../character parts/upperbody/chest/chest_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 1, "w": 570, "h": 786,
+		"u0": 0.000976562, "v0": 0.00012207, "u1": 0.768555, "v1": 0.0697021,
+		"rotate": 90, "hash": 4509760276720410053
+	},
+	"../character parts/upperbody/chest/chest_skincolor.png": {
+		"src": "../character parts/upperbody/chest/chest_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 573, "w": 570, "h": 786,
+		"u0": 0.000976562, "v0": 0.0699463, "u1": 0.768555, "v1": 0.139526,
+		"rotate": 90, "hash": 3773750050650708166
+	},
+	"../character parts/upperbody/chestangled/chestangled_outline.png": {
+		"src": "../character parts/upperbody/chestangled/chestangled_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 1145, "w": 698, "h": 775,
+		"u0": 0.000976562, "v0": 0.139771, "u1": 0.757812, "v1": 0.224976,
+		"rotate": 90, "hash": 14253894248588069004
+	},
+	"../character parts/upperbody/chestangled/chestangled_skincolor.png": {
+		"src": "../character parts/upperbody/chestangled/chestangled_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 1845, "w": 698, "h": 775,
+		"u0": 0.000976562, "v0": 0.22522, "u1": 0.757812, "v1": 0.310425,
+		"rotate": 90, "hash": 13208684921935316382
+	},
+	"../character parts/upperbody/clavicle/clavicle_outline.png": {
+		"src": "../character parts/upperbody/clavicle/clavicle_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 746, "y": 4538, "w": 149, "h": 108,
+		"u0": 0.728516, "v0": 0.553955, "u1": 0.874023, "v1": 0.567139,
+		"rotate": 0, "hash": 1748094411006597841
+	},
+	"../character parts/upperbody/clavicle/clavicle_skincolor.png": {
+		"src": "../character parts/upperbody/clavicle/clavicle_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 733, "y": 5799, "w": 149, "h": 108,
+		"u0": 0.71582, "v0": 0.707886, "u1": 0.861328, "v1": 0.721069,
+		"rotate": 0, "hash": 12796045611189490998
+	},
+	"../character parts/upperbody/forearm/forearm_outline.png": {
+		"src": "../character parts/upperbody/forearm/forearm_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 789, "y": 1, "w": 185, "h": 533,
+		"u0": 0.770508, "v0": 0.00012207, "u1": 0.951172, "v1": 0.0651855,
+		"rotate": 0, "hash": 1046092765276319454
+	},
+	"../character parts/upperbody/forearm/forearm_skincolor.png": {
+		"src": "../character parts/upperbody/forearm/forearm_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 789, "y": 536, "w": 185, "h": 533,
+		"u0": 0.770508, "v0": 0.0654297, "u1": 0.951172, "v1": 0.130493,
+		"rotate": 0, "hash": 11482186942690898692
+	},
+	"../character parts/upperbody/forearm/forearm_skinhighlightcolor.png": {
+		"src": "../character parts/upperbody/forearm/forearm_skinhighlightcolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 778, "y": 3380, "w": 185, "h": 533,
+		"u0": 0.759766, "v0": 0.412598, "u1": 0.94043, "v1": 0.477661,
+		"rotate": 0, "hash": 1223576221696841611
+	},
+	"../character parts/upperbody/hand-ver2/hand2_outline.png": {
+		"src": "../character parts/upperbody/hand-ver2/hand2_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 746, "y": 3945, "w": 187, "h": 383,
+		"u0": 0.728516, "v0": 0.481567, "u1": 0.911133, "v1": 0.52832,
+		"rotate": 0, "hash": 7473370760572968369
+	},
+	"../character parts/upperbody/hand-ver2/hand2_skincolor.png": {
+		"src": "../character parts/upperbody/hand-ver2/hand2_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 552, "y": 4667, "w": 187, "h": 383,
+		"u0": 0.539062, "v0": 0.569702, "u1": 0.913086, "v1": 0.592529,
+		"rotate": 90, "hash": 9105786013827229027
+	},
+	"../character parts/upperbody/hand/hand_outline.png": {
+		"src": "../character parts/upperbody/hand/hand_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 552, "y": 4856, "w": 280, "h": 381,
+		"u0": 0.539062, "v0": 0.592773, "u1": 0.911133, "v1": 0.626953,
+		"rotate": 90, "hash": 12011504506103640243
+	},
+	"../character parts/upperbody/hand/hand_skincolor.png": {
+		"src": "../character parts/upperbody/hand/hand_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 552, "y": 5138, "w": 280, "h": 381,
+		"u0": 0.539062, "v0": 0.627197, "u1": 0.911133, "v1": 0.661377,
+		"rotate": 90, "hash": 14829553505654942059
+	},
+	"../character parts/upperbody/midtorsoangled/midtorsoangled_outline.png": {
+		"src": "../character parts/upperbody/midtorsoangled/midtorsoangled_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 4667, "w": 549, "h": 460,
+		"u0": 0.000976562, "v0": 0.569702, "u1": 0.537109, "v1": 0.625854,
+		"rotate": 0, "hash": 377328146862760699
+	},
+	"../character parts/upperbody/midtorsoangled/midtorsoangled_skincolor.png": {
+		"src": "../character parts/upperbody/midtorsoangled/midtorsoangled_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 5129, "w": 549, "h": 460,
+		"u0": 0.000976562, "v0": 0.626099, "u1": 0.537109, "v1": 0.682251,
+		"rotate": 0, "hash": 3511892601560943840
+	},
+	"../character parts/upperbody/navel/navel_outline.png": {
+		"src": "../character parts/upperbody/navel/navel_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 976, "y": 1, "w": 38, "h": 142,
+		"u0": 0.953125, "v0": 0.00012207, "u1": 0.990234, "v1": 0.0174561,
+		"rotate": 0, "hash": 14972866189077304331
+	},
+	"../character parts/upperbody/navel/navel_skincolor.png": {
+		"src": "../character parts/upperbody/navel/navel_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 976, "y": 145, "w": 38, "h": 142,
+		"u0": 0.953125, "v0": 0.0177002, "u1": 0.990234, "v1": 0.0350342,
+		"rotate": 0, "hash": 10407209187559898750
+	},
+	"../character parts/upperbody/neck/neck_outline.png": {
+		"src": "../character parts/upperbody/neck/neck_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 6606, "w": 182, "h": 346,
+		"u0": 0.000976562, "v0": 0.806396, "u1": 0.338867, "v1": 0.828613,
+		"rotate": 90, "hash": 16159393419281327962
+	},
+	"../character parts/upperbody/neck/neck_skincolor.png": {
+		"src": "../character parts/upperbody/neck/neck_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 349, "y": 6606, "w": 182, "h": 346,
+		"u0": 0.34082, "v0": 0.806396, "u1": 0.678711, "v1": 0.828613,
+		"rotate": 90, "hash": 18103311950993095101
+	},
+	"../character parts/upperbody/nipple/nipple_nipplecolor.png": {
+		"src": "../character parts/upperbody/nipple/nipple_nipplecolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 789, "y": 1071, "w": 50, "h": 54,
+		"u0": 0.770508, "v0": 0.130737, "u1": 0.823242, "v1": 0.136841,
+		"rotate": 90, "hash": 15237649496179805217
+	},
+	"../character parts/upperbody/nipple/nipple_outline.png": {
+		"src": "../character parts/upperbody/nipple/nipple_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 845, "y": 1071, "w": 50, "h": 54,
+		"u0": 0.825195, "v0": 0.130737, "u1": 0.87793, "v1": 0.136841,
+		"rotate": 90, "hash": 14687789397403894730
+	},
+	"../character parts/upperbody/sclera-ver2/sclera2_eyelidcolor.png": {
+		"src": "../character parts/upperbody/sclera-ver2/sclera2_eyelidcolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 552, "y": 5420, "w": 167, "h": 193,
+		"u0": 0.539062, "v0": 0.661621, "u1": 0.727539, "v1": 0.682007,
+		"rotate": 90, "hash": 1157956120080353035
+	},
+	"../character parts/upperbody/sclera-ver2/sclera2_scleracolor.png": {
+		"src": "../character parts/upperbody/sclera-ver2/sclera2_scleracolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 747, "y": 5420, "w": 167, "h": 193,
+		"u0": 0.729492, "v0": 0.661621, "u1": 0.917969, "v1": 0.682007,
+		"rotate": 90, "hash": 5928112578001298718
+	},
+	"../character parts/upperbody/shoulder/shoulder_outline.png": {
+		"src": "../character parts/upperbody/shoulder/shoulder_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 746, "y": 4330, "w": 249, "h": 206,
+		"u0": 0.728516, "v0": 0.528564, "u1": 0.97168, "v1": 0.553711,
+		"rotate": 0, "hash": 1007059755632978251
+	},
+	"../character parts/upperbody/shoulder/shoulder_skincolor.png": {
+		"src": "../character parts/upperbody/shoulder/shoulder_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 733, "y": 5591, "w": 249, "h": 206,
+		"u0": 0.71582, "v0": 0.682495, "u1": 0.958984, "v1": 0.707642,
+		"rotate": 0, "hash": 9936031978946602912
+	},
+	"../character parts/upperbody/shoulder/shoulder_skinhighlightcolor.png": {
+		"src": "../character parts/upperbody/shoulder/shoulder_skinhighlightcolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 723, "y": 5931, "w": 249, "h": 206,
+		"u0": 0.706055, "v0": 0.723999, "u1": 0.949219, "v1": 0.749146,
+		"rotate": 0, "hash": 14592151268848688010
+	},
+	"../character parts/upperbody/sideboob/sideboob_outline.png": {
+		"src": "../character parts/upperbody/sideboob/sideboob_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 5591, "w": 364, "h": 338,
+		"u0": 0.000976562, "v0": 0.682495, "u1": 0.356445, "v1": 0.723755,
+		"rotate": 0, "hash": 11275417720498043836
+	},
+	"../character parts/upperbody/sideboob/sideboob_skincolor.png": {
+		"src": "../character parts/upperbody/sideboob/sideboob_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 367, "y": 5591, "w": 364, "h": 338,
+		"u0": 0.358398, "v0": 0.682495, "u1": 0.713867, "v1": 0.723755,
+		"rotate": 0, "hash": 7673444516158666402
+	},
+	"../character parts/upperbody/sideboob/sideboob_skinhighlightcolor.png": {
+		"src": "../character parts/upperbody/sideboob/sideboob_skinhighlightcolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 5931, "w": 364, "h": 338,
+		"u0": 0.000976562, "v0": 0.723999, "u1": 0.356445, "v1": 0.765259,
+		"rotate": 0, "hash": 13359082109687559658
+	},
+	"../character parts/upperbody/upperbackangled/upperbackangled_outline.png": {
+		"src": "../character parts/upperbody/upperbackangled/upperbackangled_outline.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 2545, "w": 698, "h": 775,
+		"u0": 0.000976562, "v0": 0.310669, "u1": 0.757812, "v1": 0.395874,
+		"rotate": 90, "hash": 16744570713247984743
+	},
+	"../character parts/upperbody/upperbackangled/upperbackangled_skincolor.png": {
+		"src": "../character parts/upperbody/upperbackangled/upperbackangled_skincolor.png", "dst": "upperbody/atlas_upperbody.png",
+		"x": 1, "y": 3245, "w": 698, "h": 775,
+		"u0": 0.000976562, "v0": 0.396118, "u1": 0.757812, "v1": 0.481323,
+		"rotate": 90, "hash": 12952823533381654632
+	}
+}
+

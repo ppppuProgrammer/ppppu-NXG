@@ -1,0 +1,17 @@
+../Character Parts/Male/MaleBody/MaleBody_MaleSkinColor.png
+../Character Parts/Male/MaleBody/MaleBody_Outline.png
+../Character Parts/Male/MaleGroin/MaleGroin_MaleSkinColor.png
+../Character Parts/Male/MaleGroin/MaleGroin_Outline.png
+../Character Parts/Male/MaleLeg/MaleLeg_MaleSkinColor.png
+../Character Parts/Male/MaleLeg/MaleLeg_Outline.png
+../Character Parts/Male/MalePenisHead/MalePenisHead_MaleSkinColor.png
+../Character Parts/Male/MalePenisHead/MalePenisHead_Outline.png
+../Character Parts/Male/MaleShaft-Ver2/MaleShaft_Squiggly.png
+../Character Parts/Male/MaleShaft-Ver2/MaleShaft2_Outline.png
+../Character Parts/Male/MaleShaft-Ver2/MaleShaft2_ShaftSkin.png
+../Character Parts/Male/MaleShaft/MaleShaft_Outline.png
+../Character Parts/Male/MaleShaft/MaleShaft_ShaftSkin.png
+../Character Parts/Male/MaleShaft/MaleShaft_Squiggly.png
+../Character Parts/Male/PenisHighlight/PenisHighlight.png
+../Character Parts/Male/ShaftMask-Ver2/ShaftMaskShape-2_0.0.png
+../Character Parts/Male/ShaftMask/ShaftMaskShape_0.0.png

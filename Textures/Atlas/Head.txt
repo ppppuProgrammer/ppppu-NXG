@@ -1,0 +1,30 @@
+../Character Parts/Head/ClosedLash/ClosedLashShape_0.0.png
+../Character Parts/Head/Ear/Ear_Outline.png
+../Character Parts/Head/Ear/Ear_SkinColor.png
+../Character Parts/Head/Eyeball/Eyeball_Highlight.png
+../Character Parts/Head/Eyeball/Eyeball_Outline.png
+../Character Parts/Head/Eyeball/Iris_IrisColor.png
+../Character Parts/Head/Eyeball/Pupil_PupilColor.png
+../Character Parts/Head/Eyebrow/EyebrowShape_0.0.png
+../Character Parts/Head/Eyelash/Symbol 58_0.0.png
+../Character Parts/Head/Eyelash/Symbol 58_1.0.png
+../Character Parts/Head/Eyelid/Eyelid_EyelidColor.png
+../Character Parts/Head/Eyelid/Eyelid_SkinLineColor.png
+../Character Parts/Head/EyeMask-Ver2/EyeMaskShape-2_0.0.png
+../Character Parts/Head/EyeMask/EyeMaskShape_0.0.png
+../Character Parts/Head/Face/Face_FaceColor.png
+../Character Parts/Head/Face/Face_HairColor.png
+../Character Parts/Head/Face/Face_Outline.png
+../Character Parts/Head/FaceAngled-Ver2/FaceAngled2_HairAngledColor.png
+../Character Parts/Head/FaceAngled-Ver2/FaceAngled2_Outline.png
+../Character Parts/Head/FaceAngled-Ver2/FaceAngled2_SkinColor.png
+../Character Parts/Head/FaceAngled-Ver3/FaceAngled3_HairAngledColor.png
+../Character Parts/Head/FaceAngled-Ver3/FaceAngled3_Outline.png
+../Character Parts/Head/FaceAngled-Ver3/FaceAngled3_SkinColor.png
+../Character Parts/Head/FaceAngled/FaceAngled_HairAngledColor.png
+../Character Parts/Head/FaceAngled/FaceAngled_Outline.png
+../Character Parts/Head/FaceAngled/FaceAngled_SkinColor.png
+../Character Parts/Head/Nose-Angled/NoseShape-Angled_0.0.png
+../Character Parts/Head/Nose/NoseShape_0.0.png
+../Character Parts/Head/Sclera/Sclera_EyelidColor.png
+../Character Parts/Head/Sclera/Sclera_ScleraColor.png

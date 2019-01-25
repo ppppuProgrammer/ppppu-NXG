@@ -1,0 +1,183 @@
+{
+	"../character parts/mouth/closedsmile/closedsmile_highlight.png": {
+		"src": "../character parts/mouth/closedsmile/closedsmile_highlight.png", "dst": "mouth/atlas_mouth.png",
+		"x": 110, "y": 4, "w": 79, "h": 34,
+		"u0": 0.107422, "v0": 0.015625, "u1": 0.18457, "v1": 0.148438,
+		"rotate": 0, "hash": 2717148865694805565
+	},
+	"../character parts/mouth/closedsmile/closedsmile_lipcolor.png": {
+		"src": "../character parts/mouth/closedsmile/closedsmile_lipcolor.png", "dst": "mouth/atlas_mouth.png",
+		"x": 191, "y": 4, "w": 79, "h": 34,
+		"u0": 0.186523, "v0": 0.015625, "u1": 0.263672, "v1": 0.148438,
+		"rotate": 0, "hash": 12798335443136558175
+	},
+	"../character parts/mouth/closedsmile/closedsmile_outline.png": {
+		"src": "../character parts/mouth/closedsmile/closedsmile_outline.png", "dst": "mouth/atlas_mouth.png",
+		"x": 272, "y": 4, "w": 79, "h": 34,
+		"u0": 0.265625, "v0": 0.015625, "u1": 0.342773, "v1": 0.148438,
+		"rotate": 0, "hash": 4595965514306725865
+	},
+	"../character parts/mouth/grin/grin.png": {
+		"src": "../character parts/mouth/grin/grin.png", "dst": "mouth/atlas_mouth.png",
+		"x": 1, "y": 4, "w": 107, "h": 50,
+		"u0": 0.000976562, "v0": 0.015625, "u1": 0.105469, "v1": 0.210938,
+		"rotate": 0, "hash": 5439053652186211100
+	},
+	"../character parts/mouth/ohmouth/ohmouth_lipcolor.png": {
+		"src": "../character parts/mouth/ohmouth/ohmouth_lipcolor.png", "dst": "mouth/atlas_mouth.png",
+		"x": 821, "y": 56, "w": 41, "h": 76,
+		"u0": 0.801758, "v0": 0.21875, "u1": 0.875977, "v1": 0.378906,
+		"rotate": 90, "hash": 15352464054261805489
+	},
+	"../character parts/mouth/ohmouth/oh_highlight.png": {
+		"src": "../character parts/mouth/ohmouth/oh_highlight.png", "dst": "mouth/atlas_mouth.png",
+		"x": 899, "y": 56, "w": 41, "h": 76,
+		"u0": 0.87793, "v0": 0.21875, "u1": 0.952148, "v1": 0.378906,
+		"rotate": 90, "hash": 13505344148096492541
+	},
+	"../character parts/mouth/ohmouth/oh_inside.png": {
+		"src": "../character parts/mouth/ohmouth/oh_inside.png", "dst": "mouth/atlas_mouth.png",
+		"x": 333, "y": 112, "w": 41, "h": 76,
+		"u0": 0.325195, "v0": 0.4375, "u1": 0.399414, "v1": 0.597656,
+		"rotate": 90, "hash": 15091919834940261264
+	},
+	"../character parts/mouth/ohmouth/oh_outline.png": {
+		"src": "../character parts/mouth/ohmouth/oh_outline.png", "dst": "mouth/atlas_mouth.png",
+		"x": 411, "y": 112, "w": 41, "h": 76,
+		"u0": 0.401367, "v0": 0.4375, "u1": 0.475586, "v1": 0.597656,
+		"rotate": 90, "hash": 4943640288722002079
+	},
+	"../character parts/mouth/opensmile/opensmile_lipcolor.png": {
+		"src": "../character parts/mouth/opensmile/opensmile_lipcolor.png", "dst": "mouth/atlas_mouth.png",
+		"x": 1, "y": 56, "w": 54, "h": 83,
+		"u0": 0.000976562, "v0": 0.21875, "u1": 0.0820312, "v1": 0.429688,
+		"rotate": 90, "hash": 6772555563202350898
+	},
+	"../character parts/mouth/opensmile/opensml_highlight.png": {
+		"src": "../character parts/mouth/opensmile/opensml_highlight.png", "dst": "mouth/atlas_mouth.png",
+		"x": 86, "y": 56, "w": 54, "h": 83,
+		"u0": 0.0839844, "v0": 0.21875, "u1": 0.165039, "v1": 0.429688,
+		"rotate": 90, "hash": 8787276513778710342
+	},
+	"../character parts/mouth/opensmile/opensml_inside.png": {
+		"src": "../character parts/mouth/opensmile/opensml_inside.png", "dst": "mouth/atlas_mouth.png",
+		"x": 171, "y": 56, "w": 54, "h": 83,
+		"u0": 0.166992, "v0": 0.21875, "u1": 0.248047, "v1": 0.429688,
+		"rotate": 90, "hash": 8790148032961616072
+	},
+	"../character parts/mouth/opensmile/opensml_outline.png": {
+		"src": "../character parts/mouth/opensmile/opensml_outline.png", "dst": "mouth/atlas_mouth.png",
+		"x": 256, "y": 56, "w": 54, "h": 83,
+		"u0": 0.25, "v0": 0.21875, "u1": 0.331055, "v1": 0.429688,
+		"rotate": 90, "hash": 9155370558454385991
+	},
+	"../character parts/mouth/opensmile/opensml_teeth.png": {
+		"src": "../character parts/mouth/opensmile/opensml_teeth.png", "dst": "mouth/atlas_mouth.png",
+		"x": 341, "y": 56, "w": 54, "h": 83,
+		"u0": 0.333008, "v0": 0.21875, "u1": 0.414062, "v1": 0.429688,
+		"rotate": 90, "hash": 2035981270973502912
+	},
+	"../character parts/mouth/teardropmouth/teardropmouth_lipcolor.png": {
+		"src": "../character parts/mouth/teardropmouth/teardropmouth_lipcolor.png", "dst": "mouth/atlas_mouth.png",
+		"x": 353, "y": 4, "w": 34, "h": 77,
+		"u0": 0.344727, "v0": 0.015625, "u1": 0.419922, "v1": 0.148438,
+		"rotate": 90, "hash": 3702426522789103110
+	},
+	"../character parts/mouth/teardropmouth/teardropmth_highlight.png": {
+		"src": "../character parts/mouth/teardropmouth/teardropmth_highlight.png", "dst": "mouth/atlas_mouth.png",
+		"x": 432, "y": 4, "w": 34, "h": 77,
+		"u0": 0.421875, "v0": 0.015625, "u1": 0.49707, "v1": 0.148438,
+		"rotate": 90, "hash": 3685994510763966224
+	},
+	"../character parts/mouth/teardropmouth/teardropmth_inside.png": {
+		"src": "../character parts/mouth/teardropmouth/teardropmth_inside.png", "dst": "mouth/atlas_mouth.png",
+		"x": 511, "y": 4, "w": 34, "h": 77,
+		"u0": 0.499023, "v0": 0.015625, "u1": 0.574219, "v1": 0.148438,
+		"rotate": 90, "hash": 1380923804055826922
+	},
+	"../character parts/mouth/teardropmouth/teardropmth_outline.png": {
+		"src": "../character parts/mouth/teardropmouth/teardropmth_outline.png", "dst": "mouth/atlas_mouth.png",
+		"x": 590, "y": 4, "w": 34, "h": 77,
+		"u0": 0.576172, "v0": 0.015625, "u1": 0.651367, "v1": 0.148438,
+		"rotate": 90, "hash": 5847635981534751868
+	},
+	"../character parts/mouth/teardropmouth/teardropmth_teeth.png": {
+		"src": "../character parts/mouth/teardropmouth/teardropmth_teeth.png", "dst": "mouth/atlas_mouth.png",
+		"x": 669, "y": 4, "w": 34, "h": 77,
+		"u0": 0.65332, "v0": 0.015625, "u1": 0.728516, "v1": 0.148438,
+		"rotate": 90, "hash": 14936506658477582865
+	},
+	"../character parts/mouth/tongue/tongue_color.png": {
+		"src": "../character parts/mouth/tongue/tongue_color.png", "dst": "mouth/atlas_mouth.png",
+		"x": 1, "y": 185, "w": 56, "h": 69,
+		"u0": 0.000976562, "v0": 0.722656, "u1": 0.0683594, "v1": 0.941406,
+		"rotate": 90, "hash": 16695301478764707229
+	},
+	"../character parts/mouth/tongue/tongue_highlight.png": {
+		"src": "../character parts/mouth/tongue/tongue_highlight.png", "dst": "mouth/atlas_mouth.png",
+		"x": 72, "y": 185, "w": 56, "h": 69,
+		"u0": 0.0703125, "v0": 0.722656, "u1": 0.137695, "v1": 0.941406,
+		"rotate": 90, "hash": 7052097834659248903
+	},
+	"../character parts/mouth/tongue/tongue_outline.png": {
+		"src": "../character parts/mouth/tongue/tongue_outline.png", "dst": "mouth/atlas_mouth.png",
+		"x": 143, "y": 185, "w": 56, "h": 69,
+		"u0": 0.139648, "v0": 0.722656, "u1": 0.207031, "v1": 0.941406,
+		"rotate": 90, "hash": 4978980196278547685
+	},
+	"../character parts/mouth/widemouth/widemouth_lipcolor.png": {
+		"src": "../character parts/mouth/widemouth/widemouth_lipcolor.png", "dst": "mouth/atlas_mouth.png",
+		"x": 1, "y": 112, "w": 81, "h": 71,
+		"u0": 0.000976562, "v0": 0.4375, "u1": 0.0800781, "v1": 0.714844,
+		"rotate": 0, "hash": 5268508836094543659
+	},
+	"../character parts/mouth/widemouth/widemth_highlight.png": {
+		"src": "../character parts/mouth/widemouth/widemth_highlight.png", "dst": "mouth/atlas_mouth.png",
+		"x": 84, "y": 112, "w": 81, "h": 71,
+		"u0": 0.0820312, "v0": 0.4375, "u1": 0.161133, "v1": 0.714844,
+		"rotate": 0, "hash": 10845629158837370952
+	},
+	"../character parts/mouth/widemouth/widemth_inside.png": {
+		"src": "../character parts/mouth/widemouth/widemth_inside.png", "dst": "mouth/atlas_mouth.png",
+		"x": 167, "y": 112, "w": 81, "h": 71,
+		"u0": 0.163086, "v0": 0.4375, "u1": 0.242188, "v1": 0.714844,
+		"rotate": 0, "hash": 7121230316318826467
+	},
+	"../character parts/mouth/widemouth/widemth_outline.png": {
+		"src": "../character parts/mouth/widemouth/widemth_outline.png", "dst": "mouth/atlas_mouth.png",
+		"x": 250, "y": 112, "w": 81, "h": 71,
+		"u0": 0.244141, "v0": 0.4375, "u1": 0.323242, "v1": 0.714844,
+		"rotate": 0, "hash": 12209164640486422274
+	},
+	"../character parts/mouth/wideteardropmouth/wideteardropmouth_lipcolor.png": {
+		"src": "../character parts/mouth/wideteardropmouth/wideteardropmouth_lipcolor.png", "dst": "mouth/atlas_mouth.png",
+		"x": 426, "y": 56, "w": 42, "h": 77,
+		"u0": 0.416016, "v0": 0.21875, "u1": 0.491211, "v1": 0.382812,
+		"rotate": 90, "hash": 13403057441876104393
+	},
+	"../character parts/mouth/wideteardropmouth/wideteardropmth_highlight.png": {
+		"src": "../character parts/mouth/wideteardropmouth/wideteardropmth_highlight.png", "dst": "mouth/atlas_mouth.png",
+		"x": 505, "y": 56, "w": 42, "h": 77,
+		"u0": 0.493164, "v0": 0.21875, "u1": 0.568359, "v1": 0.382812,
+		"rotate": 90, "hash": 12169809306032037322
+	},
+	"../character parts/mouth/wideteardropmouth/wideteardropmth_inside.png": {
+		"src": "../character parts/mouth/wideteardropmouth/wideteardropmth_inside.png", "dst": "mouth/atlas_mouth.png",
+		"x": 584, "y": 56, "w": 42, "h": 77,
+		"u0": 0.570312, "v0": 0.21875, "u1": 0.645508, "v1": 0.382812,
+		"rotate": 90, "hash": 7675025624222540269
+	},
+	"../character parts/mouth/wideteardropmouth/wideteardropmth_outline.png": {
+		"src": "../character parts/mouth/wideteardropmouth/wideteardropmth_outline.png", "dst": "mouth/atlas_mouth.png",
+		"x": 663, "y": 56, "w": 42, "h": 77,
+		"u0": 0.647461, "v0": 0.21875, "u1": 0.722656, "v1": 0.382812,
+		"rotate": 90, "hash": 16409376780397362590
+	},
+	"../character parts/mouth/wideteardropmouth/wideteardropmth_teeth.png": {
+		"src": "../character parts/mouth/wideteardropmouth/wideteardropmth_teeth.png", "dst": "mouth/atlas_mouth.png",
+		"x": 742, "y": 56, "w": 42, "h": 77,
+		"u0": 0.724609, "v0": 0.21875, "u1": 0.799805, "v1": 0.382812,
+		"rotate": 90, "hash": 8764510195544988171
+	}
+}
+

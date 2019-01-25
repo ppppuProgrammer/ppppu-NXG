@@ -1,0 +1,22 @@
+../Character Parts/Rosa/Earring-Rosa/Earring-Rosa_Accessory2.png
+../Character Parts/Rosa/Earring-Rosa/Earring-Rosa_Accessory3.png
+../Character Parts/Rosa/Earring-Rosa/Earring-Rosa_Outline.png
+../Character Parts/Rosa/Hair1-Rosa/Hair1_Rosa_Outline.png
+../Character Parts/Rosa/Hair1-Rosa/Hair1_RosaSeg1.png
+../Character Parts/Rosa/Hair2-Rosa/Hair2_Rosa_Outline.png
+../Character Parts/Rosa/Hair2-Rosa/Hair2_RosaSeg2.png
+../Character Parts/Rosa/Hair2-Rosa/Hair2_RosaSeg3.png
+../Character Parts/Rosa/Hair3-Rosa/Hair3_Rosa_Highlight.png
+../Character Parts/Rosa/Hair3-Rosa/Hair3_Rosa_Outline.png
+../Character Parts/Rosa/Hair3-Rosa/Hair3_RosaSeg2.png
+../Character Parts/Rosa/Hair3-Rosa/Hair3_RosaSeg3.png
+../Character Parts/Rosa/HairBack-Rosa/HairBack_Rosa_Outline.png
+../Character Parts/Rosa/HairBack-Rosa/HairBack_RosaSeg2.png
+../Character Parts/Rosa/HairBack-Rosa/HairBack_RosaSeg3.png
+../Character Parts/Rosa/HairFront-Angled Rosa/HairFrontAngled_Rosa_Outline.png
+../Character Parts/Rosa/HairFront-Angled Rosa/HairFrontAngled_RosaSeg2.png
+../Character Parts/Rosa/HairFront-Angled Rosa/HairFrontAngled_RosaSeg3.png
+../Character Parts/Rosa/HairFront-Rosa/HairFront_Rosa_Outline.png
+../Character Parts/Rosa/HairFront-Rosa/HairFront_RosaSeg2.png
+../Character Parts/Rosa/HairFront-Rosa/HairFront_RosaSeg3.png
+../Character Parts/Rosa/Headwear-Rosa/Rosalina Crown_0.0.png

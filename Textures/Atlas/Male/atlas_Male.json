@@ -1,0 +1,105 @@
+{
+	"../character parts/male/malebody/malebody_maleskincolor.png": {
+		"src": "../character parts/male/malebody/malebody_maleskincolor.png", "dst": "male/atlas_male.png",
+		"x": 1, "y": 1, "w": 2827, "h": 1220,
+		"u0": 0.000244141, "v0": 0.000244141, "u1": 0.69043, "v1": 0.298096,
+		"rotate": 0, "hash": 10964334300026388484
+	},
+	"../character parts/male/malebody/malebody_outline.png": {
+		"src": "../character parts/male/malebody/malebody_outline.png", "dst": "male/atlas_male.png",
+		"x": 1, "y": 1223, "w": 2827, "h": 1220,
+		"u0": 0.000244141, "v0": 0.298584, "u1": 0.69043, "v1": 0.596436,
+		"rotate": 0, "hash": 12102383089603268271
+	},
+	"../character parts/male/malegroin/malegroin_maleskincolor.png": {
+		"src": "../character parts/male/malegroin/malegroin_maleskincolor.png", "dst": "male/atlas_male.png",
+		"x": 2830, "y": 1332, "w": 1199, "h": 1026,
+		"u0": 0.690918, "v0": 0.325195, "u1": 0.983643, "v1": 0.575684,
+		"rotate": 0, "hash": 6863860226411103121
+	},
+	"../character parts/male/malegroin/malegroin_outline.png": {
+		"src": "../character parts/male/malegroin/malegroin_outline.png", "dst": "male/atlas_male.png",
+		"x": 1332, "y": 2445, "w": 1199, "h": 1026,
+		"u0": 0.325195, "v0": 0.596924, "u1": 0.61792, "v1": 0.847412,
+		"rotate": 0, "hash": 2722748998212828207
+	},
+	"../character parts/male/maleleg/maleleg_maleskincolor.png": {
+		"src": "../character parts/male/maleleg/maleleg_maleskincolor.png", "dst": "male/atlas_male.png",
+		"x": 2830, "y": 1, "w": 1329, "h": 1216,
+		"u0": 0.690918, "v0": 0.000244141, "u1": 0.987793, "v1": 0.324707,
+		"rotate": 90, "hash": 141309531076231470
+	},
+	"../character parts/male/maleleg/maleleg_outline.png": {
+		"src": "../character parts/male/maleleg/maleleg_outline.png", "dst": "male/atlas_male.png",
+		"x": 1, "y": 2445, "w": 1329, "h": 1216,
+		"u0": 0.000244141, "v0": 0.596924, "u1": 0.324707, "v1": 0.893799,
+		"rotate": 0, "hash": 460862900474257686
+	},
+	"../character parts/male/malepenishead/malepenishead_maleskincolor.png": {
+		"src": "../character parts/male/malepenishead/malepenishead_maleskincolor.png", "dst": "male/atlas_male.png",
+		"x": 3791, "y": 2445, "w": 232, "h": 234,
+		"u0": 0.925537, "v0": 0.596924, "u1": 0.982666, "v1": 0.653564,
+		"rotate": 90, "hash": 7409439433221608774
+	},
+	"../character parts/male/malepenishead/malepenishead_outline.png": {
+		"src": "../character parts/male/malepenishead/malepenishead_outline.png", "dst": "male/atlas_male.png",
+		"x": 1, "y": 3663, "w": 232, "h": 234,
+		"u0": 0.000244141, "v0": 0.894287, "u1": 0.057373, "v1": 0.950928,
+		"rotate": 90, "hash": 10840358157443504731
+	},
+	"../character parts/male/maleshaft-ver2/maleshaft2_outline.png": {
+		"src": "../character parts/male/maleshaft-ver2/maleshaft2_outline.png", "dst": "male/atlas_male.png",
+		"x": 2533, "y": 2812, "w": 286, "h": 492,
+		"u0": 0.618408, "v0": 0.686523, "u1": 0.738525, "v1": 0.756348,
+		"rotate": 90, "hash": 17582839066028150623
+	},
+	"../character parts/male/maleshaft-ver2/maleshaft2_shaftskin.png": {
+		"src": "../character parts/male/maleshaft-ver2/maleshaft2_shaftskin.png", "dst": "male/atlas_male.png",
+		"x": 3027, "y": 2812, "w": 286, "h": 492,
+		"u0": 0.739014, "v0": 0.686523, "u1": 0.859131, "v1": 0.756348,
+		"rotate": 90, "hash": 16342283220213106766
+	},
+	"../character parts/male/maleshaft-ver2/maleshaft_squiggly.png": {
+		"src": "../character parts/male/maleshaft-ver2/maleshaft_squiggly.png", "dst": "male/atlas_male.png",
+		"x": 3521, "y": 2812, "w": 286, "h": 492,
+		"u0": 0.859619, "v0": 0.686523, "u1": 0.979736, "v1": 0.756348,
+		"rotate": 90, "hash": 15523637227458006052
+	},
+	"../character parts/male/maleshaft/maleshaft_outline.png": {
+		"src": "../character parts/male/maleshaft/maleshaft_outline.png", "dst": "male/atlas_male.png",
+		"x": 2533, "y": 3100, "w": 259, "h": 489,
+		"u0": 0.618408, "v0": 0.756836, "u1": 0.737793, "v1": 0.820068,
+		"rotate": 90, "hash": 6559186995199423348
+	},
+	"../character parts/male/maleshaft/maleshaft_shaftskin.png": {
+		"src": "../character parts/male/maleshaft/maleshaft_shaftskin.png", "dst": "male/atlas_male.png",
+		"x": 3024, "y": 3100, "w": 259, "h": 489,
+		"u0": 0.738281, "v0": 0.756836, "u1": 0.857666, "v1": 0.820068,
+		"rotate": 90, "hash": 13043006426676303312
+	},
+	"../character parts/male/maleshaft/maleshaft_squiggly.png": {
+		"src": "../character parts/male/maleshaft/maleshaft_squiggly.png", "dst": "male/atlas_male.png",
+		"x": 3515, "y": 3100, "w": 259, "h": 489,
+		"u0": 0.858154, "v0": 0.756836, "u1": 0.977539, "v1": 0.820068,
+		"rotate": 90, "hash": 13983845064296026244
+	},
+	"../character parts/male/penishighlight/penishighlight.png": {
+		"src": "../character parts/male/penishighlight/penishighlight.png", "dst": "male/atlas_male.png",
+		"x": 4048, "y": 1, "w": 16, "h": 30,
+		"u0": 0.988281, "v0": 0.000244141, "u1": 0.995605, "v1": 0.00415039,
+		"rotate": 90, "hash": 6157254534236572584
+	},
+	"../character parts/male/shaftmask-ver2/shaftmaskshape-2_0.0.png": {
+		"src": "../character parts/male/shaftmask-ver2/shaftmaskshape-2_0.0.png", "dst": "male/atlas_male.png",
+		"x": 3272, "y": 2445, "w": 330, "h": 517,
+		"u0": 0.798828, "v0": 0.596924, "u1": 0.925049, "v1": 0.67749,
+		"rotate": 90, "hash": 14370333092095386219
+	},
+	"../character parts/male/shaftmask/shaftmaskshape_0.0.png": {
+		"src": "../character parts/male/shaftmask/shaftmaskshape_0.0.png", "dst": "male/atlas_male.png",
+		"x": 2533, "y": 2445, "w": 365, "h": 737,
+		"u0": 0.618408, "v0": 0.596924, "u1": 0.79834, "v1": 0.686035,
+		"rotate": 90, "hash": 14523427853094404137
+	}
+}
+

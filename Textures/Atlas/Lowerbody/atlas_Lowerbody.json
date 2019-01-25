@@ -1,0 +1,261 @@
+{
+	"../character parts/lowerbody/backhipsangled/backhipsangled_outline.png": {
+		"src": "../character parts/lowerbody/backhipsangled/backhipsangled_outline.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 5035, "w": 773, "h": 874,
+		"u0": 0.000488281, "v0": 0.614624, "u1": 0.427246, "v1": 0.708984,
+		"rotate": 90, "hash": 12466490523694147463
+	},
+	"../character parts/lowerbody/backhipsangled/backhipsangled_skincolor.png": {
+		"src": "../character parts/lowerbody/backhipsangled/backhipsangled_skincolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 877, "y": 5035, "w": 773, "h": 874,
+		"u0": 0.428223, "v0": 0.614624, "u1": 0.85498, "v1": 0.708984,
+		"rotate": 90, "hash": 10435245835343450017
+	},
+	"../character parts/lowerbody/backhipsangled/backhipsangled_skinhighlightcolor.png": {
+		"src": "../character parts/lowerbody/backhipsangled/backhipsangled_skinhighlightcolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 5810, "w": 773, "h": 874,
+		"u0": 0.000488281, "v0": 0.709229, "u1": 0.427246, "v1": 0.803589,
+		"rotate": 90, "hash": 5360062610565081684
+	},
+	"../character parts/lowerbody/backvulva/backvulva_skinlinecolor.png": {
+		"src": "../character parts/lowerbody/backvulva/backvulva_skinlinecolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1376, "y": 600, "w": 244, "h": 100,
+		"u0": 0.671875, "v0": 0.0732422, "u1": 0.791016, "v1": 0.0854492,
+		"rotate": 0, "hash": 15824631924769893479
+	},
+	"../character parts/lowerbody/backvulva/backvulva_vulvacolor.png": {
+		"src": "../character parts/lowerbody/backvulva/backvulva_vulvacolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1622, "y": 600, "w": 244, "h": 100,
+		"u0": 0.791992, "v0": 0.0732422, "u1": 0.911133, "v1": 0.0854492,
+		"rotate": 0, "hash": 8352086691819562378
+	},
+	"../character parts/lowerbody/buttcheek/buttcheek_highlight.png": {
+		"src": "../character parts/lowerbody/buttcheek/buttcheek_highlight.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1376, "y": 1, "w": 597, "h": 622,
+		"u0": 0.671875, "v0": 0.00012207, "u1": 0.975586, "v1": 0.072998,
+		"rotate": 90, "hash": 12003887797456823320
+	},
+	"../character parts/lowerbody/buttcheek/buttcheek_outline.png": {
+		"src": "../character parts/lowerbody/buttcheek/buttcheek_outline.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1289, "y": 703, "w": 597, "h": 622,
+		"u0": 0.629395, "v0": 0.0858154, "u1": 0.933105, "v1": 0.158691,
+		"rotate": 90, "hash": 9350093469718676705
+	},
+	"../character parts/lowerbody/buttcheek/buttcheek_skincolor.png": {
+		"src": "../character parts/lowerbody/buttcheek/buttcheek_skincolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1289, "y": 1302, "w": 597, "h": 622,
+		"u0": 0.629395, "v0": 0.158936, "u1": 0.933105, "v1": 0.231812,
+		"rotate": 90, "hash": 1287456605933852462
+	},
+	"../character parts/lowerbody/buttcheekshadow/buttcheekshadow.png": {
+		"src": "../character parts/lowerbody/buttcheekshadow/buttcheekshadow.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1913, "y": 1687, "w": 121, "h": 126,
+		"u0": 0.934082, "v0": 0.205933, "u1": 0.995605, "v1": 0.220703,
+		"rotate": 90, "hash": 1702256068639715134
+	},
+	"../character parts/lowerbody/frontbutt/frontbutt_outline.png": {
+		"src": "../character parts/lowerbody/frontbutt/frontbutt_outline.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 7360, "w": 617, "h": 602,
+		"u0": 0.000488281, "v0": 0.898438, "u1": 0.301758, "v1": 0.971924,
+		"rotate": 0, "hash": 12500385515627298155
+	},
+	"../character parts/lowerbody/frontbutt/frontbutt_skincolor.png": {
+		"src": "../character parts/lowerbody/frontbutt/frontbutt_skincolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 620, "y": 7360, "w": 617, "h": 602,
+		"u0": 0.302734, "v0": 0.898438, "u1": 0.604004, "v1": 0.971924,
+		"rotate": 0, "hash": 5196987315558272922
+	},
+	"../character parts/lowerbody/groin-ver2/groin2_skincolor.png": {
+		"src": "../character parts/lowerbody/groin-ver2/groin2_skincolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1769, "y": 4159, "w": 502, "h": 141,
+		"u0": 0.86377, "v0": 0.50769, "u1": 0.932617, "v1": 0.56897,
+		"rotate": 90, "hash": 7521065064864704989
+	},
+	"../character parts/lowerbody/groin-ver2/groin2_skinlinecolor.png": {
+		"src": "../character parts/lowerbody/groin-ver2/groin2_skinlinecolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1753, "y": 5035, "w": 502, "h": 141,
+		"u0": 0.855957, "v0": 0.614624, "u1": 0.924805, "v1": 0.675903,
+		"rotate": 90, "hash": 2965805398489829058
+	},
+	"../character parts/lowerbody/groin/groin_skincolor.png": {
+		"src": "../character parts/lowerbody/groin/groin_skincolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1771, "y": 2407, "w": 502, "h": 151,
+		"u0": 0.864746, "v0": 0.293823, "u1": 0.938477, "v1": 0.355103,
+		"rotate": 90, "hash": 17830054653238578778
+	},
+	"../character parts/lowerbody/groin/groin_skinlinecolor.png": {
+		"src": "../character parts/lowerbody/groin/groin_skinlinecolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1770, "y": 3283, "w": 502, "h": 151,
+		"u0": 0.864258, "v0": 0.400757, "u1": 0.937988, "v1": 0.462036,
+		"rotate": 90, "hash": 5639165273172346265
+	},
+	"../character parts/lowerbody/hips-ver2/hips2_highlight.png": {
+		"src": "../character parts/lowerbody/hips-ver2/hips2_highlight.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 2407, "w": 883, "h": 874,
+		"u0": 0.000488281, "v0": 0.293823, "u1": 0.431641, "v1": 0.400513,
+		"rotate": 0, "hash": 8992421442476458972
+	},
+	"../character parts/lowerbody/hips-ver2/hips2_outline.png": {
+		"src": "../character parts/lowerbody/hips-ver2/hips2_outline.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 886, "y": 2407, "w": 883, "h": 874,
+		"u0": 0.432617, "v0": 0.293823, "u1": 0.86377, "v1": 0.400513,
+		"rotate": 0, "hash": 1447358549408885532
+	},
+	"../character parts/lowerbody/hips-ver2/hips2_skincolor.png": {
+		"src": "../character parts/lowerbody/hips-ver2/hips2_skincolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 3283, "w": 883, "h": 874,
+		"u0": 0.000488281, "v0": 0.400757, "u1": 0.431641, "v1": 0.507446,
+		"rotate": 0, "hash": 17317724914854978546
+	},
+	"../character parts/lowerbody/hips/hips_highlight.png": {
+		"src": "../character parts/lowerbody/hips/hips_highlight.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 886, "y": 3283, "w": 882, "h": 874,
+		"u0": 0.432617, "v0": 0.400757, "u1": 0.863281, "v1": 0.507446,
+		"rotate": 0, "hash": 3161230983677806841
+	},
+	"../character parts/lowerbody/hips/hips_outline.png": {
+		"src": "../character parts/lowerbody/hips/hips_outline.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 4159, "w": 882, "h": 874,
+		"u0": 0.000488281, "v0": 0.50769, "u1": 0.431152, "v1": 0.61438,
+		"rotate": 0, "hash": 8161628956631897274
+	},
+	"../character parts/lowerbody/hips/hips_skincolor.png": {
+		"src": "../character parts/lowerbody/hips/hips_skincolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 885, "y": 4159, "w": 882, "h": 874,
+		"u0": 0.432129, "v0": 0.50769, "u1": 0.862793, "v1": 0.61438,
+		"rotate": 0, "hash": 10211082634029851897
+	},
+	"../character parts/lowerbody/hipsangled/hipsangled_outline.png": {
+		"src": "../character parts/lowerbody/hipsangled/hipsangled_outline.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 877, "y": 5810, "w": 773, "h": 874,
+		"u0": 0.428223, "v0": 0.709229, "u1": 0.85498, "v1": 0.803589,
+		"rotate": 90, "hash": 1234567411811213281
+	},
+	"../character parts/lowerbody/hipsangled/hipsangled_skincolor.png": {
+		"src": "../character parts/lowerbody/hipsangled/hipsangled_skincolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 6585, "w": 773, "h": 874,
+		"u0": 0.000488281, "v0": 0.803833, "u1": 0.427246, "v1": 0.898193,
+		"rotate": 90, "hash": 7764915186418159047
+	},
+	"../character parts/lowerbody/hipsangled/hipsangled_skinhighlightcolor.png": {
+		"src": "../character parts/lowerbody/hipsangled/hipsangled_skinhighlightcolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 877, "y": 6585, "w": 773, "h": 874,
+		"u0": 0.428223, "v0": 0.803833, "u1": 0.85498, "v1": 0.898193,
+		"rotate": 90, "hash": 8940820120834863276
+	},
+	"../character parts/lowerbody/lowerbackangled/lowerbackangled_outline.png": {
+		"src": "../character parts/lowerbody/lowerbackangled/lowerbackangled_outline.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1289, "y": 1901, "w": 550, "h": 457,
+		"u0": 0.629395, "v0": 0.232056, "u1": 0.897949, "v1": 0.287842,
+		"rotate": 0, "hash": 9012632670853688433
+	},
+	"../character parts/lowerbody/lowerbackangled/lowerbackangled_skincolor.png": {
+		"src": "../character parts/lowerbody/lowerbackangled/lowerbackangled_skincolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1239, "y": 7360, "w": 550, "h": 457,
+		"u0": 0.60498, "v0": 0.898438, "u1": 0.873535, "v1": 0.954224,
+		"rotate": 0, "hash": 468161179207847165
+	},
+	"../character parts/lowerbody/lowerleg/legging-pch_color.png": {
+		"src": "../character parts/lowerbody/lowerleg/legging-pch_color.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 1, "w": 1373, "h": 349,
+		"u0": 0.000488281, "v0": 0.00012207, "u1": 0.670898, "v1": 0.0427246,
+		"rotate": 0, "hash": 14762399091199566032
+	},
+	"../character parts/lowerbody/lowerleg/lowerleg_outline.png": {
+		"src": "../character parts/lowerbody/lowerleg/lowerleg_outline.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 352, "w": 1373, "h": 349,
+		"u0": 0.000488281, "v0": 0.0429688, "u1": 0.670898, "v1": 0.0855713,
+		"rotate": 0, "hash": 3252376874014520615
+	},
+	"../character parts/lowerbody/upperleg/upperleg_outline.png": {
+		"src": "../character parts/lowerbody/upperleg/upperleg_outline.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 703, "w": 1286, "h": 566,
+		"u0": 0.000488281, "v0": 0.0858154, "u1": 0.628418, "v1": 0.154907,
+		"rotate": 0, "hash": 239560064208361241
+	},
+	"../character parts/lowerbody/upperleg/upperleg_skincolor.png": {
+		"src": "../character parts/lowerbody/upperleg/upperleg_skincolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 1271, "w": 1286, "h": 566,
+		"u0": 0.000488281, "v0": 0.155151, "u1": 0.628418, "v1": 0.224243,
+		"rotate": 0, "hash": 15239994662335703715
+	},
+	"../character parts/lowerbody/upperleg/upperleg_skinhighlightcolor.png": {
+		"src": "../character parts/lowerbody/upperleg/upperleg_skinhighlightcolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1, "y": 1839, "w": 1286, "h": 566,
+		"u0": 0.000488281, "v0": 0.224487, "u1": 0.628418, "v1": 0.293579,
+		"rotate": 0, "hash": 3011297914598564082
+	},
+	"../character parts/lowerbody/vulva/vulva_clit.png": {
+		"src": "../character parts/lowerbody/vulva/vulva_clit.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1913, "y": 703, "w": 244, "h": 87,
+		"u0": 0.934082, "v0": 0.0858154, "u1": 0.976562, "v1": 0.115601,
+		"rotate": 90, "hash": 9278585418986774362
+	},
+	"../character parts/lowerbody/vulva/vulva_skinhighlightcolor.png": {
+		"src": "../character parts/lowerbody/vulva/vulva_skinhighlightcolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1913, "y": 949, "w": 244, "h": 87,
+		"u0": 0.934082, "v0": 0.115845, "u1": 0.976562, "v1": 0.14563,
+		"rotate": 90, "hash": 14823938422754996152
+	},
+	"../character parts/lowerbody/vulva/vulva_skinlinecolor_1.png": {
+		"src": "../character parts/lowerbody/vulva/vulva_skinlinecolor_1.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1913, "y": 1195, "w": 244, "h": 87,
+		"u0": 0.934082, "v0": 0.145874, "u1": 0.976562, "v1": 0.175659,
+		"rotate": 90, "hash": 6794654040874235713
+	},
+	"../character parts/lowerbody/vulva/vulva_skinlinecolor_2.png": {
+		"src": "../character parts/lowerbody/vulva/vulva_skinlinecolor_2.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1913, "y": 1441, "w": 244, "h": 87,
+		"u0": 0.934082, "v0": 0.175903, "u1": 0.976562, "v1": 0.205688,
+		"rotate": 90, "hash": 2404442702073044586
+	},
+	"../character parts/lowerbody/vulva/vulva_vulvacolor.png": {
+		"src": "../character parts/lowerbody/vulva/vulva_vulvacolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1841, "y": 1901, "w": 244, "h": 87,
+		"u0": 0.898926, "v0": 0.232056, "u1": 0.941406, "v1": 0.261841,
+		"rotate": 90, "hash": 1599613229306775061
+	},
+	"../character parts/lowerbody/vulvaangled/vulvaangled_clit.png": {
+		"src": "../character parts/lowerbody/vulvaangled/vulvaangled_clit.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1930, "y": 1901, "w": 244, "h": 82,
+		"u0": 0.942383, "v0": 0.232056, "u1": 0.982422, "v1": 0.261841,
+		"rotate": 90, "hash": 4820745837601497630
+	},
+	"../character parts/lowerbody/vulvaangled/vulvaangled_skinhighlightcolor.png": {
+		"src": "../character parts/lowerbody/vulvaangled/vulvaangled_skinhighlightcolor.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1924, "y": 2407, "w": 244, "h": 82,
+		"u0": 0.939453, "v0": 0.293823, "u1": 0.979492, "v1": 0.323608,
+		"rotate": 90, "hash": 4831409920271423698
+	},
+	"../character parts/lowerbody/vulvaangled/vulvaangled_skinlinecolor_2.png": {
+		"src": "../character parts/lowerbody/vulvaangled/vulvaangled_skinlinecolor_2.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1924, "y": 2653, "w": 244, "h": 82,
+		"u0": 0.939453, "v0": 0.323853, "u1": 0.979492, "v1": 0.353638,
+		"rotate": 90, "hash": 1661549353265020740
+	},
+	"../character parts/lowerbody/vulvaangled/vulvaangled_skinlinecolor_3.png": {
+		"src": "../character parts/lowerbody/vulvaangled/vulvaangled_skinlinecolor_3.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1771, "y": 2911, "w": 244, "h": 82,
+		"u0": 0.864746, "v0": 0.355347, "u1": 0.983887, "v1": 0.365356,
+		"rotate": 0, "hash": 9687625997362094496
+	},
+	"../character parts/lowerbody/vulvaangled/vulvaangled_skinlinecolor_4.png": {
+		"src": "../character parts/lowerbody/vulvaangled/vulvaangled_skinlinecolor_4.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1771, "y": 2995, "w": 244, "h": 82,
+		"u0": 0.864746, "v0": 0.365601, "u1": 0.983887, "v1": 0.37561,
+		"rotate": 0, "hash": 3992135591296342771
+	},
+	"../character parts/lowerbody/vulvaangled/vulvaangled_vulvacolor_2.png": {
+		"src": "../character parts/lowerbody/vulvaangled/vulvaangled_vulvacolor_2.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1771, "y": 3079, "w": 244, "h": 82,
+		"u0": 0.864746, "v0": 0.375854, "u1": 0.983887, "v1": 0.385864,
+		"rotate": 0, "hash": 5304510126232213819
+	},
+	"../character parts/lowerbody/vulvaangled/vulvaangled_vulvacolor_3.png": {
+		"src": "../character parts/lowerbody/vulvaangled/vulvaangled_vulvacolor_3.png", "dst": "lowerbody/atlas_lowerbody.png",
+		"x": 1771, "y": 3163, "w": 244, "h": 82,
+		"u0": 0.864746, "v0": 0.386108, "u1": 0.983887, "v1": 0.396118,
+		"rotate": 0, "hash": 13907353134722068407
+	}
+}
+

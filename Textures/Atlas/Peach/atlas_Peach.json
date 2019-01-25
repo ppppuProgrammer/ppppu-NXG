@@ -1,0 +1,159 @@
+{
+	"../character parts/pch/earring-pch/earring-pch_accessory2.png": {
+		"src": "../character parts/pch/earring-pch/earring-pch_accessory2.png", "dst": "peach/atlas_peach.png",
+		"x": 783, "y": 5861, "w": 216, "h": 216,
+		"u0": 0.382324, "v0": 0.715454, "u1": 0.487793, "v1": 0.741821,
+		"rotate": 0, "hash": 13479759284674262398
+	},
+	"../character parts/pch/earring-pch/earring-pch_accessory3.png": {
+		"src": "../character parts/pch/earring-pch/earring-pch_accessory3.png", "dst": "peach/atlas_peach.png",
+		"x": 1001, "y": 5861, "w": 216, "h": 216,
+		"u0": 0.48877, "v0": 0.715454, "u1": 0.594238, "v1": 0.741821,
+		"rotate": 0, "hash": 9101788986787267427
+	},
+	"../character parts/pch/earring-pch/earring-pch_highlight.png": {
+		"src": "../character parts/pch/earring-pch/earring-pch_highlight.png", "dst": "peach/atlas_peach.png",
+		"x": 1219, "y": 5861, "w": 216, "h": 216,
+		"u0": 0.595215, "v0": 0.715454, "u1": 0.700684, "v1": 0.741821,
+		"rotate": 0, "hash": 12761591266573035676
+	},
+	"../character parts/pch/earring-pch/earring-pch_outline.png": {
+		"src": "../character parts/pch/earring-pch/earring-pch_outline.png", "dst": "peach/atlas_peach.png",
+		"x": 1437, "y": 5861, "w": 216, "h": 216,
+		"u0": 0.70166, "v0": 0.715454, "u1": 0.807129, "v1": 0.741821,
+		"rotate": 0, "hash": 18239727536368823200
+	},
+	"../character parts/pch/hair1-pch/hair1_pchseg1.png": {
+		"src": "../character parts/pch/hair1-pch/hair1_pchseg1.png", "dst": "peach/atlas_peach.png",
+		"x": 543, "y": 4681, "w": 207, "h": 405,
+		"u0": 0.265137, "v0": 0.571411, "u1": 0.462891, "v1": 0.59668,
+		"rotate": 90, "hash": 10742775662813129415
+	},
+	"../character parts/pch/hair1-pch/hair1_pch_outline.png": {
+		"src": "../character parts/pch/hair1-pch/hair1_pch_outline.png", "dst": "peach/atlas_peach.png",
+		"x": 950, "y": 4681, "w": 207, "h": 405,
+		"u0": 0.463867, "v0": 0.571411, "u1": 0.661621, "v1": 0.59668,
+		"rotate": 90, "hash": 16630030972524128206
+	},
+	"../character parts/pch/hair2-pch/hair2_pchseg2.png": {
+		"src": "../character parts/pch/hair2-pch/hair2_pchseg2.png", "dst": "peach/atlas_peach.png",
+		"x": 1602, "y": 5463, "w": 389, "h": 382,
+		"u0": 0.782227, "v0": 0.66687, "u1": 0.972168, "v1": 0.713501,
+		"rotate": 0, "hash": 7651270488351970226
+	},
+	"../character parts/pch/hair2-pch/hair2_pchseg3.png": {
+		"src": "../character parts/pch/hair2-pch/hair2_pchseg3.png", "dst": "peach/atlas_peach.png",
+		"x": 1, "y": 5861, "w": 389, "h": 382,
+		"u0": 0.000488281, "v0": 0.715454, "u1": 0.19043, "v1": 0.762085,
+		"rotate": 0, "hash": 15875704504388961998
+	},
+	"../character parts/pch/hair2-pch/hair2_pch_outline.png": {
+		"src": "../character parts/pch/hair2-pch/hair2_pch_outline.png", "dst": "peach/atlas_peach.png",
+		"x": 392, "y": 5861, "w": 389, "h": 382,
+		"u0": 0.191406, "v0": 0.715454, "u1": 0.381348, "v1": 0.762085,
+		"rotate": 0, "hash": 17525921047858799291
+	},
+	"../character parts/pch/hair3-pch/hair3_pchseg2.png": {
+		"src": "../character parts/pch/hair3-pch/hair3_pchseg2.png", "dst": "peach/atlas_peach.png",
+		"x": 1, "y": 4300, "w": 540, "h": 379,
+		"u0": 0.000488281, "v0": 0.524902, "u1": 0.26416, "v1": 0.571167,
+		"rotate": 0, "hash": 1223404514124326547
+	},
+	"../character parts/pch/hair3-pch/hair3_pchseg3.png": {
+		"src": "../character parts/pch/hair3-pch/hair3_pchseg3.png", "dst": "peach/atlas_peach.png",
+		"x": 543, "y": 4300, "w": 540, "h": 379,
+		"u0": 0.265137, "v0": 0.524902, "u1": 0.528809, "v1": 0.571167,
+		"rotate": 0, "hash": 15060743374444183380
+	},
+	"../character parts/pch/hair3-pch/hair3_pch_highlight.png": {
+		"src": "../character parts/pch/hair3-pch/hair3_pch_highlight.png", "dst": "peach/atlas_peach.png",
+		"x": 1085, "y": 4300, "w": 540, "h": 379,
+		"u0": 0.529785, "v0": 0.524902, "u1": 0.793457, "v1": 0.571167,
+		"rotate": 0, "hash": 14295086536362516336
+	},
+	"../character parts/pch/hair3-pch/hair3_pch_outline.png": {
+		"src": "../character parts/pch/hair3-pch/hair3_pch_outline.png", "dst": "peach/atlas_peach.png",
+		"x": 1, "y": 4681, "w": 540, "h": 379,
+		"u0": 0.000488281, "v0": 0.571411, "u1": 0.26416, "v1": 0.617676,
+		"rotate": 0, "hash": 15841301154368034933
+	},
+	"../character parts/pch/hairback-pch/hairback_pchseg2.png": {
+		"src": "../character parts/pch/hairback-pch/hairback_pchseg2.png", "dst": "peach/atlas_peach.png",
+		"x": 1, "y": 1, "w": 1431, "h": 1893,
+		"u0": 0.000488281, "v0": 0.00012207, "u1": 0.924805, "v1": 0.174805,
+		"rotate": 90, "hash": 15823702934166289515
+	},
+	"../character parts/pch/hairback-pch/hairback_pchseg3.png": {
+		"src": "../character parts/pch/hairback-pch/hairback_pchseg3.png", "dst": "peach/atlas_peach.png",
+		"x": 1, "y": 1434, "w": 1431, "h": 1893,
+		"u0": 0.000488281, "v0": 0.175049, "u1": 0.924805, "v1": 0.349731,
+		"rotate": 90, "hash": 45367317121354984
+	},
+	"../character parts/pch/hairback-pch/hairback_pch_outline.png": {
+		"src": "../character parts/pch/hairback-pch/hairback_pch_outline.png", "dst": "peach/atlas_peach.png",
+		"x": 1, "y": 2867, "w": 1431, "h": 1893,
+		"u0": 0.000488281, "v0": 0.349976, "u1": 0.924805, "v1": 0.524658,
+		"rotate": 90, "hash": 15715425601678629566
+	},
+	"../character parts/pch/hairfront-angled pch/hairfrontangled_pchseg2.png": {
+		"src": "../character parts/pch/hairfront-angled pch/hairfrontangled_pchseg2.png", "dst": "peach/atlas_peach.png",
+		"x": 1213, "y": 5062, "w": 396, "h": 402,
+		"u0": 0.592285, "v0": 0.61792, "u1": 0.788574, "v1": 0.66626,
+		"rotate": 90, "hash": 13996669478705131662
+	},
+	"../character parts/pch/hairfront-angled pch/hairfrontangled_pchseg3.png": {
+		"src": "../character parts/pch/hairfront-angled pch/hairfrontangled_pchseg3.png", "dst": "peach/atlas_peach.png",
+		"x": 1617, "y": 5062, "w": 396, "h": 402,
+		"u0": 0.789551, "v0": 0.61792, "u1": 0.98584, "v1": 0.66626,
+		"rotate": 90, "hash": 13237057607033611702
+	},
+	"../character parts/pch/hairfront-angled pch/hairfrontangled_pch_outline.png": {
+		"src": "../character parts/pch/hairfront-angled pch/hairfrontangled_pch_outline.png", "dst": "peach/atlas_peach.png",
+		"x": 1, "y": 5463, "w": 396, "h": 402,
+		"u0": 0.000488281, "v0": 0.66687, "u1": 0.196777, "v1": 0.71521,
+		"rotate": 90, "hash": 12400379230375700890
+	},
+	"../character parts/pch/hairfront-angled2 pch/hairfrontangled2_pchseg2.png": {
+		"src": "../character parts/pch/hairfront-angled2 pch/hairfrontangled2_pchseg2.png", "dst": "peach/atlas_peach.png",
+		"x": 1, "y": 5062, "w": 399, "h": 402,
+		"u0": 0.000488281, "v0": 0.61792, "u1": 0.196777, "v1": 0.666626,
+		"rotate": 90, "hash": 13305539466187563353
+	},
+	"../character parts/pch/hairfront-angled2 pch/hairfrontangled2_pchseg3.png": {
+		"src": "../character parts/pch/hairfront-angled2 pch/hairfrontangled2_pchseg3.png", "dst": "peach/atlas_peach.png",
+		"x": 405, "y": 5062, "w": 399, "h": 402,
+		"u0": 0.197754, "v0": 0.61792, "u1": 0.394043, "v1": 0.666626,
+		"rotate": 90, "hash": 1556522269995672110
+	},
+	"../character parts/pch/hairfront-angled2 pch/hairfrontangled2_pch_outline.png": {
+		"src": "../character parts/pch/hairfront-angled2 pch/hairfrontangled2_pch_outline.png", "dst": "peach/atlas_peach.png",
+		"x": 809, "y": 5062, "w": 399, "h": 402,
+		"u0": 0.39502, "v0": 0.61792, "u1": 0.591309, "v1": 0.666626,
+		"rotate": 90, "hash": 15400471048005606859
+	},
+	"../character parts/pch/hairfront-pch/hairfront_pchseg2.png": {
+		"src": "../character parts/pch/hairfront-pch/hairfront_pchseg2.png", "dst": "peach/atlas_peach.png",
+		"x": 405, "y": 5463, "w": 396, "h": 397,
+		"u0": 0.197754, "v0": 0.66687, "u1": 0.391602, "v1": 0.71521,
+		"rotate": 90, "hash": 3857088718378414941
+	},
+	"../character parts/pch/hairfront-pch/hairfront_pchseg3.png": {
+		"src": "../character parts/pch/hairfront-pch/hairfront_pchseg3.png", "dst": "peach/atlas_peach.png",
+		"x": 804, "y": 5463, "w": 396, "h": 397,
+		"u0": 0.392578, "v0": 0.66687, "u1": 0.586426, "v1": 0.71521,
+		"rotate": 90, "hash": 12514873423036173349
+	},
+	"../character parts/pch/hairfront-pch/hairfront_pch_outline.png": {
+		"src": "../character parts/pch/hairfront-pch/hairfront_pch_outline.png", "dst": "peach/atlas_peach.png",
+		"x": 1203, "y": 5463, "w": 396, "h": 397,
+		"u0": 0.587402, "v0": 0.66687, "u1": 0.78125, "v1": 0.71521,
+		"rotate": 90, "hash": 1824060879224074014
+	},
+	"../character parts/pch/headwear-pch/peach crown_0.0.png": {
+		"src": "../character parts/pch/headwear-pch/peach crown_0.0.png", "dst": "peach/atlas_peach.png",
+		"x": 1627, "y": 4300, "w": 418, "h": 293,
+		"u0": 0.794434, "v0": 0.524902, "u1": 0.998535, "v1": 0.560669,
+		"rotate": 0, "hash": 6846882077141210713
+	}
+}
+
