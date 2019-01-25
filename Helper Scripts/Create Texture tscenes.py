@@ -79,6 +79,7 @@ colorGroupDict = pyUtils.loadColorGroups()
 
 
 def createNodeText(objectName, imgList, offsets=None):
+    print()
     variantName = pyUtils.GetCharPartSections(objectName)["variant"]
     if variantName == "":
         variantName = "Default"
@@ -87,10 +88,25 @@ def createNodeText(objectName, imgList, offsets=None):
         clrGroup = ""
         imgRelPath = str(imgList[x].relative_to(
             pyUtils.CHARACTER_PARTS_TEXTURE_PATH).with_suffix(""))
-        if imgRelPath in colorGroupDict:
-            group = colorGroupDict[imgRelPath]
+        print(imgRelPath)
+        group = "UNUSED"
+        for colorKey,colorGroup in colorGroupDict.items():
+            #print(colorKey + "," + colorGroup)
+            #print(colorKey + ", " + imgRelPath)
+            #print(colorKey.find(imgRelPath))
+            if imgRelPath.find(colorKey) > -1:
+                group = colorGroup
+                #print(imgRelPath + " set to use group " + group)
+                #print(group)
             if group is not "UNUSED":
                 clrGroup = GROUP_STRING.format(group)
+                print("breaking")
+                break
+            
+        #if imgRelPath in colorGroupDict:
+        #    group = colorGroupDict[imgRelPath]
+        #    if group is not "UNUSED":
+        #        clrGroup = GROUP_STRING.format(group)
         # res_dict[len(res_dict) + 1] = "res://{:s}".format(str(imgList[x]))
         nodeBlock += NODE_CHILD_STR.format(
             str(imgList[x].stem), x, 1.0 / UPSCALE_FACTOR,
@@ -129,8 +145,8 @@ def main():
     pyUtils.VerifyProjectFolderStructure()
     #print(colorGroupDict)
     #Grab all the folders in the cwd and put them in a list
-    folders = [folder for folder in pyUtils.CHARACTER_PARTS_TEXTURE_PATH.iterdir() if folder.is_dir()]
-    
+    folders = [folder for folder in pyUtils.CHARACTER_PARTS_TEXTURE_PATH.rglob("*") if folder.is_dir()]
+
     for folder in folders:
         res_dict.clear()
         sub_res_dict.clear()
@@ -161,6 +177,7 @@ def main():
                     offsets = None
                 #print(offsets)
         coloringFile = Path(folder / 'ColoringInfo.txt')
+        #print("Trying to find coloring info at " + str(coloringFile))
         if coloringFile.exists() and coloringFile.stat().st_size > 0:
             print("Reading {:s}".format(str(coloringFile)))
             colorLayers = coloringFile.read_text().splitlines()
@@ -205,6 +222,7 @@ def main():
                 #print("sections: {}".format(colorLayerSections))
         nodeText = createNodeText(folder.name, pngList, offsets)
         fileHeader = createSceneHeader(len(res_dict) + 1)
+        #print(subresources_text)
         output = fileHeader + resources_text + "\n" + subresources_text + "\n" + nodeText
         #print(Path(folder / str(folder.name + ".tscn")))
         tscn = Path(folder / str("Sprite_" + folder.name + ".tscn"))

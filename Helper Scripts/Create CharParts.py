@@ -22,7 +22,7 @@ for partName in partNameList:
 #print(cleanPartsList)
 #Texture folder contains the image textures for a char part. While it may be a bit redundant to have the textures in their own tscn to be placed into another tscn this will be done to ease future going plans (such as consolidating multiple unique versions for a char part into 1, an example of which is the Arm char part, which has 3 versions. Instead of having Arm1, Arm2, and Arm3, just have Arm which can switch the texture used between any of the 3.)
 texFolder = pyUtils.CHARACTER_PARTS_TEXTURE_PATH
-partTextureDirList = [texDir.stem for texDir in texFolder.iterdir() if texDir.is_dir()]
+partTextureDirList = [texDir for texDir in texFolder.rglob("*") if texDir.is_dir()]
 #print(partTextureDirList)
 #Go into the char parts folder and create the tscn for the char part.
 TSCN_HEADER_STR = '''[gd_scene load_steps={:d} format=2]
@@ -73,10 +73,14 @@ for charPart in cleanPartsList:
         #    resCounter += 1
     #Do texture related stuff now
     texturePathStrings = ""
-    currentPartTexFolders = sorted([folder for folder in os.listdir(texFolder) if re.search('^' + charPart + '($|-.*|_.*)', folder)])
+    currentPartTexFolders = sorted([folder for folder in partTextureDirList if re.search('^' + charPart + '($|-.*|_.*)', folder.stem)])
+    #print(currentPartTexFolders)
     for texFolderName in currentPartTexFolders:
-        texTscns = Path(texFolder / texFolderName).glob("*.tscn")
+        #print(type(texFolderName))
+        #print(texFolderName)
+        texTscns = texFolderName.glob("*.tscn")
         for texTscn in texTscns:
+            #print(texTscn)
             if len(texturePathStrings) > 0:
                 texturePathStrings += ", "
             texturePathStrings += '\"' + str(texTscn.resolve().relative_to(pyUtils.PROJECT_ROOT_ABS_PATH)) + '\"'
