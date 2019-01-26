@@ -10,6 +10,7 @@ BASE_CHAR_ANIMS_PATH = Path("./Base Character Animations")
 TEST_ANIM_PATH = Path(BASE_CHAR_ANIMS_PATH / "Testing")
 CHAR_PARTS_PATH = Path("./Char Parts")
 TEXTURES_PATH = Path("./Textures")
+ATLAS_BASE_PATH = Path = TEXTURES_PATH / "Atlas"
 CHARACTER_PARTS_TEXTURE_PATH = TEXTURES_PATH / "Character Parts"
 TEXTURE_CGROUP_PATH = TEXTURES_PATH / "Color Groups.txt"
 CREATION_INFO_STR = "Creation Info"
