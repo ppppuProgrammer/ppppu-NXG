@@ -20,15 +20,14 @@
 [ext_resource path="res://Color/Color Presets/Default/Female/Clit_color.tres" type="Gradient" id=18]
 [ext_resource path="res://Color/Color Presets/Default/Outline_color.tres" type="Gradient" id=19]
 [ext_resource path="res://Color/Color Presets/Default/Female/FleshLine_color.tres" type="Gradient" id=20]
-[ext_resource path="res://Characters/Character.gd" type="Script" id=21]
+[ext_resource path="res://Characters/Character Profile.gd" type="Script" id=21]
 
 [resource]
-
 script = ExtResource( 21 )
 _sections_unfolded = [ "Script", "default_color_settings" ]
 character_name = "Peach"
 character_music_name = "Beep Block Skyway"
-default_color_settings = {
+color_settings = {
 "Accessory": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ) ],
 "Body": [ ExtResource( 4 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ) ],
 "Eye": [ ExtResource( 8 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ) ],
@@ -43,4 +42,3 @@ default_color_settings = {
 "Outline": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ) ]
 }
 talkative_frequency = null
-

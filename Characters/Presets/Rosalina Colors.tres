@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=23 format=2]
 
-[ext_resource path="res://Textures/Character Icons/Rosa_Icon.png" type="Texture" id=1]
+[ext_resource path="res://Characters/Character Colors Set.gd" type="Script" id=1]
 [ext_resource path="res://Color/Color Presets/Default/Female/Accessory-1_color.tres" type="Gradient" id=2]
 [ext_resource path="res://Color/Color Presets/Default/Female/Accessory-2_color.tres" type="Gradient" id=3]
 [ext_resource path="res://Color/Color Presets/Unset_color.tres" type="Gradient" id=4]
@@ -21,14 +21,10 @@
 [ext_resource path="res://Color/Color Presets/Default/Female/Clit_color.tres" type="Gradient" id=19]
 [ext_resource path="res://Color/Color Presets/Default/Outline_color.tres" type="Gradient" id=20]
 [ext_resource path="res://Color/Color Presets/Default/Female/FleshLine_color.tres" type="Gradient" id=21]
-[ext_resource path="res://Characters/Character Profile.gd" type="Script" id=22]
 
 [resource]
-script = ExtResource( 22 )
-character_name = "Character name at maximum size"
-character_icon = ExtResource( 1 )
-character_music_name = "Beep Block Skyway"
-color_settings = {
+script = ExtResource( 1 )
+colors = {
 "Accessory": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
 "Body": [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
 "Eye": [ ExtResource( 9 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
@@ -42,4 +38,3 @@ color_settings = {
 "Male": [ ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
 "Outline": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ]
 }
-talkative_frequency = null

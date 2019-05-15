@@ -2,7 +2,7 @@ extends Node
 
 #Stores references to the Character resources which have
 #the default settings for a specific character.
-const Character = preload("res://Characters/Character.gd")
+#const Character = preload("res://Characters/Character.gd")
 
 var _defaults = {}
 

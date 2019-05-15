@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://Characters/Character Colors Set.gd" type="Script" id=1]
+[ext_resource path="res://Color/Color Presets/Unset_color.tres" type="Gradient" id=4]
+[ext_resource path="res://Color/Color Presets/Default/Highlight_color.tres" type="Gradient" id=11]
+[ext_resource path="res://Color/Color Presets/Default/Outline_color.tres" type="Gradient" id=12]
+
+[resource]
+script = ExtResource( 1 )
+colors = {
+"Body": [ ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Highlight": [ ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"Outline": [ ExtResource( 12 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ]
+}

@@ -21,15 +21,14 @@
 [ext_resource path="res://Color/Color Presets/Default/Female/Clit_color.tres" type="Gradient" id=19]
 [ext_resource path="res://Color/Color Presets/Default/Outline_color.tres" type="Gradient" id=20]
 [ext_resource path="res://Color/Color Presets/Default/Female/FleshLine_color.tres" type="Gradient" id=21]
-[ext_resource path="res://Characters/Character.gd" type="Script" id=22]
+[ext_resource path="res://Characters/Character Profile.gd" type="Script" id=22]
 
 [resource]
-
 script = ExtResource( 22 )
 character_name = "Supremely long character name to test that the ui will handle overflow properly through some means"
 character_icon = ExtResource( 1 )
 character_music_name = "Beep Block Skyway"
-default_color_settings = {
+color_settings = {
 "Accessory": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
 "Body": [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
 "Eye": [ ExtResource( 9 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
@@ -43,5 +42,4 @@ default_color_settings = {
 "Male": [ ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ],
 "Outline": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ) ]
 }
-talkative_frequency = null
-
+talkative_frequency = 0
