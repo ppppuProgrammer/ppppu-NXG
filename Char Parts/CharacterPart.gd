@@ -3,18 +3,21 @@ extends Node2D
 class_name CharacterPart
 
 export var initLoadTextures = PoolStringArray()
-export var initLoadOverTextures = PoolStringArray()
-export var initLoadUnderTextures = PoolStringArray()
+export var initLoadDecalTextures = PoolStringArray()
+#export var initLoadUnderTextures = PoolStringArray()
+#export var initLoadDecalTextures = PoolStringArray()
 var _mainTextures = []
-var _overTextures = []
-var _underTextures = []
+var _decalTextures = []
+#var _overTextures = []
+#var _underTextures = []
 export var mainTexId:int = -1 setget _setMainTex
-export var overTexId:int = -1 setget _setOverTex
-export var underTexId:int = -1 setget _setUnderTex
+export var decalTexId:int = -1 setget _setDecalTex
+#export var underTexId:int = -1 setget _setUnderTex
 #Dictionaries to find the id of a variant's name
 var _variantLookup_main:Dictionary = {}
-var _variantLookup_over:Dictionary = {}
-var _variantLookup_under:Dictionary = {}
+#var _variantLookup_over:Dictionary = {}
+#var _variantLookup_under:Dictionary = {}
+var _variantLookup_decal:Dictionary = {}
 ### Extended Node2D (EXN) properties START ###
 #Allows finer control (skewing) of the matrix used to transform nodes.
 #Do not use a Node2D's rotation, position and scale properties
@@ -29,11 +32,11 @@ export var exnPos = Vector2(0,0) setget _setPos
 export var _tr = Transform2D() setget _setTr#:Transform2D
 ### Extended Node2D (EXN) properties END ###
 onready var _mainSprite = $Main
-onready var _overSprite = $Overlay
-onready var _underSprite = $Underlay
+onready var _decalSprite = $Decal
+#onready var _underSprite = $Underlay
 #var _spritesInUse = Array().resize(3)
-enum layers {UNDER = -1, MAIN, OVER }
-
+#enum layers {UNDER = -1, MAIN, OVER }
+enum layers {MAIN, OVER }
 ### Masking properties START ###
 
 ### Masking properties END ###
@@ -46,39 +49,57 @@ signal sig_spriteSceneChanged(emitter, layer, spriteNode)
 
 func _ready():
 	_variantLookup_main["None"] = -1
-	_variantLookup_over["None"] = -1
-	_variantLookup_under["None"] = -1
+	_variantLookup_decal["None"] = -1
+#	_variantLookup_over["None"] = -1
+#	_variantLookup_under["None"] = -1
 	_tr = self.transform
-	_loadTextures(initLoadTextures, _mainTextures, _variantLookup_main)
-	_loadTextures(initLoadOverTextures, _overTextures, _variantLookup_over)
-	_loadTextures(initLoadUnderTextures, _underTextures, _variantLookup_under)
+	_loadTextures(initLoadTextures, _mainTextures)
+	_loadTextures(initLoadDecalTextures, _decalTextures)
+	#_loadTextures(initLoadDecalTextures, _overTextures, _variantLookup_over)
+	#_loadTextures(initLoadUnderTextures, _underTextures, _variantLookup_under)
 	_validateOK = true
 	_setMainTex(mainTexId)
-	_setOverTex(overTexId)
-	_setUnderTex(underTexId)
+	_setDecalTex(decalTexId)
+	#_setUnderTex(underTexId)
 
 ### Animation related START ###
 
 ### Animation related END ###
 
 ### Texture related START ###
-func _loadTextures(texPathList, textureList, lookupDict:Dictionary):
+func _loadTextures(texPathList:Array, layer:int):
 	for texPath in texPathList:
 		var tex = load(texPath)
 		if tex:
 			var charSprite = tex.instance()
-			if not charSprite.variantName in lookupDict.keys():
-				lookupDict[charSprite.variantName] = textureList.size()
-				textureList.append(charSprite)
+			add_texture(layer, charSprite)
+
+func add_texture(layer:int, charSprite)->int:
+	var textureList:Array = []
+	var lookupDict:Dictionary = {}
+	if layer == layers.MAIN:
+		textureList = _mainTextures
+		lookupDict = _variantLookup_main
+	if layer == layers.OVER:
+		textureList = _decalTextures
+		lookupDict = _variantLookup_decal
+	if not charSprite.variantName in lookupDict.keys():
+		var spriteId:int = textureList.size()
+		lookupDict[charSprite.variantName] = spriteId
+		textureList.append(charSprite)
+		return spriteId
+	return -1
+	
+		
 
 # To be called by animations to control what variant to use.
 func setVariantByName(layer, variantName):
 	if layer == layers.MAIN:
 		_setMainTexByVariant(variantName)
 	elif layer == layers.OVER:
-		_setOverTexByVariant(variantName)
-	elif layer == layers.UNDER:
-		_setUnderTexByVariant(variantName)
+		_setDecalTexByVariant(variantName)
+	#elif layer == layers.UNDER:
+#		_setUnderTexByVariant(variantName)
 
 func _setMainTexByVariant(variantName):
 	if _variantLookup_main.has(variantName):
@@ -96,34 +117,34 @@ func _setMainTex(texId):
 	_setTexture(mainTexId, _mainTextures, _mainSprite)
 	emit_signal("sig_spriteSceneChanged", self, layers.MAIN, _mainSprite)
 
-func _setOverTexByVariant(variantName):
-	if _variantLookup_over.has(variantName):
-		overTexId = _variantLookup_over[variantName]
-		_setTexture(overTexId, _overTextures, _overSprite)
+func _setDecalTexByVariant(variantName):
+	if _variantLookup_decal.has(variantName):
+		decalTexId = _variantLookup_decal[variantName]
+		_setTexture(decalTexId, _decalTextures, _decalSprite)
 	else:
-		overTexId = -1
-	emit_signal("sig_spriteSceneChanged", self, layers.OVER, _overSprite)
+		decalTexId = -1
+	emit_signal("sig_spriteSceneChanged", self, layers.OVER, _decalSprite)
 
-func _setOverTex(texId):
-	#if overTexId != texId:
-	overTexId = _validateTexId(texId, _overTextures)
-	_setTexture(overTexId, _overTextures, _overSprite)
-	emit_signal("sig_spriteSceneChanged", self, layers.OVER, _overSprite)
+func _setDecalTex(texId):
+	#if decalTexId != texId:
+	decalTexId = _validateTexId(texId, _decalTextures)
+	_setTexture(decalTexId, _decalTextures, _decalSprite)
+	emit_signal("sig_spriteSceneChanged", self, layers.OVER, _decalSprite)
 	
-func _setUnderTexByVariant(variantName):
-	if _variantLookup_under.has(variantName):
-		underTexId = _variantLookup_under[variantName]
-		_setTexture(underTexId, _overTextures, _overSprite)
-	else:
-		underTexId = -1
-	emit_signal("sig_spriteSceneChanged", self, layers.UNDER, _underSprite)	
-
-func _setUnderTex(texId):
-	#vv is commented due to conflicts with node ready order
-	#if underTexId != texId:
-	underTexId = _validateTexId(texId, _underTextures)
-	_setTexture(underTexId, _underTextures, _underSprite)
-	emit_signal("sig_spriteSceneChanged", self, layers.UNDER, _underSprite)
+#func _setUnderTexByVariant(variantName):
+#	if _variantLookup_decal.has(variantName):
+#		underTexId = _variantLookup_decal[variantName]
+#		_setTexture(underTexId, _decalTextures, _decalSprite)
+#	else:
+#		underTexId = -1
+#	emit_signal("sig_spriteSceneChanged", self, layers.UNDER, _underSprite)	
+#
+#func _setUnderTex(texId):
+#	#vv is commented due to conflicts with node ready order
+#	#if underTexId != texId:
+#	underTexId = _validateTexId(texId, _decalTextures)
+#	_setTexture(underTexId, _decalTextures, _underSprite)
+#	emit_signal("sig_spriteSceneChanged", self, layers.UNDER, _underSprite)
 	
 func _validateTexId(texId, textureList):
 	if !_validateOK:
@@ -150,10 +171,10 @@ func get_textures_in_use(layer):
 	var textures = null
 	if layer == layers.MAIN and _mainSprite:
 		textures = _mainSprite.get_used_textures_list()
-	elif layer == layers.OVER and _overSprite:
-		textures = _overSprite.get_used_textures_list()
-	elif layer == layers.UNDER and _underSprite:
-		textures = _underSprite.get_used_textures_list()
+	elif layer == layers.OVER and _decalSprite:
+		textures = _decalSprite.get_used_textures_list()
+#	elif layer == layers.UNDER and _underSprite:
+#		textures = _underSprite.get_used_textures_list()
 	return textures
 	
 ### Texture related END ###
@@ -186,10 +207,10 @@ func _setScale(scaleVector2):
 ### Transform Related END ###
 
 func setVisibility(visibility):
-	if _underSprite:
-		_underSprite.visible = visibility
-	if _overSprite:
-		_overSprite.visible = visibility
+#	if _underSprite:
+#		_underSprite.visible = visibility
+	if _decalSprite:
+		_decalSprite.visible = visibility
 	if _mainSprite:
 		_mainSprite.visible = visibility
 

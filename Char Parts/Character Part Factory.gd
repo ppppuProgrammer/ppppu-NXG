@@ -9,7 +9,6 @@ func registerPartsList(list:Array):
 			registerPart(part)
 
 func registerPart(part_scene:PackedScene)->bool:
-	#validate packed scene instance
 	var part = part_scene.instance()
 	if part is CharacterPart and not part_scene.get_rid().get_id() in _registeredPackedScenes:
 		_registeredPackedScenes.append(part_scene.get_rid().get_id())
@@ -23,6 +22,8 @@ func createPart(part_name:String)->CharacterPart:
 	else:
 		return null
 
-func addSpriteToPart(sprite:Sprite, part_name:String):
-	pass
+func addSpriteToPart(sprite:CharacterSpriteContainer, part_name:String)->int:
+	if part_name in _parts_master_copy:
+		return _parts_master_copy[part_name].add_texture(sprite.target_layer, sprite)
+	return -1
 	
