@@ -6,35 +6,20 @@
 [node name="BaseCharPart" type="Node2D"]
 light_mask = 0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Material", "Visibility" ]
-initLoadTextures = PoolStringArray(  )
-initLoadOverTextures = PoolStringArray(  )
-initLoadUnderTextures = PoolStringArray(  )
-mainTexId = -1
-overTexId = -1
-underTexId = -1
-exnSkew = Vector2( 0, 0 )
-exnScale = Vector2( 1, 1 )
-exnPos = Vector2( 0, 0 )
-_tr = Transform2D( 1, 0, 0, 1, 0, 0 )
 
 [node name="Overlay" type="Node2D" parent="."]
 light_mask = 0
 use_parent_material = true
 z_index = 1
 script = ExtResource( 2 )
-_sections_unfolded = [ "Material", "Visibility", "Z Index" ]
 
 [node name="Main" type="Node2D" parent="."]
 light_mask = 0
 use_parent_material = true
 script = ExtResource( 2 )
-_sections_unfolded = [ "Material", "Visibility", "Z Index" ]
 
 [node name="Underlay" type="Node2D" parent="."]
 light_mask = 0
 use_parent_material = true
 z_index = -1
 script = ExtResource( 2 )
-_sections_unfolded = [ "Material", "Visibility", "Z Index" ]
-

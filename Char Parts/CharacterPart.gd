@@ -1,5 +1,6 @@
 tool
 extends Node2D
+class_name CharacterPart
 
 export var initLoadTextures = PoolStringArray()
 export var initLoadOverTextures = PoolStringArray()

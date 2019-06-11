@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://Scene/Game Phases/Game Phase.gd" type="Script" id=1]
+[ext_resource path="res://Testing/unit/test phase scene.tscn" type="PackedScene" id=2]
+
+[resource]
+script = ExtResource( 1 )
+phase_scene = ExtResource( 2 )

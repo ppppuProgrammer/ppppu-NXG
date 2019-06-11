@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scene/Game Phases/Startup Load/Startup Load.gd" type="Script" id=1]
+[ext_resource path="res://Characters/Presets/Peach_Character.tres" type="Resource" id=2]
+[ext_resource path="res://Characters/Presets/Rosalina_Character.tres" type="Resource" id=3]
+
+[node name="Startup Load" type="Node2D"]
+script = ExtResource( 1 )
+_start_load_resources = {
+"Characters": [ ExtResource( 2 ), ExtResource( 3 ) ]
+}
