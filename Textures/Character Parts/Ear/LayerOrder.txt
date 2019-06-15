@@ -1,2 +1,0 @@
-Ear_SkinColor
-Ear_Outline

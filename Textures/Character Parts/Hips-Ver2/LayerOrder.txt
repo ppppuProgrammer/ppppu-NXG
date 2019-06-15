@@ -1,3 +1,0 @@
-Hips2_SkinColor
-Hips2_Outline
-Hips2_Highlight

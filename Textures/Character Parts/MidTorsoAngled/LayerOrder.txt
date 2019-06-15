@@ -1,2 +1,0 @@
-MidTorsoAngled_SkinColor
-MidTorsoAngled_Outline

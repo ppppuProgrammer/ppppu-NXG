@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/atlas_Upperbody.png-e0a49b580f5b9fd2abba4494e27cf5cd.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

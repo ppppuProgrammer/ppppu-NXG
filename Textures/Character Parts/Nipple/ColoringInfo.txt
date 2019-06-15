@@ -1,2 +1,0 @@
-Nipple_Outline:Solid;
-Nipple_NippleColor:Solid;4,

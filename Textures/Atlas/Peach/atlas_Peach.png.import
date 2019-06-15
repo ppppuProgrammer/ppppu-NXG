@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/atlas_Peach.png-39caad513544fff1f774e63496d35d00.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

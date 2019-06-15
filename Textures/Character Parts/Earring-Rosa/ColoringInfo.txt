@@ -1,3 +1,0 @@
-Earring-Rosa_Accessory3:Solid;1,
-Earring-Rosa_Accessory2:Solid;2,
-Earring-Rosa_Outline:Solid;

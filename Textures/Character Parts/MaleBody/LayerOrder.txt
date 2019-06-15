@@ -1,2 +1,0 @@
-MaleBody_MaleSkinColor
-MaleBody_Outline

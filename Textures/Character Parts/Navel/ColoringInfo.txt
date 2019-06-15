@@ -1,2 +1,0 @@
-Navel_SkinColor:Solid;2,
-Navel_Outline:Solid;

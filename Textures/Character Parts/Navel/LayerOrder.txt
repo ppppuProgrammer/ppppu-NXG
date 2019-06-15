@@ -1,2 +1,0 @@
-Navel_SkinColor
-Navel_Outline

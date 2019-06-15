@@ -1,4 +1,0 @@
-WideMouth_LipColor:Solid;1,
-WideMth_Highlight:Solid;1,
-WideMth_Inside:Solid;
-WideMth_Outline:Solid;

@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/atlas_Mouth.png-e5d9bcdedd34e4989af4752af5408110.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

@@ -1,4 +1,0 @@
-WideMouth_LipColor
-WideMth_Highlight
-WideMth_Inside
-WideMth_Outline

@@ -1,2 +1,0 @@
-Neck_SkinColor
-Neck_Outline

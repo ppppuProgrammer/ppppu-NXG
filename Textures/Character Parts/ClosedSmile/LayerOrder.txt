@@ -1,3 +1,0 @@
-ClosedSmile_LipColor
-ClosedSmile_Outline
-ClosedSmile_Highlight

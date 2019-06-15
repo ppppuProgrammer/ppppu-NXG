@@ -1,3 +1,0 @@
-Boob_Outline:Solid;
-Boob_SkinHighlightColor:Solid;2,
-Boob_SkinColor:Solid;1,

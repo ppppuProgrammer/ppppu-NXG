@@ -40,6 +40,11 @@ func set_character_button(char_number:int, name:String, icon:Texture=null):
 			_icon_holder.add_child(button)
 			_icon_holder.move_child(button, char_number)
 
+func reset():
+	for id in _icon_holder.get_child_count():
+		remove_character_button(id)
+		
+
 func remove_character_button(char_id:int):
 	var button:BaseButton = _icon_holder.get_child(char_id)
 	_icon_holder.remove_child(button)

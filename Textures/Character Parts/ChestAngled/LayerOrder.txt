@@ -1,2 +1,0 @@
-ChestAngled_Outline
-ChestAngled_SkinColor

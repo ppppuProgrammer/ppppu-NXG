@@ -1,11 +1,11 @@
 extends Node2D
+#DEFUNCT CLASS. The Character class will perform the functionality
+#that this class was to have.
 
 #Character screen is a node that can hold all parts necessary
 #to display a character and animate them. 
 #The primary purpose for handling characters like this
 #is for animations that make use of multiple characters.
-
-const CHARPART_CLASS = preload("res://Char Parts/CharacterPart.gd")
 
 #var maskFactory = preload("res://Utility/MaskingFactory.gd").new()
 const CHAR_PART_PATH = "res://Char Parts/"
@@ -126,7 +126,7 @@ func activate_character_part(partName:String):
 
 func setDefaultTextures():
 	for child in self.get_children():
-		if child is CHARPART_CLASS:
+		if child is CharacterPart:
 			child.mainTexId = 0
 
 func add_animation_to_player(animation:Animation) -> void:

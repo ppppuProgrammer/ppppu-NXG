@@ -1,3 +1,0 @@
-Tongue_Color
-Tongue_Highlight
-Tongue_Outline

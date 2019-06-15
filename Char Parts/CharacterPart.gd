@@ -36,7 +36,7 @@ onready var _decalSprite = $Decal
 #onready var _underSprite = $Underlay
 #var _spritesInUse = Array().resize(3)
 #enum layers {UNDER = -1, MAIN, OVER }
-enum layers {MAIN, OVER }
+enum layers {MAIN, DECAL }
 ### Masking properties START ###
 
 ### Masking properties END ###
@@ -48,13 +48,17 @@ signal sig_spriteSceneChanged(emitter, layer, spriteNode)
 
 
 func _ready():
+	#The texture load has issues. This can not be a part 
+	#of character part anymore (mainly for testing purposes but also for factory purposes.)
+	#The textures that are to be added are to be in a seperate location and added
+	#whenever a part is created.
 	_variantLookup_main["None"] = -1
 	_variantLookup_decal["None"] = -1
 #	_variantLookup_over["None"] = -1
 #	_variantLookup_under["None"] = -1
 	_tr = self.transform
-	_loadTextures(initLoadTextures, _mainTextures)
-	_loadTextures(initLoadDecalTextures, _decalTextures)
+	_loadTextures(initLoadTextures, layers.MAIN)
+	_loadTextures(initLoadDecalTextures, layers.DECAL)
 	#_loadTextures(initLoadDecalTextures, _overTextures, _variantLookup_over)
 	#_loadTextures(initLoadUnderTextures, _underTextures, _variantLookup_under)
 	_validateOK = true
@@ -80,7 +84,7 @@ func add_texture(layer:int, charSprite)->int:
 	if layer == layers.MAIN:
 		textureList = _mainTextures
 		lookupDict = _variantLookup_main
-	if layer == layers.OVER:
+	if layer == layers.DECAL:
 		textureList = _decalTextures
 		lookupDict = _variantLookup_decal
 	if not charSprite.variantName in lookupDict.keys():
@@ -96,7 +100,7 @@ func add_texture(layer:int, charSprite)->int:
 func setVariantByName(layer, variantName):
 	if layer == layers.MAIN:
 		_setMainTexByVariant(variantName)
-	elif layer == layers.OVER:
+	elif layer == layers.DECAL:
 		_setDecalTexByVariant(variantName)
 	#elif layer == layers.UNDER:
 #		_setUnderTexByVariant(variantName)
@@ -123,13 +127,13 @@ func _setDecalTexByVariant(variantName):
 		_setTexture(decalTexId, _decalTextures, _decalSprite)
 	else:
 		decalTexId = -1
-	emit_signal("sig_spriteSceneChanged", self, layers.OVER, _decalSprite)
+	emit_signal("sig_spriteSceneChanged", self, layers.DECAL, _decalSprite)
 
 func _setDecalTex(texId):
 	#if decalTexId != texId:
 	decalTexId = _validateTexId(texId, _decalTextures)
 	_setTexture(decalTexId, _decalTextures, _decalSprite)
-	emit_signal("sig_spriteSceneChanged", self, layers.OVER, _decalSprite)
+	emit_signal("sig_spriteSceneChanged", self, layers.DECAL, _decalSprite)
 	
 #func _setUnderTexByVariant(variantName):
 #	if _variantLookup_decal.has(variantName):
@@ -171,7 +175,7 @@ func get_textures_in_use(layer):
 	var textures = null
 	if layer == layers.MAIN and _mainSprite:
 		textures = _mainSprite.get_used_textures_list()
-	elif layer == layers.OVER and _decalSprite:
+	elif layer == layers.DECAL and _decalSprite:
 		textures = _decalSprite.get_used_textures_list()
 #	elif layer == layers.UNDER and _underSprite:
 #		textures = _underSprite.get_used_textures_list()

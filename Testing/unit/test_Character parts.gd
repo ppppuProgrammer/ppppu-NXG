@@ -29,3 +29,6 @@ func test_partExtending():
 	assert_eq(_partFactory.addSpriteToPart(headwear_extra, "Headwear"), -1)
 	var headwear_extra_dup = load("res://Testing/unit/test_CharParts/Sprite_Headwear-Test.tscn").instance()
 	assert_eq(_partFactory.addSpriteToPart(headwear_extra_dup, "Headwear"), -1)
+	gut.p("Ensure that duplicated instances have the newly added sprite")
+	var dup_headwear:CharacterPart = _partFactory.createPart("Headwear")
+	assert_has(dup_headwear._mainTextures, headwear_extra)

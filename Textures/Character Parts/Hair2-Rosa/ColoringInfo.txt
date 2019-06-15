@@ -1,3 +1,0 @@
-Hair2_RosaSeg3:Solid;1,
-Hair2_RosaSeg2:Radial;4,;(232.6715, 75.849);(232.6715, 75.849);224.4487748814;(1, 0, 0, 0, 1, 0, 0, 0, 1)
-Hair2_Rosa_Outline:Solid;

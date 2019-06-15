@@ -1,2 +1,0 @@
-Groin_SkinColor
-Groin_SkinLineColor

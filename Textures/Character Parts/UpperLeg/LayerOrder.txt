@@ -1,3 +1,0 @@
-UpperLeg_SkinColor
-UpperLeg_Outline
-UpperLeg_SkinHighlightColor

@@ -1,2 +1,0 @@
-Eyelid_EyelidColor:Solid;2,
-Eyelid_SkinLineColor:Solid;

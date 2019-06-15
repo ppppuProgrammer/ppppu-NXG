@@ -1,2 +1,0 @@
-Hand2_SkinColor:Solid;1,
-Hand2_Outline:Solid;

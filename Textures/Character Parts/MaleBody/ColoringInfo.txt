@@ -1,2 +1,0 @@
-MaleBody_MaleSkinColor:Solid;1,
-MaleBody_Outline:Solid;

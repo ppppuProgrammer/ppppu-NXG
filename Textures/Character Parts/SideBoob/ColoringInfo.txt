@@ -1,3 +1,0 @@
-SideBoob_Outline:Solid;
-Sideboob_SkinHighlightColor:Solid;2,
-Sideboob_SkinColor:Solid;1,

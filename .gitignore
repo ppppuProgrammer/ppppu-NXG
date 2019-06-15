@@ -11,6 +11,10 @@ export_presets.cfg
 # Mono-specific ignores
 .mono/
 
+#emacs-specific ignores
+\#*\#
+.\#*
+
 # p4u specific ignores
 __pycache__/
 *~

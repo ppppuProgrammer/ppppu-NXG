@@ -1,5 +1,5 @@
 extends GraphNode
-
+class_name AnimationGraphNode
 var animation_node:AnimationNode = null
 #Work around for the fact that Godot currently doesn't expose 
 #a list of parameters that a type of animation node has.

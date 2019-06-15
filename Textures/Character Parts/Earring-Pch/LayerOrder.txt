@@ -1,4 +1,0 @@
-Earring-Pch_Accessory3
-Earring-Pch_Accessory2
-Earring-Pch_Highlight
-Earring-Pch_Outline

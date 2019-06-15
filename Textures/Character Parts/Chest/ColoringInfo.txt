@@ -1,2 +1,0 @@
-Chest_SkinColor:Solid;1,
-Chest_Outline:Solid;

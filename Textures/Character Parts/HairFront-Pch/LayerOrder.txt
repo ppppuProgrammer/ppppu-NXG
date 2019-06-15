@@ -1,3 +1,0 @@
-HairFront_PchSeg3
-HairFront_PchSeg2
-HairFront_Pch_Outline

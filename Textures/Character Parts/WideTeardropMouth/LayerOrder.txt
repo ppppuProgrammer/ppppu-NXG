@@ -1,5 +1,0 @@
-WideTeardropMouth_LipColor
-WideTeardropMth_Highlight
-WideTeardropMth_Inside
-WideTeardropMth_Teeth
-WideTeardropMth_Outline

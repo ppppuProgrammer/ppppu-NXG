@@ -1,4 +1,0 @@
-Iris_IrisColor:Solid;1,
-Eyeball_Outline:Solid;
-Pupil_PupilColor:Solid;5,
-Eyeball_Highlight:Solid;4,

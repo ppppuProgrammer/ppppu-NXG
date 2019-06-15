@@ -1,5 +1,0 @@
-TeardropMouth_LipColor:Solid;1,
-TeardropMth_Highlight:Solid;1,
-TeardropMth_Teeth:Solid;
-TeardropMth_Inside:Solid;
-TeardropMth_Outline:Solid;

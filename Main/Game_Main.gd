@@ -1,11 +1,11 @@
 extends Node
-
+class_name GameMain
 #onready var _scene = $Scene
 onready var world:Node = $Game_World
 onready var gui:Control = $Game_GUI
 #export (Array) var 
 #The list of materials that are built into the game
-export (int) var start_game_phase
+export var start_game_phase:String
 export (Array) var default_materials
 export (Array) var start_characters_resources
 export (Array) var start_animations
@@ -22,23 +22,28 @@ func _ready():
 	#	$MaterialStash.add(load(material_path))
 	#Might want a title screen here at some point.
 	
-	var initial_scene:Node = scenes_list.game_phases[start_game_phase].instance()
-	
-	set_game_phase(initial_scene)
+	#var initial_scene:Node = scenes_list.get_game_phase(start_game_phase)
+	set_game_phase(scenes_list.get_game_phase(start_game_phase))
+	set_game_phase(scenes_list.get_game_phase(start_game_phase))
+	set_game_phase(scenes_list.get_game_phase(start_game_phase))
+	#set_game_phase(initial_scene)
 	#add_child(stage)
 	#stage.load_characters(start_characters_resources)
 	#stage.load_animations(start_animations)
+
+func _process(delta):
+	if world.is_next_phase_queued():
+		world.switch_phase()
 	
 # A world phase refers to a breakdown of the
 # game into significant segments. The startup splash screen, title screen, 
 # main menu, and gameplay are some examples of various phases a
 # game can have. Only 1 phase can be active at a time.
-func set_game_phase(phase:Node):
+#Returns world for the purpose of yielding for the signal
+#that the phase has changed
+func set_game_phase(phase:GamePhase):
 	world.set_world_phase(phase)
-	if phase.is_in_group("Game_Phase"):
-		phase.func_add_gui_scene
-		phase.func_remove_all_gui_scenes
-		phase.func_remove_gui_scene
+	#yield(world, "world_phase_changed")
 	
 func add_scene_to_gui(scene:Node):
 	gui.add_gui_scene(scene)
@@ -48,3 +53,11 @@ func remove_scene_from_gui(scene:Node):
 	
 func clear_gui():
 	gui.remove_all_gui_scenes()
+
+func clear_world_and_gui():
+	clear_gui()
+	set_game_phase(null)
+
+func restart_game():
+	clear_world_and_gui()
+	set_game_phase(scenes_list.get_game_phase(start_game_phase))

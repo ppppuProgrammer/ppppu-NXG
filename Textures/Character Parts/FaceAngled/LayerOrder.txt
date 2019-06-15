@@ -1,3 +1,0 @@
-FaceAngled_HairAngledColor
-FaceAngled_SkinColor
-FaceAngled_Outline

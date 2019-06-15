@@ -1,5 +1,7 @@
 extends Control
 
+var _gui_cache:Dictionary
+
 func add_gui_scene(scene:Node):
 	if not scene in self.get_children():
 		add_child(scene)

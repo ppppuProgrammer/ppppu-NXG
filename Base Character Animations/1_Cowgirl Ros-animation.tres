@@ -1,7 +1,9 @@
-[gd_resource type="Animation" format=2]
+[gd_resource type="Animation" load_steps=2 format=2]
+
+[ext_resource path="res://Animation/Character Animation Element.gd" type="Script" id=1]
+
 
 [resource]
-
 resource_name = "1_Cowgirl Ros"
 length = 4.0
 loop = true
@@ -5252,4 +5254,6 @@ tracks/423/keys = {
 "update": 1,
 "values": [ 1000 ]
 }
-
+script = ExtResource( 1 )
+animation_slot_name = "Cowgirl"
+animation_name = "Ros"

@@ -45,7 +45,8 @@ func get_icon()->Texture:
 	return character_icon
 
 func set_name(new_name:String):
-	pass
+	if character_name == "":
+		character_name = new_name
 
 func get_name()->String:
 	return character_name

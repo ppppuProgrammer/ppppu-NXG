@@ -1,2 +1,0 @@
-Eyelid_EyelidColor
-Eyelid_SkinLineColor

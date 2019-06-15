@@ -1,3 +1,0 @@
-HipsAngled_SkinColor:Solid;1,
-HipsAngled_Outline:Solid;
-HipsAngled_SkinHighlightColor:Solid;2,

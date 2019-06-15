@@ -1,3 +1,0 @@
-MaleShaft_ShaftSkin
-MaleShaft_Outline
-MaleShaft_Squiggly

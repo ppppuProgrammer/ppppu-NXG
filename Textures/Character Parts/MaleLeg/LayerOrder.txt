@@ -1,2 +1,0 @@
-MaleLeg_MaleSkinColor
-MaleLeg_Outline

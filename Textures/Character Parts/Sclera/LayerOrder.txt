@@ -1,2 +1,0 @@
-Sclera_EyelidColor
-Sclera_ScleraColor

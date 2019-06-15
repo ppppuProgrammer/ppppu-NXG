@@ -1,2 +1,0 @@
-UpperBackAngled_SkinColor
-UpperBackAngled_Outline

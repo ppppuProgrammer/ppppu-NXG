@@ -1,4 +1,0 @@
-Hair3_RosaSeg3:Solid;1,
-Hair3_RosaSeg2:Solid;5,
-Hair3_Rosa_Highlight:Solid;3,
-Hair3_Rosa_Outline:Solid;

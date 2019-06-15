@@ -1,2 +1,0 @@
-Neck_SkinColor:Solid;1,
-Neck_Outline:Solid;

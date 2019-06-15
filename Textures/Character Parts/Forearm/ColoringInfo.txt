@@ -1,3 +1,0 @@
-Forearm_SkinColor:Solid;1,
-Forearm_Outline:Solid;
-Forearm_SkinHighlightColor:Solid;2,

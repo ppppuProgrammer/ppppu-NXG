@@ -1,5 +1,0 @@
-OpenSmile_LipColor
-OpenSml_Inside
-OpenSml_Teeth
-OpenSml_Outline
-OpenSml_Highlight

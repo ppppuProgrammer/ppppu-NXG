@@ -1,4 +1,0 @@
-Hair3_PchSeg3:Solid;1,
-Hair3_PchSeg2:Solid;5,
-Hair3_Pch_Highlight:Solid;3,
-Hair3_Pch_Outline:Solid;

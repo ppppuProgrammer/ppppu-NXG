@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/atlas_Rosalina.png-34cd38215f12b97ca4128b6df44090cd.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

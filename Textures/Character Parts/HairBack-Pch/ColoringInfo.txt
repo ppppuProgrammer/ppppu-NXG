@@ -1,3 +1,0 @@
-HairBack_PchSeg3:Solid;6,
-HairBack_Pch_Outline:Solid;
-HairBack_PchSeg2:Solid;7,

@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/Checkerboard.png-37d0b97c80a256a8f917e8e38a313412.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

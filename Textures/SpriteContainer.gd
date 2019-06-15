@@ -1,8 +1,9 @@
 extends Node2D
-
+class_name CharacterSpriteContainer
 # A node that will hold various sprite nodes to complete a variant
 # of a character part.
 export var variantName:String = "Default" setget , _getVariantName
+export (CharacterPart.layers) var target_layer = 0
 #export var gradientData:Dictionary
 # Called when the node enters the scene tree for the first time.
 func _ready():

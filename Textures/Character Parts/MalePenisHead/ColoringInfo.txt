@@ -1,2 +1,0 @@
-MalePenisHead_MaleSkinColor:Solid;1,
-MalePenisHead_Outline:Solid;

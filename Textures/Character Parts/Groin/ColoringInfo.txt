@@ -1,2 +1,0 @@
-Groin_SkinColor:Solid;1,
-Groin_SkinLineColor:Solid;

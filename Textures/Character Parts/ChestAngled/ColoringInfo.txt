@@ -1,2 +1,0 @@
-ChestAngled_Outline:Solid;
-ChestAngled_SkinColor:Solid;1,

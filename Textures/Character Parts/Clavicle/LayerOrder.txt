@@ -1,2 +1,0 @@
-Clavicle_SkinColor
-Clavicle_Outline
