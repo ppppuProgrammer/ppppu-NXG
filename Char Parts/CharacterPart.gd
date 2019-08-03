@@ -235,6 +235,14 @@ func _process(delta):
 		self.transform = Transform2D(workX, workY, exnPos)
 		recalcTransform = false
 
+func clone()->CharacterPart:
+	var clone_instance:CharacterPart = self.duplicate()
+	#Need to clone the texture sprites as this is not duplicated
+	for tex_main in self._mainTextures:
+		clone_instance.add_texture(layers.MAIN, tex_main.duplicate())
+	for tex_decal in self._decalTextures:
+		clone_instance.add_texture(layers.DECAL, tex_decal.duplicate())
+	return clone_instance
 
 func _setTr(tr):
 	transform = tr
