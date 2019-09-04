@@ -36,7 +36,7 @@ onready var _decalSprite = $Decal
 #onready var _underSprite = $Underlay
 #var _spritesInUse = Array().resize(3)
 #enum layers {UNDER = -1, MAIN, OVER }
-enum layers {MAIN, DECAL }
+enum layers {NONE = 0, MAIN, DECAL }
 ### Masking properties START ###
 
 ### Masking properties END ###
@@ -246,3 +246,5 @@ func clone()->CharacterPart:
 
 func _setTr(tr):
 	transform = tr
+	
+	

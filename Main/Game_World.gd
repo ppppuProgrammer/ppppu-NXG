@@ -19,7 +19,7 @@ func set_world_phase(game_phase:GamePhase, phase_change_data:Dictionary={}):
 			printerr("Warning: %s is already queued to be switched to." % game_phase)
 		else:
 			printerr("Warning: phase \"%s could not be queued. phase %s is currently queued."
-		 		% [game_phase, _next_phase])
+				% [game_phase, _next_phase])
 		return
 	if game_phase != _current_phase:
 		_next_phase = game_phase
