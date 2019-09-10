@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "GraphEdit",
+"class": "AnimationGraphEdit",
+"language": "GDScript",
+"path": "res://UI/Animation Editor.gd"
+}, {
 "base": "GraphNode",
 "class": "AnimationGraphNode",
 "language": "GDScript",
@@ -78,8 +83,14 @@ _global_script_classes=[ {
 "class": "GamePhase",
 "language": "GDScript",
 "path": "res://Scene/Game Phases/Game Phase.gd"
+}, {
+"base": "",
+"class": "GitAPI",
+"language": "NativeScript",
+"path": "res://git_api.gdns"
 } ]
 _global_script_class_icons={
+"AnimationGraphEdit": "",
 "AnimationGraphNode": "",
 "AnimationRepository": "",
 "Character": "",
@@ -93,7 +104,8 @@ _global_script_class_icons={
 "CharacterStage": "",
 "CustomCharacterProfile": "",
 "GameMain": "",
-"GamePhase": ""
+"GamePhase": "",
+"GitAPI": ""
 }
 
 [application]
@@ -121,6 +133,10 @@ window/size/resizable=false
 [editor_plugins]
 
 enabled=PoolStringArray( "gut" )
+
+[gdnative]
+
+singletons=[ "res://git_api.gdnlib" ]
 
 [importer_defaults]
 

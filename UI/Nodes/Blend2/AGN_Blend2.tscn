@@ -44,6 +44,9 @@ slot/5/right_enabled = false
 slot/5/right_type = 0
 slot/5/right_color = Color( 1, 1, 1, 1 )
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="in" type="Label" parent="."]
 margin_left = 16.0
@@ -54,26 +57,26 @@ text = "in"
 
 [node name="out" type="Label" parent="."]
 margin_left = 16.0
-margin_top = 38.0
+margin_top = 39.0
 margin_right = 96.0
-margin_bottom = 52.0
+margin_bottom = 53.0
 text = "out"
 align = 2
 
 [node name="blend" type="Label" parent="."]
 margin_left = 16.0
-margin_top = 53.0
+margin_top = 54.0
 margin_right = 96.0
-margin_bottom = 67.0
+margin_bottom = 68.0
 text = "blend"
 
 [node name="blend_amount" parent="." instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 16.0
-margin_top = 68.0
+margin_top = 69.0
 margin_right = 96.0
-margin_bottom = 98.0
+margin_bottom = 99.0
 
 [node name="Label" parent="blend_amount/VBoxContainer" index="0"]
 margin_right = 80.0
@@ -83,18 +86,17 @@ margin_right = 80.0
 
 [node name="sync" type="CheckBox" parent="."]
 margin_left = 16.0
-margin_top = 99.0
+margin_top = 100.0
 margin_right = 96.0
-margin_bottom = 123.0
+margin_bottom = 124.0
 text = "Sync"
 
 [node name="MenuButton" type="Button" parent="."]
 margin_left = 16.0
-margin_top = 124.0
+margin_top = 125.0
 margin_right = 96.0
-margin_bottom = 144.0
+margin_bottom = 145.0
 text = "Edit Filters"
-
 [connection signal="value_changed" from="blend_amount/VBoxContainer/HSlider" to="." method="_on_HSlider_value_changed"]
 [connection signal="pressed" from="MenuButton" to="." method="_on_MenuButton_pressed"]
 

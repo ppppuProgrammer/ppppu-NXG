@@ -8,9 +8,9 @@ func before_all():
 func before_each():
 	_character_agency.clear_characters()
 
-var char_list:Array = [load("res://Testing/unit/test characters/Princess Nectarine.tres"),
-	load("res://Testing/unit/test characters/Rozalin.tres"),
-	load("res://Testing/unit/test characters/Princess Rose.tres")]
+var char_list:Array = [load("res://Testing/unit/test characters profiles/Princess Nectarine.tres"),
+	load("res://Testing/unit/test characters profiles/Rozalin.tres"),
+	load("res://Testing/unit/test characters profiles/Princess Rose.tres")]
 
 func test_character_added():
 	gut.p("Adding characters: ", 2)
@@ -47,10 +47,10 @@ func test_remove_character():
 	assert_eq(_character_agency.get_character_by_id(0).get_name(), char_list[0].get_name())
 	assert_eq(_character_agency.get_character_by_id(1).get_name(), char_list[2].get_name())
 
-var char_list2:Array = [preload("res://Testing/unit/test characters/Princess Nectarine.tres"),
-	load("res://Testing/unit/test characters/Rozalin.tres"),
-	load("res://Testing/unit/test characters/Princess Rose.tres"),
-	load("res://Testing/unit/test characters/Stupid character.tres")]
+var char_list2:Array = [preload("res://Testing/unit/test characters profiles/Princess Nectarine.tres"),
+	load("res://Testing/unit/test characters profiles/Rozalin.tres"),
+	load("res://Testing/unit/test characters profiles/Princess Rose.tres"),
+	load("res://Testing/unit/test characters profiles/Stupid character.tres")]
 
 func test_character_name_limit():
 	gut.p("Testing name limit, currently at %d characters" % _character_agency.get_max_name_length())

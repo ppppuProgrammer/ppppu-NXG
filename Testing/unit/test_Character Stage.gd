@@ -25,9 +25,9 @@ func after_all():
 func before_each():
 	pass
 
-var char_list:Array = [preload("res://Testing/unit/test characters/Princess Nectarine.tres"),
-	preload("res://Testing/unit/test characters/Rozalin.tres"),
-	preload("res://Testing/unit/test characters/Princess Rose.tres")]
+var char_list:Array = [preload("res://Testing/unit/test characters profiles/Princess Nectarine.tres"),
+	preload("res://Testing/unit/test characters profiles/Rozalin.tres"),
+	preload("res://Testing/unit/test characters profiles/Princess Rose.tres")]
 func test_add_character():
 #	yield(game_main.world, "world_phase_changed")
 	assert_gt(

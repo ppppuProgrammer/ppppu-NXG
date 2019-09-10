@@ -2,7 +2,7 @@ extends AnimationTree
 class_name CharacterAnimationTree
 
 #user_btree is the blend tree that is actually edited at runtime.
-onready var _user_btree:AnimationNodeBlendTree = tree_root.get_node("user_editable_btree") as AnimationNodeBlendTree
+onready var _user_btree:AnimationNodeBlendTree = tree_root.get_node("user_editable_b-tree") as AnimationNodeBlendTree
 onready var seeker:AnimationNodeTimeSeek = tree_root.get_node("Seek") as AnimationNodeTimeSeek
 #func _ready():
 	#Tree root is the "master" blend tree, comprised of a 
@@ -37,3 +37,6 @@ func set_node_parameter(node_name:String, parameter_name:String, value):
 	
 func setup_output_graph_node(node:GraphNode):
 	node.animation_node = (_user_btree as AnimationNodeBlendTree).get_node("output")
+
+func get_track_requirements():
+	print(_user_btree.get_parameter_list())

@@ -1,3 +1,4 @@
+class_name AnimationGraphEdit
 extends GraphEdit
 
 const AnimationGraphNode = preload("res://UI/Nodes/AnimationGraphNode.gd")
