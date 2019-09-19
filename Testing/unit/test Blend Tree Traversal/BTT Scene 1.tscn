@@ -1,28 +1,32 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Base Character Animations/1_Cowgirl-Main.tres" type="Animation" id=1]
 [ext_resource path="res://Base Character Animations/1_Cowgirl Large-animation.tres" type="Animation" id=2]
-[ext_resource path="res://Char Parts/Arm.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Char Parts/Areola.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Char Parts/Areola.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Char Parts/Arm.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Base Character Animations/1_Cowgirl-Giver.tres" type="Animation" id=5]
+[ext_resource path="res://Characters/Character Animation Tree.gd" type="Script" id=6]
 
 [sub_resource type="AnimationNodeAnimation" id=1]
+animation = "1_Cowgirl-Main"
 
 [sub_resource type="AnimationNodeBlendTree" id=2]
-graph_offset = Vector2( -205, 53 )
+graph_offset = Vector2( -266, 58 )
 nodes/Animation/node = SubResource( 1 )
 nodes/Animation/position = Vector2( -100, 120 )
 node_connections = [ "output", 0, "Animation" ]
 
 [sub_resource type="AnimationNodeAnimation" id=3]
-animation = "1_Cowgirl Large-animation"
+animation = "1_Cowgirl-Giver"
 
 [sub_resource type="AnimationNodeAnimation" id=4]
 animation = "1_Cowgirl-Main"
 
 [sub_resource type="AnimationNodeBlend2" id=5]
+sync = true
 
 [sub_resource type="AnimationNodeBlendTree" id=6]
-graph_offset = Vector2( -235, 86.25 )
+graph_offset = Vector2( -275, 64 )
 nodes/Animation/node = SubResource( 4 )
 nodes/Animation/position = Vector2( -120, 80 )
 "nodes/Animation 2/node" = SubResource( 3 )
@@ -54,30 +58,104 @@ nodes/Blend2/position = Vector2( 240, 120 )
 nodes/output/position = Vector2( 520, 140 )
 node_connections = [ "output", 0, "Blend2", "Blend2", 0, "Animation-2", "Blend2", 1, "Animation2-2" ]
 
+[sub_resource type="AnimationNodeAdd2" id=11]
+
+[sub_resource type="AnimationNodeAnimation" id=12]
+animation = "1_Cowgirl-Giver"
+
+[sub_resource type="AnimationNodeAnimation" id=13]
+animation = "1_Cowgirl-Main"
+
+[sub_resource type="AnimationNodeTimeScale" id=14]
+
+[sub_resource type="AnimationNodeBlendTree" id=15]
+graph_offset = Vector2( -109, 133 )
+nodes/Add2/node = SubResource( 11 )
+nodes/Add2/position = Vector2( 180, 140 )
+nodes/Animation/node = SubResource( 13 )
+nodes/Animation/position = Vector2( -40, 100 )
+"nodes/Animation 2/node" = SubResource( 12 )
+"nodes/Animation 2/position" = Vector2( -60, 240 )
+nodes/TimeScale/node = SubResource( 14 )
+nodes/TimeScale/position = Vector2( 360, 140 )
+nodes/output/position = Vector2( 580, 160 )
+node_connections = [ "output", 0, "TimeScale", "Add2", 0, "Animation", "Add2", 1, "Animation 2", "TimeScale", 0, "Add2" ]
+
+[sub_resource type="AnimationNodeTimeSeek" id=16]
+
+[sub_resource type="AnimationNodeTimeScale" id=17]
+
+[sub_resource type="AnimationNodeBlendTree" id=18]
+graph_offset = Vector2( -505, 125 )
+nodes/BlendTree/node = SubResource( 15 )
+nodes/BlendTree/position = Vector2( -380, 140 )
+nodes/Seek/node = SubResource( 16 )
+nodes/Seek/position = Vector2( 120, 140 )
+nodes/TimeScale/node = SubResource( 17 )
+nodes/TimeScale/position = Vector2( -80, 160 )
+node_connections = [ "output", 0, "Seek", "Seek", 0, "TimeScale", "TimeScale", 0, "BlendTree" ]
+
 [node name="Node" type="Node"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/1_Cowgirl Large-animation" = ExtResource( 2 )
+anims/1_Cowgirl-Giver = ExtResource( 5 )
 anims/1_Cowgirl-Main = ExtResource( 1 )
 
 [node name="AnimTest" type="AnimationTree" parent="."]
 tree_root = SubResource( 2 )
 anim_player = NodePath("../AnimationPlayer")
+script = ExtResource( 6 )
 
-[node name="Blend2Test" type="AnimationTree" parent="."]
+[node name="Blend2Test-Mixed" type="AnimationTree" parent="."]
 tree_root = SubResource( 6 )
 anim_player = NodePath("../AnimationPlayer")
 parameters/Blend2/blend_amount = 0.5
+script = ExtResource( 6 )
+
+[node name="Blend2Test-0" type="AnimationTree" parent="."]
+tree_root = SubResource( 6 )
+anim_player = NodePath("../AnimationPlayer")
+parameters/Blend2/blend_amount = 0.0
+script = ExtResource( 6 )
+
+[node name="Blend2Test-1" type="AnimationTree" parent="."]
+tree_root = SubResource( 6 )
+anim_player = NodePath("../AnimationPlayer")
+parameters/Blend2/blend_amount = 1.0
+script = ExtResource( 6 )
 
 [node name="Filter2Test" type="AnimationTree" parent="."]
 tree_root = SubResource( 10 )
 anim_player = NodePath("../AnimationPlayer")
 parameters/Blend2/blend_amount = 0.0
+script = ExtResource( 6 )
 
-[node name="Areola (L)" parent="." instance=ExtResource( 4 )]
+[node name="InnerTreeTest" type="AnimationTree" parent="."]
+tree_root = SubResource( 18 )
+anim_player = NodePath("../AnimationPlayer")
+parameters/BlendTree/Add2/add_amount = 0.04
+parameters/BlendTree/TimeScale/scale = 1.93
+parameters/Seek/seek_position = 2.0
+parameters/TimeScale/scale = 1.01
+script = ExtResource( 6 )
 
-[node name="Areola (R)" parent="." instance=ExtResource( 4 )]
+[node name="Areola (L)" parent="." instance=ExtResource( 3 )]
+z_index = -400
+exnSkew = Vector2( 90.8921, -89.1081 )
+exnScale = Vector2( 0.564698, 0.609698 )
+exnPos = Vector2( 185.931, 290.263 )
 
-[node name="Arm (L)" parent="." instance=ExtResource( 3 )]
+[node name="Areola (R)" parent="." instance=ExtResource( 3 )]
+z_index = 1700
+exnSkew = Vector2( -84.5168, -84.5168 )
+exnScale = Vector2( 0.563849, 0.608849 )
+exnPos = Vector2( 295.81, 290.158 )
 
-[node name="Arm2 (R)" parent="." instance=ExtResource( 3 )]
+[node name="Arm (L)" parent="." instance=ExtResource( 4 )]
+z_index = -1650
+exnSkew = Vector2( 12.525, 11.0153 )
+exnScale = Vector2( 1.1757, 1.03738 )
+exnPos = Vector2( 181.308, 338.996 )
+
+[node name="Arm2 (R)" parent="." instance=ExtResource( 4 )]

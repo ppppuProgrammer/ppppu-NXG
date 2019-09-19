@@ -3,6 +3,7 @@
 [ext_resource path="res://Char Parts/BaseCharPart.tscn" type="PackedScene" id=1]
 
 [node name="Earring" index="0" instance=ExtResource( 1 )]
+part_type="Earring"
 initLoadTextures = PoolStringArray( "Textures/Character Parts/Earring-Pch/Sprite_Earring-Pch.tscn", "Textures/Character Parts/Earring-Rosa/Sprite_Earring-Rosa.tscn" )
 initLoadOverTextures = PoolStringArray(  )
 initLoadUnderTextures = PoolStringArray(  )

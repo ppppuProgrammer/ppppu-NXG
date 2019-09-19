@@ -3,6 +3,7 @@
 [ext_resource path="res://Char Parts/BaseCharPart.tscn" type="PackedScene" id=1]
 
 [node name="Eyebrow" index="0" instance=ExtResource( 1 )]
+part_type="Eyebrow"
 initLoadTextures = PoolStringArray( "Textures/Character Parts/Eyebrow/Sprite_Eyebrow.tscn" )
 initLoadOverTextures = PoolStringArray(  )
 initLoadUnderTextures = PoolStringArray(  )

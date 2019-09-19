@@ -30,6 +30,9 @@ var time_for_last_part_add:float = 0
 #func get_animation_tree() -> CharacterAnimationTree:
 #	return _animTree
 
+func _ready() -> void:
+	_animTree.traverse_animationtree()
+
 func setup(part_create_func:FuncRef) -> void:
 	_send_task_for_parts_creation = part_create_func
 
@@ -61,21 +64,40 @@ func add_animation(animation:Animation)->bool:
 	return false
 
 func update_parts_used():
+	var parts_requirements:Dictionary = _get_parts_needed_for_current_animation()
+	var deactivate_queue:Array
+	var recycle_candidates:Dictionary
 	#Try to recycle as many currently created parts as possible.
-	var parts_required:Dictionary = _get_parts_needed_for_current_animation()
 	#Go through all currently active parts, checking to see if the type and name match
 	#what's in the requirement dictionary. If both type and name match, use it as it is.
 	#If only type matches, then rename the part that'd otherwise be unused
-	
+	for active_part_type in _activeCharParts.keys():
+		if not active_part_type in parts_requirements.keys():
+			for part_to_deactive in _activeCharParts[active_part_type]:
+				deactivate_queue.append(part_to_deactive)
+		else:
+			for part_to_evaluate in _activeCharParts[active_part_type]:
+				if part_to_evaluate.name in parts_requirements[active_part_type]:
+					#Can use the active part as is, remove from the requirements
+					parts_requirements[active_part_type].remove(parts_requirements[active_part_type].find(part_to_evaluate.name))
+				else:
+					pass
+			
+	deactivate_character_parts(deactivate_queue)
+
+func deactivate_character_parts(parts:Array)->void:
+	pass
+
 func get_active_parts_listing()->Dictionary:
 	return _activePartListing
 
 func _get_parts_needed_for_current_animation()->Dictionary:
-	var required_parts:Dictionary = {}
-	return required_parts
+	return _animTree.get_part_requirments_for_current_animation()
 
 func start_animation_playback():
 	if !_animTree.active:
 		_animTree.active = true
-		var needs = _animTree.get_track_requirements()
+	update_parts_used()
+	
+		#var needs = _animTree.get_track_requirements()
 		

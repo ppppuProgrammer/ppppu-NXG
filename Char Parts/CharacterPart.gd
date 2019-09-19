@@ -1,7 +1,9 @@
-tool
+#tool
 extends Node2D
 class_name CharacterPart
 
+var part_type_lock:bool = false
+export var part_type:String = "" setget _set_part_type
 export var initLoadTextures = PoolStringArray()
 export var initLoadDecalTextures = PoolStringArray()
 #export var initLoadUnderTextures = PoolStringArray()
@@ -46,7 +48,9 @@ var recalcTransform = false
 var _validateOK = false
 signal sig_spriteSceneChanged(emitter, layer, spriteNode)
 
-
+func _init() -> void:
+	part_type_lock = true
+	
 func _ready():
 	#The texture load has issues. This can not be a part 
 	#of character part anymore (mainly for testing purposes but also for factory purposes.)
@@ -247,4 +251,6 @@ func clone()->CharacterPart:
 func _setTr(tr):
 	transform = tr
 	
-	
+func _set_part_type(type:String)->void:
+	if part_type_lock == false:
+		part_type = type

@@ -2,7 +2,7 @@ extends Animation
 class_name CharacterAnimationElement
 
 #Extension of an Animation resource that upon being
-#loaded will set a cache of what character parts
+#loaded will set a cache the names of what character parts
 #are being used by the animation.
 
 #export var animation:Animation

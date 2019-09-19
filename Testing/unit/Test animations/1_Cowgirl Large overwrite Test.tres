@@ -2,7 +2,6 @@
 
 [ext_resource path="res://Animation/Character Animation Element.gd" type="Script" id=1]
 
-
 [resource]
 resource_name = "1_Cowgirl Large (overwrite)"
 length = 4.0

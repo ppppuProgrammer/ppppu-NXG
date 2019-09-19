@@ -7,10 +7,10 @@
 
 [sub_resource type="AnimationNodeBlendTree" id=2]
 resource_local_to_scene = true
-graph_offset = Vector2( -51, 32 )
+graph_offset = Vector2( -261, 81 )
 
 [sub_resource type="AnimationNodeBlendTree" id=3]
-graph_offset = Vector2( -182, 69 )
+graph_offset = Vector2( -183, 99 )
 nodes/Seek/node = SubResource( 1 )
 nodes/Seek/position = Vector2( 140, 100 )
 nodes/user_editable_b-tree/node = SubResource( 2 )
@@ -26,7 +26,7 @@ root_node = NodePath("../Parts")
 [node name="CharacterAnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 3 )
 anim_player = NodePath("../AnimationPlayer")
-parameters/Seek/seek_position = 1.0
+parameters/Seek/seek_position = 0.0
 script = ExtResource( 2 )
 
 [node name="SoundPlayer2D" type="AudioStreamPlayer2D" parent="."]
