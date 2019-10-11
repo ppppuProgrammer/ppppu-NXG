@@ -29,10 +29,9 @@ func _factory_loop() -> void:
 		_factory_mutex.lock()
 		while creation_queue.size() > 0:
 			var task:Dictionary = creation_queue.pop_front()
-			var part_types_list:Array = task["Types"]
-			var part_names_list:Array = task["Names"]
+			var part_order:Array = task["Order"]
 			var character:Character = task["Target"]
-			_create_parts(part_types_list, part_names_list, character)
+			_create_parts(part_order, character)
 		_factory_mutex.unlock()
 #				if !part_scene_name in _registry:
 #					#For now discard the task
@@ -71,13 +70,22 @@ func _register_part(part_scene:PackedScene)->bool:
 		reg_success = true
 	return reg_success
 
-func _create_parts(parts_list:Array, parts_names:Array, recipient:Character)->void:
+#parts order expects strings and null. When the part type to create is not set the next encountered string is the 
+#part type to make for all following strings until null is ran into.
+func _create_parts(parts_order:Array, recipient:Character)->void:
 	var created_parts:Array = []
-	for i in range(0, parts_list.size()):
-		var char_part:CharacterPart = _create_part(parts_list[i])
-		if char_part:
-			char_part.name = parts_names[i]
-			created_parts.append(char_part)
+	var type_to_create:String = ""
+	for i in range(0, parts_order.size()):
+		if parts_order[i] is String:
+			if type_to_create.empty():
+				type_to_create = parts_order[i]
+			else:
+				var char_part:CharacterPart = _create_part(type_to_create)
+				if char_part:
+					char_part.name = parts_order[i]
+					created_parts.append(char_part)
+		else:
+			type_to_create = ""
 	recipient.add_character_parts(created_parts)
 	
 
@@ -112,10 +120,10 @@ func add_sprite_to_part(sprite_scene:PackedScene, part_type:String)->bool:
 	_factory_mutex.unlock()
 	return success
 	
-func add_create_parts_task(part_types:Array, part_names:Array, recipient:Character):
-	if part_types.size() == part_names.size():
-		var task:Dictionary = {"Types": part_types, "Names": part_names, "Target": recipient}
-		_factory_mutex.lock()
-		creation_queue.append(task)
-		_factory_mutex.unlock()
-		creation_semaphore.post()
+func add_create_parts_task(parts_order:Array, recipient:Character):
+	var task:Dictionary = {"Order": parts_order, "Target": recipient}
+	_factory_mutex.lock()
+	creation_queue.append(task)
+	_factory_mutex.unlock()
+	creation_semaphore.post()
+	
