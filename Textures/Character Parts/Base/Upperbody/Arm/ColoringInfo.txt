@@ -1,0 +1,2 @@
+Arm_SkinColor:Solid;1,
+Arm_Outline:Solid;

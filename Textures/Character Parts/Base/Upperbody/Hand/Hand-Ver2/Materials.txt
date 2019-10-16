@@ -1,0 +1,2 @@
+Character_Coloration,Hand2_SkinColor,Solid,1,
+Character_Coloration,Hand2_Outline,Solid,

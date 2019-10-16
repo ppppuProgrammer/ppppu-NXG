@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/EyebrowShape_0.0.png-37785868acfe2b4f8b0570513d802c8c.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Head/Eyebrow/EyebrowShape_0.0.png"
+dest_files=[ "res://.import/EyebrowShape_0.0.png-37785868acfe2b4f8b0570513d802c8c.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

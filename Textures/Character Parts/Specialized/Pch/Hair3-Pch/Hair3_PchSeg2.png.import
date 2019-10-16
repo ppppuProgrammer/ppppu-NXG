@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Hair3_PchSeg2.png-d5f399666c961047f0d99d5ad031d03c.res"
+group_file="res://Textures/Character Parts/Pch/Peach Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Pch/Hair3-Pch/Hair3_PchSeg2.png"
+dest_files=[ "res://.import/Hair3_PchSeg2.png-d5f399666c961047f0d99d5ad031d03c.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Pch/Peach Atlas.png"
+import_mode=0

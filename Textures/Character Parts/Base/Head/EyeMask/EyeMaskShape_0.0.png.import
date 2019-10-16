@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/EyeMaskShape_0.0.png-405c7356210bfb11d397f8217940d5d3.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Head/EyeMask/EyeMaskShape_0.0.png"
+dest_files=[ "res://.import/EyeMaskShape_0.0.png-405c7356210bfb11d397f8217940d5d3.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

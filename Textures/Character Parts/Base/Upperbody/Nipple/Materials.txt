@@ -1,0 +1,2 @@
+Character_Coloration,Nipple_Outline,Solid,
+Character_Coloration,Nipple_NippleColor,Solid,4,

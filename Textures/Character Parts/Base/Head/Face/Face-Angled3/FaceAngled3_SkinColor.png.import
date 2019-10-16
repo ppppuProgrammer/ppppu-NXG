@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/FaceAngled3_SkinColor.png-91e7848f223342c668f35a2a74484188.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Head/FaceAngled-Ver3/FaceAngled3_SkinColor.png"
+dest_files=[ "res://.import/FaceAngled3_SkinColor.png-91e7848f223342c668f35a2a74484188.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

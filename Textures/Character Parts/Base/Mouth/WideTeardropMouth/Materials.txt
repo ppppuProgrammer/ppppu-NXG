@@ -1,0 +1,5 @@
+Character_Coloration,WideTeardropMouth_LipColor,Solid,1,
+Character_Coloration,WideTeardropMth_Highlight,Solid,1,
+Character_Coloration,WideTeardropMth_Inside,Solid,
+Character_Coloration,WideTeardropMth_Teeth,Solid,
+Character_Coloration,WideTeardropMth_Outline,Solid,

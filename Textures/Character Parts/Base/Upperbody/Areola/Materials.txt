@@ -1,0 +1,2 @@
+Character_Coloration,Areola_AreolaColor,Radial,5,(81.996228, 74.7930845),(81.996228, 74.7930845),90.7319761371,(1, 0, 0, 0, 0.93047, 0, 0, 0, 1)
+Character_Coloration,Areola_Highlight,Solid,1,

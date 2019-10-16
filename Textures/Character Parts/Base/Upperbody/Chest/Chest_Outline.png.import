@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Chest_Outline.png-40e6093ec79b345a1d2ef69f9a3be9b0.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Upperbody/Chest/Chest_Outline.png"
+dest_files=[ "res://.import/Chest_Outline.png-40e6093ec79b345a1d2ef69f9a3be9b0.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

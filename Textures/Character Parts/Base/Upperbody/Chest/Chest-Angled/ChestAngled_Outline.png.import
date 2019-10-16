@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/ChestAngled_Outline.png-11a600ba5978b4977f28c32ba2883712.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Upperbody/ChestAngled/ChestAngled_Outline.png"
+dest_files=[ "res://.import/ChestAngled_Outline.png-11a600ba5978b4977f28c32ba2883712.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

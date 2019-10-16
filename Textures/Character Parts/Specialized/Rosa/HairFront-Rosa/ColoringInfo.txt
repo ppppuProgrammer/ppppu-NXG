@@ -1,0 +1,3 @@
+HairFront_RosaSeg3:Solid;1,
+HairFront_RosaSeg2:Solid;2,
+HairFront_Rosa_Outline:Solid;

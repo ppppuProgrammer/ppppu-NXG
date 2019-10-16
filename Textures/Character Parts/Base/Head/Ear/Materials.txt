@@ -1,0 +1,2 @@
+Character_Coloration,Ear_SkinColor,Radial,3,(65.58115687, 92.94836485),(65.58115687, 92.94836485),141.0544611963,(0.97237, -0.23465, 0, -0.15526, 1.25307, 0, 0.1, -1.749, 1)
+Character_Coloration,Ear_Outline,Solid,

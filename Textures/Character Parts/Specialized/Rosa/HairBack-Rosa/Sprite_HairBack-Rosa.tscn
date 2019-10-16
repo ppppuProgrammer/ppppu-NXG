@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=2]
+[ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Textures/Atlas/Rosalina/Sub/atlas_Rosalina.HairBack_RosaSeg3.atlastex" type="Texture" id=3]
+[ext_resource path="res://Textures/Atlas/Rosalina/Sub/atlas_Rosalina.HairBack_Rosa_Outline.atlastex" type="Texture" id=4]
+[ext_resource path="res://Textures/Atlas/Rosalina/Sub/atlas_Rosalina.HairBack_RosaSeg2.atlastex" type="Texture" id=5]
+[ext_resource path="res://Shaders/Character Coloration.shader" type="Shader" id=6]
+[ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=7]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+render_priority = 0
+shader = ExtResource( 6 )
+shader_param/color_method = 1
+shader_param/sectionReferenceTex = ExtResource( 7 )
+shader_param/s6_UV1 = Vector2(776.4275700000001, 725.0295199999999)
+shader_param/s6_UV2 = Vector2(724.1525700000001, 1081.07952)
+shader_param/s6_radius = null
+shader_param/s6_use_focus_point = null
+shader_param/s6_gradient_transform = null
+
+
+[sub_resource type="ShaderMaterial" id=2]
+
+render_priority = 0
+shader = ExtResource( 6 )
+shader_param/color_method = 1
+shader_param/sectionReferenceTex = ExtResource( 7 )
+shader_param/s7_UV1 = Vector2(746.1365, 695.024)
+shader_param/s7_UV2 = Vector2(693.8615, 1051.074)
+shader_param/s7_radius = null
+shader_param/s7_use_focus_point = null
+shader_param/s7_gradient_transform = null
+
+[node name="HairBack-Rosa" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+variantName = "Rosa"
+
+[node name="HairBack_RosaSeg3" type="Sprite" parent="." index="0" groups=["ColorGrp_Hair",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+rotation = 1.570796
+offset = Vector2( 5.550000, 168.225000 )
+material = SubResource( 1 )
+
+
+[node name="HairBack_Rosa_Outline" type="Sprite" parent="." index="1" groups=["ColorGrp_Outline",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+rotation = 1.570796
+offset = Vector2( 5.550000, 168.225000 )
+
+[node name="HairBack_RosaSeg2" type="Sprite" parent="." index="2" groups=["ColorGrp_Hair",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 5 )
+rotation = 1.570796
+offset = Vector2( 5.550000, 168.225000 )
+material = SubResource( 2 )

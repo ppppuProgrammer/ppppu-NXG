@@ -1,0 +1,2 @@
+Character_Coloration,ChestAngled_Outline,Solid,
+Character_Coloration,ChestAngled_SkinColor,Solid,1,

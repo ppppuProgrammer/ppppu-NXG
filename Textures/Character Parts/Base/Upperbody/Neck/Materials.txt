@@ -1,0 +1,2 @@
+Character_Coloration,Neck_SkinColor,Solid,1,
+Character_Coloration,Neck_Outline,Solid,

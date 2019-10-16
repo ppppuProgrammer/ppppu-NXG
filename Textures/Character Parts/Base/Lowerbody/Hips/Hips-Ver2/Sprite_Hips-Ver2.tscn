@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=2]
+[ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Textures/Atlas/Lowerbody/Sub/atlas_Lowerbody.Hips2_SkinColor.atlastex" type="Texture" id=3]
+[ext_resource path="res://Textures/Atlas/Lowerbody/Sub/atlas_Lowerbody.Hips2_Outline.atlastex" type="Texture" id=4]
+[ext_resource path="res://Textures/Atlas/Lowerbody/Sub/atlas_Lowerbody.Hips2_Highlight.atlastex" type="Texture" id=5]
+[ext_resource path="res://Shaders/Character Coloration.shader" type="Shader" id=6]
+[ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=7]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+render_priority = 0
+shader = ExtResource( 6 )
+shader_param/color_method = 0
+shader_param/sectionReferenceTex = ExtResource( 7 )
+shader_param/s1_UV1 = null
+shader_param/s1_UV2 = null
+shader_param/s1_radius = null
+shader_param/s1_use_focus_point = null
+shader_param/s1_gradient_transform = null
+
+
+[sub_resource type="ShaderMaterial" id=2]
+
+render_priority = 0
+shader = ExtResource( 6 )
+shader_param/color_method = 0
+shader_param/sectionReferenceTex = ExtResource( 7 )
+shader_param/s2_UV1 = null
+shader_param/s2_UV2 = null
+shader_param/s2_radius = null
+shader_param/s2_use_focus_point = null
+shader_param/s2_gradient_transform = null
+
+[node name="Hips-Ver2" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+variantName = "Ver2"
+
+[node name="Hips2_SkinColor" type="Sprite" parent="." index="0" groups=["ColorGrp_Body",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+offset = Vector2( 0.000000, 73.075000 )
+material = SubResource( 1 )
+
+
+[node name="Hips2_Outline" type="Sprite" parent="." index="1" groups=["ColorGrp_Outline",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+offset = Vector2( 0.000000, 73.075000 )
+
+[node name="Hips2_Highlight" type="Sprite" parent="." index="2" groups=["ColorGrp_Highlight",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 5 )
+offset = Vector2( 0.000000, 73.075000 )
+material = SubResource( 2 )

@@ -1,0 +1,3 @@
+Character_Coloration,Boob2_Outline,Solid,
+Character_Coloration,Boob2_SkinHighlightColor,Solid,2,
+Character_Coloration,Boob2_BreastColor,Radial,3,(173.27975231000002, 169.56908139),(186.36279525080002, 142.8762972148),195.3379640403,(0.44016, -0.89804, 0, 1.39581, 0.74889, 0, 2.05, 2.1, 1)

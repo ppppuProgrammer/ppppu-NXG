@@ -1,0 +1,3 @@
+Character_Coloration,HairBack_PchSeg3,Solid,6,
+Character_Coloration,HairBack_Pch_Outline,Solid,
+Character_Coloration,HairBack_PchSeg2,Solid,7,

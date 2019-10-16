@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/UpperBackAngled_SkinColor.png-044b983405db9f2e2a4b018be22931ff.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Upperbody/UpperBackAngled/UpperBackAngled_SkinColor.png"
+dest_files=[ "res://.import/UpperBackAngled_SkinColor.png-044b983405db9f2e2a4b018be22931ff.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

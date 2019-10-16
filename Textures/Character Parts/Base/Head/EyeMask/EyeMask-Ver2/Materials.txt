@@ -1,0 +1,1 @@
+Character_Coloration,EyeMaskShape-2_0.0,Solid,

@@ -1,0 +1,5 @@
+Character_Coloration,OpenSmile_LipColor,Solid,1,
+Character_Coloration,OpenSml_Inside,Solid,
+Character_Coloration,OpenSml_Teeth,Solid,
+Character_Coloration,OpenSml_Outline,Solid,
+Character_Coloration,OpenSml_Highlight,Solid,1,

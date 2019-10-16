@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Shoulder_SkinColor.png-2eb98d5e670265a50dcf1d0d532b0244.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Upperbody/Shoulder/Shoulder_SkinColor.png"
+dest_files=[ "res://.import/Shoulder_SkinColor.png-2eb98d5e670265a50dcf1d0d532b0244.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

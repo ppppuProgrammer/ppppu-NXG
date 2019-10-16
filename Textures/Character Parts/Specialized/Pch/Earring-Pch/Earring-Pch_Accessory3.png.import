@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Earring-Pch_Accessory3.png-ff588f85319fa6a0cc4efcc36071cc7d.res"
+group_file="res://Textures/Character Parts/Pch/Peach Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Pch/Earring-Pch/Earring-Pch_Accessory3.png"
+dest_files=[ "res://.import/Earring-Pch_Accessory3.png-ff588f85319fa6a0cc4efcc36071cc7d.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Pch/Peach Atlas.png"
+import_mode=0

@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Areola_AreolaColor.png-59c07f88ad56303ff3e683cca760daa3.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Upperbody/Areola/Areola_AreolaColor.png"
+dest_files=[ "res://.import/Areola_AreolaColor.png-59c07f88ad56303ff3e683cca760daa3.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

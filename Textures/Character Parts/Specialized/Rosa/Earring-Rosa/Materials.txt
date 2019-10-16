@@ -1,0 +1,3 @@
+Character_Coloration,Earring-Rosa_Accessory3,Solid,1,
+Character_Coloration,Earring-Rosa_Accessory2,Solid,2,
+Character_Coloration,Earring-Rosa_Outline,Solid,

@@ -1,0 +1,4 @@
+Character_Coloration,Iris_IrisColor,Solid,1,
+Character_Coloration,Eyeball_Outline,Solid,
+Character_Coloration,Pupil_PupilColor,Solid,5,
+Character_Coloration,Eyeball_Highlight,Solid,4,

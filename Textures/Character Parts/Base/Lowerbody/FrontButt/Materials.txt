@@ -1,0 +1,2 @@
+Character_Coloration,FrontButt_SkinColor,Solid,1,
+Character_Coloration,FrontButt_Outline,Radial,,(354.25881250000003, 51.600063500000005),(354.25881250000003, 51.600063500000005),408.9744363105,(0.99985, 0.02133, 0, -0.01755, 0.88127, 0, 0.5, 2.6, 1)

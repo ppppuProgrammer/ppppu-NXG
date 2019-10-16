@@ -1,0 +1,2 @@
+Character_Coloration,Groin2_SkinColor,Solid,1,
+Character_Coloration,Groin2_SkinLineColor,Solid,

@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/UpperLeg_SkinHighlightColor.png-7b5ff5876d49e935842c2a9d6593f469.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Lowerbody/UpperLeg/UpperLeg_SkinHighlightColor.png"
+dest_files=[ "res://.import/UpperLeg_SkinHighlightColor.png-7b5ff5876d49e935842c2a9d6593f469.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0

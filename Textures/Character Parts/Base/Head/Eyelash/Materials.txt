@@ -1,0 +1,2 @@
+Character_Coloration,Symbol 58_1.0,Solid,
+Character_Coloration,Symbol 58_0.0,Solid,

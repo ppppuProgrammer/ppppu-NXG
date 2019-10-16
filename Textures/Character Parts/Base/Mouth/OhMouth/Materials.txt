@@ -1,0 +1,4 @@
+Character_Coloration,OhMouth_LipColor,Solid,1,
+Character_Coloration,Oh_Highlight,Solid,1,
+Character_Coloration,Oh_Inside,Solid,
+Character_Coloration,Oh_Outline,Solid,

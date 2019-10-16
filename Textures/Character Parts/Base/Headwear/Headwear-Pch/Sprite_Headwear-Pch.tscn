@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Textures/Atlas/Headwear/Sub/atlas_Headwear.Peach Crown_0.0.atlastex" type="Texture" id=3]
+
+[node name="Headwear-Pch" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+variantName = "Pch"
+
+[node name="Peach Crown_0.0" type="Sprite" parent="." index="0" groups=[
+"ColorGrp_UNUSED",
+]]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+offset = Vector2( 0, -0.175 )
+script = ExtResource( 2 )

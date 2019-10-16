@@ -1,0 +1,2 @@
+Character_Coloration,Sclera2_EyelidColor,Solid,2,
+Character_Coloration,Sclera2_ScleraColor,Solid,3,

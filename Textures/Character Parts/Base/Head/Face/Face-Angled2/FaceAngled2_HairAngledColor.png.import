@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/FaceAngled2_HairAngledColor.png-884eb0da7f05d1b0504804177d667cb3.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Head/FaceAngled-Ver2/FaceAngled2_HairAngledColor.png"
+dest_files=[ "res://.import/FaceAngled2_HairAngledColor.png-884eb0da7f05d1b0504804177d667cb3.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

@@ -1,0 +1,3 @@
+Buttcheek_Outline:Solid;
+Buttcheek_SkinColor:Solid;1,
+Buttcheek_Highlight:Solid;2,

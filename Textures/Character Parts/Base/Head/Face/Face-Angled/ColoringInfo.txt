@@ -1,0 +1,3 @@
+FaceAngled_HairAngledColor:Solid;7,
+FaceAngled_SkinColor:Solid;1,
+FaceAngled_Outline:Solid;

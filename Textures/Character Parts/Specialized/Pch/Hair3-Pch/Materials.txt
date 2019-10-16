@@ -1,0 +1,4 @@
+Character_Coloration,Hair3_PchSeg3,Solid,1,
+Character_Coloration,Hair3_PchSeg2,Solid,5,
+Character_Coloration,Hair3_Pch_Highlight,Solid,3,
+Character_Coloration,Hair3_Pch_Outline,Solid,

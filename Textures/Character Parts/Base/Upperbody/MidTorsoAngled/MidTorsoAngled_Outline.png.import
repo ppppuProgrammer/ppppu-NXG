@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/MidTorsoAngled_Outline.png-f0393002de51f3cedc3ec736fd8e31a2.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Upperbody/MidTorsoAngled/MidTorsoAngled_Outline.png"
+dest_files=[ "res://.import/MidTorsoAngled_Outline.png-f0393002de51f3cedc3ec736fd8e31a2.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

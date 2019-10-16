@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/VulvaAngled_SkinLineColor_4.png-e3fa59631ed7530894392486e91fde38.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Lowerbody/VulvaAngled/VulvaAngled_SkinLineColor_4.png"
+dest_files=[ "res://.import/VulvaAngled_SkinLineColor_4.png-e3fa59631ed7530894392486e91fde38.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0

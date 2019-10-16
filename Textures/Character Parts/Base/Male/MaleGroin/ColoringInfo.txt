@@ -1,0 +1,2 @@
+MaleGroin_MaleSkinColor:Solid;1,
+MaleGroin_Outline:Solid;

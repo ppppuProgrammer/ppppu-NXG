@@ -1,0 +1,3 @@
+Character_Coloration,UpperLeg_SkinColor,Solid,1,
+Character_Coloration,UpperLeg_Outline,Solid,
+Character_Coloration,UpperLeg_SkinHighlightColor,Solid,2,

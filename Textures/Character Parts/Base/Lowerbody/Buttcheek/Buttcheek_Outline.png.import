@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Buttcheek_Outline.png-d2ec2a05bf691b88b76bbf6d3b2ea49e.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Lowerbody/Buttcheek/Buttcheek_Outline.png"
+dest_files=[ "res://.import/Buttcheek_Outline.png-d2ec2a05bf691b88b76bbf6d3b2ea49e.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0

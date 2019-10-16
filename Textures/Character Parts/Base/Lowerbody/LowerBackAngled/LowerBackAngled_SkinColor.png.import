@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/LowerBackAngled_SkinColor.png-f0fb9f506ed2f4e40f71388d3c9452f6.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Lowerbody/LowerBackAngled/LowerBackAngled_SkinColor.png"
+dest_files=[ "res://.import/LowerBackAngled_SkinColor.png-f0fb9f506ed2f4e40f71388d3c9452f6.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0

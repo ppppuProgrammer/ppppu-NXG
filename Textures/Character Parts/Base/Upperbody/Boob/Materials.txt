@@ -1,0 +1,3 @@
+Character_Coloration,Boob_Outline,Solid,
+Character_Coloration,Boob_SkinHighlightColor,Solid,2,
+Character_Coloration,Boob_SkinColor,Solid,1,

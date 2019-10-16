@@ -1,0 +1,2 @@
+MaleLeg_MaleSkinColor:Solid;1,
+MaleLeg_Outline:Solid;

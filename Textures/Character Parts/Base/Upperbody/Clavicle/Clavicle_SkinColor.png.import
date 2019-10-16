@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Clavicle_SkinColor.png-41318bba9d2b544dfb327238bab4c3ac.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Upperbody/Clavicle/Clavicle_SkinColor.png"
+dest_files=[ "res://.import/Clavicle_SkinColor.png-41318bba9d2b544dfb327238bab4c3ac.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

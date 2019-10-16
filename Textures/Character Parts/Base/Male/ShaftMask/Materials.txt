@@ -1,0 +1,1 @@
+Character_Coloration,ShaftMaskShape_0.0,Solid,

@@ -1,0 +1,3 @@
+Character_Coloration,ClosedSmile_LipColor,Solid,1,
+Character_Coloration,ClosedSmile_Outline,Solid,
+Character_Coloration,ClosedSmile_Highlight,Solid,1,

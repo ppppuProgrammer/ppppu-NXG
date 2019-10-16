@@ -1,0 +1,3 @@
+Character_Coloration,FaceAngled3_HairAngledColor,Solid,7,
+Character_Coloration,FaceAngled3_SkinColor,Solid,1,
+Character_Coloration,FaceAngled3_Outline,Solid,

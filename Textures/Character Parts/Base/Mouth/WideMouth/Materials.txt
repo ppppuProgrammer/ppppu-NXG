@@ -1,0 +1,4 @@
+Character_Coloration,WideMouth_LipColor,Solid,1,
+Character_Coloration,WideMth_Highlight,Solid,1,
+Character_Coloration,WideMth_Inside,Solid,
+Character_Coloration,WideMth_Outline,Solid,

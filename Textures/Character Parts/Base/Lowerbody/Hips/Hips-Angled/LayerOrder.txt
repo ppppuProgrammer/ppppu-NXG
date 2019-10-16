@@ -1,0 +1,3 @@
+HipsAngled_SkinColor
+HipsAngled_Outline
+HipsAngled_SkinHighlightColor

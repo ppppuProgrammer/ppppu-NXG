@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Ear_Outline.png-423f3c11298063a14ca5c6095ef21de0.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Head/Ear/Ear_Outline.png"
+dest_files=[ "res://.import/Ear_Outline.png-423f3c11298063a14ca5c6095ef21de0.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

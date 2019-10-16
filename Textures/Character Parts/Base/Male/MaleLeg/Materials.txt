@@ -1,0 +1,2 @@
+Character_Coloration,MaleLeg_MaleSkinColor,Solid,1,
+Character_Coloration,MaleLeg_Outline,Solid,

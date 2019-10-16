@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/BackHipsAngled_Outline.png-ce7bb0b9ea34fdbd6d720e844605a952.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Lowerbody/BackHipsAngled/BackHipsAngled_Outline.png"
+dest_files=[ "res://.import/BackHipsAngled_Outline.png-ce7bb0b9ea34fdbd6d720e844605a952.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0

@@ -1,0 +1,4 @@
+Earring-Pch_Accessory3:Solid;1,
+Earring-Pch_Accessory2:Solid;2,
+Earring-Pch_Highlight:Solid;1,
+Earring-Pch_Outline:Solid;

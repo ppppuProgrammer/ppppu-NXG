@@ -1,0 +1,3 @@
+Character_Coloration,HairFrontAngled_RosaSeg3,Solid,1,
+Character_Coloration,HairFrontAngled_RosaSeg2,Solid,2,
+Character_Coloration,HairFrontAngled_Rosa_Outline,Solid,

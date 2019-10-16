@@ -1,0 +1,2 @@
+Character_Coloration,Arm3_SkinColor,Solid,1,
+Character_Coloration,Arm3_Outline,Solid,

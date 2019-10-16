@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Hand_Outline.png-c89bad962bc0e50964e88dd3138ae123.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Upperbody/Hand/Hand_Outline.png"
+dest_files=[ "res://.import/Hand_Outline.png-c89bad962bc0e50964e88dd3138ae123.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

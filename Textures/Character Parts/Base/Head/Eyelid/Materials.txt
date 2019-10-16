@@ -1,0 +1,2 @@
+Character_Coloration,Eyelid_EyelidColor,Solid,2,
+Character_Coloration,Eyelid_SkinLineColor,Solid,

@@ -1,0 +1,3 @@
+Character_Coloration,Hips_SkinColor,Solid,1,
+Character_Coloration,Hips_Outline,Solid,
+Character_Coloration,Hips_Highlight,Solid,2,

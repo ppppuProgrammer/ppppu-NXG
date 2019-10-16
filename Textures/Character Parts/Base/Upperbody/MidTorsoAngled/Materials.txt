@@ -1,0 +1,2 @@
+Character_Coloration,MidTorsoAngled_SkinColor,Solid,1,
+Character_Coloration,MidTorsoAngled_Outline,Solid,

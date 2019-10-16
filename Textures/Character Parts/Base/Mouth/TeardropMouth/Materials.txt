@@ -1,0 +1,5 @@
+Character_Coloration,TeardropMouth_LipColor,Solid,1,
+Character_Coloration,TeardropMth_Highlight,Solid,1,
+Character_Coloration,TeardropMth_Teeth,Solid,
+Character_Coloration,TeardropMth_Inside,Solid,
+Character_Coloration,TeardropMth_Outline,Solid,

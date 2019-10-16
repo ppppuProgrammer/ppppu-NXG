@@ -1,0 +1,25 @@
+[gd_scene load_steps=7 format=2]
+[ext_resource path="res://Textures/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Textures/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Textures/Atlas/Lowerbody/Sub/atlas_Lowerbody.Legging-Pch_Color.atlastex" type="Texture" id=3]
+[ext_resource path="res://Textures/Atlas/Lowerbody/Sub/atlas_Lowerbody.LowerLeg_Outline.atlastex" type="Texture" id=4]
+[ext_resource path="res://Shaders/Character Coloration.shader" type="Shader" id=5]
+[ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=6]
+
+[node name="LowerLeg" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+variantName = "Default"
+
+[node name="Legging-Pch_Color" type="Sprite" parent="." index="0" groups=["ColorGrp_UNUSED",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+offset = Vector2( -532.700000, 47.275000 )
+
+[node name="LowerLeg_Outline" type="Sprite" parent="." index="1" groups=["ColorGrp_Outline",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+offset = Vector2( -532.700000, 47.275000 )

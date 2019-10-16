@@ -1,0 +1,4 @@
+Character_Coloration,Earring-Pch_Accessory3,Solid,1,
+Character_Coloration,Earring-Pch_Accessory2,Solid,2,
+Character_Coloration,Earring-Pch_Highlight,Solid,1,
+Character_Coloration,Earring-Pch_Outline,Solid,

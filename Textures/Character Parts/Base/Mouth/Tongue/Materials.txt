@@ -1,0 +1,3 @@
+Character_Coloration,Tongue_Color,Solid,
+Character_Coloration,Tongue_Highlight,Solid,1,
+Character_Coloration,Tongue_Outline,Solid,

@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/MidTorsoAngled_SkinColor.png-3ab59cf6bf9b8cc5758d868b454fc476.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Upperbody/MidTorsoAngled/MidTorsoAngled_SkinColor.png"
+dest_files=[ "res://.import/MidTorsoAngled_SkinColor.png-3ab59cf6bf9b8cc5758d868b454fc476.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

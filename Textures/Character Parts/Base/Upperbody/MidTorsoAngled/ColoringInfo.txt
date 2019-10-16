@@ -1,0 +1,2 @@
+MidTorsoAngled_SkinColor:Solid;1,
+MidTorsoAngled_Outline:Solid;

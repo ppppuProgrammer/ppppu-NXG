@@ -1,0 +1,3 @@
+Tongue_Color:Solid;
+Tongue_Highlight:Solid;1,
+Tongue_Outline:Solid;

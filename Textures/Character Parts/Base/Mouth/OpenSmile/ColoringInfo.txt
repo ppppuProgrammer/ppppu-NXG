@@ -1,0 +1,5 @@
+OpenSmile_LipColor:Solid;1,
+OpenSml_Inside:Solid;
+OpenSml_Teeth:Solid;
+OpenSml_Outline:Solid;
+OpenSml_Highlight:Solid;1,

@@ -1,0 +1,2 @@
+Character_Coloration,Hair1_RosaSeg1,Linear,3,(120.299, 179.8115),(118.59899999999999, 255.68650000000002),null
+Character_Coloration,Hair1_Rosa_Outline,Solid,

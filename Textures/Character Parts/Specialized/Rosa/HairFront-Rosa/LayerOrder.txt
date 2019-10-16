@@ -1,0 +1,3 @@
+HairFront_RosaSeg3
+HairFront_RosaSeg2
+HairFront_Rosa_Outline

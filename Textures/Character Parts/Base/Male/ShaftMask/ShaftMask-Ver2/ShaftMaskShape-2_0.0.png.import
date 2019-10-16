@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/ShaftMaskShape-2_0.0.png-ab3b9ac1c2449f408cd7d8f8d4c8405f.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Textures/Character Parts/Male/ShaftMask-Ver2/ShaftMaskShape-2_0.0.png"
+dest_files=[ "res://.import/ShaftMaskShape-2_0.0.png-ab3b9ac1c2449f408cd7d8f8d4c8405f.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=2
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=true
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

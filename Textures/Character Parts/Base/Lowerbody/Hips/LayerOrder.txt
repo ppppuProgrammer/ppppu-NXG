@@ -1,0 +1,3 @@
+Hips_SkinColor
+Hips_Outline
+Hips_Highlight

@@ -1,0 +1,3 @@
+Character_Coloration,Hair2_PchSeg3,Solid,1,
+Character_Coloration,Hair2_PchSeg2,Radial,4,(232.6715, 75.849),(232.6715, 75.849),224.4487748814,(1, 0, 0, 0, 1, 0, 0, 0, 1)
+Character_Coloration,Hair2_Pch_Outline,Solid,

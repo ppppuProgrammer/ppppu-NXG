@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Boob_Outline.png-57314b80569fb7a1b9eb2fdd3f83630e.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Textures/Character Parts/Upperbody/Boob/Boob_Outline.png"
+dest_files=[ "res://.import/Boob_Outline.png-57314b80569fb7a1b9eb2fdd3f83630e.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0
