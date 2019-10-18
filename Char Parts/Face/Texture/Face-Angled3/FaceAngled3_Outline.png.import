@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/FaceAngled3_Outline.png-5672afac2ccd8008b26aab5375d3a688.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Face/Texture/Face-Angled3/FaceAngled3_Outline.png"
+dest_files=[ "res://.import/FaceAngled3_Outline.png-5672afac2ccd8008b26aab5375d3a688.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

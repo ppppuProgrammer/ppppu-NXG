@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Sideboob_SkinHighlightColor.png-a75ed79856607d4377fcccf96cb19090.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Boob/Texture/Boob-Side/Sideboob_SkinHighlightColor.png"
+dest_files=[ "res://.import/Sideboob_SkinHighlightColor.png-a75ed79856607d4377fcccf96cb19090.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

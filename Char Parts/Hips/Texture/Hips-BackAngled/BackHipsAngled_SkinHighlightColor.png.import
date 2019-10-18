@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/BackHipsAngled_SkinHighlightColor.png-99920e72511cb81ad60662b57c6a0a86.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Hips/Texture/Hips-BackAngled/BackHipsAngled_SkinHighlightColor.png"
+dest_files=[ "res://.import/BackHipsAngled_SkinHighlightColor.png-99920e72511cb81ad60662b57c6a0a86.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0

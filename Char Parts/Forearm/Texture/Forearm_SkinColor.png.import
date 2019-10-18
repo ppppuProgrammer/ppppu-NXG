@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Forearm_SkinColor.png-19f80f9295448f25d64fdfaec94b164b.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Forearm/Texture/Forearm_SkinColor.png"
+dest_files=[ "res://.import/Forearm_SkinColor.png-19f80f9295448f25d64fdfaec94b164b.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

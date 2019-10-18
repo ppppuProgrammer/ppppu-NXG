@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Boob2_SkinHighlightColor.png-7422ba317f64f7a497960e4d974c4e3e.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Boob/Texture/Boob-Ver2/Boob2_SkinHighlightColor.png"
+dest_files=[ "res://.import/Boob2_SkinHighlightColor.png-7422ba317f64f7a497960e4d974c4e3e.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

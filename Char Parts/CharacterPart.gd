@@ -4,8 +4,8 @@ class_name CharacterPart
 
 var part_type_lock:bool = false
 export var part_type:String = "" setget _set_part_type
-export var initLoadTextures = PoolStringArray()
-export var initLoadDecalTextures = PoolStringArray()
+#export var initLoadTextures = PoolStringArray()
+#export var initLoadDecalTextures = PoolStringArray()
 #export var initLoadUnderTextures = PoolStringArray()
 #export var initLoadDecalTextures = PoolStringArray()
 var _mainTextures = []
@@ -61,13 +61,13 @@ func _ready():
 #	_variantLookup_over["None"] = -1
 #	_variantLookup_under["None"] = -1
 	_tr = self.transform
-	_loadTextures(initLoadTextures, layers.MAIN)
-	_loadTextures(initLoadDecalTextures, layers.DECAL)
+	#_loadTextures(initLoadTextures, layers.MAIN)
+	#_loadTextures(initLoadDecalTextures, layers.DECAL)
 	#_loadTextures(initLoadDecalTextures, _overTextures, _variantLookup_over)
 	#_loadTextures(initLoadUnderTextures, _underTextures, _variantLookup_under)
 	_validateOK = true
-	_setMainTex(mainTexId)
-	_setDecalTex(decalTexId)
+	#_setMainTex(mainTexId)
+	#_setDecalTex(decalTexId)
 	#_setUnderTex(underTexId)
 
 ### Animation related START ###

@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Hips_Outline.png-d8abc49426981c51b373eee7d425ab65.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Hips/Texture/Hips_Outline.png"
+dest_files=[ "res://.import/Hips_Outline.png-d8abc49426981c51b373eee7d425ab65.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0

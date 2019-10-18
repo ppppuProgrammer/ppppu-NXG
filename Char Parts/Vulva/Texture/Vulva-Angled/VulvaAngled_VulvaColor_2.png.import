@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/VulvaAngled_VulvaColor_2.png-4d754bd8c199d5e53f52c4246cd6c749.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Vulva/Texture/Vulva-Angled/VulvaAngled_VulvaColor_2.png"
+dest_files=[ "res://.import/VulvaAngled_VulvaColor_2.png-4d754bd8c199d5e53f52c4246cd6c749.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0

@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/ClosedLashShape_0.0.png-c9601682cf55961f407375450d99138e.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/ClosedLash/Texture/ClosedLashShape_0.0.png"
+dest_files=[ "res://.import/ClosedLashShape_0.0.png-c9601682cf55961f407375450d99138e.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Boob3_BreastColor.png-ca429bc813db49408a47fc87b1e1cfb0.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Boob/Texture/Boob-Ver3/Boob3_BreastColor.png"
+dest_files=[ "res://.import/Boob3_BreastColor.png-ca429bc813db49408a47fc87b1e1cfb0.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

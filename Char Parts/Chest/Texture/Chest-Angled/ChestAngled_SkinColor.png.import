@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/ChestAngled_SkinColor.png-64caf5cb18ff7344a4efda1f41ce301d.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Chest/Texture/Chest-Angled/ChestAngled_SkinColor.png"
+dest_files=[ "res://.import/ChestAngled_SkinColor.png-64caf5cb18ff7344a4efda1f41ce301d.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

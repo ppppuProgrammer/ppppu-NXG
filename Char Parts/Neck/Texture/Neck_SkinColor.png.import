@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Neck_SkinColor.png-93908b734bf616b2fa365ac649956940.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Neck/Texture/Neck_SkinColor.png"
+dest_files=[ "res://.import/Neck_SkinColor.png-93908b734bf616b2fa365ac649956940.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

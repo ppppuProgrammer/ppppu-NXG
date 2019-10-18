@@ -1,4 +1,0 @@
-extends Node
-
-enum COLOR_METHOD_TYPE {SOLID, LINEAR, RADIAL}
-const SECTIONS_IN_COLOR_GROUP:int = 8

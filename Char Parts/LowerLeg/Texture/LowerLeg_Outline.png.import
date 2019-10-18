@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/LowerLeg_Outline.png-8a50ea263757447f4e515abadd8e14dc.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/LowerLeg/Texture/LowerLeg_Outline.png"
+dest_files=[ "res://.import/LowerLeg_Outline.png-8a50ea263757447f4e515abadd8e14dc.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0

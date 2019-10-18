@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Shoulder_Outline.png-90648e31b10207475f9a2200aa6a4931.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Shoulder/Texture/Shoulder_Outline.png"
+dest_files=[ "res://.import/Shoulder_Outline.png-90648e31b10207475f9a2200aa6a4931.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

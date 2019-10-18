@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Nipple_NippleColor.png-21ef791b1118d255b3e0c2fef50e2208.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Nipple/Texture/Nipple_NippleColor.png"
+dest_files=[ "res://.import/Nipple_NippleColor.png-21ef791b1118d255b3e0c2fef50e2208.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

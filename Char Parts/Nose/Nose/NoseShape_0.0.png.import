@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/NoseShape_0.0.png-ac625baf85a57d572ddcb3106e62406e.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Nose/Nose/NoseShape_0.0.png"
+dest_files=[ "res://.import/NoseShape_0.0.png-ac625baf85a57d572ddcb3106e62406e.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

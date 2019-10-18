@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Symbol 58_0.0.png-8dbfed03ee1fecdbd268734122522e00.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Eyelash/Texture/Symbol 58_0.0.png"
+dest_files=[ "res://.import/Symbol 58_0.0.png-8dbfed03ee1fecdbd268734122522e00.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

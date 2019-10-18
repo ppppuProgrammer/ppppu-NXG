@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Sclera2_ScleraColor.png-fff797df089b88930c6601bdf94d600a.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Sclera/Texture/Sclera-Ver2/Sclera2_ScleraColor.png"
+dest_files=[ "res://.import/Sclera2_ScleraColor.png-fff797df089b88930c6601bdf94d600a.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

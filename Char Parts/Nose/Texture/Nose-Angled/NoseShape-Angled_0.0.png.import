@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/NoseShape-Angled_0.0.png-4d65975492ab6163bd1e22fbfd9646fc.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Nose/Texture/Nose-Angled/NoseShape-Angled_0.0.png"
+dest_files=[ "res://.import/NoseShape-Angled_0.0.png-4d65975492ab6163bd1e22fbfd9646fc.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

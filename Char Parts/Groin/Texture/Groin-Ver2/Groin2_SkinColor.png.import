@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Groin2_SkinColor.png-921f980e5b413ca8a514327d26ee737c.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Groin/Texture/Groin-Ver2/Groin2_SkinColor.png"
+dest_files=[ "res://.import/Groin2_SkinColor.png-921f980e5b413ca8a514327d26ee737c.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0
