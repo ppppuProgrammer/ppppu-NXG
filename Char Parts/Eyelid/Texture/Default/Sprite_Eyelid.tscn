@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=2]
+[ext_resource path="res://Char Parts/SpriteContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Char Parts/CharPartSprite.gd" type="Script" id=2]
+[ext_resource path="res://Char Parts/Eyelid/Texture/Default/Eyelid_EyelidColor" type="Texture" id=3]
+[ext_resource path="res://Char Parts/Eyelid/Texture/Default/Eyelid_SkinLineColor" type="Texture" id=4]
+[ext_resource path="res://Shaders/Character Coloration.shader" type="Shader" id=5]
+[ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=6]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+render_priority = 0
+shader = ExtResource( 5 )
+shader_param/color_method = 0
+shader_param/sectionReferenceTex = ExtResource( 6 )
+shader_param/s2_UV1 = null
+shader_param/s2_UV2 = null
+shader_param/s2_radius = null
+shader_param/s2_use_focus_point = null
+shader_param/s2_gradient_transform = null
+
+[node name="Eyelid" index="0" instance=ExtResource( 1 )]
+use_parent_material = true
+variantName = "Default"
+
+[node name="Eyelid_EyelidColor" type="Sprite" parent="." index="0" groups=["ColorGrp_Head",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 3 )
+offset = Vector2( 132.500000, 96.600000 )
+material = SubResource( 1 )
+
+
+[node name="Eyelid_SkinLineColor" type="Sprite" parent="." index="1" groups=["ColorGrp_Outline",]]
+script = ExtResource( 2 )
+use_parent_material = false
+scale = Vector2( 0.200000, 0.200000 )
+texture = ExtResource( 4 )
+offset = Vector2( 132.500000, 96.600000 )

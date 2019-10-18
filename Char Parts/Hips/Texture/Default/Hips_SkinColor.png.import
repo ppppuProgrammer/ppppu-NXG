@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Hips_SkinColor.png-ebc1abe6529e5983b295ac0aa2264b0c.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Hips/Texture/Default/Hips_SkinColor.png"
+dest_files=[ "res://.import/Hips_SkinColor.png-ebc1abe6529e5983b295ac0aa2264b0c.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0

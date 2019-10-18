@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Navel_Outline.png-d9d60281a99c3044de74648567835fef.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Navel/Texture/Default/Navel_Outline.png"
+dest_files=[ "res://.import/Navel_Outline.png-d9d60281a99c3044de74648567835fef.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Eyeball_Highlight.png-9cbaa123097fe76b6e44fd259a04cd90.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Eyeball/Texture/Default/Eyeball_Highlight.png"
+dest_files=[ "res://.import/Eyeball_Highlight.png-9cbaa123097fe76b6e44fd259a04cd90.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

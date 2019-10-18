@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Pupil_PupilColor.png-abd28898bdadb66c11a454d8e3833a2a.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Eyeball/Texture/Default/Pupil_PupilColor.png"
+dest_files=[ "res://.import/Pupil_PupilColor.png-abd28898bdadb66c11a454d8e3833a2a.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

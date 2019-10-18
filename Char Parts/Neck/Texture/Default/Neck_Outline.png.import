@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Neck_Outline.png-87ab813f142f345f7e4a3d44c13557f3.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Neck/Texture/Default/Neck_Outline.png"
+dest_files=[ "res://.import/Neck_Outline.png-87ab813f142f345f7e4a3d44c13557f3.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

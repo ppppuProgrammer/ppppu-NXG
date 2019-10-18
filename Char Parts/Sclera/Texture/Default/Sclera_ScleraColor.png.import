@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Sclera_ScleraColor.png-7adf0bd66ce411b31ff70ec7a5e73892.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Sclera/Texture/Default/Sclera_ScleraColor.png"
+dest_files=[ "res://.import/Sclera_ScleraColor.png-7adf0bd66ce411b31ff70ec7a5e73892.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

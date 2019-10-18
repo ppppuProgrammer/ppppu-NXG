@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Iris_IrisColor.png-2f9ac072653d4711e767f013e4724986.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Eyeball/Texture/Default/Iris_IrisColor.png"
+dest_files=[ "res://.import/Iris_IrisColor.png-2f9ac072653d4711e767f013e4724986.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Areola_Highlight.png-5f936edeea0038b4043e30af17794459.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Areola/Texture/Default/Areola_Highlight.png"
+dest_files=[ "res://.import/Areola_Highlight.png-5f936edeea0038b4043e30af17794459.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0

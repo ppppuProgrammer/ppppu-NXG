@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/FrontButt_SkinColor.png-8fbd0fb09e9fd1fc36387c1cd422befd.res"
+group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/FrontButt/Texture/Default/FrontButt_SkinColor.png"
+dest_files=[ "res://.import/FrontButt_SkinColor.png-8fbd0fb09e9fd1fc36387c1cd422befd.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
+import_mode=0

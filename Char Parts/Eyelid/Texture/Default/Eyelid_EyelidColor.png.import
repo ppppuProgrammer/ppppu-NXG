@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Eyelid_EyelidColor.png-a30f8d009a9440f631284a3523fb4593.res"
+group_file="res://Textures/Character Parts/Head/Head Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Eyelid/Texture/Default/Eyelid_EyelidColor.png"
+dest_files=[ "res://.import/Eyelid_EyelidColor.png-a30f8d009a9440f631284a3523fb4593.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Head/Head Atlas.png"
+import_mode=0

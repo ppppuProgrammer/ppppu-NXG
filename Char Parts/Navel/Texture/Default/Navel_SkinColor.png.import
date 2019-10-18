@@ -1,0 +1,17 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Navel_SkinColor.png-332a9e5e84e2af2b91e30adf903aea87.res"
+group_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Char Parts/Navel/Texture/Default/Navel_SkinColor.png"
+dest_files=[ "res://.import/Navel_SkinColor.png-332a9e5e84e2af2b91e30adf903aea87.res" ]
+
+[params]
+
+atlas_file="res://Textures/Character Parts/Upperbody/Upperbody Atlas.png"
+import_mode=0
