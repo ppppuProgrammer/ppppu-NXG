@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=2]
 [ext_resource path="res://Char Parts/SpriteContainer.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Char Parts/CharPartSprite.gd" type="Script" id=2]
-[ext_resource path="res://Char Parts/Face/Texture/Face-Angled3/FaceAngled3_HairAngledColor" type="Texture" id=3]
-[ext_resource path="res://Char Parts/Face/Texture/Face-Angled3/FaceAngled3_SkinColor" type="Texture" id=4]
-[ext_resource path="res://Char Parts/Face/Texture/Face-Angled3/FaceAngled3_Outline" type="Texture" id=5]
+[ext_resource path="res://Char Parts/Face/Texture/Face-Angled3/FaceAngled3_HairAngledColor.png" type="Texture" id=3]
+[ext_resource path="res://Char Parts/Face/Texture/Face-Angled3/FaceAngled3_SkinColor.png" type="Texture" id=4]
+[ext_resource path="res://Char Parts/Face/Texture/Face-Angled3/FaceAngled3_Outline.png" type="Texture" id=5]
 [ext_resource path="res://Shaders/Character Coloration.shader" type="Shader" id=6]
 [ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=7]
 
@@ -34,7 +34,8 @@ shader_param/s1_gradient_transform = null
 
 [node name="Face-Angled3" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
-variantName = "Ver3"
+variantName = "Angled3"
+target_layer = 1
 
 [node name="FaceAngled3_HairAngledColor" type="Sprite" parent="." index="0" groups=["ColorGrp_Hair",]]
 script = ExtResource( 2 )

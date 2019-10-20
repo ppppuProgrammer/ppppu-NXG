@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ShaftMaskShape_0.0.png-f9fd5ad907a0a08bed1e99aeb7787700.stex"
+path="res://.import/Eyelash-0.png-d153146b92795f2ec3201d9faace671a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Char Parts/ShaftMask/Texture/Default/ShaftMaskShape_0.0.png"
-dest_files=[ "res://.import/ShaftMaskShape_0.0.png-f9fd5ad907a0a08bed1e99aeb7787700.stex" ]
+source_file="res://Char Parts/Eyelash/Texture/Default/Eyelash-0.png"
+dest_files=[ "res://.import/Eyelash-0.png-d153146b92795f2ec3201d9faace671a.stex" ]
 
 [params]
 

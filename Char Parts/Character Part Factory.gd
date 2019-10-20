@@ -10,6 +10,7 @@ var creation_semaphore:Semaphore
 var _factory_active:bool = true
 var _factory_thread:Thread
 var creation_queue:Array = []
+
 func _init() -> void:
 	_factory_mutex = Mutex.new()
 	_run_lock = Mutex.new()
@@ -17,7 +18,7 @@ func _init() -> void:
 	_factory_thread = Thread.new()
 	_factory_thread.start(self, "_factory_loop")
 
-func _factory_loop() -> void:
+func _factory_loop(userdata) -> void:
 	while true:
 		creation_semaphore.wait()
 		
@@ -38,22 +39,39 @@ func _factory_loop() -> void:
 #					print_debug(task_discard_str % [part_scene_name, task["name"]])
 #				else:
 #					pass
+
 func shutdown() -> void:
 	_run_lock.lock()
 	_factory_active = false
 	_run_lock.unlock()
 	creation_semaphore.post()
-	_factory_thread.wait_for_finish()
+	_factory_thread.wait_to_finish()
+	_factory_thread = null
 		
 func _cleanup() ->void:
 	pass
-	
-func register_multiple_parts(list:Array):
+
+func register_parts(parts_application:Dictionary)->void:
 	_factory_mutex.lock()
-	for part in list:
-		if part is CharacterPart:
-			_register_part(part)
+	for part_type in parts_application.keys():
+		var part_entry:Dictionary = parts_application[part_type]
+		if part_entry.has("Scene"):
+			_register_part(part_entry["Scene"])
+		if _parts_registry.has(part_type):
+			if part_entry.has(CharacterPart.layers.MAIN):
+				for main_tex in part_entry[CharacterPart.layers.MAIN]:
+					_assign_sprite_for_part(part_type, main_tex, CharacterPart.layers.MAIN)
+			if part_entry.has(CharacterPart.layers.DECAL):
+				for decal_tex in part_entry[CharacterPart.layers.DECAL]:
+					_assign_sprite_for_part(part_type, decal_tex, CharacterPart.layers.DECAL)
 	_factory_mutex.unlock()
+
+#func register_multiple_parts(list:Array):
+#	_factory_mutex.lock()
+#	for part in list:
+#		if part is CharacterPart:
+#			_register_part(part)
+#	_factory_mutex.unlock()
 	
 func register_single_part(part_scene:PackedScene)->bool:
 	_factory_mutex.lock()
@@ -64,10 +82,12 @@ func register_single_part(part_scene:PackedScene)->bool:
 func _register_part(part_scene:PackedScene)->bool:
 	var reg_success:bool = false
 	var part = part_scene.instance()
-	if part is CharacterPart and not part_scene.get_rid().get_id() in _registeredPackedScenes:
-		_registeredPackedScenes.append(part_scene.get_rid().get_id())
-		_parts_registry[part.name] = {"PartScene": part_scene, "MainTexs": [], "DecalTexs": []}
+	var iid:int = part_scene.get_instance_id()
+	if part is CharacterPart and not part_scene.get_instance_id() in _registeredPackedScenes:
+		_registeredPackedScenes.append(part_scene.get_instance_id())
+		_parts_registry[part.name] = {"PartScene": part_scene, CharacterPart.layers.MAIN: [], CharacterPart.layers.DECAL: []}
 		reg_success = true
+		part.queue_free()
 	return reg_success
 
 #parts order expects strings and null. When the part type to create is not set the next encountered string is the 
@@ -94,9 +114,9 @@ func _create_part(part_type:String)->CharacterPart:
 		var part:CharacterPart = _parts_registry[part_type]["PartScene"].instance()
 		var mainLayer:int = CharacterPart.layers.MAIN
 		var decalLayer:int = CharacterPart.layers.DECAL
-		for mainTex in _parts_registry[part_type]["MainTexs"]:
+		for mainTex in _parts_registry[part_type][CharacterPart.layers.MAIN]:
 			part.add_texture(mainLayer, mainTex.instance())
-		for decalTex in _parts_registry[part_type]["DecalTexs"]:
+		for decalTex in _parts_registry[part_type][CharacterPart.layers.DECAL]:
 			part.add_texture(decalLayer, decalTex.instance())
 		return part
 	else:
@@ -112,14 +132,18 @@ func add_sprite_to_part(sprite_scene:PackedScene, part_type:String)->bool:
 			var node_prop_name:String = ss_state.get_node_property_name(0, idx)
 			if node_prop_name == "target_layer":
 				var layer_value:int = ss_state.get_node_property_value(0, idx)
-				var layer:String = "MainTexs" if layer_value == CharacterPart.layers.MAIN else "DecalTexs" if layer_value == CharacterPart.layers.DECAL else null
-				if not sprite_scene in _parts_registry[part_type][layer]:
-					_parts_registry[part_type][layer].append(sprite_scene)
-					success = true
-					break
+				success = _assign_sprite_for_part(part_type, sprite_scene, layer_value)
+				break
 	_factory_mutex.unlock()
 	return success
-	
+
+func _assign_sprite_for_part(part_type:String, packed_scene:PackedScene, layer:int)->bool:
+	#var layer:String = "MainTexs" if layer_value == CharacterPart.layers.MAIN else "DecalTexs" if layer_value == CharacterPart.layers.DECAL else null
+	if not packed_scene in _parts_registry[part_type][layer]:
+		_parts_registry[part_type][layer].append(packed_scene)
+		return true
+	return false
+
 func add_create_parts_task(parts_order:Array, recipient:Character):
 	var task:Dictionary = {"Order": parts_order, "Target": recipient}
 	_factory_mutex.lock()
@@ -127,3 +151,8 @@ func add_create_parts_task(parts_order:Array, recipient:Character):
 	_factory_mutex.unlock()
 	creation_semaphore.post()
 	
+func has_part(type:String)->bool:
+	return _parts_registry.has(type)
+
+func get_texture_count_for_part(type:String, layer:int)->int:
+	return _parts_registry[type][layer].size()

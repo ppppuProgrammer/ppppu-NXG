@@ -1,13 +1,14 @@
 [gd_scene load_steps=6 format=2]
 [ext_resource path="res://Char Parts/SpriteContainer.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Char Parts/CharPartSprite.gd" type="Script" id=2]
-[ext_resource path="res://Char Parts/Nose/Texture/Nose-Angled/0" type="Texture" id=3]
+[ext_resource path="res://Char Parts/Nose/Texture/Nose-Angled/NoseShape-Angled.png" type="Texture" id=3]
 [ext_resource path="res://Shaders/Character Coloration.shader" type="Shader" id=4]
 [ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=5]
 
 [node name="Nose-Angled" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Angled"
+target_layer = 1
 
 [node name="NoseShape-Angled_0.0" type="Sprite" parent="." index="0" groups=["ColorGrp_UNUSED",]]
 script = ExtResource( 2 )

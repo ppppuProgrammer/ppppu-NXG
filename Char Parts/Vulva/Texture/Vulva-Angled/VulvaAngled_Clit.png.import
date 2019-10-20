@@ -1,17 +1,34 @@
 [remap]
 
-importer="texture_atlas"
-type="Texture"
-path="res://.import/VulvaAngled_Clit.png-70350ae86a8fab9e98e5af820eef9333.res"
-group_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
-valid=true
+importer="texture"
+type="StreamTexture"
+path="res://.import/VulvaAngled_Clit.png-70350ae86a8fab9e98e5af820eef9333.stex"
+metadata={
+"vram_texture": false
+}
+
 [deps]
 
-
 source_file="res://Char Parts/Vulva/Texture/Vulva-Angled/VulvaAngled_Clit.png"
-dest_files=[ "res://.import/VulvaAngled_Clit.png-70350ae86a8fab9e98e5af820eef9333.res" ]
+dest_files=[ "res://.import/VulvaAngled_Clit.png-70350ae86a8fab9e98e5af820eef9333.stex" ]
 
 [params]
 
-atlas_file="res://Textures/Character Parts/Lowerbody/Lowerbody Atlas.png"
-import_mode=0
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=2
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=true
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

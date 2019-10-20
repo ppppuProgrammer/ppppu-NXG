@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=2]
 [ext_resource path="res://Char Parts/SpriteContainer.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Char Parts/CharPartSprite.gd" type="Script" id=2]
-[ext_resource path="res://Char Parts/WideTeardropMouth/Texture/Default/WideTeardropMouth_LipColor" type="Texture" id=3]
-[ext_resource path="res://Char Parts/WideTeardropMouth/Texture/Default/WideTeardropMth_Highlight" type="Texture" id=4]
-[ext_resource path="res://Char Parts/WideTeardropMouth/Texture/Default/WideTeardropMth_Inside" type="Texture" id=5]
-[ext_resource path="res://Char Parts/WideTeardropMouth/Texture/Default/WideTeardropMth_Teeth" type="Texture" id=6]
-[ext_resource path="res://Char Parts/WideTeardropMouth/Texture/Default/WideTeardropMth_Outline" type="Texture" id=7]
+[ext_resource path="res://Char Parts/WideTeardropMouth/Texture/Default/WideTeardropMouth_LipColor.png" type="Texture" id=3]
+[ext_resource path="res://Char Parts/WideTeardropMouth/Texture/Default/WideTeardropMth_Highlight.png" type="Texture" id=4]
+[ext_resource path="res://Char Parts/WideTeardropMouth/Texture/Default/WideTeardropMth_Inside.png" type="Texture" id=5]
+[ext_resource path="res://Char Parts/WideTeardropMouth/Texture/Default/WideTeardropMth_Teeth.png" type="Texture" id=6]
+[ext_resource path="res://Char Parts/WideTeardropMouth/Texture/Default/WideTeardropMth_Outline.png" type="Texture" id=7]
 [ext_resource path="res://Shaders/Character Coloration.shader" type="Shader" id=8]
 [ext_resource path="res://Textures/Color Lookup.png" type="Texture" id=9]
 
@@ -37,6 +37,7 @@ shader_param/s1_gradient_transform = null
 [node name="WideTeardropMouth" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
 variantName = "Default"
+target_layer = 1
 
 [node name="WideTeardropMouth_LipColor" type="Sprite" parent="." index="0" groups=["ColorGrp_Lips",]]
 script = ExtResource( 2 )
