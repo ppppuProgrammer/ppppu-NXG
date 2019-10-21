@@ -34,7 +34,7 @@ shader_param/s1_gradient_transform = null
 
 [node name="Boob-Side" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
-variantName = "Default"
+variantName = "Side"
 target_layer = 1
 
 [node name="SideBoob_Outline" type="Sprite" parent="." index="0" groups=["ColorGrp_Outline",]]

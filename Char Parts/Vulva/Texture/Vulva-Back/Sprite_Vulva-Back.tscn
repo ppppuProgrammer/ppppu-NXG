@@ -20,7 +20,7 @@ shader_param/s1_gradient_transform = Basis(1, 0.00061, 0, -0.00031, 0.70502, 0, 
 
 [node name="Vulva-Back" index="0" instance=ExtResource( 1 )]
 use_parent_material = true
-variantName = "Default"
+variantName = "Back"
 target_layer = 1
 
 [node name="BackVulva_VulvaColor" type="Sprite" parent="." index="0" groups=["ColorGrp_Lower Body",]]

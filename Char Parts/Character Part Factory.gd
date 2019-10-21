@@ -59,11 +59,13 @@ func register_parts(parts_application:Dictionary)->void:
 			_register_part(part_entry["Scene"])
 		if _parts_registry.has(part_type):
 			if part_entry.has(CharacterPart.layers.MAIN):
-				for main_tex in part_entry[CharacterPart.layers.MAIN]:
-					_assign_sprite_for_part(part_type, main_tex, CharacterPart.layers.MAIN)
+				for variant_name_main in part_entry[CharacterPart.layers.MAIN].keys():
+					var main_tex:PackedScene = part_entry[CharacterPart.layers.MAIN][variant_name_main]
+					_assign_sprite_for_part(part_type, main_tex, CharacterPart.layers.MAIN, variant_name_main)
 			if part_entry.has(CharacterPart.layers.DECAL):
-				for decal_tex in part_entry[CharacterPart.layers.DECAL]:
-					_assign_sprite_for_part(part_type, decal_tex, CharacterPart.layers.DECAL)
+				for variant_name_decal in part_entry[CharacterPart.layers.DECAL].keys():
+					var decal_tex:PackedScene = part_entry[CharacterPart.layers.DECAL][variant_name_decal]
+					_assign_sprite_for_part(part_type, decal_tex, CharacterPart.layers.DECAL, variant_name_decal)
 	_factory_mutex.unlock()
 
 #func register_multiple_parts(list:Array):
@@ -85,7 +87,7 @@ func _register_part(part_scene:PackedScene)->bool:
 	var iid:int = part_scene.get_instance_id()
 	if part is CharacterPart and not part_scene.get_instance_id() in _registeredPackedScenes:
 		_registeredPackedScenes.append(part_scene.get_instance_id())
-		_parts_registry[part.name] = {"PartScene": part_scene, CharacterPart.layers.MAIN: [], CharacterPart.layers.DECAL: []}
+		_parts_registry[part.name] = {"PartScene": part_scene, CharacterPart.layers.MAIN: {}, CharacterPart.layers.DECAL: {}}
 		reg_success = true
 		part.queue_free()
 	return reg_success
@@ -125,22 +127,27 @@ func _create_part(part_type:String)->CharacterPart:
 func add_sprite_to_part(sprite_scene:PackedScene, part_type:String)->bool:
 	_factory_mutex.lock()
 	var success:bool = false
+	var variant_name:String = ""
+	var layer_value:int = 0
 	if part_type in _parts_registry:
 		var ss_state:SceneState = sprite_scene.get_state()
 		#Don't assume that target_layer property will use the same value for all the sprite packed scenes.
 		for idx in ss_state.get_node_property_count(0):
 			var node_prop_name:String = ss_state.get_node_property_name(0, idx)
 			if node_prop_name == "target_layer":
-				var layer_value:int = ss_state.get_node_property_value(0, idx)
-				success = _assign_sprite_for_part(part_type, sprite_scene, layer_value)
+				layer_value = ss_state.get_node_property_value(0, idx)
+			if node_prop_name == "variantName":
+				variant_name = ss_state.get_node_property_value(0, idx)
+			if not variant_name.empty() and layer_value > 0:
+				success = _assign_sprite_for_part(part_type, sprite_scene, layer_value, variant_name)
 				break
 	_factory_mutex.unlock()
 	return success
 
-func _assign_sprite_for_part(part_type:String, packed_scene:PackedScene, layer:int)->bool:
+func _assign_sprite_for_part(part_type:String, packed_scene:PackedScene, layer:int, variant_name:String)->bool:
 	#var layer:String = "MainTexs" if layer_value == CharacterPart.layers.MAIN else "DecalTexs" if layer_value == CharacterPart.layers.DECAL else null
-	if not packed_scene in _parts_registry[part_type][layer]:
-		_parts_registry[part_type][layer].append(packed_scene)
+	if not _parts_registry[part_type][layer].has(variant_name):
+		_parts_registry[part_type][layer][variant_name] = packed_scene
 		return true
 	return false
 

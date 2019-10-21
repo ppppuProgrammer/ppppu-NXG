@@ -51,10 +51,10 @@ func test_scan_parts_resources():
 				if part_dir_scanner.dir_exists("Texture"):
 					#Scan for all the variants
 					if part_dir_scanner.change_dir("Texture") == OK:
-						if not part_dir_scanner.dir_exists("Default"):
-							continue
+#						if not part_dir_scanner.dir_exists("Default"):
+#							continue
 						factory_register_data[part_folder_name] = {"Scene": load("%s/%s.tscn" % [current_path, 
-								part_folder_name]), CharacterPart.layers.MAIN: [], CharacterPart.layers.DECAL: []}
+								part_folder_name]), CharacterPart.layers.MAIN: {}, CharacterPart.layers.DECAL: {}}
 						var part_registry:Dictionary = factory_register_data[part_folder_name]
 						var variants_folders:PoolStringArray = _get_directory_contents(
 								part_dir_scanner.get_current_dir(), filesystem_types.DIRECTORIES)
@@ -69,17 +69,22 @@ func test_scan_parts_resources():
 								assert_not_null(sprite_scene, "[%s; %s] PackedScene could not be loaded, check for errors such as missing external resources" % [part_folder_name, variant_folder_name])
 								if sprite_scene:
 									var sprite_layer:int = 0
+									var variant_name:String = ""
 									var state:SceneState = sprite_scene.get_state()
 									for prop_idx in state.get_node_property_count(0):
 										if state.get_node_property_name(0, prop_idx) == "target_layer":
 											sprite_layer = state.get_node_property_value(0, prop_idx)
-											if sprite_layer == CharacterPart.layers.MAIN and not sprite_scene in part_registry[CharacterPart.layers.MAIN]:
-												part_registry[CharacterPart.layers.MAIN].append(sprite_scene)
-											elif sprite_layer == CharacterPart.layers.DECAL and not sprite_scene in part_registry[CharacterPart.layers.DECAL]:
-												part_registry[CharacterPart.layers.DECAL].append(sprite_scene)
+										if state.get_node_property_name(0, prop_idx) == "variantName":
+											variant_name = state.get_node_property_value(0, prop_idx)
+										if sprite_layer > 0 and not variant_name.empty():
+											if sprite_layer == CharacterPart.layers.MAIN and not part_registry[CharacterPart.layers.MAIN].has(variant_name):
+												part_registry[CharacterPart.layers.MAIN][variant_name] = sprite_scene
+											elif sprite_layer == CharacterPart.layers.DECAL and not part_registry[CharacterPart.layers.DECAL].has(variant_name):
+												part_registry[CharacterPart.layers.DECAL][variant_name] = sprite_scene
+											assert_eq(part_registry[sprite_layer][variant_name], sprite_scene, 
+													"[type: %s] sprite \"%s\" could not added, variant \"%s\" was already in use. Conflicting files [%s , %s]" % 
+													[part_folder_name, load_path.get_file(), variant_name, (part_registry[sprite_layer][variant_name] as PackedScene).resource_path, sprite_scene.resource_path])
 									assert_gt(sprite_layer, 0, "[%s; %s] sprite layer for \"%s\" was not set " % [part_folder_name, variant_folder_name, load_path.get_file()])
-									if sprite_layer > 0:
-										assert_has(part_registry[sprite_layer], sprite_scene, "[type: %s] sprite \"%s\" was not added to part registry for layer %d" % [part_folder_name, load_path.get_file(), sprite_layer])
 							part_dir_scanner.change_dir("..")
 						assert_eq(variants_folders.size(), part_registry[1].size() + part_registry[2].size(), "[type: %s] Found %d variant(s) but only %d were added" % [part_folder_name, variants_folders.size(), part_registry[1].size() + part_registry[2].size()])
 	_partFactory.register_parts(factory_register_data)
